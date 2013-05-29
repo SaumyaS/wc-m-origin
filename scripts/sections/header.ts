@@ -3,3 +3,9 @@
 #     Move stuff here
 #   }
 # }
+
+
+  # 
+  $$("#MessageArea"){
+    remove()
+  }

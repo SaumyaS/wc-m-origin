@@ -26,5 +26,6 @@ $("/html") {
 
   @import mappings.ts
   @import pages/home.ts
+  @import pages/categories.ts
 }
 

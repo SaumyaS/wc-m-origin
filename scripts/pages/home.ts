@@ -28,11 +28,6 @@ $$("body"){
     remove()
   }
 
-  $$("#content_wrapper_box"){
-    $("./script[10]"){
-      remove()
-    }
-  }
 
   # Removes breadcrumbs
   $$("#breadcrumb"){
@@ -58,7 +53,7 @@ $$("body"){
     remove()
   }
 
-
+  # Forward button for banner
   $$(".forward"){
     remove()
   }
@@ -72,29 +67,8 @@ $$("body"){
     remove()
   }
 
+  # Backward button for banner
   $$(".backward"){
-    remove()
-  }
-
-  # Removes unneeded footer items
-  $$(".footer_nav_wrapper"){
-    remove()
-  }
-
-  # Removes the Entrust logo
-  $$(".intrust"){
-    remove()
-  }
-
-  # Removes the credit card logos
-  $$(".copyright_right_box"){
-    remove()
-  }
-
-  
-
-  # 
-  $$("#MessageArea"){
     remove()
   }
 
