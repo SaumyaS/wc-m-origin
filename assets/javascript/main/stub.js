@@ -1,1 +1,4 @@
-// Delete me when ready
+
+function test(){
+	alert("hello");
+}

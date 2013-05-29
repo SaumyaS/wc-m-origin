@@ -2,4 +2,225 @@
 // Scope that in each file at the start
 ._home {
   
+  ._category {
+    border-bottom: #808080;
+    border-top: 1px solid #808080;
+    @include background(linear-gradient(#fff, #c0c0c0));
+    background-position-x: right;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+ 
+
+  ._sub2 {
+    border-bottom: #fff;
+    border-top: 1px solid #ddd;
+    background-position-x: right;
+    background-color: #fff;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+  #ad_17601{
+    @include background(linear-gradient(#555, #111));
+    border-bottom: 1px solid #c3c3c3;
+    overflow: hidden;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .checkout_wrapper {
+    text-align: center;
+    background-color: #ddd;
+    position: relative;
+    >div {
+      
+      position: relative;
+      bottom: 0;
+      opacity: .8;
+      margin-bottom: -3px;
+      
+      >div{
+        display: inline-block;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  #_icons_bar{ 
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    opacity: .8;
+
+       
+    >div:hover{
+      cursor: pointer;
+      
+    }
+    >div{
+      padding-left: 4px;
+      padding-right: 4px;
+      display: inline-block;    
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  ._header_bar {
+    border-bottom: 1px solid #C3C3C3;
+    background-color: #777;
+    color: #ccc;
+    position: relative;
+    background-position-x: right;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize; 
+    padding: 10px;
+  }
+
+  #search_bar{
+    border-bottom: 2px solid #C3C3C3;
+    background-color: #777; 
+    color: #ccc;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+       
+  }
+
+  #header-search{
+    display: inline-block;
+    padding-left: 10px;
+    >a{
+      color: #ccc;
+      font-size: 16px;
+      line-height: 1;
+      text-decoration: none;
+      text-transform: capitalize; 
+    }
+  }
+  
+
+  ._cart {
+    border-bottom: 1px solid #C3C3C3;
+    background-color: #777;
+    color: #ccc;
+    text-align: left;
+    position: relative;
+    background-position-x: right;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: capitalize; 
+    padding: 10px;
+  }
+
+  #SimpleSearchForm_SearchTerm{
+    float: left;
+  }
+
+  #searchDiv {
+    float: left;
+  }
+
+  #headerAdvancedSearch  {
+    display: block;
+  }
+
+  #WC_ContentAreaESpot_div_1_13352 {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+  }
+
+  #ad_62501 {
+    text-align: center;
+    display: block;
+    background-color: #000;
+
+    li{
+      display: inline-block;
+    }
+  }
+
+  .copyright_left_box{
+    text-align: center;
+    background-color: #000;
+    color: #ccc;
+  }
+
+  .MyAccountURLSep a{
+    text-align: center;
+  }
+
+  #shoppingCartBar{
+      text-align: center;
+  }
+
+  .subscribe_data_warapper{
+    display: inline-block;   
+  }
+
+  .subs_imput_box {
+    position: relative;
+    font-size: 16px;
+    line-height: 1;
+    float: left;
+    padding-bottom: 5px;
+
+    #emailSidebar {
+      padding: 5px;
+      float: left;
+    }
+    
+  }
+
+  #emailText {
+    float: left;
+    padding-top: 10px; 
+    font-weight: bold;
+  }
+
+  .subscribe_wrapper{border-bottom: #fff;
+    border-top: 1px solid #ddd;
+    background-position-x: right;
+    background-color: #ffc623;
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-top: 10px
+  }
+
+  #WC_ContentAreaESpot_links_7_1 img{
+    width: 60%;
+  }
+
+
+  
 }
