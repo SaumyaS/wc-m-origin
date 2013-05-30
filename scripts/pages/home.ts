@@ -28,6 +28,9 @@ $$("body"){
     remove()
   }
 
+  $$("div.bt_pagination"){
+  	remove()
+  }
 
   # Removes breadcrumbs
   $$("#breadcrumb"){
@@ -56,6 +59,10 @@ $$("body"){
   # Forward button for banner
   $$(".forward"){
     remove()
+  }
+
+  $$(".MyAccountURLSep"){
+  	remove()
   }
 
   # Removes the main hero image
@@ -94,32 +101,22 @@ $$("body"){
     }
   }
 
+  
+
+
   $$(".checkout_wrapper"){
     insert("div", id: "_icons_bar"){
-      insert("div", id: "image-account", data-ur-tab-id: "account", data-ur-tabs-component: "button")
+      insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
 
       insert("div", id: "image-search", data-ur-tab-id: "search", data-ur-tabs-component: "button")
      
       insert("div", id: "image-cart", data-ur-tab-id: "cart", data-ur-tabs-component: "button")
     }
 
-    $$("#image-account"){
-      insert("img", src: asset("images/male_user.png"))
+    $$("#image-menu"){
+      insert("img", src: asset("images/menu.png"))
     }
-    $$("li.MyAccountURLSep"){
-      attributes(data-ur-tabs-component: "content", data-ur-tab-id: "account")
-
-
-      $$("a"){
-        # attribute("class", "_header_bar")
-        # attributes(class: "_header_bar", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
-        # copy_here("")
-        remove()
-      }
-      insert("a", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301", class: "_header_bar", "Login Or Create An Account")
-
-
-    }
+    
     
     $$("#image-search"){
       insert("img", src: asset("images/search.png"))
@@ -137,6 +134,10 @@ $$("body"){
         attribute("class", "_cart")
       }
     }    
+  }
+
+  $$("ul.nav-primary"){
+	attributes(data-ur-tabs-component: "content", data-ur-tab-id: "menu", data-ur-state: "enabled")
   }
 
   $$("div#_icons_bar"){
@@ -172,7 +173,7 @@ $$("body"){
     move_to("//div[@class='subs_imput_box']", "before")
   }
 
-  $$(".header_wrapper"){
+  $$("#page"){
     attributes(data-ur-set: "tabs", data-ur-closeable: "true")
   }
 

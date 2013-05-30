@@ -9,5 +9,9 @@ $("/html"){
 				remove()
 			}
 		}
+
+		$$("#image-menu"){
+			attribute("data-ur-state", "disabled")
+		}
 	}
 }
