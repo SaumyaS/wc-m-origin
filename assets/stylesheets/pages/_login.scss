@@ -1,0 +1,89 @@
+.log_heading{
+	font-size: 16px;
+	color: #505050;
+	display: block;
+	h1{
+		background-color: #ffe089;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-weight: bold;
+
+	}
+	hr{
+		display: block;
+		background-color: #fc0;
+		height: 2px;
+		border: none;
+		margin: 10px 0px;
+	}
+}
+
+.login-box{
+	
+	.col-1{
+		padding: 10px 20px;
+		h2{
+			font-weight: bold;
+		}
+		form{
+			display: block;
+			margin-top: 0em;
+			label{
+				min-width: 100px;
+				display: inline-block;
+				font-weight: bold;
+				margin: 5px 0;
+			}
+			input{
+				margin: 5px 0px;
+				width: 200px;
+				padding: 4px;
+				background: #ccc;
+				border: 1px solid #aaa;
+				border-radius: 4px;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.4) inset;
+			}
+			#WC_AccountDisplay_links_1{
+				color: #3a00f4;
+				text-decoration: underline;
+				display: inline-block;
+				cursor: auto;
+				font-size: 12px;
+			}
+			#WC_AccountDisplay_links_2{
+				text-decoration: none;
+			}
+
+		}
+	}
+	.col-2{
+		padding: 10px 20px;
+		background: #ddd;
+		#ad_18601{
+			color: #505050;
+			h2{
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.btn{
+	background: url(../../../images/addto_cart_bg.jpg) repeat-x;
+	height: 22px;
+	color: black;
+	padding: 3px 10px;
+	margin: 5px 5px 5px 0;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+}
+
+a{
+	color: #3a00f4;
+}
