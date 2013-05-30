@@ -16,7 +16,11 @@
     padding: 10px;
   }
 
- 
+  .images{
+    >div{
+      position: relative;
+    }
+  }
 
   ._sub2 {
     border-bottom: #fff;

@@ -10,7 +10,7 @@ $("/html"){
 			}
 		}
 
-		$$("#image-menu"){
+		$$(".nav-primary"){
 			attribute("data-ur-state", "disabled")
 		}
 	}

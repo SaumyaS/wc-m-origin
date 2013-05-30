@@ -65,10 +65,7 @@ $$("body"){
   	remove()
   }
 
-  # Removes the main hero image
-  $$(".banner_wrapper"){
-    remove()
-  }
+  
 
   $$("#WC_ContentAreaESpot_div_1_17106"){
     remove()
