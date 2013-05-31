@@ -1,0 +1,58 @@
+#box{
+	display: block;
+	div{
+		overflow: hidden;
+		padding-bottom: 5px;
+		.search-sidebar{
+
+			h2{
+				border-bottom: 1px solid #808080;
+    			border-top: 1px solid #808080;
+				@include background(linear-gradient(#fff, #c0c0c0));
+				line-height: 1;
+				text-align: center;
+				margin-top: 0;
+				font-size: 16px;
+				font-weight: bold;
+				padding: 10px;
+			}
+		}
+		.search-main{
+			h2{
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				background: #ffe7a3;
+				padding: 5px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.search_based{
+				border-bottom: 1px solid #cccccc;
+				margin-bottom: 10px;
+				padding: 6px;
+				width: 100%;
+			}
+			.pricing-login{
+				background: #ebebeb;
+				text-align: center;
+				padding: 5px;
+			}
+			.result-item{
+				display: block;
+				.item-description{
+					float: left;
+					width: 150px;
+					p{
+						display: none;
+					}
+				}
+				.item-action{
+					position: relative;
+					float: left;
+					width: 150px;
+				}
+				
+			}
+		}
+	}
+}

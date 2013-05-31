@@ -3,7 +3,7 @@
 ._home {
   
   ._category {
-    border-bottom: #808080;
+    border-bottom:1px solid #808080;
     border-top: 1px solid #808080;
     @include background(linear-gradient(#fff, #c0c0c0));
     background-position-x: right;
@@ -23,7 +23,7 @@
   }
 
   ._sub2 {
-    border-bottom: #fff;
+    border-bottom: 1px solid #fff;
     border-top: 1px solid #ddd;
     background-position-x: right;
     background-color: #fff;
