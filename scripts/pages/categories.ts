@@ -8,8 +8,5 @@ $("/html"){
 				remove()
 		}
 
-		$$(".nav-primary"){
-			attribute("data-ur-state", "disabled")
-		}
 	}
 }
