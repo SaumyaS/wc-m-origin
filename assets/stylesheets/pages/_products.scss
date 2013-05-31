@@ -16,6 +16,19 @@
 				font-weight: bold;
 				padding: 10px;
 			}
+			ul{
+				h4{
+					border-bottom: 1px solid #808080;
+	    			border-top: 1px solid #808080;
+					@include background(linear-gradient(#aaa, #555));
+					line-height: 1;
+					text-align: center;
+					margin-top: 0;
+					font-size: 16px;
+					font-weight: bold;
+					padding: 10px;
+				}
+			}
 		}
 		.search-main{
 			h2{
@@ -36,20 +49,36 @@
 				background: #ebebeb;
 				text-align: center;
 				padding: 5px;
+				border-bottom: 2px solid #000;
 			}
 			.result-item{
+				border-bottom: 1px solid #ccc;
+				padding-top: 5px;
+				padding-left: 5px;
 				display: block;
 				.item-description{
 					float: left;
 					width: 150px;
+					a{
+						h1{
+							color: #3a3a39;
+							font-size: 12px;
+						}
+					}
 					p{
 						display: none;
 					}
 				}
 				.item-action{
+					margin-top: -90px;
 					position: relative;
 					float: left;
-					width: 150px;
+					width: 120px;
+					.discount-price{
+						font-weight: bold;
+						color: #ff6311;
+						font-size: 14px;
+					}
 				}
 				
 			}
