@@ -22,11 +22,14 @@ match($status) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }
+      with(/TopCategoriesDisplay/){
+        log("--> Importing pages/new.ts in mapping.ts")
+        @import pages/new.ts
+      }
 
 
       else() {
         log("--> No page match in mappings.ts")
-        @import pages/new.ts
       }
     }
   }
