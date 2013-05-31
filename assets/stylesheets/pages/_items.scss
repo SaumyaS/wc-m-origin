@@ -3,4 +3,23 @@
 	border-bottom: 2px solid #ffc623;
 	padding-bottom: 5px;
 	font-weight: bold;
+	div{
+		font-weight: normal;
+		display: block;
+		font-size: 12px;
+		letter-spacing: normal;
+		ul{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			overflow: hidden;
+			height: auto;
+			li{
+				float: left;
+				
+			}
+
+		}
+
+	}
 }

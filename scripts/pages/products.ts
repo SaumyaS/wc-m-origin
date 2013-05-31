@@ -1,33 +1,36 @@
 $$(".search-sidebar"){
+
+	$("./h2"){
+		insert_after("div", class:"_resultContent")
+	}
+
+	$("./div"){
+		insert("div", class: "_tabWidget")
+	}
+
+
+
+	$$("._tabWidget"){
+		move_here("../../ul")
+	}
+
 	attribute("data-ur-set", "toggler")
 	$("./h2"){
 		attributes(data-ur-toggler-component: "button", data-ur-toggler-id: "search")
 	}
-	$("./ul"){
+	$("./div"){
 		attributes(data-ur-toggler-component: "content", data-ur-toggler-id: "search")
 	}
 
-	$("ul[1]"){
+	$$("._tabWidget"){
 		attributes(data-ur-set: "tabs", data-ur-closeable: "true")
-		$("./li/h4"){
+		$("./ul/li/h4"){
 			attributes(data-ur-tabs-component: "button", data-ur-id: "price")
 		}
-		$("./li/ul"){
+		$("./ul/li/ul"){
 			attributes(data-ur-tabs-component: "content", data-ur-id: "price")
 		}
 	}
-
-	$("ul[2]"){
-		attributes(data-ur-set: "tabs", data-ur-closeable: "true")
-		$("./li/h4"){
-			attributes(data-ur-tabs-component: "button", data-ur-id: "mfg")
-		}
-		$("./li/ul"){
-			attributes(data-ur-tabs-component: "content", data-ur-id: "mfg")
-		}
-	}
-
-
 
 	
 }
