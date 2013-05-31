@@ -25,10 +25,10 @@ $$(".search-sidebar"){
 	$$("._tabWidget"){
 		attributes(data-ur-set: "tabs", data-ur-closeable: "true")
 		$("./ul/li/h4"){
-			attributes(data-ur-tabs-component: "button", data-ur-id: "price")
+			attributes(data-ur-tabs-component: "button", data-ur-tab-id: "price")
 		}
 		$("./ul/li/ul"){
-			attributes(data-ur-tabs-component: "content", data-ur-id: "price")
+			attributes(data-ur-tabs-component: "content", data-ur-tab-id: "price")
 		}
 	}
 
