@@ -28,6 +28,7 @@ $("/html") {
   @import pages/home.ts
   @import pages/products.ts
   @import pages/categories.ts
+  @import pages/items.ts
 
 }
 

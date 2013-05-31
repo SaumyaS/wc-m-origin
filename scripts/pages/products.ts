@@ -24,11 +24,21 @@ $$(".search-sidebar"){
 
 	$$("._tabWidget"){
 		attributes(data-ur-set: "tabs", data-ur-closeable: "true")
-		$("./ul/li/h4"){
-			attributes(data-ur-tabs-component: "button", data-ur-tab-id: "price")
+		$("ul[1]"){
+			$("./li/h4"){
+				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "price")
+			}
+			$("./li/ul"){
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "price")
+			}
 		}
-		$("./ul/li/ul"){
-			attributes(data-ur-tabs-component: "content", data-ur-tab-id: "price")
+		$("ul[2]"){
+			$("./li/h4"){
+				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "mfg")
+			}
+			$("./li/ul"){
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "mfg")
+			}
 		}
 	}
 
