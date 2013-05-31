@@ -32,6 +32,10 @@ $$("body"){
   	remove()
   }
 
+  $$(".dijitDialog"){
+  	remove()
+  }
+
   # Removes breadcrumbs
   $$("#breadcrumb"){
     remove()
@@ -77,16 +81,27 @@ $$("body"){
   }
 
   $$(".nav_wrapper"){
+    $("./div/ul"){
+    	$("li[1]"){
+    		attribute("id", "menu1")
+    	}
+    }
+
     $$(".nav-primary"){
       $$(">li"){
         attribute("class", "col")
+        $$(">a"){
+        	attribute("class", "_category")
+        }
       }
     }
 
-    $$(".col"){
+
+
+    $$("#menu1"){
       attribute("data-ur-set", "toggler")
       $$(">a"){
-        attributes(class:"_category", data-ur-toggler-component: "button")
+        attribute("data-ur-toggler-component", "button")
       }
         
       $$(".subnav"){
@@ -171,7 +186,7 @@ $$("body"){
   }
 
   $$("#page"){
-    attributes(data-ur-set: "tabs", data-ur-closeable: "true")
+    attributes(data-ur-set: "tabs", data-ur-closeable: "true", data-ur-id: "test")
   }
 
 
