@@ -1,3 +1,7 @@
+$$("#ad_17601"){
+	move_here("//div[@id='_icons_bar']")
+}
+
 $$(".product_social_icons"){
 	remove()
 }
