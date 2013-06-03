@@ -30,9 +30,17 @@ $$(".order-confirm"){
 			}
 			$("./div[6]"){
 				add_class("_colEach")
+				wrap("div"){
+					attribute("class", "_eachDiv")
+					insert_top("div", "Each: ")
+				}
 			}
 			$("./div[7]"){
 				add_class("_colTotal")
+				wrap("div"){
+					attribute("class", "_totalDiv")
+					insert_top("div", "Total: ")
+				}
 			}
 
 			$$("._colInStock"){
