@@ -6,6 +6,13 @@ $$("#ad_17601"){
 
 $$(".order-confirm"){
 	$(".//div[@id='order-summary']"){
+
+		
+		$("./a"){
+			attribute("style", "text-align: center")
+		}
+			
+		
 		$$(".mw_was_thead"){
 			attribute("style", "display: none;")
 		}
