@@ -1,0 +1,43 @@
+.order-confirm{
+	display: block;
+	padding-top: 5px;
+	h1{
+		background-color: #ffe089;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 16px;
+	}
+	#order-summary{
+		display: block;
+		#order_details{
+
+		}
+	}
+
+	.mw_was_tbody{
+		-webkit-box-shadow: #555 1px 1px 4px;
+		background: white;
+		border-bottom-left-radius: 3px 3px;
+		border-bottom-right-radius: 3px 3px;
+		border-top-left-radius: 3px 3px;
+		border-top-right-radius: 3px 3px;
+		clear: both;
+		line-height: 140%;
+		margin: 10px 5px;
+		overflow: hidden;
+		padding: 10px;
+
+		.image{
+			display: block;
+			float: left;
+			padding-bottom: 70px;
+			width: 30%;
+		}
+		.mw_was_td{
+			
+		}
+
+	}
+}

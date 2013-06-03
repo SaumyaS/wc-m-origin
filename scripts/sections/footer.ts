@@ -43,3 +43,7 @@
   $$(".foot_contact"){
     remove()
   }
+
+ $$("#WC_ContentAreaESpot_div_1_17106"){
+    remove()
+  }

@@ -6,26 +6,19 @@
 
 
 
-$$("body"){
+
   
-  add_class("_home")
-  table_dump(".//table")
+  
 
 
  
 
-  $$("div.bt_pagination"){
-  	remove()
-  }
 
  
 
-  # Removes breadcrumbs
-  $$("#breadcrumb"){
-    remove()
-  }
+  
 
-}
+
 
   # Removes Content eSpot
   $$(".small_box"){
@@ -49,9 +42,7 @@ $$("body"){
 
   
 
-  $$("#WC_ContentAreaESpot_div_1_17106"){
-    remove()
-  }
+ 
 
   # Backward button for banner
   $$(".backward"){

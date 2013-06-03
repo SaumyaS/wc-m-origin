@@ -3,6 +3,15 @@
 #     Move stuff here
 #   }
 # }
+
+  
+$$("body"){
+  add_class("_home")
+  table_dump(".//table")
+}
+
+
+
   $("./head"){
     insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
   }
@@ -16,6 +25,12 @@ $("/html"){
   $$("br"){
     remove()
   }
+
+  # Removes breadcrumbs
+  $$("#breadcrumb"){
+    remove()
+  }
+  
   # 
   $$("#MessageArea"){
     remove()

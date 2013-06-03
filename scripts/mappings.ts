@@ -25,6 +25,24 @@ match($status) {
       with(/TopCategoriesDisplay/){
         log("--> Importing pages/new.ts in mapping.ts")
         @import pages/new.ts
+        @import pages/home.ts
+      }
+      with(/BrandsCategoryLandingView/){
+        log("--> Importing Brands")
+        @import pages/brands.ts
+      }
+      with(/CategoryDisplay/){
+        log("--> Importing Category")
+        @import pages/categories.ts
+        @import pages/products.ts
+      }
+      with(/ProductDisplay/){
+         log("--> Importing Product")
+        @import pages/items.ts
+      }
+      with(/AjaxOrderItemDisplayView/){
+        log("--> Importing AjaxOrderItemDisplayView")
+        @import pages/orderItemDisplay.ts
       }
 
 
