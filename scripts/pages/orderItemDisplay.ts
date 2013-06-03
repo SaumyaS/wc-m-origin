@@ -6,7 +6,6 @@ $$("#ad_17601"){
 
 $$(".order-confirm"){
 	$(".//div[@id='order-summary']"){
-		insert_top("div", "dkesfjglsdjfnbgkjsdgfs")
 		$$(".mw_was_thead"){
 			attribute("style", "display: none;")
 		}
@@ -40,5 +39,5 @@ $$(".order-confirm"){
 }
 
 $$("#itemInfo"){
-	move_here("../div/div/div[@class='_colQuantity']")
+	move_here("//div[@class='_colQuantity']")
 }
