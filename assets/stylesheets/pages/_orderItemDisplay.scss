@@ -28,16 +28,47 @@
 		margin: 10px 5px;
 		overflow: hidden;
 		padding: 10px;
+		
+		.order-product-info{
+			.image{
+				display: block;
+				float: left;
+				width: 30%;
+			}
+			.info{
+				display: block;
+				padding-top: 10px;
+			}
+			._colQuantity{
+				padding-top: 5px;
+				display: block;
+				float: left;
+				label{
+					float: left;
+					padding-right: 5px;
+					padding-top: 3px;
+				}
+				input{
+					background: #ccc;
+					border: 1px solid #aaa;
+				}
+			}
+			._colEach{
+				display: block;
+				padding-top: 5px;
+				border-top: 1px solid #DDD;
+				text-align: right;
+			}
+			._colTotal{
+				display: block;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #DDD;
+				text-align: right;
+				font-weight: bold;
+			}
 
-		.image{
-			display: block;
-			float: left;
-			padding-bottom: 70px;
-			width: 30%;
 		}
-		.mw_was_td{
-			
-		}
+		
 
 	}
 }

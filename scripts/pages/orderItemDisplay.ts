@@ -19,9 +19,14 @@ $$(".order-confirm"){
 			}
 			$("./div[4]"){
 				add_class("_colInStock")
+				
+
 			}
 			$("./div[5]"){
-				attribute("class", "_colQuantity")
+				add_class("_colQuantity")
+				$("./label"){
+					attributes(style: "display: block;", value: "Quantity:")
+				}
 			}
 			$("./div[6]"){
 				add_class("_colEach")
@@ -29,15 +34,17 @@ $$(".order-confirm"){
 			$("./div[7]"){
 				add_class("_colTotal")
 			}
-			insert_after("div", class: "info", "hello", id: "itemInfo")
+
+			$$("._colInStock"){
+				insert_after("div", class: "info")
+			}
+
+			
 
 
 		}
-
+		
 		
 	}
 }
 
-$$("#itemInfo"){
-	move_here("//div[@class='_colQuantity']")
-}
