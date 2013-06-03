@@ -68,7 +68,127 @@
 			}
 
 		}
+		.order-product-last{
+			._delete{
+				display: none;
+			}
+			._remove{
+				padding-top: 20px;
+				a{
+					text-decoration: underline;
+					color: #ff6311;
+				}
+				
+			}
+		}
 		
+
+	}
+
+	#cart-total{
+		display: block;
+		._promo{
+			border: 2px solid #555;
+			padding: 10px 10px 10px 130px;
+			background-color: #ededed;
+			height: 114px;
+			margin: 10px 5px;
+			
+			#PromotionCodeForm{
+				display: block;
+				margin-top: 0em;
+				h2{
+					margin-left: -128px;
+					margin-top: -8px;
+					position: absolute;
+					width: 110px;
+					height: 120px;
+					color: white;
+					background-color: #555555;
+					padding: 5px;
+					line-height: 1em;
+					font-weight: bold;
+					font-size: 16px;
+
+				}
+				label{
+					display: inline-block;
+					min-width: 100px;
+					font-weight: bold;
+				}
+				input{
+					margin: 5px 0px;
+					padding: 4px;
+					background: #ccc;
+					border: 1px solid #aaa;
+					width: 130px;
+
+				}
+			}
+		}
+		._shipping{
+			border: 2px solid #555;
+			padding: 10px 10px 10px 130px;
+			background-color: #ededed;
+			height: 114px;
+			margin: 10px 5px;
+			font-weight: bold;
+			font-size: 16px;
+			h2{
+				margin-left: -128px;
+				margin-top: -8px;
+				position: absolute;
+				width: 110px;
+				height: 120px;
+				color: white;
+				background-color: #555555;
+				padding: 5px;
+				line-height: 1em;
+			}
+			input{
+				margin: 5px 0px;
+				padding: 4px;
+				background: #ccc;
+				border: 1px solid #aaa;
+				width: 130px;
+			}
+			label{
+				display: inline-block;
+				min-width: 100px;
+				font-weight: bold;
+				font-size: 13px;
+			}
+			a{
+				font-size: 13px;
+			}
+		}
+		._tax{
+			border: 2px solid #555;
+			padding: 10px 10px 10px 130px;
+			background-color: #ededed;
+			height: 114px;
+			margin: 10px 5px;
+			font-weight: bold;
+			font-size: 16px;
+			h2{
+				margin-left: -128px;
+				margin-top: -8px;
+				position: absolute;
+				width: 110px;
+				height: 120px;
+				color: white;
+				background-color: #555555;
+				padding: 5px;
+				line-height: 1em;
+			}
+			>div{
+				font-size: 12px;
+				font-weight: normal;
+			}
+			font{
+				font-weight: bold;
+			}
+		}
 
 	}
 }
