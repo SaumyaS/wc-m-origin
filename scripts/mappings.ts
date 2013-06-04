@@ -48,6 +48,10 @@ match($status) {
         log("--> Importing Search")
         @import pages/search.ts
       }
+      with(/BrandsCategoryLandingDisplayView/){
+        log("--> Importing BrandSearch")
+        @import pages/brandSearch.ts
+      }
 
 
       else() {

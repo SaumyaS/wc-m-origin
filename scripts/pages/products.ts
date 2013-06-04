@@ -1,3 +1,7 @@
+$$("#ad_17601"){
+	move_here("//div[@id='_icons_bar']")
+}
+
 $$(".search-sidebar"){
 
 	$("./h2"){
@@ -50,7 +54,7 @@ $$(".search-main"){
 		remove()
 	}
 
-	
+
 
 
 }

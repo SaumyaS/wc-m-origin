@@ -4,7 +4,11 @@
 #   }
 # }
 
-  
+$$("#ad_17601"){
+  move_here("//div[@id='_icons_bar']")
+}
+
+
 $$("body"){
   add_class("_home")
   table_dump(".//table")
