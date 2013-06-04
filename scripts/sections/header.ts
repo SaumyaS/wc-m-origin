@@ -155,3 +155,9 @@ $("/html"){
     }
   }
 
+  $("//*[@id='MiniShoppingCart']"){
+    attribute("onmouseover", "")
+  }
+
+
+
