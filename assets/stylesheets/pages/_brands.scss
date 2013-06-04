@@ -1,0 +1,88 @@
+._brands{
+	margin: auto;
+	padding-top: 5px;
+	background: #FFF;
+	h1{
+		background-color: #ffe089;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		padding: 5px;
+		font-size: 2em;
+		font-weight: bold;
+		display: block;
+	}
+	h2{
+		letter-spacing: -1px;
+		padding: 5px;
+		display: block;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.brand-gallery{
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+		>div{
+			display: inline-block;
+			border-radius: 3px;
+			margin: 10px;
+			>a{
+				text-decoration: none;
+				>img{
+					border: 1px solid #ccc;
+					padding: 5px;
+
+				}
+			}
+		}
+	}
+	.all-brands-alpha{
+		display: block;
+		.tabs{
+			
+			padding: 5px;
+			list-style: none;
+			text-align: center;
+			li{
+				float: left;
+				padding-left: 4px;
+				padding-bottom: 5px;
+				a{
+					display: block;
+					padding: 7px 5px;
+					text-decoration: none;
+					border: 2px solid #ccc;
+					border-radius: 3px;
+					color: black;
+					font-weight: bold;
+					font-size: 18px;
+				}
+				a.current{
+					border-color:#ffc623;
+				}
+			}
+		}
+		.pane{
+			clear: both;
+			overflow: hidden;
+			padding: 5px;
+			text-align: center;
+			margin: 0px auto;
+			.pane-col{
+				width: 30%;
+				padding: 4px;
+				float: left;
+				a{
+					display: block;
+					padding: 4px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					border: 1px solid #ccc;
+					text-decoration: none;
+					font-weight: bold;
+					color: #333;
+				}
+			}
+		}
+	}
+}

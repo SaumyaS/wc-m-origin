@@ -112,5 +112,11 @@ $$(".order-confirm"){
 		
 		
 	}
+
+	$$(".body759"){
+		$("./div/p"){
+			insert_after("br")
+		}
+	}
 }
 
