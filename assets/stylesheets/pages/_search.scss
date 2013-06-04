@@ -1,0 +1,96 @@
+.search-container{
+	display: block;
+	padding-bottom: 5px;
+		
+		.search-sidebar{
+			overflow: hidden;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			h2{
+				border-bottom: 1px solid #808080;
+    			border-top: 1px solid #808080;
+				@include background(linear-gradient(#fff, #c0c0c0));
+				line-height: 1;
+				text-align: center;
+				margin-top: 0;
+				font-size: 16px;
+				font-weight: bold;
+				padding: 10px;
+			}
+			ul{
+				h4{
+					border-bottom: 1px solid #808080;
+	    			border-top: 1px solid #808080;
+					@include background(linear-gradient(#aaa, #555));
+					line-height: 1;
+					text-align: center;
+					margin-top: 0;
+					font-size: 16px;
+					font-weight: bold;
+					padding: 10px;
+				}
+			}
+		}
+		.search-main{
+			h2{
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				background: #ffe7a3;
+				padding: 5px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.search_based{
+				border-bottom: 1px solid #cccccc;
+				margin-bottom: 10px;
+				padding: 6px;
+				width: 100%;
+				.grid_view{
+					display: none;
+				}
+			}
+			.pricing-login{
+				background: #ebebeb;
+				text-align: center;
+				padding: 5px;
+				border-bottom: 2px solid #000;
+				
+			}
+			.result-item{
+				border-bottom: 1px solid #ccc;
+				padding-top: 5px;
+				padding-left: 15px;
+				display: block;
+				.item-description{
+					float: left;
+					width: 150px;
+					line-height: 1.5;
+					a{
+						h1{
+							color: #3a3a39;
+							font-size: 12px;
+						}
+					}
+					p{
+						display: none;
+					}
+				}
+				.item-action{
+					margin-top: -60px;
+					position: relative;
+					float: left;
+					width: 120px;
+					.discount-price{
+						font-weight: bold;
+						color: #ff6311;
+						font-size: 14px;
+					}
+					a{
+						margin-top: -4px;
+					}
+				}
+				
+			}
+		}
+
+}

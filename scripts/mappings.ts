@@ -37,12 +37,16 @@ match($status) {
         @import pages/products.ts
       }
       with(/ProductDisplay/){
-         log("--> Importing Product")
+        log("--> Importing Product")
         @import pages/items.ts
       }
       with(/AjaxOrderItemDisplayView/){
         log("--> Importing AjaxOrderItemDisplayView")
         @import pages/orderItemDisplay.ts
+      }
+      with(/SearchDisplay/){
+        log("--> Importing Search")
+        @import pages/search.ts
       }
 
 
