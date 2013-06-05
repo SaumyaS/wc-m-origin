@@ -60,6 +60,14 @@ match($status) {
         log("--> Importing contact us")
         @import pages/contactus.ts
       }
+      with(/Navigation_Specials/){
+        log("--> Importing specials")
+        @import pages/specials.ts
+      }
+      with(/QuickOrderView/){
+        log("--> Importing Quick Order")
+        @import pages/quickOrder.ts
+      }
 
 
       else() {

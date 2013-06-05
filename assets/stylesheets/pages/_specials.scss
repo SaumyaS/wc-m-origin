@@ -1,0 +1,60 @@
+.account-col-quick-order{
+	overflow: hidden;
+
+	display: block;
+	
+	
+	h1{
+		background-color: #ffe089;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		font-size: 2em;
+		padding: 3px;
+		font-weight: bold;
+	}
+
+	.Quick-Order-eSpot{
+		
+		margin-top: 5px;
+		width: 100%;
+		background-color: #ddd;
+		>div{
+			padding: 10px;
+		}
+		h3{
+			display: block;
+			font-size: 1.17em;
+			font-weight: bold;
+		}
+	}
+	.checkout-container-Quick-Order{
+		margin: 3px;
+		padding: 5px;
+		border: 2px solid #ccc;
+		.sub-col-Quick-Order{
+			border-bottom: 1pc solid #cccccc;
+			h2{
+				border-bottom: 2px solid #DFDFDF;
+			}
+
+			.quickOrderSKU{
+				display: block;
+				input{
+					margin: 5px 0px;
+					padding: 4px;
+					background: #ccc;
+					border: 1px solid #aaa;
+					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+				}
+				a{
+					margin-left: 10px; 
+					margin-bottom: 5px;
+				}
+			}
+
+		}
+		
+	}
+			
+}
+
