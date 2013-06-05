@@ -6,13 +6,6 @@ $("//*[@id='main_content_wrapper']/div/div"){
 	$("./div"){
 		attribute("class", "_location")
 	}
-
-
-
-	$("//*[@id='WC_ContentAreaESpot_div_1_18101']/hr"){
-		insert_after("div", class: "_map")
-	}
-
 	
 }
 

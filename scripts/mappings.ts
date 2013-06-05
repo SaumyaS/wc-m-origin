@@ -52,9 +52,13 @@ match($status) {
         log("--> Importing BrandSearch")
         @import pages/brandSearch.ts
       }
-      with(/ContentDisplayView/){
-        log("--> Importing Location")
+      with(/Store_Locations/){
+        log("--> Importing Store_Locations")
         @import pages/location.ts
+      }
+      with(/Navigation_Contact_Us/){
+        log("--> Importing contact us")
+        @import pages/contactus.ts
       }
 
 
