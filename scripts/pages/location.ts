@@ -17,6 +17,6 @@ $("//*[@id='main_content_wrapper']/div/div"){
 }
 
 $("//*[@id='WC_ContentAreaESpot_div_22_1']/iframe"){
-	attributes(width: "300px", height: "600px;", scrolling: "no", frameborder: "0")
+	attributes(width: "100%", height: "100%", scrolling: "yes", frameborder: "0", id: "iframe", marginheight: "0", onLoad: "autoResize('iframe1')")
 }
 
