@@ -123,3 +123,10 @@ $$(".order-confirm"){
 	}
 }
 
+$("//*[@id='cart-total']/div[2]"){
+	$("./h2"){
+		text(){
+			set("Shipping")
+		}
+	}
+}
