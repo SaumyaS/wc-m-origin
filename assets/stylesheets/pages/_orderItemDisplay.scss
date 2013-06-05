@@ -1,6 +1,7 @@
 .order-confirm{
 	display: block;
 	padding-top: 5px;
+	background-color: #ccc;
 	h1{
 		background-color: #ffe089;
 		border-top: 1px solid #555;
@@ -11,6 +12,7 @@
 	}
 	#order-summary{
 		display: block;
+
 		>a{
 			text-align: center;
 		}
@@ -37,7 +39,7 @@
 			}
 			.info{
 				display: block;
-				padding-top: 10px;
+				padding-top: 30px;
 			}
 			._colQuantity{
 				padding-top: 5px;
@@ -58,6 +60,8 @@
 				padding-top: 5px;
 				border-top: 1px solid #DDD;
 				text-align: right;
+				._each{
+				}
 			}
 			._totalDiv{
 				display: block;
@@ -65,6 +69,8 @@
 				border-bottom: 1px solid #DDD;
 				text-align: right;
 				font-weight: bold;
+				._total{
+				}
 			}
 
 		}

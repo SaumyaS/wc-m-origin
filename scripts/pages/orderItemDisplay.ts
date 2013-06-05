@@ -33,20 +33,23 @@ $$(".order-confirm"){
 				add_class("_colQuantity")
 				$("./label"){
 					attributes(style: "display: block;", value: "Quantity:")
+					text(){
+						set("Quantity:")
+					}
 				}
 			}
 			$("./div[6]"){
 				add_class("_colEach")
 				wrap("div"){
 					attribute("class", "_eachDiv")
-					insert_top("div", "Each: ")
+					insert_top("div", "Each: ", class: "_each", style: "float:left; padding-left: 120px;")
 				}
 			}
 			$("./div[7]"){
 				add_class("_colTotal")
 				wrap("div"){
 					attribute("class", "_totalDiv")
-					insert_top("div", "Total: ")
+					insert_top("div", "Total: ", class: "_total", style: "float:left; padding-left: 120px;")
 				}
 			}
 
