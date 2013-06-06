@@ -9,13 +9,16 @@
 #autoSuggest_Container{
 	text-align: left;
 	.autoSuggestBoxPopup{
-		position: absolute;
+		position: relative;
+		border-radius: 3px;
 		background: white;
 		z-index: 9999;
 		padding: 10px;
-		margin-top: 30px;
+		margin-top: 40px;
 		margin-bottom: 20px;
 		width:200px;
+		border: 1px solid #aaa;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4) inset;
 		.autoSuggest_wrapper{
 			a{
 				color: #3a00f4;
@@ -24,15 +27,18 @@
 			}
 			.heading{
 				color: #505050;
+				font-weight: bold;
 			}
 			display: block;
 			.dijitContentPane{
 				direction: ltr;
 				unicode-bidi: embed;
 				#suggestedKeywordsHeader{
-					color: #505050
+					color: #505050;
+					font-weight: bold;
 				}
 				ul{
+					color: #999;
 					display: block;
 					list-style-type: disc;
 					-webkit-margin-before: 1em;
@@ -41,16 +47,18 @@
 					-webkit-margin-end: 0px;
 					-webkit-padding-start: 40px;
 				}
-				.results{
-					ul{
-						display: block;
-						list-style-type: disc;
-						-webkit-margin-before: 1em;
-						-webkit-margin-after: 1em;
-						-webkit-margin-start: 0px;
-						-webkit-margin-end: 0px;
-						-webkit-padding-start: 40px;
-					}
+				
+			}
+			.results{
+				ul{
+					color: #999;
+					display: block;
+					list-style-type: disc;
+					-webkit-margin-before: 1em;
+					-webkit-margin-after: 1em;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
+					-webkit-padding-start: 40px;
 				}
 			}
 
