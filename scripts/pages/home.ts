@@ -12,7 +12,26 @@
 
 
  
-
+$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
+  $("./div/ul"){
+    attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons")
+    insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
+      move_here("../li")
+    }
+    $("./div/li[3]"){
+      attribute("class", "type1")
+    }
+    $("./div/li[1]"){
+      attributes(data-ur-carousel-component: "item", alt: "1")
+    }
+    $("./div/li[2]"){
+      attributes(data-ur-carousel-component: "item", alt: "2")
+    }
+    $("./div/li[3]"){
+      attributes(data-ur-carousel-component: "item", alt: "3")
+    }
+  }
+}
 
  
 
@@ -20,10 +39,7 @@
 
 
 
-  # Removes Content eSpot
-  $$(".small_box"){
-    remove()
-  }
+
 
   $$("#right_nav"){
     remove()

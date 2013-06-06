@@ -142,6 +142,32 @@
     padding: 10px;
   }
 
+
+
+  
+.small_box{
+  display: block;
+  .type1{
+    display: block;
+    width: 200px;
+    background-color: #000;
+    padding: 7px;  
+    list-style: none;
+  }
+}
+
+div[data-ur-carousel-component="view_container"]{
+  width: 100%;
+  overflow-x: hidden;
+}
+div[data-ur-carousel-component="scroll_container"] > * {
+  display: inline-block;
+  float: left;
+}
+
+
+
+
   #SimpleSearchForm_SearchTerm{
     float: left;
   }
@@ -153,6 +179,7 @@
 
   #headerAdvancedSearch  {
     display: block;
+    margin-top: 5px;
   }
 
   #WC_ContentAreaESpot_div_1_13352 {
