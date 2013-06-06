@@ -31,3 +31,9 @@ $$(".product-more-info"){
 
 
 }
+
+$$(".product-info"){
+	inner(){
+		replace(/PricingNot/, "Pricing <br> Not")
+	}
+}
