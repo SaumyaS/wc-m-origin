@@ -2,19 +2,10 @@
 	div{
 		display: block;
 		h1{
-			background-color: #ffe089;
-			border-top: 1px solid #555;
-			border-bottom: 1px solid #555;
-			font-size: 2em;
-			padding: 3px;
-			font-weight: bold;
+			@include title_bar;
 		}
 		hr{
-			display: block;
-			background-color: #fc0;
-			height: 2px;
-			border: none;
-			margin: 10px 0px;
+			@include horizontal_line;
 		}
 		#ad_18101{
 			display: block;

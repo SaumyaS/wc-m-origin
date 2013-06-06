@@ -34,6 +34,6 @@ $$(".product-more-info"){
 
 $$(".product-info"){
 	inner(){
-		replace(/PricingNot/, "Pricing <br> Not")
+		replace(/Pricing/, "Pricing <br> Not")
 	}
 }

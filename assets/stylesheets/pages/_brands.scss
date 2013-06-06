@@ -3,13 +3,7 @@
 	padding-top: 5px;
 	background: #FFF;
 	h1{
-		background-color: #ffe089;
-		border-top: 1px solid #555;
-		border-bottom: 1px solid #555;
-		padding: 5px;
-		font-size: 2em;
-		font-weight: bold;
-		display: block;
+		@include title_bar;
 	}
 	h2{
 		letter-spacing: -1px;

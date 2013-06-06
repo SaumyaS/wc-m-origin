@@ -5,12 +5,7 @@
 	
 	
 	h1{
-		background-color: #ffe089;
-		border-top: 1px solid #555;
-		border-bottom: 1px solid #555;
-		font-size: 2em;
-		padding: 3px;
-		font-weight: bold;
+		@include title_bar;
 	}
 
 	.Quick-Order-eSpot{
@@ -41,11 +36,7 @@
 			.quickOrderSKU{
 				display: block;
 				input{
-					margin: 5px 0px;
-					padding: 4px;
-					background: #ccc;
-					border: 1px solid #aaa;
-					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+					@include input;
 				}
 				a{
 					margin-left: 10px; 
