@@ -67,6 +67,17 @@
 				border-bottom: 2px solid #dfdfdf;
 				margin-bottom: 10px;
 			}
+			.order-product-info{
+				margin-bottom: 5px;
+				background-color: #ddd;
+				padding: 5px;
+				._remove{
+					text-decoration: underline;
+					a{
+						color: #505050;
+					}
+				}
+			}
 		}
 		
 	}

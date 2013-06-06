@@ -38,22 +38,22 @@ $("//*[@id='ad_18351']"){
 
 	$$("#order_details"){
 
-		$("./div/div"){
+		$$(".mw_was_thead"){
+			remove()
+		}
+		
+		$$(".order-product-info"){
 			$("./div[1]"){
-				attribute("style", "float: left;")
-
+				insert_before("h4", "SKU: ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_SKU")
 			}
 			$("./div[2]"){
-				attribute("style", "float: left; margin-left: 40px; width: 100px;")
-
+				insert_before("h4", "Name: ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_Name")
 			}
 			$("./div[3]"){
-				attribute("style", "float: left;margin-left: 40px")
-
+				insert_before("h4", "QTY:  ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_QTY")
 			}
 			$("./div[4]"){
-				attribute("style", "margin-left: 40px")
-
+				attribute("class", "_remove")
 			}
 		}
 

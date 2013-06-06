@@ -52,7 +52,7 @@
   
 
   $$(".subscribe_wrapper"){
-    insert("h1", "Join Mailing List: ", id: "emailText")
+    insert("h4", "Join Mailing List: ", id: "emailText")
     $$("input"){
 
     }
