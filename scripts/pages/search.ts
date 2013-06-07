@@ -32,18 +32,26 @@ $$(".search-sidebar"){
 		attributes(data-ur-set: "tabs", data-ur-closeable: "true")
 		$("ul[1]"){
 			$("./li/h4"){
-				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "price")
+				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "1")
 			}
 			$("./li/ul"){
-				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "price")
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "1")
 			}
 		}
 		$("ul[2]"){
 			$("./li/h4"){
-				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "mfg")
+				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "2")
 			}
 			$("./li/ul"){
-				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "mfg")
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "2")
+			}
+		}
+		$("ul[3]"){
+			$("./li/h4"){
+				attributes(data-ur-tabs-component: "button", data-ur-tab-id: "3")
+			}
+			$("./li/ul"){
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id: "3")
 			}
 		}
 	}
