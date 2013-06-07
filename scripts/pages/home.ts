@@ -11,11 +11,16 @@
   }
 
   
-  
+$$(".nav_wrapper"){
+  insert_before("div", class: "__banner"){
+    move_here("//*[@id='content_wrapper_box']/div[2]")
+    move_here("//*[@id='content_wrapper_box']/div[2]/div/ul")
+  }
+}
 
-
+#$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
 # Carousel Widget
-$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
+$("/html/body/div[@id='page']/div[@class='header_widget']"){
   $("./div/ul"){
     attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
     insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
@@ -85,7 +90,7 @@ $("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_w
     move_to("//div[@class='subs_imput_box']", "before")
   }
 
-  
+
 
   
 
