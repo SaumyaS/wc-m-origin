@@ -1,8 +1,4 @@
-# $('./body') {
-#   insert_top("header", class: "_header") {
-#     Move stuff here
-#   }
-# }
+
 
 $$("#ad_17601"){
   move_here("//div[@id='_icons_bar']")

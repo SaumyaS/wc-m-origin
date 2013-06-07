@@ -5,13 +5,16 @@
 #Add our meta tags
 
 
-
+# Moves header icons back to the header
+  $$("#ad_17601"){
+    move_here("//div[@id='_icons_bar']")
+  }
 
   
   
 
 
- 
+# Carousel Widget
 $("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
   $("./div/ul"){
     attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
@@ -82,9 +85,7 @@ $("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_w
     move_to("//div[@class='subs_imput_box']", "before")
   }
 
-  $$("#ad_17601"){
-    move_here("//div[@id='_icons_bar']")
-  }
+  
 
   
 
