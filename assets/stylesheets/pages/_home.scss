@@ -313,16 +313,28 @@ strong{
 
 ._dots{
   div{
-    margin-top: 5px;
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
   }
   div[data-ur-state="active"]{
-    color: red;
+    background: #ffc623;
   }
   div[data-ur-state="inactive"]{
-    color: blue;
+    background: gray;
+    opacity: .7;
+    width: 5px;
+    height: 5px;
+    margin-top: -3px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 190, .75);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255, 255, 190, .75);
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 190, .75);
+    padding-bottom: 5px;
   }
+}
+
+.small_box[data-ur-carousel-component="view_container"]{
+  background: #000;
+  margin-bottom: -5px;
 }
 
