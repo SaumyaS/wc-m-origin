@@ -4,9 +4,13 @@
 	h1{
 		@include title_bar;
 	}
+	hr{
+			@include horizontal_line;
+	}
 }
 #Advanced_Search_Form_div{
 	padding: 10px;
+	overflow: hidden;
 	.advanced_search{
 		display: block;
 		label{
@@ -23,6 +27,8 @@
 		hr{
 			background-color: #cccccc;
 			width: 100%;
+			margin-left: -10px;
+			min-width: 400px;
 		}
 	}
 }

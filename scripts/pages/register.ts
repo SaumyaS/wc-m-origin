@@ -72,4 +72,3 @@ $$(".register"){
 		attribute("style", "margin-left: 10px;")
 	}
 }
-//*[@id="WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1"]
