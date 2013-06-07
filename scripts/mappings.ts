@@ -68,7 +68,10 @@ match($status) {
         log("--> Importing Quick Order")
         @import pages/quickOrder.ts
       }
-
+      with(/UserRegistrationForm/){
+        log("--> Importing Register code")
+        @import pages/register.ts
+      }
 
       else() {
         log("--> No page match in mappings.ts")
