@@ -14,7 +14,7 @@
  
 $("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
   $("./div/ul"){
-    attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons")
+    attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
     insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
       move_here("../li")
     }
