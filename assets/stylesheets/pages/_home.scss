@@ -311,3 +311,19 @@ strong{
   font-weight: bold;
 }
 
+._dots{
+  background-color: #000;
+  div{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  div[data-ur-state="active"]{
+    color: red;
+  }
+  div[data-ur-state="inactive"]{
+    color: blue;
+  }
+}
+

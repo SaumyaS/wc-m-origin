@@ -18,6 +18,7 @@ $("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_w
     insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
       move_here("../li")
     }
+    insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
     $("./div/li[3]"){
       attribute("class", "type1")
     }
