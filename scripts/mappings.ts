@@ -72,6 +72,10 @@ match($status) {
         log("--> Importing Register code")
         @import pages/register.ts
       }
+      with(/AjaxCatalogSearchView/){
+        log("--> Importing AdvancedSearch")
+        @import pages/advancedSearch.ts
+      }
 
       else() {
         log("--> No page match in mappings.ts")

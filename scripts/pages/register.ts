@@ -28,10 +28,14 @@ $$(".register"){
 				insert_before("br")
 			}
 			$("./label[5]"){
+				
 				insert_before("br")
 			}
 			$("./label[6]"){
 				insert_before("br")
+			}
+			$("./input[@id='WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1']"){
+				attribute("style", "margin-left: 123px;")
 			}
 		}
 		$("./div[2]"){
@@ -62,6 +66,10 @@ $$(".register"){
 				remove()
 			}
 		}
+	}
 
+	$("./a[1]"){
+		attribute("style", "margin-left: 10px;")
 	}
 }
+//*[@id="WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1"]

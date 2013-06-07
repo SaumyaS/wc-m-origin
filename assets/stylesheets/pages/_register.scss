@@ -9,7 +9,9 @@
 		margin: 10px 3px;
 		overflow: hidden;
 		label{
+			display: inline-block;
 			font-weight: bold;
+			min-width: 120px;
 		}
 		input[type="text"]{
 			margin: 5px 0;
@@ -28,6 +30,7 @@
 			border: 1px solid #aaa;
 			background: #ccc;
 			padding: 3px;
+			width: 157px;
 		}
 		ol{
 			padding-left: 15px;
