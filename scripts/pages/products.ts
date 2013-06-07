@@ -1,3 +1,5 @@
+
+# Moves header icons back to the header
 $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
 }
@@ -53,7 +55,11 @@ $$(".search-main"){
 	$("./div/div/div/ul"){
 		remove()
 	}
-
+	$$(".pricingLoginSearch"){
+		$("./a"){
+			attributes(style: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301", onclick: "")
+		}
+	}
 
 
 

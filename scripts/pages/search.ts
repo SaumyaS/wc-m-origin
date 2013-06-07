@@ -64,7 +64,7 @@ $$(".search-sidebar"){
 $$(".search-main"){
 	$$(".pricingLoginSearch"){
 		$("./a"){
-			attribute("style", "")
+			attributes(style: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301", onclick: "")
 		}
 	}
 }

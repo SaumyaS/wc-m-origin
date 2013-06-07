@@ -76,6 +76,10 @@ match($status) {
         log("--> Importing AdvancedSearch")
         @import pages/advancedSearch.ts
       }
+      with(/AjaxLogonForm/){
+        log("--> Importing Login")
+        @import pages/login.ts
+      }
 
       else() {
         log("--> No page match in mappings.ts")
