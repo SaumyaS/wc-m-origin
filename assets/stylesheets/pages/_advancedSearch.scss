@@ -1,0 +1,28 @@
+#Search_Advanced_Header{
+
+	display: block;
+	h1{
+		@include title_bar;
+	}
+}
+#Advanced_Search_Form_div{
+	padding: 10px;
+	.advanced_search{
+		display: block;
+		label{
+			display: inline-block;
+			min-width: 100px;
+			font-weight: bold;
+		}
+		input[type="text"]{
+			margin: 5px 0px;
+			padding: 4px;
+			background: #ccc;
+			border: 1px solid #aaa;
+		}
+		hr{
+			background-color: #cccccc;
+			width: 100%;
+		}
+	}
+}
