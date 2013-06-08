@@ -26,7 +26,7 @@ $("/html/body/div[@id='page']"){
   # Carousel Widget
   $("./div[@class='header_widget']"){
     $("./div/ul"){
-      attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
+      attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled", data-ur-center: "enabled")
       insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
         move_here("../li")
       }

@@ -4,7 +4,6 @@
 
 
 .banner_wrapper{
-  
   padding-bottom: 95px;
   background-color: #333;
   .slider_wrapper{
@@ -34,10 +33,7 @@
     display: block;
     width: 200px;
     background-color: #000;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 40px;
-    padding-left: 60px;
+    padding: 7px;
 
     list-style: none;
   }
@@ -125,7 +121,7 @@
 ._trader{
   overflow: hidden;
   background-color: #eee;
-  width: 93%;
+  width: 100%;
   padding: 10px;
   h3{
     display: block;
@@ -147,13 +143,11 @@
 
   ._traderCarousel{
     #first-carousel{
-      overflow: hidden;
       position: relative;
       top: 0px;
       margin: 0px;
       left: 0px;
       width: 100%;
-      display: inline-block;
       li{
         height: 241px;
         list-style: none;
