@@ -71,38 +71,37 @@ $("/html/body/div[@id='page']"){
         attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader")
         $("./ul[@id='first-carousel']"){
           attributes(data-ur-carousel-component: "scroll_container")
-            $("./script"){
-              remove()
-            }
-            $("./li[1]"){
-              attributes(data-ur-carousel-component: "item", alt: "1")
-            }
-            $("./li[2]"){
-              attributes(data-ur-carousel-component: "item", alt: "2")
-            }
-            $("./li[3]"){
-              attributes(data-ur-carousel-component: "item", alt: "3")
-            }
-            $("./li[4]"){
-              attributes(data-ur-carousel-component: "item", alt: "4")
-            }
-            $("./li[5]"){
-              attributes(data-ur-carousel-component: "item", alt: "5")
-            }
-            $("./li[6]"){
-              attributes(data-ur-carousel-component: "item", alt: "6")
-            }
-            $("./li[7]"){
-              attributes(data-ur-carousel-component: "item", alt: "7")
-            }
-            $("./li[8]"){
-              attributes(data-ur-carousel-component: "item", alt: "8")
-            }
-            $("./li[9"){
-              attributes(data-ur-carousel-component: "item", alt: "9")
-            }
-
+          $("./script"){
+            remove()
           }
+          $("./li[1]"){
+            attributes(data-ur-carousel-component: "item", alt: "1")
+          }
+          $("./li[2]"){
+            attributes(data-ur-carousel-component: "item", alt: "2")
+          }
+          $("./li[3]"){
+            attributes(data-ur-carousel-component: "item", alt: "3")
+          }
+          $("./li[4]"){
+            attributes(data-ur-carousel-component: "item", alt: "4")
+          }
+          $("./li[5]"){
+            attributes(data-ur-carousel-component: "item", alt: "5")
+          }
+          $("./li[6]"){
+            attributes(data-ur-carousel-component: "item", alt: "6")
+          }
+          $("./li[7]"){
+            attributes(data-ur-carousel-component: "item", alt: "7")
+          }
+          $("./li[8]"){
+            attributes(data-ur-carousel-component: "item", alt: "8")
+          }
+          $("./li[9]"){
+            attributes(data-ur-carousel-component: "item", alt: "9")
+          }
+        }
       }
     }
 
@@ -161,10 +160,5 @@ $("/html/body/div[@id='page']"){
   $$("#emailText"){
     move_to("//div[@class='subs_imput_box']", "before")
   }
-
-
-$("//*[@id='content_wrapper_box']/div[2]/div/div[3]/div[2]/div"){
-  insert_top("div", "gdfndfgjndfgsdfans")
-}
   
 
