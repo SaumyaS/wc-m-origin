@@ -1,150 +1,32 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-._home {
+
+
+
+.banner_wrapper{
   
-  ._category {
-    border-bottom:1px solid #808080;
-    border-top: 1px solid #808080;
-    @include background(linear-gradient(#fff, #c0c0c0));
-    background-position-x: right;
-    display: block;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-  .images{
-    >div{
-      position: relative;
-    }
-  }
-
-  ._sub2 {
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #ddd;
-    background-position-x: right;
-    background-color: #fff;
-    display: block;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-  }
-
-
-  #ad_17601{
-    @include background(linear-gradient(#555, #111));
-    border-bottom: 1px solid #c3c3c3;
-    overflow: hidden;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-  }
-
-  .checkout_wrapper {
-    text-align: center;
-    background-color: #ddd;
-    position: relative;
-    >div {
-      
-      position: relative;
-      bottom: 0;
-      opacity: .8;
-      margin-bottom: -3px;
-      
-      >div{
-        display: inline-block;
-        padding-top: 3px;
+  padding-bottom: 95px;
+  background-color: #333;
+  .slider_wrapper{
+    .images{
+      margin: 0 auto;
+      padding: 5px;
+      img{
+        
+        height: 95px;
+        position: absolute;
+        width: 98%;
       }
     }
   }
-
-  #_icons_bar{ 
-    position: absolute;
-    bottom: 0;
-    right: 5px;
-    opacity: .8;
-
-       
-    >div:hover{
-      cursor: pointer;
-      
-    }
-    >div{
-      padding-left: 4px;
-      padding-right: 4px;
-      display: inline-block;    
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  ._header_bar {
-    border-bottom: 1px solid #C3C3C3;
-    background-color: #777;
-    color: #ccc;
-    position: relative;
-    background-position-x: right;
-    font-weight: bold;
-    display: block;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: capitalize; 
-    padding: 10px;
-  }
-
-  #search_bar{
-    border-bottom: 2px solid #C3C3C3;
-    background-color: #777; 
-    color: #ccc;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-       
-  }
-
-  #header-search{
-    display: inline-block;
-    padding-left: 10px;
-    >a{
-      color: #ccc;
-      font-size: 16px;
-      line-height: 1;
-      text-decoration: none;
-      text-transform: capitalize; 
-    }
-  }
-  
-
-  ._cart {
-    border-bottom: 1px solid #C3C3C3;
-    background-color: #777;
-    color: #ccc;
-    text-align: left;
-    position: relative;
-    background-position-x: right;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: capitalize; 
-    padding: 10px;
-  }
+}
 
 
+.small_box[data-ur-carousel-component="view_container"]{
+  background: #000;
+  margin-bottom: -5px;
+}
 
-  
 .small_box{
   overflow-x: hidden;
   display: block;
@@ -159,182 +41,190 @@
 
     list-style: none;
   }
-}
-
-div[data-ur-carousel-component="view_container"]{
-  width: 100%;
-  overflow-x: hidden;
-}
-div[data-ur-carousel-component="scroll_container"] > * {
-  display: inline-block;
-  float: left;
-}
 
 
-
-
-  #SimpleSearchForm_SearchTerm{
+  div[data-ur-carousel-component="view_container"]{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  div[data-ur-carousel-component="scroll_container"] > * {
+    display: inline-block;
     float: left;
   }
 
-  #searchDiv {
-    margin-top: 5px;
-    float: left;
-  }
-
-  #headerAdvancedSearch  {
-    display: block;
-    margin-top: 35px;
-  }
-
-  #WC_ContentAreaESpot_div_1_13352 {
-    background-color: #000;
-    color: #ccc;
-    text-align: center;
-  }
-
-  #ad_62501 {
-    text-align: center;
-    display: block;
-    background-color: #000;
-
-    li{
-      display: inline-block;
+  ._dots{
+    div{
+      margin-bottom: 0;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    div[data-ur-state="active"]{
+      background: white;
+      width: 5px;
+      height: 5px;
+      padding-bottom: 5px;
+    }
+    div[data-ur-state="inactive"]{
+      background: gray;
+      opacity: .7;
+      width: 5px;
+      height: 5px;
+      margin-top: -3px;
+      padding-bottom: 5px;
     }
   }
+ 
 
-  .copyright_left_box{
-    text-align: center;
-    background-color: #000;
-    color: #ccc;
-  }
+ 
 
-  .MyAccountURLSep a{
-    text-align: center;
-  }
+  
+}
 
-  #shoppingCartBar{
-      text-align: center;
-  }
+.subscribe_wrapper{
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #ddd;
+  background-position-x: right;
+  background-color: #ffc623;
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  padding-left: 10px;
+  padding-top: 10px;
 
   .subscribe_data_warapper{
     display: inline-block;   
-  }
 
-  .subs_imput_box {
-    position: relative;
-    font-size: 16px;
-    line-height: 1;
-    float: left;
-    padding-bottom: 5px;
-
-    #emailSidebar {
-      padding: 5px;
+    .subs_imput_box {
+      position: relative;
+      font-size: 16px;
+      line-height: 1;
       float: left;
-    }
-    
-  }
+      padding-bottom: 5px;
 
-  #emailText {
-    float: left;
-    padding-top: 10px; 
-    font-weight: bold;
-  }
-
-  .subscribe_wrapper{
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #ddd;
-    background-position-x: right;
-    background-color: #ffc623;
-    display: block;
-    font-size: 12px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-transform: capitalize;
-    padding-left: 10px;
-    padding-top: 10px
-  }
-
-  
-
-
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #505050;
-}
-
-.banner_wrapper{
-  
-  padding-bottom: 95px;
-  background-color: #333;
-  .slider_wrapper{
-    .images{
-      margin: 0 auto;
-      padding: 5px;
-      img{
-        
-        height: 95px;
-        position: absolute;
-        width: auto;
+      #emailSidebar {
+        padding: 5px;
+        float: left;
       }
     }
+
+    #emailText {
+      float: left;
+      padding-top: 10px; 
+      font-weight: bold;
+    }
   }
-}
-
-h2{
-  display: block;
-  font-size: 1.5em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
-}
-
-h1{
-  display: block;
-  font-size: 1.7em;
-  -webkit-margin-before: 0.3em;
-  -webkit-margin-after: 0.3em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
 }
 
 #SimpleSearchForm_SearchTerm{
   @include input;
 }
 
-strong{
-  font-weight: bold;
+._trader{
+  overflow: hidden;
+  background-color: #eee;
+  width: 93%;
+  padding: 10px;
+  h3{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+  }
+
+  div[data-ur-carousel-component="view_container"]{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  ul[data-ur-carousel-component="scroll_container"] > * {
+    display: inline-block;
+    float: left;
+  }
+
+  ._traderCarousel{
+    #first-carousel{
+      overflow: hidden;
+      position: relative;
+      top: 0px;
+      margin: 0px;
+      left: 0px;
+      width: 100%;
+      display: inline-block;
+      li{
+        height: 241px;
+        list-style: none;
+        background: url(../../../images/letest_product_bg.gif) no-repeat 0 0;
+        margin-right: 20px;
+        padding: 22px 10px 10px;
+        width: 120px;
+        .letest_proimage{
+          padding-bottom: 5px;
+          border-bottom: 1px solid #ccc;
+        }
+        a{
+          .lproduct_name{
+            color: #292929;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            height: 40px;
+            padding: 5px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+        .llproduct_price{
+          text-align: center;
+          color: #ff6311;
+          display: block;
+          font-size: 12px;
+          font-weight: bold;
+          margin: 0 0 10px;
+          text-decoration: none;
+        }
+        .lpadd_tocart{
+          background: url(../../../images/addto_cart_bg.jpg) repeat-x;
+          height: 22px;
+          width: 80px;
+          color: #292929;
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          margin: 0px auto;
+          margin-bottom: -15px;
+        }
+      }
+    }
+  }
 }
 
-._dots{
-  div{
-    margin-bottom: 0;
-    margin-left: 3px;
-    margin-right: 3px;
+
+._feature{
+  border-top: 1px solid #bbb;
+  overflow: hidden;
+  background-color: #eee;
+  width: 93%;
+  padding: 10px;
+  h3{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
   }
-  div[data-ur-state="active"]{
-    background: white;
-    width: 5px;
-    height: 5px;
-    padding-bottom: 5px;
-  }
-  div[data-ur-state="inactive"]{
-    background: gray;
-    opacity: .7;
-    width: 5px;
-    height: 5px;
-    margin-top: -3px;
-    padding-bottom: 5px;
+  .future_product{
+    height: 232px;
+    background: url(../../../images/future_product_bg.gif) no-repeat;
+    width: 100%;
   }
 }
 
-.small_box[data-ur-carousel-component="view_container"]{
-  background: #000;
-  margin-bottom: -5px;
-}
+
+
+
+
 

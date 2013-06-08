@@ -18,6 +18,7 @@ $$("body"){
 
 $("/html"){
   remove(".//script[contains(@src,'navigation.js')]")
+  remove(".//script[contains(@src,'jcarousel.min.js')]")
   
 }
 
