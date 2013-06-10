@@ -70,7 +70,7 @@ $("/html/body/div[@id='page']"){
       $("./div[@class='_traderCarousel']"){
         attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled", data-ur-center: "enabled")
         $("./ul[@id='first-carousel']"){
-          attributes(data-ur-carousel-component: "scroll_container", style: "width: 20px;")
+          attributes(data-ur-carousel-component: "scroll_container", style: "width: 1900px;")
           $("./script"){
             remove()
           }
