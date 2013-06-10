@@ -37,31 +37,6 @@
 					color: #505050;
 					font-weight: bold;
 				}
-				ul{
-					color: #999;
-					display: block;
-					list-style-type: disc;
-					-webkit-margin-before: 1em;
-					-webkit-margin-after: 1em;
-					-webkit-margin-start: 0px;
-					-webkit-margin-end: 0px;
-					-webkit-padding-start: 40px;
-					li{
-						a{
-							border-bottom: 1px solid #fff;
-						    background-position-x: right;
-						    background-color: #fff;
-						    display: block;
-						    font-size: 16px;
-						    line-height: 1;
-						    text-decoration: none;
-						    text-transform: lowercase;
-						    padding-top: 5px;
-						    padding-bottom: 5px;
-						}
-					}
-				}
-				
 			}
 			.results{
 				ul{
@@ -76,15 +51,15 @@
 					li{
 						a{
 							border-bottom: 1px solid #fff;
-						    background-position-x: right;
-						    background-color: #fff;
-						    display: block;
-						    font-size: 16px;
-						    line-height: 1;
-						    text-decoration: none;
-						    text-transform: lowercase;
-						    padding-top: 5px;
-						    padding-bottom: 5px;
+					    background-position-x: right;
+					    background-color: #fff;
+					    display: block;
+					    font-size: 16px;
+					    line-height: 1;
+					    text-decoration: none;
+					    text-transform: lowercase;
+					    padding-top: 5px;
+					    padding-bottom: 5px;
 						}
 					}
 				}

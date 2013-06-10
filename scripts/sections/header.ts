@@ -47,10 +47,7 @@ $("/html"){
     remove()
 	}
   
-   $$("div.dijitDialog"){
-  	remove()
-  }
-
+ 
   $$(".header_wrapper"){
   	wrap("div"){
   		attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
