@@ -74,42 +74,32 @@ $("/html/body/div[@id='page']"){
           $("./script"){
             remove()
           }
-          $("./li[1]"){
-            attributes(data-ur-carousel-component: "item", alt: "1")
+          $("./li"){
+            attributes(data-ur-carousel-component: "item", class: "_item")
           }
-          $("./li[2]"){
-            attributes(data-ur-carousel-component: "item", alt: "2")
-          }
-          $("./li[3]"){
-            attributes(data-ur-carousel-component: "item", alt: "3")
-          }
-          $("./li[4]"){
-            attributes(data-ur-carousel-component: "item", alt: "4")
-          }
-          $("./li[5]"){
-            attributes(data-ur-carousel-component: "item", alt: "5")
-          }
-          $("./li[6]"){
-            attributes(data-ur-carousel-component: "item", alt: "6")
-          }
-          $("./li[7]"){
-            attributes(data-ur-carousel-component: "item", alt: "7")
-          }
-          $("./li[8]"){
-            attributes(data-ur-carousel-component: "item", alt: "8")
-          }
-          $("./li[9]"){
-            attributes(data-ur-carousel-component: "item", alt: "9")
-          }
+          
         }
       }
     }
-
+//*[@id="first-carousel"]/li[1]/div[2]/p
     $("./div[4]"){
       add_class("_feature")
-    }
-    $("./div/div[@class='future_product']/div"){
-      attribute("class", "torwsfgssf")
+      $("./div[@class='future_product']"){
+        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature") 
+        $("./ul"){
+          attributes(data-ur-carousel-component: "scroll_container")
+          $("./li"){
+            attributes(data-ur-carousel-component: "item", class: "_item")
+            $("./div[2]/p"){
+              remove()
+            }
+            $("./div[2]/ul[@class='add_wishlist']"){
+              remove()
+            }
+          }
+        }
+
+      }      
     }
 
   }

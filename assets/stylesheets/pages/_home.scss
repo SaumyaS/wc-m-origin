@@ -41,10 +41,7 @@
   }
 
 
-  div[data-ur-carousel-component="view_container"]{
-    width: 100%;
-    overflow-x: hidden;
-  }
+
   div[data-ur-carousel-component="scroll_container"] > * {
     display: inline-block;
     float: left;
@@ -132,19 +129,14 @@
     font-weight: bold;
   }
 
-  div[data-ur-carousel-component="view_container"]{
-    width: 100%;
-    overflow-x: hidden;
-  }
 
-  ul[data-ur-carousel-component="scroll_container"] > * {
-    display: inline-block;
-    float: left;
-  }
+
 
   ._traderCarousel{
     #first-carousel{
+
       li{
+        float: left;
         height: 241px;
         list-style: none;
         background: url(../../../images/letest_product_bg.gif) no-repeat 0 0;
@@ -194,10 +186,9 @@
 
 
 ._feature{
+  position: relative;
   border-top: 1px solid #bbb;
-  overflow: hidden;
   background-color: #eee;
-  width: 93%;
   padding: 10px;
   h3{
     display: block;
@@ -206,10 +197,32 @@
     margin: 0 0 10px 0;
     font-weight: bold;
   }
+
+
+ 
   .future_product{
-    height: 232px;
-    background: url(../../../images/future_product_bg.gif) no-repeat;
     width: 100%;
+    ul{
+      display: inline-block;
+
+      li{
+        width: 120px;
+        height: 250px;
+        float: left;
+        padding: 5px;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        margin: 0 10px 20px 10px;
+        .futute_proimage_01{
+          padding-bottom: 5px;
+          border-bottom: 1px solid #ccc;
+          img{
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+    }
   }
 }
 
