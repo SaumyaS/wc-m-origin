@@ -42,10 +42,7 @@
 
 
 
-  div[data-ur-carousel-component="scroll_container"] > * {
-    display: inline-block;
-    float: left;
-  }
+ 
 
   ._dots{
     div{
@@ -191,6 +188,7 @@
   border-top: 1px solid #bbb;
   background-color: #eee;
   padding: 10px;
+  
   h3{
     display: block;
     padding-bottom: 10px;

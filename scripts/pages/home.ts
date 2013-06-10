@@ -68,7 +68,7 @@ $("/html/body/div[@id='page']"){
         
       
       $("./div[@class='_traderCarousel']"){
-        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-vertical-scroll: "disabled", data-ur-infinite: "disabled")
+        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
         $("./ul[@id='first-carousel']"){
           attributes(data-ur-carousel-component: "scroll_container")
           $("./script"){
@@ -85,7 +85,7 @@ $("/html/body/div[@id='page']"){
     $("./div[4]"){
       add_class("_feature")
       $("./div[@class='future_product']"){
-        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature", data-ur-vertical-scroll: "disabled", data-ur-infinite: "disabled", data-ur-center: "enabled") 
+        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled", data-ur-center: "enabled") 
         $("./ul"){
           attributes(data-ur-carousel-component: "scroll_container")
           $("./li"){
