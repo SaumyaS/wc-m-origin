@@ -117,9 +117,10 @@
 ._trader{
   overflow: hidden;
   background-color: #eee;
+  padding: 10px;
   h3{
     display: block;
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     margin: 0 0 10px 0;
     font-weight: bold;
@@ -130,7 +131,6 @@
 
   ._traderCarousel{
     display: block;
-      margin-left: 10px;
     #first-carousel{
       display: block;
       width: 1900px !important;
@@ -187,10 +187,11 @@
 ._feature{
   border-top: 1px solid #bbb;
   background-color: #eee;
+  padding: 10px;
 
   h3{
     display: block;
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     margin: 0 0 10px 0;
     font-weight: bold;
@@ -200,7 +201,6 @@
  
   .future_product{
     display: block;
-      margin-left: 10px;
     
     ul{
       width: 1000px !important;

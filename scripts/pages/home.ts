@@ -81,7 +81,7 @@ $("/html/body/div[@id='page']"){
         }
       }
     }
-//*[@id="first-carousel"]/li[1]/div[2]/p
+    
     $("./div[4]"){
       add_class("_feature")
       $("./div[@class='future_product']"){
