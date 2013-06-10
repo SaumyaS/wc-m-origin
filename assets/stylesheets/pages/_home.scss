@@ -205,6 +205,7 @@
       display: inline-block;
 
       li{
+        display: block;
         width: 120px;
         height: 250px;
         float: left;
@@ -216,8 +217,43 @@
           padding-bottom: 5px;
           border-bottom: 1px solid #ccc;
           img{
+
             width: 120px;
             height: 120px;
+          }
+        }
+        .futute_prodata{
+
+          ._featurePrice{
+            overflow: hidden;
+            height: 40px;
+            color: #292929;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+          }
+          .featured_product_price{
+            text-align: center;
+            color: #ff6311;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            text-decoration: none;
+          }
+          .lpadd_tocart{
+            background: url(../../../images/addto_cart_bg.jpg) repeat-x;
+            height: 22px;
+            width: 80px;
+            color: #292929;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            margin: 0px auto;
+            margin-bottom: -15px;
           }
         }
       }

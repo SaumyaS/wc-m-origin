@@ -90,6 +90,12 @@ $("/html/body/div[@id='page']"){
           attributes(data-ur-carousel-component: "scroll_container")
           $("./li"){
             attributes(data-ur-carousel-component: "item", class: "_item")
+            $("./div[2]/a[1]"){
+              add_class("_featurePrice")
+            }
+            $("./div[2]/span[1]"){
+              remove()
+            }
             $("./div[2]/p"){
               remove()
             }
