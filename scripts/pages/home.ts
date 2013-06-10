@@ -68,7 +68,7 @@ $("/html/body/div[@id='page']"){
         
       
       $("./div[@class='_traderCarousel']"){
-        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader")
+        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-vertical-scroll: "disabled", data-ur-infinite: "disabled")
         $("./ul[@id='first-carousel']"){
           attributes(data-ur-carousel-component: "scroll_container")
           $("./script"){
