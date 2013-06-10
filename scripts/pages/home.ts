@@ -68,9 +68,9 @@ $("/html/body/div[@id='page']"){
         
       
       $("./div[@class='_traderCarousel']"){
-        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
+        attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled", data-ur-center: "enabled")
         $("./ul[@id='first-carousel']"){
-          attributes(data-ur-carousel-component: "scroll_container")
+          attributes(data-ur-carousel-component: "scroll_container", style: "width: 20px;")
           $("./script"){
             remove()
           }
