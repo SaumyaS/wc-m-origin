@@ -133,7 +133,7 @@
     display: block;
     #first-carousel{
       display: block;
-      width: 1900px;
+      width: 1900px !important;
       li{
         float: left;
         height: 241px;
@@ -201,10 +201,10 @@
 
  
   .future_product{
-    width: 100%;
-    display: block;
+    width: 1000px !important;
+    
     ul{
-      display: block;
+      
 
       li{
         display: block;
@@ -214,7 +214,7 @@
         padding: 5px;
         background-color: #fff;
         border: 2px solid #ccc;
-        margin: 0 10px 20px 10px;
+        margin: 0 10px 20px 0px;
         .futute_proimage_01{
           padding-bottom: 5px;
           border-bottom: 1px solid #ccc;
