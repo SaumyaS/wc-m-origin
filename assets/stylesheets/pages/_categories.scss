@@ -2,6 +2,19 @@
 	border-top: 2px solid #5D5D5D;
 }
 
+._catView{
+	position: relative;
+	display: block;
+	
+	._catType{
+		width: 150px;
+		background-color: #000;
+		padding: 7px;
+	}
+}
+
+
+
 .topcat_header{
 	padding: 0px 0px 0px 3px;
 	height: 25px;
