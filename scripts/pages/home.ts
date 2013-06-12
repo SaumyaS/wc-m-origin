@@ -117,9 +117,7 @@ $("/html/body/div[@id='page']"){
 
 
 
-  $$("#right_nav"){
-    remove()
-  }
+ 
   
   # Removes Product category section on the page
 #  $$(".product_cat"){

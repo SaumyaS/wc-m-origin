@@ -29,3 +29,25 @@ $base-line-height: 24px;
     border: none;
     margin: 10px 0px;
 }
+
+@mixin dots{
+    div{
+      margin-bottom: 0;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    div[data-ur-state="active"]{
+      background: white;
+      width: 5px;
+      height: 5px;
+      padding-bottom: 5px;
+    }
+    div[data-ur-state="inactive"]{
+      background: gray;
+      opacity: .7;
+      width: 5px;
+      height: 5px;
+      margin-top: -3px;
+      padding-bottom: 5px;
+    }
+}

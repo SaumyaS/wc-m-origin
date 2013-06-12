@@ -44,25 +44,7 @@
  
 
   ._dots{
-    div{
-      margin-bottom: 0;
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-    div[data-ur-state="active"]{
-      background: white;
-      width: 5px;
-      height: 5px;
-      padding-bottom: 5px;
-    }
-    div[data-ur-state="inactive"]{
-      background: gray;
-      opacity: .7;
-      width: 5px;
-      height: 5px;
-      margin-top: -3px;
-      padding-bottom: 5px;
-    }
+    @include dots;
   }
  
 
@@ -148,6 +130,7 @@
         a{
           .lproduct_name{
             overflow: hidden;
+            text-overflow: ellipsis;
             color: #292929;
             display: block;
             font-size: 12px;
@@ -229,6 +212,8 @@
 
           ._featurePrice{
             overflow: hidden;
+            text-overflow: ellipsis;
+
             height: 40px;
             color: #292929;
             display: block;
