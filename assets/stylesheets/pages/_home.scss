@@ -151,16 +151,7 @@
           text-decoration: none;
         }
         .lpadd_tocart{
-          background: url(../../../images/addto_cart_bg.jpg) repeat-x;
-          font-weight: bold;
-          height: 22px;
-          width: 80px;
-          color: #292929;
-          text-decoration: none;
-          text-align: center;
-          display: block;
-          margin: 0px auto;
-          margin-bottom: -15px;
+          @include add_to_cart_HP;
         }
       }
     }
@@ -233,16 +224,7 @@
             text-decoration: none;
           }
           .lpadd_tocart{
-            background: url(../../../images/addto_cart_bg.jpg) repeat-x;
-            height: 22px;
-            width: 80px;
-            color: #292929;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            display: block;
-            margin: 0px auto;
-            margin-bottom: -15px;
+            @include add_to_cart_HP;
           }
         }
       }
