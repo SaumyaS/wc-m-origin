@@ -30,6 +30,24 @@
 					padding: 10px;
 				}
 			}
+			ul{
+				li{
+					text-align: center;
+					a{
+						font-family: 'trebuchet ms', sans-serif;
+					    border-bottom:1px solid #808080;
+					    border-top: 1px solid #808080;
+					    background-color: #eee;
+					    display: block;
+					    font-size: 13px;
+					    line-height: 1;
+					    text-decoration: none;
+					    text-transform: capitalize;
+					    padding: 10px;
+					    color: #2C3539;
+					}
+				}
+			}
 		}
 		.search-main{
 			h2{
