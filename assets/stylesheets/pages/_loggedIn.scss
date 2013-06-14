@@ -1,0 +1,58 @@
+._login{
+	._togglerWidget{
+		padding-top: 3px;
+		text-align: center;
+		._userInfo{
+			@include bars;
+		}
+		.group{
+			a{
+				@include subbars;
+			}
+
+		}
+	}
+	.account-col{
+		#box{
+			display: block;
+			.my_account{
+				.main_header{
+					padding-bottom: 0px !important;
+					h1{
+
+						@include title_bar;
+						-webkit-margin-before: 0px;
+						-webkit-margin-after: 0px;
+					}
+					.left{
+						padding-bottom: 0px !important;
+					}
+				}
+			}
+
+		}
+	}
+
+
+}
+
+.acct-name {
+	font-weight: bold;
+	color: #ffc623 !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 5px 2px;
+}
+.cart_menu{
+	.MyAccountURLSep{
+		border-bottom: 1px solid #eee;
+		background-color: #111;
+		a{
+			text-decoration: none;
+			color: #FFF;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			padding: 10px 2px;
+		}
+	}
+}
