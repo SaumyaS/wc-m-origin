@@ -60,6 +60,7 @@ $("/html"){
     $("./div/ul"){
     	$("li[1]"){
     		attribute("id", "menu1")
+        
     	}
     }
 
@@ -69,6 +70,9 @@ $("/html"){
         $$(">a"){
         	attribute("class", "_category")
         }
+      }
+      $("./li[1]"){
+        attribute("class", "_accordian")
       }
     }
 
@@ -103,18 +107,16 @@ $("/html"){
 
     $$("#image-menu"){
       insert("img", src: asset("images/menu.png"))
-    }
-    
+    }    
     
     $$("#image-search"){
       insert("img", src: asset("images/search.png"))
     }
 
-   
-
     $$("#image-cart"){
       insert("img", src: asset("images/cart.png"))
     }
+
     $$("li.miniShopCartSep"){
       attributes(data-ur-tabs-component: "content", data-ur-tab-id: "cart")
 

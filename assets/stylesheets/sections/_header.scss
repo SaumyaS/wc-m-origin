@@ -70,12 +70,14 @@
 }
 
 ._home {
+
+  
   
   ._category {
     font-family: 'FrancoisOne', sans-serif;
     border-bottom:1px solid #808080;
     border-top: 1px solid #808080;
-    @include background(linear-gradient(#fff, #c0c0c0));
+    background: #aaa;
     background-position-x: right;
     display: block;
     font-size: 16px;
@@ -85,9 +87,26 @@
     font-weight: bold;
     padding: 10px;
     color: #2C3539;
-  }
 
+  }
   
+  .nav-primary{
+    #menu1{
+      >a{
+        background: url(../../../images/img/plus.png) no-repeat right center #aaa;
+      }
+      >a.active{
+        background: url(../../../images/img/delete.png) no-repeat right center #aaa;
+      }
+    }
+    .col{
+      a{
+        background: url(../../../images/menu_go.png) no-repeat right center #aaa;
+        padding-right: 10px;
+     }
+    }
+
+  }
 
   ._sub2 {
     font-family: 'FrancoisOne', sans-serif;
