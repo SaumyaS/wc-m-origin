@@ -65,6 +65,37 @@ $base-line-height: 24px;
   border-radius: 5px;
 }
 
+@mixin bars{
+  font-family: 'FrancoisOne', sans-serif;
+  border-bottom:1px solid #808080;
+  border-top: 1px solid #808080;
+  background: #aaa;
+  background-position-x: right;
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px;
+  color: #2C3539;
+}
+
+@mixin subbars{
+  font-family: 'FrancoisOne', sans-serif;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  background-position-x: right;
+  background-color: #eee;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #726E6D;
+}
+
 .btn{
   background: url(../../../images/addto_cart_bg.jpg) repeat-x;
   font-weight: bold;

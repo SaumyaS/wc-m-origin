@@ -19,7 +19,13 @@ $$("body"){
 $("/html"){
   #remove(".//script[contains(@src,'jcarousel.min.js')]")
   remove(".//script[contains(@src,'navigation.js')]")
-  
+
+  $("./body"){
+    $(".//li[@class='MyAccountURLSep']/a"){
+      attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+    }
+  }
+
 }
 
   # Removes all the breakpoints
@@ -39,7 +45,7 @@ $("/html"){
 
 
   $$(".MyAccountURLSep"){
-  	remove()
+ 	  move_to("../../ul[@class='cart_menu']", position("top"))
   }
 
     # 
@@ -154,6 +160,8 @@ $("/html"){
   $("//*[@id='MiniShoppingCart']"){
     attribute("onmouseover", "")
   }
+
+
 
 
 

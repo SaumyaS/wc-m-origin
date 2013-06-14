@@ -74,19 +74,7 @@
   
   
   ._category {
-    font-family: 'FrancoisOne', sans-serif;
-    border-bottom:1px solid #808080;
-    border-top: 1px solid #808080;
-    background: #aaa;
-    background-position-x: right;
-    display: block;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    padding: 10px;
-    color: #2C3539;
+    @include bars;
 
   }
   
@@ -109,28 +97,13 @@
   }
 
   ._sub2 {
-    font-family: 'FrancoisOne', sans-serif;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
-    background-position-x: right;
-    background-color: #eee;
-    background-color: #fff;
-    display: block;
-    font-size: 13px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    @include subbars;
     padding-left: 15px;
-    color: #726E6D;
   }
 
   /* header bar*/
   #ad_17601{
     @include background(linear-gradient(#555, #111));
-    border-bottom: 1px solid #c3c3c3;
     overflow: hidden;
     position: relative;
     padding-top: 10px;
