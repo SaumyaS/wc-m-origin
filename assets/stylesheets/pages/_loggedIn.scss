@@ -28,6 +28,22 @@
 						padding-bottom: 0px !important;
 					}
 				}
+				.body{
+					padding: 5px;
+					.checkout-container{
+						border: 2px solid #ccc;
+						padding: 5px;
+						margin: 10px 0;
+						overflow: hidden;
+						#WC_MyAccountCenterLinkDisplay_div_130{
+							h3{
+								margin-top: 0px;
+								border-bottom: 1px solid #aaa;
+								padding-bottom: 5px;
+							}
+						}
+					}
+				}
 			}
 
 		}
@@ -45,6 +61,8 @@
 }
 .cart_menu{
 	.MyAccountURLSep{
+		padding-top: 3px;
+		padding-bottom: 3px;
 		border-bottom: 1px solid #eee;
 		background-color: #111;
 		a{

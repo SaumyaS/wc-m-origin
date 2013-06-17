@@ -21,7 +21,15 @@ $("/html/body"){
 			$("../div[@class='nav-secondary']"){
 				attributes(data-ur-toggler-component: "content")
 			}
-		}		
+		}
+		$("./div[@class='account-col']"){
+			$(".//div[@class='info']"){
+				$("./a"){
+					insert("br")
+				}
+			}
+		}
+
 
 
 	}
