@@ -61,6 +61,18 @@ $("/html"){
   	}
   }
 
+$$(".header_widget"){
+  insert_top("div", class: "messagepop"){
+    insert("a", "Go To Cart", class: "_gotocart"){
+      attributes(href: "Orde%E2%80%A6DisplayView&orderId=.&langId=-1&storeId=11301&URL=AjaxOrderItemDisplayView")
+    }
+    insert("label", class: "_continueShop"){
+      insert("a", href: "#", class: "_close", "Continue Shopping")
+    }
+  }
+}
+
+
 
   $$(".nav_wrapper"){
     $("./div/ul"){
@@ -100,6 +112,9 @@ $("/html"){
   }
 
   
+  $("//*[@id='shoppingCartBar']"){
+    
+  }
 
 
   $$(".checkout_wrapper"){
