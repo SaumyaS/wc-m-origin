@@ -12,7 +12,7 @@ $("/html") {
   # Needed to begin mobilizing
   remove_all_styles()
   remove_html_comments()
-
+  
   # Late load all the images on the site
   # lateload()
   
