@@ -80,7 +80,15 @@ match($status) {
         log("--> Importing Login")
         @import pages/login.ts
       }
-
+      with(/forgetpassword/){
+        log("--> Importing forgetpassword")
+        @import pages/forgetpassword.ts
+      }
+      with(/ResetPasswordForm/){
+        log("--> Importing ResetPasswordForm")
+        @import pages/forgetpassword.ts
+      }
+  
       else() {
         log("--> No page match in mappings.ts")
       }
