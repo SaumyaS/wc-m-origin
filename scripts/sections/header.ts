@@ -38,10 +38,10 @@ $("/html"){
     remove()
   }
   
-  # 
-  $$("#MessageArea"){
-    remove()
-  }
+  # # 
+  # $$("#MessageArea"){
+  #   remove()
+  # }
 
 
   $$(".MyAccountURLSep"){
@@ -61,16 +61,16 @@ $("/html"){
   	}
   }
 
-$$(".header_widget"){
-  insert_top("div", class: "messagepop"){
-    insert("a", "Go To Cart", class: "_gotocart"){
-      attributes(href: "/webapp/wcs/stores/servlet/AjaxOrderItemDisplayView?catalogId=11101&langId=-1&storeId=11301&krypto=HtmeXOK%2FYAfBYZffcZMpZCS1kvLj7DcsobbYRc68LVTw2yn74DZ%2BBZB%2FZ29NpkoVmJuGUAalJO51%0AEDIAGczxc6bObZF9hUrHsD8Nwtij1rIVhHbyxzoiCR9dhPh37hEB9oPd3u07Fq3raXYlG%2FLa0w%3D%3D&ddkey=http:OrderCalculate")
-    }
-    insert("label", class: "_continueShop"){
-      insert("a", href: "#", class: "_close", "Continue Shopping")
-    }
-  }
-}
+# $$(".header_widget"){
+#   insert_top("div", class: "messagepop"){
+#     insert("a", "Go To Cart", class: "_gotocart"){
+#       attributes(href: "/webapp/wcs/stores/servlet/AjaxOrderItemDisplayView?catalogId=11101&langId=-1&storeId=11301&krypto=HtmeXOK%2FYAfBYZffcZMpZCS1kvLj7DcsobbYRc68LVTw2yn74DZ%2BBZB%2FZ29NpkoVmJuGUAalJO51%0AEDIAGczxc6bObZF9hUrHsD8Nwtij1rIVhHbyxzoiCR9dhPh37hEB9oPd3u07Fq3raXYlG%2FLa0w%3D%3D&ddkey=http:OrderCalculate")
+#     }
+#     insert("label", class: "_continueShop"){
+#       insert("a", href: "#", class: "_close", "Continue Shopping")
+#     }
+#   }
+# }
 
 
 
@@ -114,6 +114,10 @@ $$(".header_widget"){
   
   $("//*[@id='shoppingCartBar']"){
     
+  }
+
+  $$("#msgpopup1_x"){
+    remove()
   }
 
 

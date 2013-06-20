@@ -44,14 +44,14 @@ $$(".order-confirm"){
 				add_class("_colEach")
 				wrap("div"){
 					attribute("class", "_eachDiv")
-					insert_top("div", "Each: ", class: "_each", style: "float:left; padding-left: 120px;")
+					insert_top("div", "Each: ", class: "_each", style: "float:left; padding-left: 100px;")
 				}
 			}
 			$("./div[7]"){
 				add_class("_colTotal")
 				wrap("div"){
 					attribute("class", "_totalDiv")
-					insert_top("div", "Total: ", class: "_total", style: "float:left; padding-left: 120px;")
+					insert_top("div", "Total: ", class: "_total", style: "float:left; padding-left: 100px;")
 				}
 			}
 

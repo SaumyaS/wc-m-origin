@@ -88,6 +88,14 @@ match($status) {
         log("--> Importing ResetPasswordForm")
         @import pages/forgetpassword.ts
       }
+      with(/LogonForm/){
+        log("--> Importing LogonForm")
+        @import pages/logonForm.ts
+      }
+      with(/OrderShippingBillingView/){
+        log("--> Importing ShippingBilling")
+        @import pages/shippingBilling.ts
+      }
   
       else() {
         log("--> No page match in mappings.ts")

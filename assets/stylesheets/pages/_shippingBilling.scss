@@ -1,0 +1,11 @@
+._shippingBilling{
+	h3{
+		letter-spacing: -1px;
+		padding: 5px;
+		background-color: #eee;
+	}
+}
+
+h1{
+	@include title_bar;
+}

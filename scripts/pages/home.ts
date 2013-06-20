@@ -15,8 +15,8 @@ $("/html/body/div[@id='page']"){
   
   $("./div[@class='header_widget']/div[@class='nav_wrapper']"){
     insert_before("div", class: "__banner"){
-      move_here("../../div/div[@id='content_wrapper_box']/div[2]")
-      move_here("../../div/div[@id='content_wrapper_box']/div[2]/div/ul")
+      move_here("../../div/div[@id='content_wrapper_box']/div[3]")
+      move_here("../../div/div[@id='content_wrapper_box']/div[3]/div/ul")
     }
   }
 

@@ -1,0 +1,38 @@
+._logonForm{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+
+	.login-box{
+		.col-1{
+			a{
+				margin-top: 10px;
+			}
+		}
+		.col-2{
+			form{
+				label{
+					
+					min-width: 100px;
+					display: inline-block;
+					font-weight: bold;
+				}
+				input{
+					margin: 5px 0px;
+					width: 150px;
+					padding: 4px;
+					background: #ccc;
+					border: 1px solid #aaa;
+					border-radius: 4px;
+					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+				}
+				#WC_AccountDisplay_links_2{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

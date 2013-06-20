@@ -229,3 +229,28 @@
   
 
 }
+
+#Add_To_Cart_modal_dialog{
+  width: 200px !important;
+  text-align: center;
+  .Add_To_Cart_modal_dialog_container{
+
+    float: none !important;
+    width: 200px !important;
+    .Add_To_Cart_modal_dialog_h2{
+      img{
+        display: none !important;
+      }
+      h2{
+        background-color: #eee !important;
+        background-image: none !important;
+      }
+    }
+    .shoping_btn{
+      width: 200px !important;
+      li{
+        float: none !important;
+      }
+    }
+  }
+}
