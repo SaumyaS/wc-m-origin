@@ -25,7 +25,7 @@ $("/html/body"){
 		$("./div[@class='account-col']"){
 			$(".//div[@class='info']"){
 				$("./a"){
-					insert("br")
+					insert_after("br")
 				}
 			}
 		}

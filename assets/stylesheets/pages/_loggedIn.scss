@@ -13,7 +13,9 @@
 		}
 	}
 	.account-col{
+
 		#box{
+			padding-bottom: 0px !important;
 			display: block;
 			.my_account{
 				.main_header{
@@ -46,6 +48,9 @@
 							padding-bottom: 0px !important;
 							.info{
 								padding-bottom: 0px !important;
+								a{
+									margin-top: 5px;
+								}
 							}
 						}
 					}

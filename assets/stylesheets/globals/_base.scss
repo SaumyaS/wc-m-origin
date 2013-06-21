@@ -12,7 +12,7 @@ html {
 body {
   -webkit-text-size-adjust: none;
   background: #fff;
-  color: #333;
+  color: #505050;
   font-family: "Helvetica Neue", Helvetica, Verdana;
   position: relative;
   min-height: 100%;
@@ -72,4 +72,14 @@ h3{
 
 strong{
   font-weight: bold;
+}
+
+label{
+  min-width: 100px;
+  font-weight: bold;
+}
+
+form{
+  display: block;
+  margin-top: 0em;
 }

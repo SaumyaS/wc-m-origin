@@ -4,6 +4,10 @@ $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
 }
 
+$$(".main_container"){
+	add_class("_products")
+}
+
 $$(".search-sidebar"){
 
 	$("./h2"){

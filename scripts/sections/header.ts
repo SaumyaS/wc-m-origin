@@ -46,6 +46,9 @@ $("/html"){
 
   $$(".MyAccountURLSep"){
  	  move_to("../../ul[@class='cart_menu']", position("top"))
+    $("./a[2]"){
+      attribute("href", "webapp/wcs/stores/servlet/Logoff?storeId=11301&amp;URL=https%3A%2F%2Fqa-whitecap.ecom.hdsupply.com%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FLogonForm%3FcatalogId%3D11101%26myAcctMain%3D1%26langId%3D-1%26storeId%3D11301")
+    }
   }
 
     # 

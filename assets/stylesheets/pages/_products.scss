@@ -1,101 +1,103 @@
-#box{
-	display: block;
-	div{
-		overflow: hidden;
-		padding-bottom: 5px;
-		.search-sidebar{
+._products{
+	#box{
+		display: block;
+		div{
+			overflow: hidden;
+			padding-bottom: 5px;
+			.search-sidebar{
 
-			h2{
-				@include title_bar;
-			}
-			ul{
-				h4{
-					font-family: 'trebuchet ms', sans-serif;
-					border-bottom: 1px solid #808080;
-	    			border-top: 1px solid #808080;
-					@include background(linear-gradient(#aaa, #555));
-					line-height: 1;
-					text-align: center;
-					margin-top: 0;
-					font-size: 16px;
-					font-weight: bold;
-					padding: 10px;
+				h2{
+					@include title_bar;
 				}
 				ul{
-					li{
+					h4{
+						font-family: 'trebuchet ms', sans-serif;
+						border-bottom: 1px solid #808080;
+		    			border-top: 1px solid #808080;
+						@include background(linear-gradient(#aaa, #555));
+						line-height: 1;
 						text-align: center;
-						a{
-							font-family: 'trebuchet ms', sans-serif;
-						    border-bottom:1px solid #808080;
-						    border-top: 1px solid #808080;
-						    background-color: #eee;
-						    display: block;
-						    font-size: 13px;
-						    line-height: 1;
-						    text-decoration: none;
-						    text-transform: capitalize;
-						    padding: 10px;
-						    color: #2C3539;
-						}
-					}
-				}
-			}
-		}
-		.search-main{
-			h2{
-				border-top: 1px solid #ccc;
-				border-bottom: 1px solid #ccc;
-				background: #ffe7a3;
-				padding: 5px;
-				font-weight: bold;
-				font-size: 16px;
-			}
-			.search_based{
-				border-bottom: 1px solid #cccccc;
-				margin-bottom: 10px;
-				padding: 6px;
-				width: 100%;
-			}
-			.pricing-login{
-				background: #ebebeb;
-				text-align: center;
-				padding: 5px;
-				border-bottom: 2px solid #000;
-			}
-			.result-item{
-				border-bottom: 1px solid #ccc;
-				padding-top: 5px;
-				padding-left: 15px;
-				display: block;
-				.item-description{
-					float: left;
-					width: 150px;
-					line-height: 1.5;
-					a{
-						h1{
-							color: #3a3a39;
-							font-size: 12px;
-						}
-					}
-					p{
-						display: none;
-					}
-				}
-				.item-action{
-					margin-top: -60px;
-					position: relative;
-					float: left;
-					width: 120px;
-					.discount-price{
+						margin-top: 0;
+						font-size: 16px;
 						font-weight: bold;
-						color: #ff6311;
-						font-size: 14px;
+						padding: 10px;
 					}
-					a{
-						margin-top: -4px;
+					ul{
+						li{
+							text-align: center;
+							a{
+								font-family: 'trebuchet ms', sans-serif;
+							    border-bottom:1px solid #808080;
+							    border-top: 1px solid #808080;
+							    background-color: #eee;
+							    display: block;
+							    font-size: 13px;
+							    line-height: 1;
+							    text-decoration: none;
+							    text-transform: capitalize;
+							    padding: 10px;
+							    color: #2C3539;
+							}
+						}
 					}
 				}
-				
+			}
+			.search-main{
+				h2{
+					border-top: 1px solid #ccc;
+					border-bottom: 1px solid #ccc;
+					background: #ffe7a3;
+					padding: 5px;
+					font-weight: bold;
+					font-size: 16px;
+				}
+				.search_based{
+					border-bottom: 1px solid #cccccc;
+					margin-bottom: 10px;
+					padding: 6px;
+					width: 100%;
+				}
+				.pricing-login{
+					background: #ebebeb;
+					text-align: center;
+					padding: 5px;
+					border-bottom: 2px solid #000;
+				}
+				.result-item{
+					border-bottom: 1px solid #ccc;
+					padding-top: 5px;
+					padding-left: 15px;
+					display: block;
+					.item-description{
+						float: left;
+						width: 150px;
+						line-height: 1.5;
+						a{
+							h1{
+								color: #3a3a39;
+								font-size: 12px;
+							}
+						}
+						p{
+							display: none;
+						}
+					}
+					.item-action{
+						margin-top: -60px;
+						position: relative;
+						float: left;
+						width: 120px;
+						.discount-price{
+							font-weight: bold;
+							color: #ff6311;
+							font-size: 14px;
+						}
+						a{
+							margin-top: -4px;
+						}
+					}
+					
+				}
 			}
 		}
 	}

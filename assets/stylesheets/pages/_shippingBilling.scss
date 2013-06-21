@@ -1,11 +1,78 @@
 ._shippingBilling{
+	label{
+		display: inline-block;
+	}
+	input[type="text"], input[type="password"]{
+		border: 1px solid #aaa;
+		background-color: #ccc;
+		padding: 3px;
+		margin: 5px 0px;
+	}
+	textarea{
+		border: 1px solid #aaa;
+		background-color: #ccc;
+		padding: 3px;
+		margin: 5px 0px;
+		vertical-align: top;
+		font-family: Arial, Helvetica, sans-serif;
+		min-width: 151px;
+
+	}
 	h3{
 		letter-spacing: -1px;
 		padding: 5px;
 		background-color: #eee;
 	}
+	h1{
+		@include title_bar;
+	}
+	.checkout-container{
+		border: 2px solid #ccc;
+		padding: 10px;
+		margin: 10px 5px;
+		overflow: hidden;
+		
+		#willCallDisplayArea{
+			margin-bottom: 5px;
+			padding: 5px;
+			border-bottom: 1px solid #CCCCCC;
+			background-color: #FEFDCD;
+			input{
+				margin-left: 100px;
+			}
+		}
+
+		#willCallShippingAddressForm{
+			
+		}
+		.shipping_method_content{
+		
+
+			#willCallShippingMethods{
+				display: block;
+				
+				span{
+					input[type="radio"]{
+						margin-left: 100px;
+					}
+				}
+			}
+		}
+
+		.billing_method{
+			input{
+				margin-left: -5px;
+				margin-top: -3px;
+			}
+		}
+
+		#create-account-container{
+			line-height: 1.3em;
+		}
+	}
+	#WC_UnregisteredCheckout_links_4{
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
 }
 
-h1{
-	@include title_bar;
-}
