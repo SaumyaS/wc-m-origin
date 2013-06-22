@@ -4,6 +4,9 @@ $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
 }
 
+$("//*[@id='order_details']/div[1]"){
+	remove()
+}
 
 
 $$(".order-confirm"){
@@ -15,10 +18,7 @@ $$(".order-confirm"){
 		}
 			
 		
-		$$(".mw_was_thead"){
-			attribute("style", "display: none;")
-		}
-
+	
 		$$(".order-product-info"){
 			$("./div[2]"){
 				add_class("_colTitle")

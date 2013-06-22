@@ -96,6 +96,14 @@ match($status) {
         log("--> Importing ShippingBilling")
         @import pages/shippingBilling.ts
       }
+      with(/AddToCartModalView/){
+        log("--> Importing AddtoCart")
+        @import pages/addtocart.ts
+      }
+      with(/ShopCartDisplayView/){
+        log("--> Importing order change")
+        @import pages/orderItemDisplay.ts
+      }
   
       else() {
         log("--> No page match in mappings.ts")

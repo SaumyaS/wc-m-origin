@@ -27,6 +27,12 @@ a.selected {
   }
 }
 
+.shadow{
+  -moz-box-shadow: 1px 1px 1px #888;
+  -webkit-box-shadow: 1px 1px 1px #888;
+  box-shadow: 1px 1px 1px #888; 
+}
+
 
 
 // .messagepop p, .messagepop.div {
