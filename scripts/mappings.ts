@@ -48,10 +48,6 @@ match($status) {
         log("--> Importing Search")
         @import pages/search.ts
       }
-      with(/BrandsCategoryLandingDisplayView/){
-        log("--> Importing BrandSearch")
-        @import pages/brandSearch.ts
-      }
       with(/Store_Locations/){
         log("--> Importing Store_Locations")
         @import pages/location.ts
@@ -107,6 +103,14 @@ match($status) {
       with(/AjaxQuickCartDisplay/){
         log("--> Importing quickCart")
         @import pages/quickCart.ts
+      }
+      with(/SingleShipmentOrderSummaryView/){
+        log("--> Importing Shipment Order Summary Info")
+        @import pages/shipmentOrderSummary.ts
+      }
+      with(/BrandsCategoryLandingDisplayView/){
+        log("--> Importing Brand Category Page")
+        @import pages/brandCategoryDisplay.ts
       }
   
       else() {

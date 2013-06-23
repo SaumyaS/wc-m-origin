@@ -14,7 +14,8 @@
         
         height: 95px;
         position: absolute;
-        width: 98%;
+        width: 97%;
+        border-radius: 10px;
       }
     }
   }
@@ -37,6 +38,9 @@
     padding-right: 40px;
 
     list-style: none;
+    img{
+      border-radius: 10px;
+    }
   }
 
 

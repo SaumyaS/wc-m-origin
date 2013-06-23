@@ -1,0 +1,22 @@
+._brandsDisplay{
+	display: block;
+	.brand-splash{
+		text-align: center;
+		padding: 5px;
+		background-color: #555;
+		img{
+			border-radius: 10px;
+		}
+	}
+	.brand-promos{
+		h1{
+			@include title_bar;
+		}
+		.promo-box{
+			float: left;
+			width: 288px;
+			padding-bottom: 10px;
+			background-color: #ebebeb;
+		}
+	}
+}
