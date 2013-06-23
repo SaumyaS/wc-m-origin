@@ -102,7 +102,11 @@ match($status) {
       }
       with(/ShopCartDisplayView/){
         log("--> Importing order change")
-        @import pages/orderItemDisplay.ts
+        @import pages/orderChange.ts
+      }
+      with(/AjaxQuickCartDisplay/){
+        log("--> Importing quickCart")
+        @import pages/quickCart.ts
       }
   
       else() {
