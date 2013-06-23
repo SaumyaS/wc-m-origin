@@ -23,12 +23,20 @@ $$(".main_container"){
 			
 			insert_top("div", class: "_brandCategories"){
 				attributes(data-ur-carousel-component: "scroll_container")
-				move_here("//*[@id='branding-categories']/li[1]/div/div[@class='category-item']")
+				move_here("//*[@id='branding-categories']/li/div/div[@class='category-item']")
 				$("./div[@class='category-item']"){
 					attributes(data-ur-carousel-component: "item")
 				}
 			}
+			$("./div[2]"){
+				remove()
+			}
 		}
 	}
 
+
+}
+
+$("/html"){
+	remove(".//script[contains(@src,'jcarousel.min.js')]")
 }

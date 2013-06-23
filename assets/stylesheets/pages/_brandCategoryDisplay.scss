@@ -30,15 +30,15 @@
 			@include title_bar;
 		}
 		.branding_double_cat{
+			background-color: #444;
 			._brandCategories{
-				background-color: #eee;
 				display: block;
 				.category-item{
 					display: inline-block;
 					float: left;
 					width: 170px;
 					margin: 5px;
-					text-align: left;
+					text-align: center;
 
 					a{
 						background-color: #fff;
@@ -50,6 +50,9 @@
 					}
 					.topcat_product_name{
 						text-align: center;
+						font-weight: bold;
+						height: 20px;
+						color: #eee;
 					}
 				}
 			}
