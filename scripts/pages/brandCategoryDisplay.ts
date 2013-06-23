@@ -32,6 +32,19 @@ $$(".main_container"){
 				remove()
 			}
 		}
+		$("./div[@class='branding_single_cat']"){
+			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brands2CategoriesCarousel", data-ur-center: "enabled", data-ur-infinite: "disabled")
+			
+			$("./ul/li/div[@class='category-row']"){
+				attributes(data-ur-carousel-component: "scroll_container")	
+				$("./div[@class='category-item']"){
+					attributes(data-ur-carousel-component: "item")
+				}
+			}
+			$("./div[2]"){
+				remove()
+			}
+		}
 	}
 
 

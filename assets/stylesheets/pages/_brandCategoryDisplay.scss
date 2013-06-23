@@ -57,5 +57,33 @@
 				}
 			}
 		}
+		.branding_single_cat{
+			background-color: #444;
+			.category-row{
+				display: block;
+				.category-item{
+					display: inline-block;
+					float: left;
+					width: 170px;
+					margin: 5px;
+					text-align: center;
+
+					a{
+						background-color: #fff;
+						display: block;
+						border-radius: 4px;
+						border: 2px solid #ccc;
+						margin-bottom: 5px;
+						text-align: center;
+					}
+					.topcat_product_name{
+						text-align: center;
+						font-weight: bold;
+						height: 20px;
+						color: #eee;
+					}
+				}
+			}
+		}
 	}
 }
