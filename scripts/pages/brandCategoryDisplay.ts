@@ -16,5 +16,19 @@ $$(".main_container"){
 			}
 		}
 	}
+	$("./div[@class='brand-categories']"){
+		
+		$("./div[@class='branding_double_cat']"){
+			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsCarousel", data-ur-center: "enabled")
+			
+			insert_top("div", class: "_brandCategories"){
+				attributes(data-ur-carousel-component: "scroll_container")
+				move_here("//*[@id='branding-categories']/li[1]/div/div[@class='category-item']")
+				$("./div[@class='category-item']"){
+					attributes(data-ur-carousel-component: "item")
+				}
+			}
+		}
+	}
 
 }
