@@ -19,7 +19,7 @@ $$(".main_container"){
 	$("./div[@class='brand-categories']"){
 		
 		$("./div[@class='branding_double_cat']"){
-			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsCarousel", data-ur-center: "enabled")
+			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsCategoriesCarousel", data-ur-center: "enabled")
 			
 			insert_top("div", class: "_brandCategories"){
 				attributes(data-ur-carousel-component: "scroll_container")
