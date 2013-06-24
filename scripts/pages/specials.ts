@@ -10,5 +10,20 @@ $("//*[@id='main_content_wrapper']/div/div"){
 	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[1]"){
 		attributes(style: "", class: "_specialText")
 	}
-	
+
+
+	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[2]"){
+		$("./div[1]"){
+			remove()
+		}
+		$("./div[1]"){
+			remove()
+		}
+	}
 }
+
+//*[@id="WC_ContentAreaESpot_div_22_1"]/div[2]
+
+# $("//div[@id='WC_ContentAreaESpot_div_22_1']/div[2]/div[1]"){
+# 	remove()
+# }

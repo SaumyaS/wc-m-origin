@@ -9,7 +9,23 @@
 		hr{
 			@include horizontal_line;
 		}
-		
+
+		#ad_62001{
+			a{
+				img{
+					height: 50px;
+				}
+			}
+			#WC_ContentAreaESpot_div_22_1{
+				._specialText{
+					padding: 10px;
+					font-family: Verdana, Geneva, sans-serif;
+					font-size: 14px;
+					background-color: #f5f5f5;
+					text-align: center;
+				}
+			}
+		}
 		
 	}
 
