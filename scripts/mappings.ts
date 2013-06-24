@@ -116,6 +116,11 @@ match($status) {
         log("--> Importing Confirmation View Page")
         @import pages/orderConfirmation.ts
       }
+      with(/home/){
+        log("--> Importing pages/new.ts in mapping.ts")
+        @import pages/new.ts
+        @import pages/home.ts
+      }
   
       else() {
         log("--> No page match in mappings.ts")

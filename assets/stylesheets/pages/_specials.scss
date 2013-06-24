@@ -2,7 +2,9 @@
 	div{
 		display: block;
 		h1{
-			@include title_bar;
+			background-color: #ffe089;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
 		}
 		hr{
 			@include horizontal_line;

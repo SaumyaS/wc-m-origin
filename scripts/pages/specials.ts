@@ -5,8 +5,10 @@ $$("#ad_17601"){
 }
 
 $("//*[@id='main_content_wrapper']/div/div"){
-	$("./div"){
-		attribute("class", "_specials")
+	add_class("_specials")
+	
+	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[1]"){
+		attributes(style: "", class: "_specialText")
 	}
 	
 }
