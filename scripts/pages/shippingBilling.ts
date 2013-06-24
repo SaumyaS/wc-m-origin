@@ -41,5 +41,4 @@ $$(".visaCVV2"){
 		# $("./span/script"){
 		# 	remove()
 		# }
-		add_class("_test")
 	}

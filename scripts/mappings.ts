@@ -112,6 +112,10 @@ match($status) {
         log("--> Importing Brand Category Page")
         @import pages/brandCategoryDisplay.ts
       }
+      with(/OrderShippingBillingConfirmationView/){
+        log("--> Importing Confirmation View Page")
+        @import pages/orderConfirmation.ts
+      }
   
       else() {
         log("--> No page match in mappings.ts")

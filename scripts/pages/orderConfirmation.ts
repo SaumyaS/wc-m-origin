@@ -4,9 +4,17 @@ $$("#ad_17601"){
 }
 
 $("/html/body"){
-	$("//*[@id='page']/div[4]/div"){
+	$("//*[@id='content_wrapper']/div"){
 		attributes(style: "background-color: #fff;")
 		add_class("_reviewPage")
+	}
+
+	$("./div[@id='thankyou']"){
+		$("./div[@class='order-details']"){
+			$("./label[2]"){
+				insert_before("br")
+			}
+		}
 	}
 
 	$(".//div[@id='order-info']"){
@@ -46,11 +54,8 @@ $("/html/body"){
 		}
 		$("./div[@id='order-total']"){
 			$("./div[1]"){
-				add_class("_taxInfo")
-				insert("br")
-			}
-			$("./div[2]"){
 				add_class("_order_total")
+				insert("br")
 			}
 		}
 		$("./p"){

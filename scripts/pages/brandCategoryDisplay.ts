@@ -19,7 +19,7 @@ $$(".main_container"){
 	$("./div[@class='brand-categories']"){
 		
 		$("./div[@class='branding_double_cat']"){
-			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsCategoriesCarousel", data-ur-center: "enabled")
+			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsCategoriesCarousel", data-ur-center: "enabled", data-ur-infinite: "disabled")
 			
 			insert_top("div", class: "_brandCategories"){
 				attributes(data-ur-carousel-component: "scroll_container")
@@ -27,9 +27,6 @@ $$(".main_container"){
 				$("./div[@class='category-item']"){
 					attributes(data-ur-carousel-component: "item")
 				}
-			}
-			$("./div[2]"){
-				remove()
 			}
 		}
 		$("./div[@class='branding_single_cat']"){
@@ -41,9 +38,18 @@ $$(".main_container"){
 					attributes(data-ur-carousel-component: "item")
 				}
 			}
-			$("./div[2]"){
-				remove()
+		}
+	}
+	$("./div[@class='brand-featured-products']"){
+		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "brandsProductsCarousel", data-ur-center: "enabled", data-ur-infinite: "disabled")
+		$("./ul[@class='brand_catpro']"){
+			attributes(data-ur-carousel-component: "scroll_container")
+			wrap("div"){
+				attributes(class: "_featured_prod")
 			}
+			$("./li"){
+				attributes(data-ur-carousel-component: "item")
+			}	
 		}
 	}
 

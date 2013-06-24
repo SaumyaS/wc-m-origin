@@ -217,3 +217,102 @@
 	}
 }
 
+//Review Page
+._reviewPage{
+
+	#thankyou{
+		margin: 5px;
+		margin-top: 10px;
+		padding: 10px;
+		border: 1px solid #aaa;
+		background-color: #ccc;
+		overflow: hidden;
+
+	}
+	#order-info{
+		.col-1{
+			margin: 5px;
+			padding: 5px;
+			border: 2px solid #ddd;
+			h3{
+				padding-bottom: .5em;
+				border-bottom: 1px solid #ddd;
+				a{
+					color: red !important;
+					font-size: 12px;
+					letter-spacing: normal;
+					text-decoration: none;
+				}
+			}
+			.sub-col{
+				margin-bottom: 5px;
+				label{
+					display: inline-block;
+					min-width: 100px;
+				}
+				hr{
+					color: #ddd;
+				}
+			}
+		}
+		.col-2{
+			margin: 5px;
+			padding: 5px;
+			border: 2px solid #ddd;
+			h3{
+				padding-bottom: .5em;
+				border-bottom: 1px solid #ddd;
+				a{
+					color: red !important;
+					font-size: 12px;
+					letter-spacing: normal;
+					text-decoration: none;
+				}
+			}
+			.sub-col{
+				margin-bottom: 5px;
+				label{
+					display: inline-block;
+					min-width: 100px;
+				}
+				hr{
+					background-color: #ddd;
+				}
+			}
+		}
+	}
+	#order-summary{
+		.dijitContentPane{
+			-webkit-box-shadow: #555 1px 1px 4px;
+			background: white;
+			border-bottom-left-radius: 3px 3px;
+			border-bottom-right-radius: 3px 3px;
+			border-top-left-radius: 3px 3px;
+			border-top-right-radius: 3px 3px;
+			clear: both;
+			line-height: 140%;
+			margin: 10px 5px;
+			overflow: hidden;
+			padding: 10px;
+		}
+		#order-total{
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid #aaa;
+			background-color: #ccc;
+			overflow: hidden;
+			._order_total{
+				label{
+					min-width: 150px;
+					display: inline-block;
+				}
+			}
+		}
+		p{
+			margin-top: 10px;
+		}
+		margin: 5px;
+		
+
+	}
+}

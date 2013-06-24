@@ -30,7 +30,9 @@
 			@include title_bar;
 		}
 		.branding_double_cat{
-			background-color: #444;
+			background-color: #eee;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
 			._brandCategories{
 				display: block;
 				.category-item{
@@ -52,14 +54,17 @@
 						text-align: center;
 						font-weight: bold;
 						height: 20px;
-						color: #eee;
+						color: #000;
 					}
 				}
 			}
 		}
 		.branding_single_cat{
-			background-color: #444;
+			background-color: #eee;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
 			.category-row{
+				width: 980px !important;
 				display: block;
 				.category-item{
 					display: inline-block;
@@ -79,8 +84,57 @@
 					.topcat_product_name{
 						text-align: center;
 						font-weight: bold;
-						height: 20px;
-						color: #eee;
+						height: 10px;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+	.brand-featured-products{
+		h1{
+			@include title_bar;	
+		}
+		._featured_prod{
+			background-color: #eee;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
+		}
+		.brand_catpro{
+			
+			width: 1200px !important;
+			overflow: hidden;
+			
+			li{
+				margin: 0 10px;
+				float: left;
+				.futute_proimage_01{
+					background-color: #fff;
+					width: 200px;
+					height: 200px;
+					border: 2px solid #ccc;
+					border-radius: 4px;
+
+				}
+				.futute_prodata{
+					width: 200px;
+					a{
+						color: #000;
+						text-align: center;
+						font-weight: bold;
+					}
+					.featured_product_price{
+						color: #ff6311;
+						display: block;
+						font-size: 14px;
+						font-weight: bold;
+						margin: 0 0 10px;
+						text-decoration: none;
+					}
+					.lpadd_tocart{
+						@include add_to_cart_HP;
 					}
 				}
 			}
