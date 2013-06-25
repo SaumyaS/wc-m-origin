@@ -96,6 +96,24 @@ $base-line-height: 24px;
   color: #726E6D;
 }
 
+@mixin specialsScroll{
+  background-color: #eee;
+            padding: 5px;
+            border-bottom: 1px solid #888;
+            border-top: 1px solid #888;
+            div{
+              div{
+
+                text-align: center;
+                img{
+                  margin-left: 5px;
+                  margin-right: 5px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+}
+
 .btn{
   background: url(../../../images/addto_cart_bg.jpg) repeat-x;
   font-weight: bold;
