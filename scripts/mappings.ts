@@ -142,6 +142,10 @@ match($status) {
         log("--> Importing BillingAddressDisplayView")
         @import pages/billingAddressDisplayView.ts
       }
+      with(/EmailModalView/){
+        log("--> Importing EmailModalView")
+        @import pages/emailModalView.ts
+      }
       
   
       else() {
