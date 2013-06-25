@@ -6,7 +6,7 @@ $$("#ad_17601"){
 
 $("/html/body"){
 	$("//div[@class='main_container']"){
-		add_class("_login")
+		add_class("_accountSummary")
 		$("./div[@class='nav-secondary']"){
 			insert_before("div", class: "_userInfo", "My Info"){
 				

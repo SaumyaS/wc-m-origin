@@ -64,6 +64,11 @@ match($status) {
         log("--> Importing Quick Order")
         @import pages/quickOrder.ts
       }
+      with(/personalInformation/){
+        log("--> Importing UserRegistrationForm")
+        @import pages/personalInfo.ts
+        @import pages/register.ts
+      }
       with(/UserRegistrationForm/){
         log("--> Importing Register code")
         @import pages/register.ts
@@ -71,6 +76,10 @@ match($status) {
       with(/AjaxCatalogSearchView/){
         log("--> Importing AdvancedSearch")
         @import pages/advancedSearch.ts
+      }
+      with(/AjaxLogonFormCenterLinksDisplayView/){
+        log("--> Importing Account Summary")
+        @import pages/accountSummary.ts
       }
       with(/AjaxLogonForm/){
         log("--> Importing Login")
@@ -121,6 +130,19 @@ match($status) {
         @import pages/new.ts
         @import pages/home.ts
       }
+      with(/cartItemPopulatedDivView/){
+        log("--> Importing cart Item populated")
+        @import pages/cartItemPopulated.ts
+      }
+      with(/AjaxAddressBookForm/){
+        log("--> importing AjaxAddressBookForm")
+        @import pages/ajaxAddressBookForm.ts
+      }
+      with(/BillingAddressDisplayView/){
+        log("--> Importing BillingAddressDisplayView")
+        @import pages/billingAddressDisplayView.ts
+      }
+      
   
       else() {
         log("--> No page match in mappings.ts")

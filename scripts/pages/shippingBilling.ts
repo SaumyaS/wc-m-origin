@@ -42,3 +42,17 @@ $$(".visaCVV2"){
 		# 	remove()
 		# }
 	}
+
+$("//*[@id='shippingAddressDisplayArea']/span"){
+	insert_after("br")
+}
+
+$("//*[@id='WC_CheckoutPaymentsAndBillingAddressf_div_2_1']/label"){
+	insert_after("br")
+	$("../input"){
+		attributes(style: "margin-left: 10px; margin-bottom: 10px;")
+	}
+	$("../input[4]"){
+		attributes(style: "margin-bottom: 10px;")
+	}
+}
