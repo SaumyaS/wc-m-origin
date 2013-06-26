@@ -23,19 +23,19 @@ $("//div[@id='OrderStatusTableDisplay_div_4']"){
 		}
 
 		$("./div[@class='_orderNumber']"){
-			attributes(style: "float: left; font-weight: bold; min-width: 130px;")
+			attributes(style: "float: left; font-weight: bold; min-width: 120px;")
 		}
 		$("./div[@class='_orderDate']"){
-			attributes(style: "float: left; font-weight: bold; min-width: 130px;")
+			attributes(style: "float: left; font-weight: bold; min-width: 120px;")
 		}
 		$("./div[@class='_purchaseOrder']"){
-			attributes(style: "float: left; font-weight: bold; min-width: 130px;")
+			attributes(style: "float: left; font-weight: bold; min-width: 120px;")
 		}
 		$("./div[@class='_status']"){
-			attributes(style: "float: left; font-weight: bold; min-width: 130px;")
+			attributes(style: "float: left; font-weight: bold; min-width: 120px;")
 		}
 		$("./div[@class='_totalPrice']"){
-			attributes(style: "float: left; font-weight: bold; min-width: 130px;")
+			attributes(style: "float: left; font-weight: bold; min-width: 120px;")
 		}
 
 		$("./div[13]"){
