@@ -1,40 +1,8 @@
-
-# Moves header icons back to the header
-$$("#ad_17601"){
-	move_here("//div[@id='_icons_bar']")
-}
-
-$("/html/body"){
-	$("//div[@class='main_container']"){
-		add_class("_accountSummary")
-		$("./div[@class='nav-secondary']"){
-			insert_before("div", class: "_userInfo", "My Info"){
-				
-			}
-		}
-		$("./div[@class='_userInfo']"){
-			attributes(data-ur-toggler-component: "button")
-			wrap("div"){
-				attributes(class: "_togglerWidget", data-ur-set: "toggler")
-				move_here("../div[@class='nav-secondary']")
-			}
-			$("../div[@class='nav-secondary']"){
-				attributes(data-ur-toggler-component: "content")
-			}
-		}
-		$("./div[@class='account-col']"){
-			$(".//div[@class='info']"){
-				$("./a"){
-					insert_after("br")
-				}
-			}
-		}
-		$(".//div[@id='OrderStatusTableDisplay_div_1']"){
-			$(".//div[@class='mw_was_thead']"){
-				remove()
-			}
-		}
-		$(".//div[@class='mw_was_tbody']/div"){
+$("//div[@id='OrderStatusTableDisplay_div_4']"){
+	$(".//div[@class='mw_was_thead']"){
+		remove()
+	}
+	$(".//div[@class='mw_was_tbody']/div"){
 		insert_top("div", class: "_totalPrice", "Total Price: ")
 		insert_top("div", class: "_status", "Status: ")
 		insert_top("div", class: "_purchaseOrder", "Purchase Order: ")
@@ -82,10 +50,6 @@ $("/html/body"){
 				}
 			}
 		}
-
-
-	}
-
 
 
 	}

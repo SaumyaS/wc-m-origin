@@ -146,6 +146,10 @@ match($status) {
         log("--> Importing EmailModalView")
         @import pages/emailModalView.ts
       }
+      with(/ProcessedOrders/){
+        log("--> Importing processed Orders")
+        @import pages/processedOrders.ts
+      }
       
   
       else() {
