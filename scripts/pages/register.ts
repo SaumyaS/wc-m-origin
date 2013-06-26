@@ -37,8 +37,7 @@ $$(".register"){
 				insert_before("br")
 			}
 			$("./input[@id='WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1']"){
-				attribute("style", "margin-left: 123px;")
-			}
+				attribute("style", "margin-left: 114px !important;")			}
 		}
 		$("./div[2]"){
 			$("./label[2]"){
