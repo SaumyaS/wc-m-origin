@@ -27,8 +27,11 @@ $("//*[@id='Register']"){
 		attribute("style", "margin-left: 114px !important;")
 	}
 	
+	$("./div/div[1]"){
+		attribute("style", "min-width: 400px; float: left")
+	}
 	$("./div/div[2]"){
-		attribute("style", "float: left;")
+		attribute("style", "width: 300px; float: left")
 	}
 
 }
