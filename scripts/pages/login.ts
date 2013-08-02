@@ -7,6 +7,26 @@ $$("#ad_17601"){
 $("/html/body"){
 	$("//div[@class='main_container']"){
 		add_class("_accountSummary")
+
+		$("./div[@class='login-box']"){
+			$("./div[@class='col-1']"){
+				$("./form"){
+					$("./label[2]"){
+						insert_before("br")
+					}
+					# $("./a[@id='WC_AccountDisplay_links_1']"){
+					# 	insert_before("br")
+					# }
+					$("./a"){
+						insert_before("br")
+					}
+				}
+			}
+		}
+
+
+
+
 		$("./div[@class='nav-secondary']"){
 			insert_before("div", class: "_userInfo", "My Info"){
 				

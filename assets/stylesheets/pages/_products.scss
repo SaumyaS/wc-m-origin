@@ -2,9 +2,9 @@
 	#box{
 		display: block;
 		div{
-			overflow: hidden;
 			padding-bottom: 5px;
 			.search-sidebar{
+				overflow: hidden;
 
 				h2{
 					@include title_bar;
@@ -83,10 +83,14 @@
 						}
 					}
 					.item-action{
-						margin-top: -60px;
+						margin-top: -50px;
 						position: relative;
-						float: left;
 						width: 120px;
+						.orig-price{
+							text-decoration: line-through;
+							color: #777;
+							display: block;
+						}
 						.discount-price{
 							font-weight: bold;
 							color: #ff6311;
