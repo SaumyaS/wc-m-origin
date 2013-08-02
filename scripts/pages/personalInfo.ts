@@ -13,8 +13,8 @@ $("//*[@id='Register']"){
 		attributes(style: "padding: 5px;")
 	}
 
-	$("./div/div[2]/input[@id='WC_UserRegistrationUpdateForm_FormInput_email_In_Register_1']"){
-		insert_after("br")
+	$("./div/div[2]/input[@id='WC_UserRegistrationUpdateForm_FormInput_receiveEmail_In_Register_1']"){
+		insert_before("br")
 	}
 	$("./div/div/label"){
 		insert_before("br")
@@ -31,9 +31,12 @@ $("//*[@id='Register']"){
 		attribute("style", "min-width: 400px; float: left")
 	}
 	$("./div/div[2]"){
-		attribute("style", "width: 300px; float: left")
+		attribute("style", "width: 300px; float: left; margin-top: 25px;")
 	}
 
+	$("./div/div[2]/br[6]"){
+		remove()
+	}
 }
 
 
