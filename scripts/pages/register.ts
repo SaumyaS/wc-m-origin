@@ -20,6 +20,7 @@ $$(".register"){
 	# checkout container 2
 	$("./div[2]"){
 		$("./div[1]"){
+			attribute("style", "min-width: 400px; float: left;")
 			$("./label[2]"){
 				insert_before("br")
 			}
@@ -37,9 +38,12 @@ $$(".register"){
 				insert_before("br")
 			}
 			$("./input[@id='WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1']"){
-				attribute("style", "margin-left: 114px !important;")			}
+				attribute("style", "margin-left: 124px !important;")
+				insert_before("br")			
+			}
 		}
 		$("./div[2]"){
+			attribute("style", "width: 300px; float: left; margin-top: 23px;")
 			$("./label[2]"){
 				insert_before("br")
 			}

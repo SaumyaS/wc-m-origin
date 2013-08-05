@@ -10,13 +10,17 @@
     move_here("//div[@id='_icons_bar']")
   }
 
+$$("#requisition_list_popup_main_div"){
+  remove()
+}
+
 
 $("/html/body/div[@id='page']"){
-  
+  # Move Banner_Wrapper and Smallbox into the Header_Widget
   $("./div[@class='header_widget']/div[@class='nav_wrapper']"){
     insert_before("div", class: "__banner"){
-      move_here("../../div/div[@id='content_wrapper_box']/div[3]")
-      move_here("../../div/div[@id='content_wrapper_box']/div[3]/div/ul")
+        move_here("../../div/div[@id='content_wrapper_box']/div[3]")
+        move_here("../../div/div[@id='content_wrapper_box']/div[3]/div/ul")
     }
   }
 

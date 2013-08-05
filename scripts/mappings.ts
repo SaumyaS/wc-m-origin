@@ -150,6 +150,16 @@ match($status) {
         log("--> Importing processed Orders")
         @import pages/processedOrders.ts
       }
+      with(/AjaxRequisitionListDisplayView/){
+        log("--> Importing ReQListDisplay")
+        @import pages/AjaxRequisitionListDisplayView.ts
+      }
+      with(/AjaxRequisitionListCreateView/){
+        @import pages/AjaxRequisitionListCreateView.ts
+      }
+      with(/AjaxRequisitionListDetailView/){
+        @import pages/AjaxRequisitionListDetailView.ts
+      }
       
   
       else() {
