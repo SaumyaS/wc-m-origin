@@ -12,11 +12,6 @@ $("//label"){
 	insert_before("br")
 }
 
-$("//div[@class='button_footer_line'"){
-	$("./a[2]"){
-		attributes(style: "float: right;")
-	}
-}
 $$(".btn-gray"){
 	attributes(style: "float:right")
 }
