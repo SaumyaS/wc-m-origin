@@ -1,7 +1,7 @@
 $("//label"){
 	attributes(style: "font-weight: bold;display: inline-block; min-width: 100px;")
 }
-$("//input"){
+$("//input[@type='text']"){
 	attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;")
 	
 }
@@ -51,44 +51,46 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 			remove()
 		}
 		$("./div[@class='mw_was_tbody']"){
+			attributes(style: "margin-bottom: 5px;")
 			$("./div"){
+				attributes(style: "background-color: #eee;padding: 5px;")
 				$("div[6]"){
-				attributes(style: "margin-bottom: 10px;")
-				$("./a"){
-					attributes(style: "float: none;")
+					attributes(style: "margin-bottom: 10px;")
+					$("./a"){
+						attributes(style: "float: none;")
+					}
+					insert_after("hr")
 				}
-				insert_after("hr")
-			}
-			$("div[5]"){
-				insert_before("label", "Part Number:"){
-					attributes(style: "display: inline-block; float: left;")
-					insert_before("br")
+				$("div[5]"){
+					insert_before("label", "Part Number:"){
+						attributes(style: "display: inline-block; float: left;")
+						insert_before("br")
+					}
+					attributes(style: "margin-bottom: 5px;")
 				}
-				attributes(style: "margin-bottom: 5px;")
-			}
-			$("div[4]"){
-				insert_before("label", "Brand:"){
-					attributes(style: "display: inline-block; float: left;")
+				$("div[4]"){
+					insert_before("label", "Brand:"){
+						attributes(style: "display: inline-block; float: left;")
+					}
 				}
-			}
-			$("div[3]"){
-				insert_before("label", "Quantity:"){
-					attributes(style: "display: inline-block; float: left;")
+				$("div[3]"){
+					insert_before("label", "Quantity:"){
+						attributes(style: "display: inline-block; float: left;")
+					}
 				}
-			}
-			$("div[2]"){
-				insert_before("label", "SKU:"){
-					attributes(style: "display: inline-block; float: left;")
+				$("div[2]"){
+					insert_before("label", "SKU:"){
+						attributes(style: "display: inline-block; float: left;")
+					}
 				}
-			}
-			$("div[1]"){
-				insert_before("label", "Name:"){
-					attributes(style: "display: inline-block; float: left;")
+				$("div[1]"){
+					insert_before("label", "Name:"){
+						attributes(style: "display: inline-block; float: left;")
+					}
+					$("./a"){
+						attributes(style: "color: #505050; text-decoration: underline;")
+					}
 				}
-				$("./a"){
-					attributes(style: "color: #505050; text-decoration: underline;")
-				}
-			}
 			}
 		}
 
