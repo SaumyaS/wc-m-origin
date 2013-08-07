@@ -4,6 +4,10 @@ $$("#ad_17601"){
   move_here("//div[@id='_icons_bar']")
 }
 
+$$("#requisition_list_popup_main_div"){
+  attributes(style: "display:none;")
+}
+
 
 
 $$("body"){
