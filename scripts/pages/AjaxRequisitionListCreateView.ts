@@ -24,20 +24,19 @@ $$("#requisitionListType"){
 
 $$("#WC_RequisitionListDetailsAddForm_div_1"){
 	attributes(style: "width: 345px;")
+	insert_after("hr", class: "test")
 	$("./br"){
 		remove()
 	}
 	remove_text_nodes()
 
 	$("./input[1]"){
-		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;")
 		insert_before("label", "SKU: "){
 			attributes(style: "display: inline-block")
 		}
 		insert_after("br")
 	}
 	$("./input[2]"){
-		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;")
 		insert_after("br")
 		insert_before("label", "QTY: "){
 			attributes(style: "display: inline-block")
@@ -50,8 +49,16 @@ $$("#WC_RequisitionListDetailsAddForm_div_1"){
 	$("./a"){
 		attributes(style: "width: 150px;margin: 5px auto;")
 		insert_after("br")
+
 	}
 
+	
+
+
+}
+
+$$(".test"){
+	attributes(style: "display: block; background-color: #fc0; height: 2px; border: none; margin: 10px 0px;")
 }
 
 $("//br[1]"){

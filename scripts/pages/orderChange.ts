@@ -1,11 +1,22 @@
-$("//*[@id='cart-total']"){
+$$("#cart-total"){
 	$("./div[1]"){
-		add_class("_promo")
-		attribute("style", "width: auto")
+		attributes(style: "", class: "_promo")
+		$(".//input[@id='promoCode']"){
+			insert_after("br")
+			insert_before("br")
+		}
 	}
 	$("./div[2]"){
 		attributes(style: "", class: "_shipping")
 		insert_after("div", class: "_tax")
+		$(".//input[@id='shippingAndTaxZipCode']"){
+			insert_after("br")
+			insert_before("br")
+		}
+		$("h2"){
+			insert_after("h2", "Shipping")
+			remove()
+		}
 	}
 	$("./div[3]"){
 		insert("h2", "Estimated Tax")
@@ -28,7 +39,7 @@ $("//*[@id='cart-total']"){
 
 		}
 	}
-}
+}		
 
 		$$(".order-product-info"){
 			$("./div[2]"){

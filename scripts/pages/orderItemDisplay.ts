@@ -87,10 +87,18 @@ $$(".order-confirm"){
 		$$("#cart-total"){
 			$("./div[1]"){
 				attributes(style: "", class: "_promo")
+				$(".//input[@id='promoCode']"){
+					insert_after("br")
+					insert_before("br")
+				}
 			}
 			$("./div[2]"){
 				attributes(style: "", class: "_shipping")
 				insert_after("div", class: "_tax")
+				$(".//input[@id='shippingAndTaxZipCode']"){
+					insert_after("br")
+					insert_before("br")
+				}
 			}
 			$("./div[3]"){
 				insert("h2", "Estimated Tax")
@@ -113,9 +121,7 @@ $$(".order-confirm"){
 
 				}
 			}
-		}
-		
-		
+		}		
 	}
 
 	$$(".body759"){
