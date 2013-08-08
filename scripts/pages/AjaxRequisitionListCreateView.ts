@@ -23,18 +23,21 @@ $$("#requisitionListType"){
 }
 
 $$("#WC_RequisitionListDetailsAddForm_div_1"){
+	attributes(style: "width: 345px;")
 	$("./br"){
 		remove()
 	}
 	remove_text_nodes()
 
 	$("./input[1]"){
+		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;width: 230px")
 		insert_before("label", "SKU: "){
 			attributes(style: "display: inline-block")
 		}
 		insert_after("br")
 	}
 	$("./input[2]"){
+		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;width: 230px")
 		insert_after("br")
 		insert_before("label", "QTY: "){
 			attributes(style: "display: inline-block")
@@ -43,6 +46,10 @@ $$("#WC_RequisitionListDetailsAddForm_div_1"){
 				attributes(style: "color: red;")
 			}
 		}
+	}
+	$("./a"){
+		attributes(style: "float: right; width: 150px;margin-top: 5px;")
+		insert_after("br")
 	}
 
 }
