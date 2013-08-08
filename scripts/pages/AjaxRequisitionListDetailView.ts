@@ -28,14 +28,14 @@ $$("#WC_RequisitionListDetailsAddForm_div_1"){
 	remove_text_nodes()
 
 	$("./input[1]"){
-		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;width: 230px")
+		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;")
 		insert_before("label", "SKU: "){
 			attributes(style: "display: inline-block")
 		}
 		insert_after("br")
 	}
 	$("./input[2]"){
-		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;width: 230px")
+		attributes(style: "margin: 5px 0px;padding: 4px;background: #ccc;border: 1px solid #aaa;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;")
 		insert_after("br")
 		insert_before("label", "QTY: "){
 			attributes(style: "display: inline-block")
@@ -46,7 +46,7 @@ $$("#WC_RequisitionListDetailsAddForm_div_1"){
 		}
 	}
 	$("./a"){
-		attributes(style: "float: right; width: 200px;margin-top: 5px;")
+		attributes(style: "width: 150px;margin: 5px auto;")
 		insert_after("br")
 	}
 
