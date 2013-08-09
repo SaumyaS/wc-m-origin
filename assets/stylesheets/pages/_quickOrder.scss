@@ -10,6 +10,45 @@
 
 	.Quick-Order-eSpot{
 		
+		.quick-order-po-number{
+			width: 300px;
+			float: left;
+			.quick-order-po-number-text{
+				width: 100px;
+				float: left;
+			}
+			input{
+				margin: 5px 0px;
+				padding: 4px;
+				background: #ccc;
+				border: 1px solid #aaa;
+				box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+			}
+		}
+		._shipToQO{
+			h3{
+				float: left;
+				display: inline-block;
+			}
+			select{
+				margin: 8px;
+			}
+		}
+		._addressQO{
+			float: right;
+			width: 300px;
+			.erp-shipping-address-detail{
+				width: 200px;
+			}
+		}
+		#WC_ContentAreaESpot_div_1_18351{
+			#ad_18351{
+				width: 300px;
+				div{
+					display: inline-block;
+				}
+			}
+		}
 		margin-top: 5px;
 		width: 100%;
 		background-color: #ddd;
