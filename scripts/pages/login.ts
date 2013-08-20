@@ -50,7 +50,7 @@ $("/html/body"){
 			}
 			$(".//div[@class='body']"){
 				$("./div[1]"){
-					attributes(style: "width: 333px;display: inline-block;float: left;margin-right: 10px;min-width: 320px;")
+					attributes(style: "width: 287px;display: inline-block;float: left;margin-right: 10px;min-width: 320px;")
 				}
 
 			}
