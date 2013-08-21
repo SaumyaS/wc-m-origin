@@ -151,15 +151,9 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				$("./div[@class='_remove']"){
 					insert_after("hr")
 					insert_after("br")
-					insert_before("div", class: "_description", "Description"){
+					insert_before("div", class: "_descriptionButton", "Description"){
 						wrap("div", class: "_togglerContainer")
-						attributes(style: "padding: 5px; 
-											border: 1px solid #555; 
-											background-color: #aaa;
-											font-weight: bold;
-											margin: 10px;
-											text-align: center;
-											width: 100px;")
+						
 						
 						
 						
@@ -196,7 +190,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 $("//div[@class='_togglerContainer']"){
 	attributes(data-ur-set: "toggler")
-	$("./div[@class='_description']"){
+	$("./div[@class='_descriptionButton']"){
 		attributes(data-ur-toggler-component: "button", data-ur-id: "description")
 	}
 	$("./div[@class='_descriptionText']"){
