@@ -3,14 +3,22 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    $(".lpadd_tocart").click(function(){
-    	$(".messagepop").show();
+    $("._descriptionButton").click(function(){
+        alert("hello");
+        $("._descriptionText").toggle('slow');
     });
 
-    $("._continueShop").click(function(){
-    	$(".messagepop").hide();
-    	return false;
-    })
 
+   
 
 });
+
+// $(document).ready(function(){
+//      $("._descriptionButton").click(function(){
+//         $("._descriptionText").toggle('slow');
+//     });
+// })
+
+function test(){
+    alert("hello");
+}

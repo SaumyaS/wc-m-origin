@@ -80,45 +80,126 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 			attributes(style: "margin-bottom: 5px;")
 			$("./div"){
 				attributes(style: "background-color: #eee;padding: 5px;")
-				$("div[6]"){
-					attributes(style: "margin-bottom: 10px;")
-					$("./a"){
-						attributes(style: "float: none;")
+				
+
+
+				$("./div[1]"){
+					attributes(class: "_name")
+				}
+				$("./div[2]"){
+					attributes(class: "_image")
+				}
+				$("./div[3]"){
+					attributes(class: "_sku")
+				}
+				$("./div[4]"){
+					attributes(class: "_quantity")
+				}
+				$("./div[5]"){
+					attributes(class: "_price")
+				}
+				$("./div[6]"){
+					attributes(class: "_partNumber")
+				}
+				$("./div[7]"){
+					attributes(class: "_remove")
+				}
+
+
+
+
+
+				insert_top("div", class: "_partContainer"){
+					move_here("../div[@class='_partNumber']"){
+						insert_before("label", "Part Number:", class: "_partLabel"){
+					 		attributes(style: "display: inline-block; float: left;")
+					 	}
 					}
+				}
+				insert_top("div", class: "_priceContainer"){
+					move_here("../div[@class='_price']"){
+						insert_before("label", "Price:", class: "_priceLabel"){
+					 		attributes(style: "display: inline-block; float: left;")
+					 	}
+					}
+					
+				}
+				insert_top("div", class: "_quantityContainer"){
+					move_here("../div[@class='_quantity']"){
+						insert_before("label", "Quantity:", class: "_quantityLabel"){
+							attributes(style: "display: inline-block; float: left;")
+						}
+					}
+				}
+				insert_top("div", class: "_skuContainer"){
+					move_here("../div[@class='_sku']"){
+						insert_before("label", "SKU:", class: "_skuLabel"){
+					 		attributes(style: "display: inline-block; float: left;")
+					 	}
+					}
+				}
+				insert_top("div", class: "_nameContainer"){
+					move_here("../div[@class='_name']"){
+						insert_before("label", "Name:", class: "_nameLable"){
+					 		attributes(style: "display: inline-block; float: left;")
+					 	}
+					 	$("./a"){
+					 		attributes(style: "color: #505050; text-decoration: underline;")
+					 	}
+					}
+				}
+				$("./div[@class='_remove']"){
 					insert_after("hr")
-				}
-				$("div[5]"){
-					insert_before("label", "Part Number:"){
-						attributes(style: "display: inline-block; float: left;")
-						insert_before("br")
-					}
-					attributes(style: "margin-bottom: 5px;")
-				}
-				$("div[4]"){
-					insert_before("label", "Brand:"){
-						attributes(style: "display: inline-block; float: left;")
-					}
-				}
-				$("div[3]"){
-					insert_before("label", "Quantity:"){
-						attributes(style: "display: inline-block; float: left;")
-					}
-				}
-				$("div[2]"){
-					insert_before("label", "SKU:"){
-						attributes(style: "display: inline-block; float: left;")
+					insert_after("br")
+					insert_before("div", class: "_descriptionButton", "Description"){
+						wrap("div", class: "_togglerContainer")
+						attributes(style: "padding: 5px; 
+											border: 1px solid #555; 
+											background-color: #aaa;
+											font-weight: bold;
+											margin: 10px;
+											text-align: center;
+											width: 100px;", onlclick: "test()")
+						
+						
+						
+						insert_after("div", class: "_descriptionText"){
+							move_here("../../div[@class='_nameContainer']/div[@class='_name']/font/div[3]/p")
+							attributes(style: "background-color: #bbb;")
+						}
 					}
 				}
-				$("div[1]"){
-					insert_before("label", "Name:"){
-						attributes(style: "display: inline-block; float: left;")
-					}
-					$("./a"){
-						attributes(style: "color: #505050; text-decoration: underline;")
-					}
+
+				
+
+
+
+
+				
+				
+
+				insert_top("div", class: "_info"){
+					attributes(style: "width: 320px; float: left;")
+					move_here("../div[@class='_nameContainer']")
+					move_here("../div[@class='_skuContainer']")
+					move_here("../div[@class='_quantityContainer']")
+					move_here("../div[@class='_priceContainer']")
+					move_here("../div[@class='_partContainer']")
+
 				}
 			}
 		}
-
 	}
 }
+
+
+
+# $("//div[@class='_togglerContainer']"){
+	
+# 	$("./div[@class='_description']"){
+# 		attributes(data-ur-toggler-component: "button", data-ur-id: "description")
+# 	}
+# 	$("./div[@class='_descriptionText']"){
+# 		attributes(data-ur-toggler-component: "content", data-ur-id: "description")
+# 	}
+# }
