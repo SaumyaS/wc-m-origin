@@ -153,7 +153,13 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					insert_after("br")
 					insert_before("div", class: "_descriptionButton", "Description"){
 						wrap("div", class: "_togglerContainer")
-						
+						attributes(style: "padding: 5px; 
+											border: 1px solid #555; 
+											background-color: #aaa;
+											font-weight: bold;
+											margin: 10px;
+											text-align: center;
+											width: 100px;")
 						
 						
 						
