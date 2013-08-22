@@ -13,6 +13,12 @@ $(document).ready(function() {
 
 });
 
+$(document).on("AjaxRequisitionListCreateView", function(){
+    $("._descriptionButton").click(function(){
+        $("._descriptionText").toggle('slow');
+    });
+});
+
 // $(document).ready(function(){
 //      $("._descriptionButton").click(function(){
 //         $("._descriptionText").toggle('slow');

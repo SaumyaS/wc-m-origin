@@ -85,6 +85,12 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 				$("./div[1]"){
 					attributes(class: "_name")
+					$("./font/div[2]/div[1]"){
+						remove()
+					}
+					$("./font/div[2]/div[1]"){
+						attributes(style: "width: 90%, float: none;")
+					}
 				}
 				$("./div[2]"){
 					attributes(class: "_image")
@@ -99,7 +105,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					attributes(class: "_price")
 				}
 				$("./div[6]"){
-					attributes(class: "_partNumber")
+					attributes(class: "_manufacturer")
 				}
 				$("./div[7]"){
 					attributes(class: "_remove")
@@ -109,9 +115,9 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 
 
-				insert_top("div", class: "_partContainer"){
-					move_here("../div[@class='_partNumber']"){
-						insert_before("label", "Part Number:", class: "_partLabel"){
+				insert_top("div", class: "_manufacturerContainer"){
+					move_here("../div[@class='_manufacturer']"){
+						insert_before("label", "Manufacturer:", class: "_partLabel"){
 					 		attributes(style: "display: inline-block; float: left;")
 					 	}
 					}
@@ -152,20 +158,27 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					insert_after("hr")
 					insert_after("br")
 					insert_before("div", class: "_descriptionButton", "Description"){
-						wrap("div", class: "_togglerContainer")
+						wrap("div", class: "_togglerContainer"){
+							insert_before("br")
+						}
 						attributes(style: "padding: 5px; 
 											border: 1px solid #555; 
 											background-color: #aaa;
 											font-weight: bold;
-											margin: 10px;
+											margin-left: 10px;
+											margin-right: 10px;
+											margin-bottom: 0px;
+											margin-top: 20px;
 											text-align: center;
 											width: 100px;")
 						
 						
 						
 						insert_after("div", class: "_descriptionText"){
-							move_here("../../div[@class='_nameContainer']/div[@class='_name']/font/div[3]/p")
-							attributes(style: "background-color: #bbb;")
+							move_here("../../div[@class='_nameContainer']/div[@class='_name']/font/div[3]/div[2]/b"){
+
+							}
+							attributes(style: "background-color: #bbb; margin-left: 10px; margin-bottom: 10px;")
 						}
 					}
 				}
@@ -184,7 +197,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					move_here("../div[@class='_skuContainer']")
 					move_here("../div[@class='_quantityContainer']")
 					move_here("../div[@class='_priceContainer']")
-					move_here("../div[@class='_partContainer']")
+					move_here("../div[@class='_manufacturerContainer']")
 
 				}
 			}
