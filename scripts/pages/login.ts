@@ -48,12 +48,12 @@ $("/html/body"){
 					insert_after("br")
 				}
 			}
-			$(".//div[@class='body']"){
-				$("./div[1]"){
-					attributes(style: "display: inline-block;float: left;margin-right: 10px;")
-				}
+			# $(".//div[@class='body']"){
+			# 	$("./div[1]"){
+			# 		attributes(style: "display: inline-block;float: left;margin-right: 10px;")
+			# 	}
 
-			}
+			# }
 		}
 		$(".//div[@id='OrderStatusTableDisplay_div_1']"){
 			$(".//div[@class='mw_was_thead']"){

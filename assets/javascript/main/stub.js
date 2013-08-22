@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 $(document).on("AjaxRequisitionListCreateView", function(){
-    $("._descriptionButton").click(function(){
+    $("body._descriptionButton").click(function(){
         $("._descriptionText").toggle('slow');
     });
 });

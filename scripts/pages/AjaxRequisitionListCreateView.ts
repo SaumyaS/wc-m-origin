@@ -112,12 +112,17 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				}
 
 
+				$("./div[@class='_image']"){
+					move_to("../", position("top"))
+				}
+
 
 
 
 				insert_top("div", class: "_manufacturerContainer"){
+					attributes(style: "line-height: 1;")
 					move_here("../div[@class='_manufacturer']"){
-						insert_before("label", "Manufacturer:", class: "_partLabel"){
+						insert_before("label", "Manufacturer:", class: "_manufacturerLabel"){
 					 		attributes(style: "display: inline-block; float: left;")
 					 	}
 					}
@@ -157,15 +162,14 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				$("./div[@class='_remove']"){
 					insert_after("hr")
 					insert_after("br")
-					insert_before("div", class: "_descriptionButton", "Description"){
+					insert_before("div", class: "_featureButton", "Features"){
 						wrap("div", class: "_togglerContainer"){
-							insert_before("br")
+							attributes(style: "margin-top:30px;")
 						}
 						attributes(style: "padding: 5px; 
 											border: 1px solid #555; 
 											background-color: #aaa;
 											font-weight: bold;
-											margin-left: 10px;
 											margin-right: 10px;
 											margin-bottom: 0px;
 											margin-top: 20px;
@@ -174,11 +178,11 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 						
 						
 						
-						insert_after("div", class: "_descriptionText"){
-							move_here("../../div[@class='_nameContainer']/div[@class='_name']/font/div[3]/div[2]/b"){
-
+						insert_after("div", class: "_featureText"){
+							move_here("../../div[@class='_nameContainer']/div[@class='_name']/font/div[3]/div[2]/div[2]"){
+								attributes(style: "background-color: #bbb; margin-bottom: 10px;")
 							}
-							attributes(style: "background-color: #bbb; margin-left: 10px; margin-bottom: 10px;")
+							attributes(style: "background-color: #bbb; margin-bottom: 10px; padding: 10px;")
 						}
 					}
 				}
@@ -192,7 +196,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				
 
 				insert_top("div", class: "_info"){
-					attributes(style: "width: 320px; float: left;")
+					# attributes(style: "width: 320px; float: left;")
 					move_here("../div[@class='_nameContainer']")
 					move_here("../div[@class='_skuContainer']")
 					move_here("../div[@class='_quantityContainer']")
@@ -207,12 +211,12 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 
 
-$("//div[@class='_togglerContainer']"){
-	attributes(data-ur-set: "toggler")
-	$("./div[@class='_descriptionButton']"){
-		attributes(data-ur-toggler-component: "button", data-ur-id: "description")
-	}
-	$("./div[@class='_descriptionText']"){
-		attributes(data-ur-toggler-component: "content", data-ur-id: "description")
-	}
-}
+# $("//div[@class='_togglerContainer']"){
+# 	attributes(data-ur-set: "toggler")
+# 	$("./div[@class='_featureButton']"){
+# 		attributes(data-ur-toggler-component: "button", data-ur-id: "feature")
+# 	}
+# 	$("./div[@class='_featureText']"){
+# 		attributes(data-ur-toggler-component: "content", data-ur-id: "feature")
+# 	}
+# }
