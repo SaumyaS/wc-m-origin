@@ -84,12 +84,12 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 
 				$("./div[1]"){
-					attributes(class: "_name")
+					attributes(class: "_name", style: "margin-left: 204px;")
 					$("./font/div[2]/div[1]"){
 						remove()
 					}
 					$("./font/div[2]/div[1]"){
-						attributes(style: "width: 90%, float: none;")
+						attributes(style: "width: 90%")
 					}
 				}
 				$("./div[2]"){
@@ -112,9 +112,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				}
 
 
-				$("./div[@class='_image']"){
-					move_to("../", position("top"))
-				}
+				
 
 
 
@@ -196,14 +194,25 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				
 
 				insert_top("div", class: "_info"){
-					# attributes(style: "width: 320px; float: left;")
+					attributes(style: "display: block;")
 					move_here("../div[@class='_nameContainer']")
 					move_here("../div[@class='_skuContainer']")
 					move_here("../div[@class='_quantityContainer']")
 					move_here("../div[@class='_priceContainer']")
 					move_here("../div[@class='_manufacturerContainer']")
+					insert_after("br")
 
 				}
+				insert_top("div", class: "testImg"){
+					attributes(style: "float: left; margin-bottom: 90px; margin-right: 10px")
+					move_here("../div[@class='_image']"){
+						$(".//img"){
+							attributes(style: "border: 2px solid #777;")
+						}
+					}
+				}
+
+				
 			}
 		}
 	}
@@ -211,12 +220,20 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 
 
-# $("//div[@class='_togglerContainer']"){
-# 	attributes(data-ur-set: "toggler")
-# 	$("./div[@class='_featureButton']"){
-# 		attributes(data-ur-toggler-component: "button", data-ur-id: "feature")
-# 	}
-# 	$("./div[@class='_featureText']"){
-# 		attributes(data-ur-toggler-component: "content", data-ur-id: "feature")
-# 	}
-# }
+$("//div[@class='_togglerContainer']"){
+	$("ancestor::div[@class='mw_was_tbody']"){
+		$("./div[@class='mw_was_tr']"){
+			attributes(data-ur-set: "toggler")
+			$counter = "feature_" + index()
+			$("./div[@class='_togglerContainer']"){
+				
+				$("./div[@class='_featureButton']"){
+					attributes(data-ur-toggler-component: "button", data-ur-id: $counter)
+				}
+				$("./div[@class='_featureText']"){
+					attributes(data-ur-toggler-component: "content", data-ur-id: $counter)
+				}
+			}
+		}
+	}
+}
