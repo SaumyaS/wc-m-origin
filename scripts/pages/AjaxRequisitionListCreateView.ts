@@ -170,7 +170,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 											font-weight: bold;
 											margin-right: 10px;
 											margin-bottom: 0px;
-											margin-top: 20px;
+											margin-top: 42px;
 											text-align: center;
 											width: 100px;")
 						
