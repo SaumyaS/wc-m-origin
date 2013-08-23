@@ -3,28 +3,11 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    $("._descriptionButton").click(function(){
-        alert("hello");
-        $("._descriptionText").toggle('slow');
-    });
-
-
-   
-
 });
 
-$(document).on("AjaxRequisitionListCreateView", function(){
-    $("body._descriptionButton").click(function(){
-        $("._descriptionText").toggle('slow');
-    });
+$(document).bind("DOMSubtreeModified", function(){
+    Ur.setup('._togglerContainer');
 });
 
-// $(document).ready(function(){
-//      $("._descriptionButton").click(function(){
-//         $("._descriptionText").toggle('slow');
-//     });
-// })
 
-function test(){
-    alert("hello");
-}
+

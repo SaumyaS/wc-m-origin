@@ -204,7 +204,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 				}
 				insert_top("div", class: "testImg"){
-					attributes(style: "float: left; margin-bottom: 90px; margin-right: 10px")
+					attributes(style: "float: left; margin-top: 5px; margin-bottom: 90px; margin-right: 10px")
 					move_here("../div[@class='_image']"){
 						$(".//img"){
 							attributes(style: "border: 2px solid #777;")
