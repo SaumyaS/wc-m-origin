@@ -3,10 +3,12 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    Ur.setup('._togglerContainer');
+
 });
 
 $(document).bind("DOMSubtreeModified", function(){
-    Ur.setup('._togglerContainer');
+    
 });
 
 
