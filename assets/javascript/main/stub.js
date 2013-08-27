@@ -7,8 +7,12 @@ $(document).ready(function() {
 
 });
 
-$(document).bind("DOMSubtreeModified", function(){
+/*$(document).bind("DOMSubtreeModified", function(){
      Ur.setup('._togglerContainer');
+});*/
+
+$("#requisitionListName").DOMNodeAppear(function() {
+  Ur.setup("._togglerContainer");
 });
 
 

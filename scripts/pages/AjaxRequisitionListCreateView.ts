@@ -1,4 +1,5 @@
 
+
 $(".//label"){
 	attributes(style: "font-weight: bold;display: inline-block; min-width: 100px;")
 	insert_before("br")
@@ -102,10 +103,10 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					attributes(class: "_quantity")
 				}
 				$("./div[5]"){
-					attributes(class: "_price")
+					attributes(class: "_price", style: "margin-left: 204px;")
 				}
 				$("./div[6]"){
-					attributes(class: "_manufacturer")
+					attributes(class: "_manufacturer", style: "margin-left: 204px;")
 				}
 				$("./div[7]"){
 					attributes(class: "_remove")
@@ -162,7 +163,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					insert_after("br")
 					insert_before("div", class: "_featureButton", "Features"){
 						wrap("div", class: "_togglerContainer"){
-							attributes(style: "margin-top:30px;")
+							//attributes(style: "margin-top:30px;")
 						}
 						attributes(style: "padding: 5px; 
 											border: 1px solid #555; 
@@ -170,7 +171,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 											font-weight: bold;
 											margin-right: 10px;
 											margin-bottom: 0px;
-											margin-top: 55px;
+											margin-top: 91px;
 											text-align: center;
 											width: 100px;")
 						
@@ -204,7 +205,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 				}
 				insert_top("div", class: "testImg"){
-					attributes(style: "float: left; margin-top: 5px; margin-bottom: 30px; margin-right: 10px")
+					attributes(style: "float: left; margin-top: 5px; margin-bottom: 139px; margin-right: 10px")
 					move_here("../div[@class='_image']"){
 						$(".//img"){
 							attributes(style: "border: 2px solid #777;")
@@ -217,6 +218,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 		}
 	}
 }
+
 
 
 
