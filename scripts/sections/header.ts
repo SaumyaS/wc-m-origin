@@ -26,7 +26,7 @@ $("/html"){
   remove(".//script[contains(@src,'navigation.js')]")
 
   $("./body"){
-    $(".//li[@class='MyAccountURLSep']/a"){
+    $(".//li[@class='MyAccountURLSep']/a[1]"){
       attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
     }
   }
@@ -51,9 +51,6 @@ $("/html"){
 
   $$(".MyAccountURLSep"){
  	  move_to("../../ul[@class='cart_menu']", position("top"))
-    $("./a[2]"){
-      attribute("href", "webapp/wcs/stores/servlet/Logoff?storeId=11301&amp;URL=https%3A%2F%2Fqa-whitecap.ecom.hdsupply.com%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FLogonForm%3FcatalogId%3D11101%26myAcctMain%3D1%26langId%3D-1%26storeId%3D11301")
-    }
   }
 
     # 

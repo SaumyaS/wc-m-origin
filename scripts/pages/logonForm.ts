@@ -8,3 +8,15 @@
   		add_class("_logonForm")
   	}
   }
+
+$("//div[@class='login-box']"){
+	$(".//form[@id='Logon']"){
+		$("./label[@for='password']"){
+			insert_before("br")
+		}
+		$("./a[@id='WC_AccountDisplay_links_1']"){
+			insert_before("br")
+			insert_after("br")
+		}
+	}
+}
