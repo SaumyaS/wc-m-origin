@@ -12,6 +12,10 @@ $("//label"){
 	insert_before("br")
 }
 
+$("/span[1]"){
+	insert_after("br")
+}
+
 $$(".btn-gray"){
 	attributes(style: "float:right")
 }
@@ -66,11 +70,9 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 			attributes(style: "margin-bottom: 5px;")
 			$("./div"){
 				attributes(style: "background-color: #eee;padding: 5px;")
-				
-
 
 				$("./div[1]"){
-					attributes(class: "_name", style: "margin-left: 204px;")
+					attributes(class: "_name", style: "margin-left: 100px;")
 					$("./font/div[2]/div[1]"){
 						remove()
 					}
@@ -79,19 +81,19 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					}
 				}
 				$("./div[2]"){
-					attributes(class: "_image")
+					attributes(class: "_image", style: "margin-left: 100px;")
 				}
 				$("./div[3]"){
-					attributes(class: "_sku")
+					attributes(class: "_sku", style: "margin-left: 100px;")
 				}
 				$("./div[4]"){
-					attributes(class: "_quantity")
+					attributes(class: "_quantity", style: "margin-left: 100px;")
 				}
 				$("./div[5]"){
-					attributes(class: "_price", style: "margin-left: 204px;")
+					attributes(class: "_price", style: "margin-left: 100px;")
 				}
 				$("./div[6]"){
-					attributes(class: "_manufacturer", style: "margin-left: 204px;")
+					attributes(class: "_manufacturer", style: "margin-left: 100px;")
 				}
 				$("./div[7]"){
 					attributes(class: "_remove")
@@ -156,7 +158,6 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 											font-weight: bold;
 											margin-right: 10px;
 											margin-bottom: 0px;
-											margin-top: 91px;
 											text-align: center;
 											width: 100px;")
 						
@@ -180,7 +181,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				
 
 				insert_top("div", class: "_info"){
-					attributes(style: "display: block;")
+					attributes(style: "display: block;margin-left:104px;")
 					move_here("../div[@class='_nameContainer']")
 					move_here("../div[@class='_skuContainer']")
 					move_here("../div[@class='_quantityContainer']")

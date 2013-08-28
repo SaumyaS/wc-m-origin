@@ -11,7 +11,7 @@ $(document).ready(function() {
      Ur.setup('._togglerContainer');
 });*/
 
-$("#requisitionListName").DOMNodeAppear(function() {
+$("#createdBy").DOMNodeAppear(function() {
   Ur.setup("._togglerContainer");
 });
 

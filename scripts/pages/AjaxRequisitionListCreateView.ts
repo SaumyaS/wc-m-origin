@@ -10,6 +10,15 @@ $("//input[@type='text']"){
 }
 
 
+$("//div[@class='checkout-container']"){
+	$("./span[1]"){
+		insert_after("br")
+	}	
+}
+
+# $("/span[1]"){
+# 	insert_after("br")
+# }
 
 $("//div[@class='info_content']"){
 	# insert_after("br")
@@ -85,7 +94,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 
 				$("./div[1]"){
-					attributes(class: "_name", style: "margin-left: 204px;")
+					attributes(class: "_name", style: "margin-left: 100px;")
 					$("./font/div[2]/div[1]"){
 						remove()
 					}
@@ -97,16 +106,16 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 					attributes(class: "_image")
 				}
 				$("./div[3]"){
-					attributes(class: "_sku")
+					attributes(class: "_sku", style: "margin-left: 100px;")
 				}
 				$("./div[4]"){
-					attributes(class: "_quantity")
+					attributes(class: "_quantity", style: "margin-left: 100px;")
 				}
 				$("./div[5]"){
-					attributes(class: "_price", style: "margin-left: 204px;")
+					attributes(class: "_price", style: "margin-left: 100px;")
 				}
 				$("./div[6]"){
-					attributes(class: "_manufacturer", style: "margin-left: 204px;")
+					attributes(class: "_manufacturer", style: "margin-left: 100px;")
 				}
 				$("./div[7]"){
 					attributes(class: "_remove")
@@ -171,7 +180,6 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 											font-weight: bold;
 											margin-right: 10px;
 											margin-bottom: 0px;
-											margin-top: 91px;
 											text-align: center;
 											width: 100px;")
 						
@@ -195,7 +203,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 				
 
 				insert_top("div", class: "_info"){
-					attributes(style: "display: block;")
+					attributes(style: "display: block;margin-left:104px;")
 					move_here("../div[@class='_nameContainer']")
 					move_here("../div[@class='_skuContainer']")
 					move_here("../div[@class='_quantityContainer']")
@@ -205,7 +213,7 @@ $$("#RequisitionListDetailTableDisplay_Widget"){
 
 				}
 				insert_top("div", class: "testImg"){
-					attributes(style: "float: left; margin-top: 5px; margin-bottom: 139px; margin-right: 10px")
+					attributes(style: "float: left; margin-top: 5px;  margin-right: 10px")
 					move_here("../div[@class='_image']"){
 						$(".//img"){
 							attributes(style: "border: 2px solid #777;")
