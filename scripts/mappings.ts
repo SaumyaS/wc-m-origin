@@ -97,6 +97,10 @@ match($status) {
         log("--> Importing LogonForm")
         @import pages/logonForm.ts
       }
+      with(/Logon/){
+        log("--> Importing ResetPassword")
+        @import pages/logon.ts
+      }
       with(/OrderShippingBillingView/){
         log("--> Importing ShippingBilling")
         @import pages/shippingBilling.ts
