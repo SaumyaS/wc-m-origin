@@ -38,4 +38,8 @@ $$(".product-info"){
 	inner(){
 		replace(/Pricing/, "Pricing <br>")
 	}
+
+	$("./a[@id='login_modal_link']"){
+		attributes(href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+	}
 }
