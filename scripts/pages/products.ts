@@ -11,7 +11,7 @@ $$(".main_container"){
 $$(".search-sidebar"){
 
 	$("./h2"){
-		insert_after("div", class:"_resultContent", style: "display: block;")
+		insert_after("div", class:"_resultContent")
 	}
 
 	$("./div"){
