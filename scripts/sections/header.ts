@@ -27,7 +27,7 @@ $("/html"){
 
   $("./body"){
     $(".//li[@class='MyAccountURLSep']/a[1]"){
-      # attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+      attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
     }
   }
 
