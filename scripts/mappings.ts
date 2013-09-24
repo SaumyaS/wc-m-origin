@@ -81,6 +81,10 @@ match($status) {
         log("--> Importing Account Summary")
         @import pages/accountSummary.ts
       }
+      with(/ReLogonFormView/){
+        log("--> Importing Relogin")
+        @import pages/reLogin.ts
+      }
       with(/AjaxLogonForm/){
         log("--> Importing Login")
         @import pages/login.ts
