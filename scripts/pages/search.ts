@@ -6,6 +6,32 @@ $$("#ad_17601"){
 
 $$(".main_container"){
 	add_class("_search")
+	$("./div[@id='search-content']"){
+		$("./p[2]"){
+			inner(){
+				replace(/Try/, "<br>&#09;Try")
+			}
+		}
+		$("./div[@class='product_cat_01']"){
+
+			insert_before("div", "Categories", class: "_categoryToggle"){
+				insert_before("div", class: "_categoryTogglerContainer"){
+					attribute("data-ur-set", "toggler")
+				}
+				attributes(data-ur-toggler-component: "button", data-ur-toggler-id: "category")
+			}
+			attributes(data-ur-toggler-component: "content", data-ur-toggler-id: "category")
+
+			$(".//div[@class='subnav']"){
+			}
+
+		}
+		$("./div[@class='_categoryTogglerContainer']"){
+			move_here("../div[@class='_categoryToggle']")
+			move_here("../div[@class='product_cat_01']")
+		}
+		move_here("//*[@id='search-content']/div[1]/div[2]/ul/li/a")
+	}
 }
 
 $$(".search-sidebar"){
