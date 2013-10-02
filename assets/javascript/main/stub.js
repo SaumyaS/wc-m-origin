@@ -10,7 +10,7 @@ $("#createdBy").DOMNodeAppear(function() {
 
 $("#createNewRequisitionList").DOMNodeAppear(function(){
     $("._userInfo").prop('data-ur-state', 'disabled');
-    alert("10");
+    // alert("10");
 });
 
 
