@@ -78,6 +78,7 @@ $("/html/body/div[@id='page']"){
           $("./script"){
             remove()
           }
+          insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
           $("./li"){
             attributes(data-ur-carousel-component: "item", class: "_item")
           }
@@ -92,6 +93,7 @@ $("/html/body/div[@id='page']"){
         attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
         $("./ul"){
           attributes(data-ur-carousel-component: "scroll_container")
+          insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
           $("./li"){
             attributes(data-ur-carousel-component: "item", class: "_item")
             $("./div[2]/a[1]"){

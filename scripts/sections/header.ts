@@ -51,16 +51,12 @@ $("/html"){
           match(text()) {
             with(/Empty/){
               $("../img") {
-                add_class("_empty")
-                # attributes(src: asset("images/cart-empty.png"))
                 remove()
               }
               insert("img", src: asset("images/cart-empty.png"))
             }
             with(/Checkout/){
               $("../img") {
-                add_class("_checkout")
-                # attributes(src: asset("images/cart-full.png"))
                 remove()
               }
               insert("img", src: asset("images/cart-full.png"))
