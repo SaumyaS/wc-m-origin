@@ -55,7 +55,7 @@ $base-line-height: 24px;
 @mixin add_to_cart_HP{
   background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
   font-weight: bold;
-  height: 30px;
+  height: 25px;
   width: 80px;
   color: #292929;
   text-decoration: none;
@@ -116,9 +116,9 @@ $base-line-height: 24px;
 }
 
 .btn{
-  background: url(../../../images/addto_cart_bg.jpg) repeat-x;
+  background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
   font-weight: bold;
-  height: 22px;
+  height: 25px;
   color: #292929;
   text-decoration: none;
   text-align: center;
@@ -129,9 +129,9 @@ $base-line-height: 24px;
 }
 
 .btn-gray{
-  background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x;
+  background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x #555;
   font-weight: bold;
-  height: 22px;
+  height: 25px;
   color: #292929;
   text-decoration: none;
   text-align: center;
