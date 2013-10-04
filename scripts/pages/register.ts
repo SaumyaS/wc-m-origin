@@ -8,6 +8,7 @@ $$("#ad_17601"){
 $$(".register"){
 	#checkout container 1
 	$("./div[1]"){
+		add_class("_loginCredentials")
 		$("./label[2]"){
 			insert_before("br")
 		}
@@ -18,7 +19,9 @@ $$(".register"){
 
 	}
 	# checkout container 2
+
 	$("./div[2]"){
+		add_class("_personalInfoForm")
 		$("./div[1]"){
 			attribute("style", "min-width: 400px; float: left;")
 			$("./label[2]"){
@@ -58,8 +61,10 @@ $$(".register"){
 			}
 		}
 	}
+
 	#checkout container 3
 	$("./div[3]"){
+		add_class("_companyInfoForm")
 		$("./ol"){
 			$("./li"){
 				insert_before("br")
@@ -75,5 +80,22 @@ $$(".register"){
 
 	$("./a[1]"){
 		attribute("style", "margin-left: 10px;")
+	}
+
+
+	$("./h1[2]"){
+		add_class("_companyInfoTitle")
+		insert_before("div", class: "_companyInfoContainer")
+	}
+	$("./div[@class='_companyInfoContainer']"){
+		attributes(data-ur-set: "toggler")
+		move_here("../h1[2]")
+		move_here("../div[4]")
+		$("./h1"){
+			attributes(data-ur-toggler-component: "button")
+		}
+		$("./div"){
+			attributes(data-ur-toggler-component: "content")
+		}
 	}
 }

@@ -30,6 +30,18 @@ $base-line-height: 24px;
     margin: 10px 0px;
 }
 
+@mixin toggler{
+  border-bottom: 1px solid #808080;
+  border-top: 1px solid #808080;
+  @include background(linear-gradient(#fff, #c0c0c0));
+  line-height: 1;
+  text-align: center;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
 @mixin dots{
     div{
       margin-bottom: 0;
@@ -55,15 +67,13 @@ $base-line-height: 24px;
 @mixin add_to_cart_HP{
   background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
   font-weight: bold;
-  height: 25px;
-  width: 80px;
   color: #292929;
   text-decoration: none;
   text-align: center;
   display: block;
   margin: 0px auto;
   border-radius: 5px;
-  padding-top: 5px;
+  padding: 5px 10px;
 }
 
 @mixin bars{
@@ -118,26 +128,24 @@ $base-line-height: 24px;
 .btn{
   background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
   font-weight: bold;
-  height: 25px;
   color: #292929;
   text-decoration: none;
   text-align: center;
   display: inline-block;
   margin: 0px auto;
   border-radius: 5px;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 .btn-gray{
-  background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x #555;
+  background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x #999999;
   font-weight: bold;
-  height: 25px;
   color: #292929;
   text-decoration: none;
   text-align: center;
   display: inline-block;
   margin: 0px auto;
   border-radius: 5px;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 

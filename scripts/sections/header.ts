@@ -131,7 +131,7 @@ $("/html"){
 
 
   $$(".checkout_wrapper"){
-    insert("div", class: "test"){
+    insert("div", class: "_accountURL"){
       move_here("../ul[@class='cart_menu']"){
         $(".//li[@class='MyAccountURLSep']"){
           attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 

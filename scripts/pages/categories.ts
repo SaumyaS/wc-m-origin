@@ -18,12 +18,7 @@ $("/html"){
 				}
 				attributes(class: "_catType", data-ur-carousel-component: "item")
 			}
-		}
-		
-
-	
-
-		
+		}	
 	}
 	$("./body//div[@class='topcat_right_content']"){
 		# attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feat_icons", data-ur-center: "enabled", data-ur-autoscroll: "disabled", data-ur-infinite: "disabled")
@@ -38,4 +33,10 @@ $("/html"){
 		add_class("_test")
 		move_to("../../div/div[@class='topcat_left_content']/div[2]", position("after"))
 	}
+
+	
 }
+
+
+
+

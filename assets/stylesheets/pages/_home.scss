@@ -156,6 +156,7 @@
         }
         .lpadd_tocart{
           @include add_to_cart_HP;
+          margin-top: -7px;
         }
       }
     }

@@ -49,26 +49,46 @@
 }
 
 .topcat_narrow_row{
-	background-color: #ffe089;
+	margin: 0px;
+	padding: 13px 0 0 0;
 	text-align: center;
 	border-bottom: 1px solid #666;
 	.top_cat{
-		background-color: white;
-		width: 250px;
-		margin: 0px auto;
-		
-		padding-top: 13px;
-		
+		list-style-type: none;
+		padding: 0;
+		margin: 0 !important;
+		overflow: hidden;
+		li{
+			width: 50%;
+			float: left;
+			padding: 0 0 13px 0;
+			margin: 0;
+			div{
+				// width: 172px;
 
-		.topcat_proimage{
-			width: 146px;
-			margin-left: 50px;
-			display: block;
-			img{
-				border: 2px solid #ccc;
-				
+				.topcat_proimage{
+					margin-bottom: 3px;
+					display: block;
+					text-decoration: none;
+
+					img{
+						border: 2px solid #ccc;
+						
+					}
+				}
+
 			}
 		}
+		//background-color: white;
+		//width: 250px;
+		// margin: 10px;
+		// border-radius: 3px;
+		// display: inline-block;
+		
+		//padding-top: 13px;
+		
+
+		
 
 		.topcat_product_name_cntr{
 			span{
