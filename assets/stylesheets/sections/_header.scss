@@ -171,13 +171,10 @@
   }
 
   #search_bar{
-    border-bottom: 2px solid #C3C3C3;
-    background-color: #777; 
-    color: #ccc;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #eee;
+    background-color: #000;
        
   }
 
@@ -208,19 +205,7 @@
   }
 
   ._cart {
-    border-bottom: 1px solid #C3C3C3;
-    background-color: #777;
-    color: #ccc;
-    text-align: left;
-    position: relative;
-    background-position-x: right;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: capitalize; 
-    padding: 10px;
+    list-style: none;  
   }
    .MyAccountURLSep a{
     text-align: center;

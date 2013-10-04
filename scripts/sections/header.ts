@@ -26,56 +26,37 @@ $("/html"){
   remove(".//script[contains(@src,'navigation.js')]")
 
   $("./body"){
-    $(".//li[@class='MyAccountURLSep']/a[1]"){
-      attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+    # Removes all the breakpoints
+    $$("br"){
+      remove()
+    }
+
+    # Removes breadcrumbs
+    $$("#breadcrumb"){
+      remove()
+    }
+
+    $$("#sessionTimeoutModalDiv"){
+      remove()
+    }
+
+    $(".//div[@class='header_wrapper']"){
+      wrap("div"){
+        attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
+        move_here("../div[@class='nav_wrapper']")
+      }
+    }
+
+
+    $(".//li[@class='MyAccountURLSep']"){
+      move_to("../../ul[@class='cart_menu']", position("top"))
+      $("./a[1]"){
+        attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+      }
     }
   }
 
 }
-
-  # Removes all the breakpoints
-  $$("br"){
-    remove()
-  }
-
-  # Removes breadcrumbs
-  $$("#breadcrumb"){
-    remove()
-  }
-  
-  # # 
-  # $$("#MessageArea"){
-  #   remove()
-  # }
-
-
-  $$(".MyAccountURLSep"){
- 	  move_to("../../ul[@class='cart_menu']", position("top"))
-  }
-
-    # 
-  $$("#sessionTimeoutModalDiv"){
-    remove()
-	}
-  
- 
-  $$(".header_wrapper"){
-  	wrap("div"){
-  		attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
-  		move_here("../div[@class='nav_wrapper']")
-  	}
-  }
-
-# $$(".header_widget"){
-#   insert_top("div", class: "messagepop"){
-#     insert("a", "Go To Cart", class: "_gotocart"){
-#       attributes(href: "/webapp/wcs/stores/servlet/AjaxOrderItemDisplayView?catalogId=11101&langId=-1&storeId=11301&krypto=HtmeXOK%2FYAfBYZffcZMpZCS1kvLj7DcsobbYRc68LVTw2yn74DZ%2BBZB%2FZ29NpkoVmJuGUAalJO51%0AEDIAGczxc6bObZF9hUrHsD8Nwtij1rIVhHbyxzoiCR9dhPh37hEB9oPd3u07Fq3raXYlG%2FLa0w%3D%3D&ddkey=http:OrderCalculate")
-#     }
-#     insert("label", class: "_continueShop"){
-#       insert("a", href: "#", class: "_close", "Continue Shopping")
-#     }
-#   }
-# }
 
 
 
@@ -104,11 +85,11 @@ $("/html"){
     $$("#menu1"){
       attribute("data-ur-set", "toggler")
       $$(">a"){
-        attribute("data-ur-toggler-component", "button")
+        attributes(data-ur-toggler-component: "button", data-ur-id: "submenu")
       }
         
       $$(".subnav"){
-        attribute("data-ur-toggler-component", "content")
+        attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
         $$("a"){
           attribute("class", "_sub2")
         }
@@ -117,63 +98,94 @@ $("/html"){
   }
 
   
-  $("//*[@id='shoppingCartBar']"){
-    
-  }
+  
 
   $$("#msgpopup1_x"){
     remove()
   }
 
 
+  $("//*[@id='shoppingCartBar']"){
+    wrap_text_children("span") {
+      match(text()) {
+        with(/Empty/){
+          $("../img") {
+            add_class("_empty")
+            # attributes(src: asset("images/cart-empty.png"))
+            remove()
+          }
+          insert("img", src: asset("images/cart-empty.png"))
+        }
+        with(/Checkout/){
+          $("../img") {
+            add_class("_checkout")
+            # attributes(src: asset("images/cart-full.png"))
+            remove()
+          }
+          insert("img", src: asset("images/cart-full.png"))
+        }
+      }
+      remove_text_nodes()
+    }    
+  }
+
+
   $$(".checkout_wrapper"){
+    insert("div", class: "test"){
+      move_here("../ul[@class='cart_menu']"){
+        $(".//li[@class='MyAccountURLSep']"){
+          attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
+        }
+      }
+    }
     insert("div", id: "_icons_bar"){
       insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
 
-      insert("div", id: "image-search", data-ur-tab-id: "search", data-ur-tabs-component: "button")
-     
-      insert("div", id: "image-cart", data-ur-tab-id: "cart", data-ur-tabs-component: "button")
+      insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
+      
+      insert("div", id: "image-cart"){
+        move_here("//*[@id='shopping-cart']")
+        add_class("_cart") 
+      }
     }
 
     $$("#image-menu"){
       insert("img", src: asset("images/menu.png"))
     }    
     
-    $$("#image-search"){
-      insert("img", src: asset("images/search.png"))
+    $$("#image-user"){
+      insert("img", src: asset("images/user.png"))
     }
+    $("./ul[@class='cart_menu']"){
 
-    $$("#image-cart"){
-      insert("img", src: asset("images/cart.png"))
+        
+      
     }
-
-    $$("li.miniShopCartSep"){
-      attributes(data-ur-tabs-component: "content", data-ur-tab-id: "cart")
-
-      $$("a"){
-        attribute("class", "_cart")
-      }
-    }    
+      
   }
 
   $$("ul.nav-primary"){
-	attributes(data-ur-tabs-component: "content", data-ur-tab-id: "menu")
+	 attributes(data-ur-tabs-component: "content", data-ur-tab-id: "menu")
   }
 
-  $$("div#_icons_bar"){
-    move_to("//ul[@class='cart_menu']", "before")
-  }
+  # $$("div#_icons_bar"){
+  #   move_to("//ul[@class='cart_menu']", "before")
+  # }
 
   $$("a#headerAdvancedSearch"){
-    move_to("//div[@id='autoSuggest_Container']", "after")
+    # move_to("//div[@id='autoSuggest_Container']", "after")
+    attributes(style: "display: none;")
   }
 
   $$("form#CatalogSearchForm"){
     wrap("div") {
-      attributes(id: "search_bar", data-ur-tabs-component: "content", data-ur-tab-id: "search")
+      attributes(id: "search_bar")
       move_here("../a[@id='headerAdvancedSearch']")
+
     }
   }
+
+
 
   $$("#search_overlay"){
     attribute("value") {
@@ -186,6 +198,6 @@ $("/html"){
   }
 
 
-
-
-
+  $("//*[@class='free_gifts_popup_main_div']"){
+    attributes(style: "display: none;")
+  }

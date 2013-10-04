@@ -53,9 +53,9 @@ $base-line-height: 24px;
 }
 
 @mixin add_to_cart_HP{
-  background: url(../../../images/addto_cart_bg.jpg) repeat-x;
+  background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
   font-weight: bold;
-  height: 22px;
+  height: 30px;
   width: 80px;
   color: #292929;
   text-decoration: none;
@@ -63,6 +63,7 @@ $base-line-height: 24px;
   display: block;
   margin: 0px auto;
   border-radius: 5px;
+  padding-top: 5px;
 }
 
 @mixin bars{
