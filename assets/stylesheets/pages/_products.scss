@@ -2,12 +2,11 @@
 	#box{
 		display: block;
 		div{
-			padding-bottom: 5px;
 			.search-sidebar{
-				overflow: hidden;
 
 				h2{
-					@include title_bar;
+					@include toggler;
+					-webkit-margin-after: 0;
 				}
 				ul{
 					h4{
@@ -15,6 +14,7 @@
 						border-bottom: 1px solid #808080;
 		    			border-top: 1px solid #808080;
 						@include background(linear-gradient(#aaa, #555));
+						color: #fff;
 						line-height: 1;
 						text-align: center;
 						margin-top: 0;
@@ -65,8 +65,7 @@
 				}
 				.result-item{
 					border-bottom: 1px solid #ccc;
-					padding-top: 5px;
-					padding-left: 15px;
+					padding:5px 10px;
 					display: block;
 					.item-description{
 						float: left;
@@ -83,9 +82,9 @@
 						}
 					}
 					.item-action{
-						margin-top: -50px;
-						position: relative;
-						width: 120px;
+						display: inline-block;
+						margin-top: -59px;
+						margin-bottom: 8px;
 						.orig-price{
 							text-decoration: line-through;
 							color: #777;
@@ -98,6 +97,9 @@
 						}
 						a{
 							margin-top: -4px;
+						}
+						.add-to{
+							display: none;
 						}
 					}
 					

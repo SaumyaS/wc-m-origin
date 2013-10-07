@@ -39,11 +39,11 @@ $("/html/body"){
 		}
 	}
 	$(".//div[@id='order-summary']"){
-		$("./div[@class='dijitContentPane']"){
-			text(){
-				replace(/Product/, "")
-			}
-		}
+		# $("./div[@class='dijitContentPane']"){
+		# 	text(){
+		# 		replace(/Product/, "")
+		# 	}
+		# }
 		$("./div[@id='order-total']"){
 			$("./div[1]"){
 				add_class("_taxInfo")
@@ -52,9 +52,6 @@ $("/html/body"){
 			$("./div[2]"){
 				add_class("_order_total")
 			}
-		}
-		$("./p"){
-			
 		}
 	}
 }
