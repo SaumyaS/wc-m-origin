@@ -8,6 +8,15 @@ $$(".product_social_icons"){
 	remove()
 }
 
+$$(".main-col"){
+	$("./div[@class='gallery']"){
+		insert_before("div", class: "_mainInfo")
+	}
+	$("./div[@class='_mainInfo']"){
+		move_here("../div[@class='gallery']")
+	}
+}
+
 $$(".product-more-info"){
 	attribute("data-ur-set", "toggler")
 	$("./h2[1]"){
