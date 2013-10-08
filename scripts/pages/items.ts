@@ -14,6 +14,25 @@ $$(".main-col"){
 	}
 	$("./div[@class='_mainInfo']"){
 		move_here("../div[@class='gallery']")
+		insert_after("div", class: "_item-info")
+		insert_before("div", class: "_top-info")
+	}
+	$("./div[@class='_item-info']"){
+		move_here("../div[@class='product-info']/span[1]")
+		move_here("../div[@class='product-info']/h4[1]")
+		move_here("../div[@class='product-info']/h2[1]")
+		move_here("../div[@class='product-info']/label[1]")
+		move_here("../div[@class='product-info']/input[@id='quantity_236459']")
+		move_here("../div[@class='product-info']/a[@id='productPageAdd2Cart']")
+
+	}
+
+	$("./div[@class='_top-info']"){
+		move_here("../div[@class='_mainInfo']")
+		move_here("../div[@class='_item-info']")
+		insert_after("div", class: "_product-info"){
+			move_here("../div[@class='product-more-info']")
+		}
 	}
 }
 

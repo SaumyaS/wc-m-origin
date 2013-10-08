@@ -22,7 +22,7 @@
 			overflow: hidden;
 			height: auto;
 			li{
-				float: left;
+				display: inline-block;
 
 			}
 
@@ -32,6 +32,14 @@
 }
 .product-detail-content{
 	.main-col{
+		._top-info{
+			overflow: hidden;
+			._item-info{
+				.btn{
+					margin-top: 5px;
+				}
+			}
+		}
 		.gallery{
 			
 			padding: 20px;
