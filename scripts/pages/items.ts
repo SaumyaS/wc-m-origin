@@ -8,6 +8,10 @@ $$(".product_social_icons"){
 	remove()
 }
 
+$$(".product_spacing"){
+	# $("./div[@")
+}
+
 $$(".main-col"){
 	$("./div[@class='gallery']"){
 		insert_before("div", class: "_mainInfo")
