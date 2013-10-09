@@ -1,73 +1,73 @@
 
 
 $$("#ad_17601"){
-  move_here("//div[@id='_icons_bar']")
+	move_here("//div[@id='_icons_bar']")
 }
 
 $$("#requisition_list_popup_main_div"){
-  attributes(style: "display:none;")
+  	attributes(style: "display:none;")
 }
 
 
 
 $$("body"){
-  add_class("_home")
-  table_dump(".//table")
+  	add_class("_home")
+  	table_dump(".//table")
 }
 
 
 
-  $("./head"){
+$("./head"){
 	insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
-  }
+}
 
 $("/html"){
   #remove(".//script[contains(@src,'jcarousel.min.js')]")
   remove(".//script[contains(@src,'navigation.js')]")
 
-  $("./body"){
-	# Removes all the breakpoints
-	$$("br"){
-	remove()
-	}
-
-	# Removes breadcrumbs
-	$$("#breadcrumb"){
-	remove()
-	}
-
-	$$("#sessionTimeoutModalDiv"){
-	remove()
-	}
-
-	$(".//div[@class='header_wrapper']"){
-	wrap("div"){
-	  attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
-	  move_here("../div[@class='nav_wrapper']")
-	}
-
-	$(".//a[@id='shoppingCartBar']"){
-	  wrap_text_children("span") {
-		match(text()) {
-		with(/Empty/){
-		  $("../img") {
+  	$("./body"){
+		# Removes all the breakpoints
+		$$("br"){
 			remove()
-		  }
-		  insert("img", src: asset("images/cart-empty.png"))
 		}
-		with(/Checkout/){
-		  $("../img") {
+
+		# Removes breadcrumbs
+		$$("#breadcrumb"){
 			remove()
-		  }
-		  insert("img", src: asset("images/cart-full.png"))
 		}
+
+		$$("#sessionTimeoutModalDiv"){
+			remove()
 		}
-		remove_text_nodes()
-	  }    
-	}
+
+		$(".//div[@class='header_wrapper']"){
+			wrap("div"){
+			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
+			  	move_here("../div[@class='nav_wrapper']")
+			}
+
+			$(".//a[@id='shoppingCartBar']"){
+				wrap_text_children("span") {
+					match(text()) {
+						with(/Empty/){
+							$("../img") {
+								remove()
+							}
+					 		insert("img", src: asset("images/cart-empty.png"))
+						}	
+						with(/Checkout/){
+					  		$("../img") {
+								remove()
+					  		}
+					  		insert("img", src: asset("images/cart-full.png"))
+						}
+					}
+					remove_text_nodes()
+				}    
+			}
 
 
-	}
+		}
 
 
 	$(".//li[@class='MyAccountURLSep']"){
@@ -130,39 +130,32 @@ $$(".nav_wrapper"){
   
 
 
-  $$(".checkout_wrapper"){
+$$(".checkout_wrapper"){
 	insert("div", class: "_accountURL"){
-	move_here("../ul[@class='cart_menu']"){
-	  $(".//li[@class='MyAccountURLSep']"){
-		attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
-	  }
-	}
+		move_here("../ul[@class='cart_menu']"){
+		  	$(".//li[@class='MyAccountURLSep']"){
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
+		  	}
+		}
 	}
 	insert("div", id: "_icons_bar"){
-	insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
+		insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
 
-	insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
-	
-	insert("div", id: "image-cart"){
-	  move_here("//*[@id='shopping-cart']")
-	  add_class("_cart") 
-	}
+		insert("div", id: "image-cart"){
+		  	move_here("//*[@id='shopping-cart']")
+		  	add_class("_cart") 
+		}
+		insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
 	}
 
 	$$("#image-menu"){
-	insert("img", src: asset("images/menu.png"))
+		insert("img", src: asset("images/menu.png"))
 	}    
-	
-	$$("#image-user"){
-	insert("img", src: asset("images/user.png"))
-	}
-	$("./ul[@class='cart_menu']"){
 
-	  
-	
+	$$("#image-user"){
+		insert("img", src: asset("images/user.png"))
 	}
-	
-  }
+}
 
   $$("ul.nav-primary"){
 	 attributes(data-ur-tabs-component: "content", data-ur-tab-id: "menu")
@@ -172,32 +165,31 @@ $$(".nav_wrapper"){
   #   move_to("//ul[@class='cart_menu']", "before")
   # }
 
-  $$("a#headerAdvancedSearch"){
+$$("a#headerAdvancedSearch"){
 	# move_to("//div[@id='autoSuggest_Container']", "after")
 	attributes(style: "display: none;")
-  }
+}
 
-  $$("form#CatalogSearchForm"){
+$$("form#CatalogSearchForm"){
 	wrap("div") {
-	attributes(id: "search_bar")
-	move_here("../a[@id='headerAdvancedSearch']")
-
+		attributes(id: "search_bar")
+		move_here("../a[@id='headerAdvancedSearch']")
 	}
-  }
+}
 
 
 
-  $$("#search_overlay"){
+$$("#search_overlay"){
 	attribute("value") {
-	value("Search")
+		value("Search")
 	}
-  }
+}
 
-  $("//*[@id='MiniShoppingCart']"){
+$("//*[@id='MiniShoppingCart']"){
 	attribute("onmouseover", "")
-  }
+}
 
 
-  $("//*[@class='free_gifts_popup_main_div']"){
+$("//*[@class='free_gifts_popup_main_div']"){
 	attributes(style: "display: none;")
-  }
+}

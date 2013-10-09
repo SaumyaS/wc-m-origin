@@ -4,236 +4,221 @@
 
 
 .banner_wrapper{
-  padding-bottom: 95px;
-  background-color: #333;
-  .slider_wrapper{
-    .images{
-      margin: 0 auto;
-      padding: 5px;
-      img{
-        
-        height: 95px;
-        position: absolute;
-        width: 97%;
-        border-radius: 10px;
-      }
-    }
-  }
+	padding-bottom: 95px;
+	background-color: #333;
+	.slider_wrapper{
+		.images{
+			margin: 0 auto;
+			padding: 5px;
+			img{
+		
+				height: 95px;
+				position: absolute;
+				width: 97%;
+				border-radius: 10px;
+			}
+		}
+	}
 }
 
 
 .small_box[data-ur-carousel-component="view_container"]{
-  background: #000;
-  margin-bottom: -5px;
+	background: #000;
+	margin-bottom: -5px;
 }
 
 .small_box{
-  overflow-x: hidden;
-  display: block;
-  .type1{
-    width: 200px;
-    background-color: #000;
-    padding: 7px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    list-style: none;
-    img{
-      border-radius: 10px;
-    }
-  }
-
-
-
- 
-
-  ._dots{
-    @include dots;
-  }
- 
-
- 
-
-  
+	overflow-x: hidden;
+	display: block;
+	.type1{
+		width: 200px;
+		background-color: #000;
+		padding: 7px;
+		padding-left: 40px;
+		padding-right: 40px;
+		list-style: none;
+		img{
+			border-radius: 10px;
+		}
+	}
+	._dots{
+		@include dots;
+	}
 }
 
 .subscribe_wrapper{
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #ddd;
-  background-position-x: right;
-  background-color: #ffc623;
-  display: block;
-  font-size: 12px;
-  line-height: 1;
-  text-decoration: none;
-  text-transform: lowercase;
-  text-transform: capitalize;
-  padding-left: 10px;
-  padding-top: 10px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #ddd;
+	background-position-x: right;
+	background-color: #ffc623;
+	display: block;
+	font-size: 12px;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-transform: capitalize;
+	padding-left: 10px;
+	padding-top: 10px;
 
-  .subscribe_data_warapper{
-    display: inline-block;   
+	.subscribe_data_warapper{
+		display: inline-block;   
 
-    .subs_imput_box {
-      position: relative;
-      font-size: 16px;
-      line-height: 1;
-      float: left;
-      padding-bottom: 5px;
+		.subs_imput_box {
+			position: relative;
+			font-size: 16px;
+			line-height: 1;
+			float: left;
+			padding-bottom: 5px;
 
-      #emailSidebar {
-        padding: 5px;
-        float: left;
-      }
-    }
+			#emailSidebar {
+				padding: 5px;
+				float: left;
+			}
+		}
 
-    #emailText {
-      float: left;
-      padding-top: 10px; 
-      font-weight: bold;
-    }
-  }
+		#emailText {
+			float: left;
+			padding-top: 10px; 
+			font-weight: bold;
+		}
+	}
 }
 
 #SimpleSearchForm_SearchTerm{
-  @include input;
+	@include input;
 }
 
 ._trader{
-  overflow: hidden;
-  background-color: #eee;
-  padding: 10px;
-  h3{
-    display: block;
-    padding-bottom: 10px;
-    font-size: 20px;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-  }
+	overflow: hidden;
+  	background-color: #eee;
+  	padding: 10px;
+  	h3{
+		display: block;
+		padding-bottom: 10px;
+		font-size: 20px;
+		margin: 0 0 10px 0;
+		font-weight: bold;
+  	}
 
 
 
 
-  ._traderCarousel{
-    display: block;
-    #first-carousel{
-      display: block;
-      width: 1900px !important;
-      li{
-        float: left;
-        height: 241px;
-        list-style: none;
-        background: url(../../../images/letest_product_bg.gif) no-repeat 0 0;
-        margin: 0 5px;
-        padding: 22px 10px 10px;
-        width: 120px;
-        .letest_proimage{
-          padding-bottom: 5px;
-          border-bottom: 1px solid #ccc;
-        }
-        a{
-          .lproduct_name{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #292929;
-            display: block;
-            font-size: 12px;
-            font-weight: bold;
-            height: 40px;
-            padding: 5px;
-            text-align: center;
-            border-bottom: 1px solid #ccc;
-          }
-        }
-        .llproduct_price{
-          text-align: center;
-          color: #ff6311;
-          display: block;
-          font-size: 12px;
-          font-weight: bold;
-          margin: 0 0 10px;
-          text-decoration: none;
-        }
-        .lpadd_tocart{
-          @include add_to_cart_HP;
-          margin-top: -7px;
-        }
-      }
-    }
-  }
+  	._traderCarousel{
+		display: block;
+		#first-carousel{
+	  		display: block;
+			width: 1900px !important;
+	  		li{
+				float: left;
+				height: 241px;
+				list-style: none;
+				background: url(../../../images/letest_product_bg.gif) no-repeat 0 0;
+				margin: 0 5px;
+				padding: 22px 10px 10px;
+				width: 120px;
+				.letest_proimage{
+	  				padding-bottom: 5px;
+	  				border-bottom: 1px solid #ccc;
+				}
+				a{
+		  			.lproduct_name{
+						overflow: hidden;
+						text-overflow: ellipsis;
+						color: #292929;
+						display: block;
+						font-size: 12px;
+						font-weight: bold;
+						height: 40px;
+						padding: 5px;
+						text-align: center;
+						border-bottom: 1px solid #ccc;
+		  			}
+				}
+				.llproduct_price{
+		  			text-align: center;
+		  			color: #ff6311;
+		  			display: block;
+		  			font-size: 12px;
+		  			font-weight: bold;
+		  			margin: 0 0 10px;
+		  			text-decoration: none;
+				}
+				.lpadd_tocart{
+		  			@include add_to_cart_HP;
+		  			margin-top: -7px;
+				}
+	  		}
+		}
+  	}
 }
 
 
 ._feature{
-  border-top: 1px solid #bbb;
-  background-color: #eee;
-  padding: 10px;
+	border-top: 1px solid #bbb;
+	background-color: #eee;
+	padding: 10px;
 
-  h3{
-    display: block;
-    padding-bottom: 10px;
-    font-size: 20px;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-  }
+	h3{
+		display: block;
+		padding-bottom: 10px;
+		font-size: 20px;
+		margin: 0 0 10px 0;
+		font-weight: bold;
+	}
+  	.future_product{	
+		display: block;
+	
+		ul{
+			width: 1000px !important;
+			padding: 5px;
 
+			li{
+				display: block;
+				width: 120px;
+				float: left;
+				padding: 5px;
+				background-color: #fff;
+				border: 2px solid #ccc;
+				margin: 0 10px 10px 0;
+				.futute_proimage_01{
+					padding-bottom: 5px;
+					border-bottom: 1px solid #ccc;
+					img{
+						width: 120px;
+						height: 120px;
+					}
+				}
+				.futute_prodata{
 
- 
-  .future_product{
-    display: block;
-    
-    ul{
-      width: 1000px !important;
-      padding: 5px;
+					._featurePrice{
+						overflow: hidden;
+						text-overflow: ellipsis;
 
-      li{
-        display: block;
-        width: 120px;
-        float: left;
-        padding: 5px;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        margin: 0 10px 10px 0;
-        .futute_proimage_01{
-          padding-bottom: 5px;
-          border-bottom: 1px solid #ccc;
-          img{
-
-            width: 120px;
-            height: 120px;
-          }
-        }
-        .futute_prodata{
-
-          ._featurePrice{
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            height: 40px;
-            color: #292929;
-            display: block;
-            font-size: 12px;
-            font-weight: bold;
-            padding: 5px;
-            text-align: center;
-            border-bottom: 1px solid #ccc;
-          }
-          .featured_product_price{
-            text-align: center;
-            color: #ff6311;
-            display: block;
-            font-size: 12px;
-            font-weight: bold;
-            margin: 0 0 10px;
-            text-decoration: none;
-          }
-          .lpadd_tocart{
-            @include add_to_cart_HP;
-          }
-        }
-      }
-    }
-  }
+						height: 40px;
+						color: #292929;
+						display: block;
+						font-size: 12px;
+						font-weight: bold;
+						padding: 5px;
+						text-align: center;
+						border-bottom: 1px solid #ccc;
+					}
+					.featured_product_price{
+						text-align: center;
+						color: #ff6311;
+						display: block;
+						font-size: 12px;
+						font-weight: bold;
+						margin: 0 0 10px;
+						text-decoration: none;
+					}
+					.lpadd_tocart{
+						@include add_to_cart_HP;
+					}
+				}
+			}
+		}
+	}
 }
 
 
