@@ -14,11 +14,15 @@ $("/html/body"){
 					$("./label[2]"){
 						insert_before("br")
 					}
+					$("./input") {
+						add_class("expand")
+					}
 					# $("./a[@id='WC_AccountDisplay_links_1']"){
 					# 	insert_before("br")
 					# }
 					$("./a"){
 						insert_before("br")
+						add_class("expand")
 					}
 				}
 			}
@@ -107,6 +111,10 @@ $("/html/body"){
 					attributes(style: "float: right;")
 				}
 			}
+		}
+
+		$("//*[@id='WC_AccountDisplay_links_3]'"]) {
+			add_class("expand")
 		}
 
 
