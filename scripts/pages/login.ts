@@ -113,7 +113,7 @@ $("/html/body"){
 			}
 		}
 
-		$("//*[@id='WC_AccountDisplay_links_3]'"]) {
+		$("//*[@id='WC_AccountDisplay_links_3']") {
 			add_class("expand")
 		}
 
