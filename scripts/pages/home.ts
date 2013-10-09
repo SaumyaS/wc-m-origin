@@ -55,60 +55,61 @@ $("/html/body/div[@id='page']"){
 	  		remove()
 		}
 
-	$("./div[3]"){
-	 	add_class("_trader")
+		$("./div[3]"){
+		 	add_class("_trader")
 
-	  	$$("lpadd_tocart"){
-			add_class("btn")
-	  	}
-	}
-
-	$("./div[3]"){
-	  	$("./h3"){
-			insert_after("div", class: "_traderCarousel"){
-		  		move_here("../ul")
-			}
-	  	}
-		
-	  
-	  	$("./div[@class='_traderCarousel']"){
-			attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
-			$("./ul[@id='first-carousel']"){
-		  		attributes(data-ur-carousel-component: "scroll_container", style: "width: 1900px;")
-		  		$("./script"){
-					remove()
-		  		}
-		  		insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
-		  		$("./li"){
-					attributes(data-ur-carousel-component: "item", class: "_item")
-				}
-	  		}
+		  	$$("lpadd_tocart"){
+				add_class("btn")
+		  	}
 		}
-	
-		$("./div[4]"){
-			add_class("_feature")
-			$("./div[@class='future_product']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
-				$("./ul"){
-					attributes(data-ur-carousel-component: "scroll_container")
-					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
-					$("./li"){
-						attributes(data-ur-carousel-component: "item", class: "_item")
-						$("./div[2]/a[1]"){
-							add_class("_featurePrice")
-						}
-						$("./div[2]/span[1]"){
-							remove()
-						}
-						$("./div[2]/p"){
-				  			remove()
-						}
-						$("./div[2]/ul[@class='add_wishlist']"){
-				 			remove()
-						}
+
+		$("./div[3]"){
+		  	$("./h3"){
+				insert_after("div", class: "_traderCarousel"){
+			  		move_here("../ul")
+				}
+		  	}
+			
+		  
+		  	$("./div[@class='_traderCarousel']"){
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
+				$("./ul[@id='first-carousel']"){
+			  		attributes(data-ur-carousel-component: "scroll_container", style: "width: 1900px;")
+			  		$("./script"){
+						remove()
 			  		}
-				}	
-		  	}      
+			  		insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+			  		$("./li"){
+						attributes(data-ur-carousel-component: "item", class: "_item")
+					}
+		  		}
+			}
+		
+			$("./div[4]"){
+				add_class("_feature")
+				$("./div[@class='future_product']"){
+					attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
+					$("./ul"){
+						attributes(data-ur-carousel-component: "scroll_container")
+						insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+						$("./li"){
+							attributes(data-ur-carousel-component: "item", class: "_item")
+							$("./div[2]/a[1]"){
+								add_class("_featurePrice")
+							}
+							$("./div[2]/span[1]"){
+								remove()
+							}
+							$("./div[2]/p"){
+					  			remove()
+							}
+							$("./div[2]/ul[@class='add_wishlist']"){
+					 			remove()
+							}
+				  		}
+					}	
+			  	}      
+			}
 		}
 	}
 }
