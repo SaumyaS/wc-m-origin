@@ -18,7 +18,7 @@ $$("body"){
 
 
   $("./head"){
-    insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
+	insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
   }
 
 $("/html"){
@@ -26,104 +26,104 @@ $("/html"){
   remove(".//script[contains(@src,'navigation.js')]")
 
   $("./body"){
-    # Removes all the breakpoints
-    $$("br"){
-      remove()
-    }
+	# Removes all the breakpoints
+	$$("br"){
+	remove()
+	}
 
-    # Removes breadcrumbs
-    $$("#breadcrumb"){
-      remove()
-    }
+	# Removes breadcrumbs
+	$$("#breadcrumb"){
+	remove()
+	}
 
-    $$("#sessionTimeoutModalDiv"){
-      remove()
-    }
+	$$("#sessionTimeoutModalDiv"){
+	remove()
+	}
 
-    $(".//div[@class='header_wrapper']"){
-      wrap("div"){
-        attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
-        move_here("../div[@class='nav_wrapper']")
-      }
+	$(".//div[@class='header_wrapper']"){
+	wrap("div"){
+	  attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
+	  move_here("../div[@class='nav_wrapper']")
+	}
 
-      $(".//a[@id='shoppingCartBar']"){
-        wrap_text_children("span") {
-          match(text()) {
-            with(/Empty/){
-              $("../img") {
-                remove()
-              }
-              insert("img", src: asset("images/cart-empty.png"))
-            }
-            with(/Checkout/){
-              $("../img") {
-                remove()
-              }
-              insert("img", src: asset("images/cart-full.png"))
-            }
-          }
-          remove_text_nodes()
-        }    
-      }
-
-
-    }
+	$(".//a[@id='shoppingCartBar']"){
+	  wrap_text_children("span") {
+		match(text()) {
+		with(/Empty/){
+		  $("../img") {
+			remove()
+		  }
+		  insert("img", src: asset("images/cart-empty.png"))
+		}
+		with(/Checkout/){
+		  $("../img") {
+			remove()
+		  }
+		  insert("img", src: asset("images/cart-full.png"))
+		}
+		}
+		remove_text_nodes()
+	  }    
+	}
 
 
-    $(".//li[@class='MyAccountURLSep']"){
-      move_to("../../ul[@class='cart_menu']", position("top"))
-      $("./a[1]"){
-        attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
-      }
-    }
+	}
+
+
+	$(".//li[@class='MyAccountURLSep']"){
+		move_to("../../ul[@class='cart_menu']", position("top"))
+		$("./a[1]"){
+		  attributes(onclick: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
+		}
+	}
   }
 
 }
 
 
 
-  $$(".nav_wrapper"){
-    $("./div/ul"){
-    	$("li[1]"){
-    		attribute("id", "menu1")
-        
-    	}
-    }
+$$(".nav_wrapper"){
+	$("./div/ul"){
+		$("li[1]"){
+			attribute("id", "menu1")
+		  
+		}
+	}
 
-    $$(".nav-primary"){
-      $$(">li"){
-        attribute("class", "col")
-        $$(">a"){
-        	attribute("class", "_category")
-        }
-      }
-      $("./li[1]"){
-        attribute("class", "_accordian")
-      }
-    }
+	$$(".nav-primary"){
+		$$(">li"){
+			attribute("class", "col")
+			$$(">a"){
+				attribute("class", "_category")
+			}
+		}
+		$("./li[1]"){
+			attribute("class", "_accordian")
+		}
+	}
 
+	
 
-
-    $$("#menu1"){
-      attribute("data-ur-set", "toggler")
-      $$(">a"){
-        attributes(data-ur-toggler-component: "button", data-ur-id: "submenu")
-      }
-        
-      $$(".subnav"){
-        attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
-        $$("a"){
-          attribute("class", "_sub2")
-        }
-      }
-    }
-  }
+	$$("#menu1"){
+		attribute("data-ur-set", "toggler")
+		$$(">a"){
+		  attributes(data-ur-toggler-component: "button", data-ur-id: "submenu")
+		}
+		  
+		$$(".subnav"){
+			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
+			$$("a"){
+			attribute("class", "_sub2")
+			}
+		}
+	}
+}
 
   
   
 
   $$("#msgpopup1_x"){
-    remove()
+	remove()
   }
 
 
@@ -131,37 +131,37 @@ $("/html"){
 
 
   $$(".checkout_wrapper"){
-    insert("div", class: "_accountURL"){
-      move_here("../ul[@class='cart_menu']"){
-        $(".//li[@class='MyAccountURLSep']"){
-          attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
-        }
-      }
-    }
-    insert("div", id: "_icons_bar"){
-      insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
+	insert("div", class: "_accountURL"){
+	move_here("../ul[@class='cart_menu']"){
+	  $(".//li[@class='MyAccountURLSep']"){
+		attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
+	  }
+	}
+	}
+	insert("div", id: "_icons_bar"){
+	insert("div", id: "image-menu", data-ur-tab-id: "menu", data-ur-tabs-component: "button")
 
-      insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
-      
-      insert("div", id: "image-cart"){
-        move_here("//*[@id='shopping-cart']")
-        add_class("_cart") 
-      }
-    }
+	insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
+	
+	insert("div", id: "image-cart"){
+	  move_here("//*[@id='shopping-cart']")
+	  add_class("_cart") 
+	}
+	}
 
-    $$("#image-menu"){
-      insert("img", src: asset("images/menu.png"))
-    }    
-    
-    $$("#image-user"){
-      insert("img", src: asset("images/user.png"))
-    }
-    $("./ul[@class='cart_menu']"){
+	$$("#image-menu"){
+	insert("img", src: asset("images/menu.png"))
+	}    
+	
+	$$("#image-user"){
+	insert("img", src: asset("images/user.png"))
+	}
+	$("./ul[@class='cart_menu']"){
 
-        
-      
-    }
-      
+	  
+	
+	}
+	
   }
 
   $$("ul.nav-primary"){
@@ -173,31 +173,31 @@ $("/html"){
   # }
 
   $$("a#headerAdvancedSearch"){
-    # move_to("//div[@id='autoSuggest_Container']", "after")
-    attributes(style: "display: none;")
+	# move_to("//div[@id='autoSuggest_Container']", "after")
+	attributes(style: "display: none;")
   }
 
   $$("form#CatalogSearchForm"){
-    wrap("div") {
-      attributes(id: "search_bar")
-      move_here("../a[@id='headerAdvancedSearch']")
+	wrap("div") {
+	attributes(id: "search_bar")
+	move_here("../a[@id='headerAdvancedSearch']")
 
-    }
+	}
   }
 
 
 
   $$("#search_overlay"){
-    attribute("value") {
-      value("Search")
-    }
+	attribute("value") {
+	value("Search")
+	}
   }
 
   $("//*[@id='MiniShoppingCart']"){
-    attribute("onmouseover", "")
+	attribute("onmouseover", "")
   }
 
 
   $("//*[@class='free_gifts_popup_main_div']"){
-    attributes(style: "display: none;")
+	attributes(style: "display: none;")
   }

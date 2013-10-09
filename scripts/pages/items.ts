@@ -26,7 +26,8 @@ $$(".main-col"){
 		move_here("../div[@class='product-info']/h4[1]")
 		move_here("../div[@class='product-info']/h2[1]")
 		move_here("../div[@class='product-info']/label[1]")
-		move_here("../div[@class='product-info']/input[@id='quantity_236459']")
+		move_here("../div[@class='product-info']/input[@type='text']")
+		insert("br")
 		move_here("../div[@class='product-info']/a[@id='productPageAdd2Cart']")
 
 	}
