@@ -83,8 +83,10 @@ $$(".nav_wrapper"){
 	$$(".nav-primary"){
 		$$(">li"){
 			attribute("class", "col")
+
 			$$(">a"){
 				attribute("class", "_category")
+				add_class("_box-shadow")
 			}
 		}
 		$("./li[1]"){
@@ -101,7 +103,7 @@ $$(".nav_wrapper"){
 		$$(".subnav"){
 			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
 			$$("a"){
-			attribute("class", "_sub2")
+				attribute("class", "_sub2")
 			}
 		}
 	}
@@ -151,6 +153,15 @@ $$("form#CatalogSearchForm"){
 	wrap("div") {
 		attributes(id: "search_bar")
 		move_here("../a[@id='headerAdvancedSearch']")
+		$(".//a[@id='WC_CachedHeaderDisplay_button_1']"){
+			add_class("btn-gray")
+			text(){
+				set("Search")
+			}
+			$("./input"){
+				remove()
+			}
+		}
 	}
 }
 
@@ -173,9 +184,7 @@ $("./body"){
 	inner_wrap("div", id: "body-content"){
 		insert_bottom("div", id: "pers-nav-mask")
 		insert_before("div", id: "pers-nav"){
-			move_here("//div[@class='nav_wrapper']"){
-				add_class("_box-shadow")
-			}
+			move_here("//div[@class='nav_wrapper']")
 		}
 	}
 }
