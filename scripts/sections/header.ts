@@ -184,9 +184,7 @@ $("./body"){
 	inner_wrap("div", id: "body-content"){
 		insert_bottom("div", id: "pers-nav-mask")
 		insert_before("div", id: "pers-nav"){
-			move_here("//div[@class='nav_wrapper']"){
-				# add_class("_box-shadow")
-			}
+			move_here("//div[@class='nav_wrapper']")
 		}
 	}
 }
