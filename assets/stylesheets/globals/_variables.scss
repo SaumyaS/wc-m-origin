@@ -14,145 +14,148 @@ $base-line-height: 24px;
 }
 
 @mixin title_bar{
-    background-color: #ffe089;
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-    font-size: 1.7em;
-    padding: 5px;
-    font-weight: bold;
+		background-color: #ffe089;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		font-size: 1.7em;
+		padding: 5px;
+		font-weight: bold;
 }
 
 @mixin horizontal_line{
-    display: block;
-    background-color: #fc0;
-    height: 2px;
-    border: none;
-    margin: 10px 0px;
+		display: block;
+		background-color: #fc0;
+		height: 2px;
+		border: none;
+		margin: 10px 0px;
 }
 
 @mixin toggler{
-  border-bottom: 1px solid #808080;
-  border-top: 1px solid #808080;
-  @include background(linear-gradient(#fff, #c0c0c0));
-  line-height: 1;
-  text-align: center;
-  margin-top: 0;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px;
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	@include background(linear-gradient(#fff, #c0c0c0));
+	line-height: 1;
+	text-align: center;
+	margin-top: 0;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
 }
 
 @mixin dots{
-    div{
-      margin-bottom: 0;
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-    div[data-ur-state="active"]{
-      background: white;
-      width: 5px;
-      height: 5px;
-      padding-bottom: 5px;
-    }
-    div[data-ur-state="inactive"]{
-      background: gray;
-      opacity: .7;
-      width: 5px;
-      height: 5px;
-      margin-top: -3px;
-      padding-bottom: 5px;
-    }
+	div{
+		margin-bottom: 0;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	div[data-ur-state="active"]{
+		background: white;
+		width: 5px;
+		height: 5px;
+		padding-bottom: 5px;
+	}
+	div[data-ur-state="inactive"]{
+		background: gray;
+		opacity: .7;
+		width: 5px;
+		height: 5px;
+		margin-top: -3px;
+		padding-bottom: 5px;
+	}
 }
 
 @mixin add_to_cart_HP{
-  background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
-  font-weight: bold;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 0px auto;
-  border-radius: 5px;
-  padding: 5px 10px;
+	background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
+	font-weight: bold;
+	color: #292929;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
 @mixin bars{
-  font-family: 'FrancoisOne', sans-serif;
-  border-bottom:1px solid #808080;
-  border-top: 1px solid #808080;
-  background: #aaa;
-  background-position-x: right;
-  display: block;
-  font-size: 16px;
-  line-height: 1;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-weight: bold;
-  padding: 10px;
-  color: #2C3539;
+	font-family: 'FrancoisOne', sans-serif;
+	border-bottom:1px solid #808080;
+	border-top: 1px solid #808080;
+	background: #aaa;
+	background-position-x: right;
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 10px;
+	color: #2C3539;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 4px;
 }
 
 @mixin subbars{
-  font-family: 'FrancoisOne', sans-serif;
-  border-bottom: 1px solid #aaa;
-  border-top: 1px solid #aaa;
-  background-position-x: right;
-  background-color: #eee;
-  display: block;
-  font-size: 13px;
-  line-height: 1;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #726E6D;
-  margin-left: 13px;
-  margin-right: 13px;
+	font-family: 'FrancoisOne', sans-serif;
+	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	background-position-x: right;
+	background-color: #eee;
+	display: block;
+	font-size: 13px;
+	line-height: 1;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #726E6D;
+	margin-left: 13px;
+	margin-right: 13px;
 }
 
 @mixin specialsScroll{
-  background-color: #eee;
-            padding: 5px;
-            border-bottom: 1px solid #888;
-            border-top: 1px solid #888;
-            div{
-              div{
+	background-color: #eee;
+	padding: 5px;
+	border-bottom: 1px solid #888;
+	border-top: 1px solid #888;
+	div{
+		div{
 
-                text-align: center;
-                img{
-                  margin-left: 5px;
-                  margin-right: 5px;
-                  margin-bottom: 10px;
-                }
-              }
-            }
+			text-align: center;
+			img{
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-bottom: 10px;
+			}
+		}
+	}
 }
 
 .btn{
-  background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
-  font-weight: bold;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  margin: 0px auto;
-  border-radius: 5px;
-  padding: 5px 10px;
-  box-shadow: 0px 1px 3px rgba(0,0,0,.75);
+	background: url(../../../images/addto_cart_bg.jpg) repeat-x #f8c301;
+	font-weight: bold;
+	color: #292929;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	margin: 0px auto;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.75);
 }
 
 .btn-gray{
-  background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x #999999;
-  font-weight: bold;
-  color: #292929;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  margin: 0px auto;
-  border-radius: 5px;
-  padding: 5px 10px;
+	background: url(../../../images/addto_cart_bg-gray.jpg) repeat-x #999999;
+	font-weight: bold;
+	color: #292929;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	margin: 0px auto;
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
 .expand { // used to make certain elements full-width, usually on mobile
-  display: block;
-  width: auto !important;
+	display: block;
+	width: auto !important;
 }
