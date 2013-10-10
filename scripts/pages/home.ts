@@ -15,7 +15,7 @@ $$("#requisition_list_popup_main_div"){
 }
 
 
-$("/html/body/div[@id='page']"){
+$$("#page"){
 	# Move Banner_Wrapper and Smallbox into the Header_Widget
 	$("./div[@class='header_widget']/div[@class='nav_wrapper']"){
 		insert_before("div", class: "__banner"){
@@ -28,7 +28,7 @@ $("/html/body/div[@id='page']"){
 
 	#$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
 	# Carousel Widget
-  	$("./div[@class='header_widget']"){
+  	$(".//div[@class='main_wrapper']"){
 		$("./div/ul"){
 		  	attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled", data-ur-center: "enabled")
 		  	insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
@@ -84,32 +84,32 @@ $("/html/body/div[@id='page']"){
 					}
 		  		}
 			}
+		}
 		
-			$("./div[4]"){
-				add_class("_feature")
-				$("./div[@class='future_product']"){
-					attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
-					$("./ul"){
-						attributes(data-ur-carousel-component: "scroll_container")
-						insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
-						$("./li"){
-							attributes(data-ur-carousel-component: "item", class: "_item")
-							$("./div[2]/a[1]"){
-								add_class("_featurePrice")
-							}
-							$("./div[2]/span[1]"){
-								remove()
-							}
-							$("./div[2]/p"){
-					  			remove()
-							}
-							$("./div[2]/ul[@class='add_wishlist']"){
-					 			remove()
-							}
-				  		}
-					}	
-			  	}      
-			}
+		$("./div[4]"){
+			add_class("_feature")
+			$("./div[@class='future_product']"){
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
+				$("./ul"){
+					attributes(data-ur-carousel-component: "scroll_container")
+					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+					$("./li"){
+						attributes(data-ur-carousel-component: "item", class: "_item")
+						$("./div[2]/a[1]"){
+							add_class("_featurePrice")
+						}
+						$("./div[2]/span[1]"){
+							remove()
+						}
+						$("./div[2]/p"){
+				  			remove()
+						}
+						$("./div[2]/ul[@class='add_wishlist']"){
+				 			remove()
+						}
+			  		}
+				}	
+		  	}      
 		}
 	}
 }

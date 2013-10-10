@@ -83,3 +83,55 @@ form{
   display: block;
   margin-top: 0em;
 }
+
+
+._box-shadow {
+  @include box-shadow($box-shadow-demo-pers-nav);
+}
+$slider-width: 255px;
+#body-content{
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  overflow: hidden;
+  background: #aaaaaa;
+  @include box-shadow($box-shadow-demo-pers-nav);
+  // Fixes the flashing that occurs when the universal navigation is clicked due to the redraw
+  @include transform(translate(0, 0));
+  @include transition (all 0.3s ease);
+  // Fixes the flashing that occurs when togglers and tabs clicked due to the redraw
+  [data-ur-set = 'tabs'], [data-ur-set = 'toggler'] {
+    @include transform(translate(0, 0));
+  }
+  &.pers-nav-active {
+    @include transform(translate(-$slider-width, 0));
+  }
+}
+
+#pers-nav-mask {
+  display: none;
+  &.pers-nav-active {
+    opacity: 0;
+  }
+}
+#pers-nav{
+  opacity: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #aaaaaa;
+  width: $slider-width;
+  min-height: 100%;
+  position: absolute;
+  &.pers-nav-active {
+    opacity: 1;
+    @include prefixer(transition-delay, 0s);
+  }
+  .sprites-dude {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  >:last-child {
+    @include box-shadow($box-shadow-demo-pers-nav);
+  }
+}
