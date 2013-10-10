@@ -83,8 +83,10 @@ $$(".nav_wrapper"){
 	$$(".nav-primary"){
 		$$(">li"){
 			attribute("class", "col")
+
 			$$(">a"){
 				attribute("class", "_category")
+				add_class("_box-shadow")
 			}
 		}
 		$("./li[1]"){
@@ -101,7 +103,7 @@ $$(".nav_wrapper"){
 		$$(".subnav"){
 			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
 			$$("a"){
-			attribute("class", "_sub2")
+				attribute("class", "_sub2")
 			}
 		}
 	}
@@ -174,7 +176,7 @@ $("./body"){
 		insert_bottom("div", id: "pers-nav-mask")
 		insert_before("div", id: "pers-nav"){
 			move_here("//div[@class='nav_wrapper']"){
-				add_class("_box-shadow")
+				# add_class("_box-shadow")
 			}
 		}
 	}

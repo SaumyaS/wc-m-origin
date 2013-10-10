@@ -75,18 +75,19 @@
 }
 
 ._home {
-
-	
-	
 	._category {
 		@include bars;
-
 	}
 	
 	.nav-primary{
+		margin-top: 10px;
 		#menu1{
+
 			>a{
 				background: url(../../../images/img/plus.png) no-repeat right center #aaa;
+				border-radius: 4px;
+				margin-right: 10px;
+				margin-left: 10px;
 			}
 			>a.active{
 				background: url(../../../images/img/delete.png) no-repeat right center #aaa;
@@ -96,15 +97,22 @@
 			a{
 				background: url(../../../images/menu_go.png) no-repeat right center #aaa;
 				padding-right: 10px;
+				border-radius: 4px;
+				margin-right: 10px;
+				margin-left: 10px;
 		 }
 		}
 
 	}
-
-	._sub2 {
-		@include subbars;
-		padding-left: 15px;
+	.subnav{
+		margin-bottom: 10px;
+		._sub2 {
+			@include subbars;
+			padding-left: 15px;
+		}
 	}
+
+	
 
 	/* header bar*/
 	#ad_17601{
