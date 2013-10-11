@@ -20,3 +20,7 @@ $("//div[@class='login-box']"){
 		}
 	}
 }
+
+$("//*[@class='btn']") {
+	add_class("expand")
+}

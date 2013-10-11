@@ -94,7 +94,7 @@ $slider-width: 255px;
   z-index: 1;
   max-width: 100%;
   overflow: hidden;
-  background: #aaaaaa;
+  background: white;
   @include box-shadow($box-shadow-demo-pers-nav);
   // Fixes the flashing that occurs when the universal navigation is clicked due to the redraw
   @include transform(translate(0, 0));
@@ -119,7 +119,8 @@ $slider-width: 255px;
   top: 0;
   right: 0;
   position: absolute;
-  background: #aaaaaa;
+  background: #777;
+
   width: $slider-width;
   min-height: 100%;
   position: absolute;
@@ -130,8 +131,5 @@ $slider-width: 255px;
   .sprites-dude {
     display: inline-block;
     margin-right: 5px;
-  }
-  >:last-child {
-    @include box-shadow($box-shadow-demo-pers-nav);
   }
 }
