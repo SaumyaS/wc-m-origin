@@ -187,33 +187,47 @@ $("//*[@class='free_gifts_popup_main_div']"){
 }
 
 $("./body"){
-	inner_wrap("div", id: "body-content"){
-		insert_bottom("div", id: "pers-nav-mask")
-		insert_before("div", id: "pers-nav"){
-			copy_here("//div[@class='nav_wrapper']")
-		}
-	}
-	$("./div[@id='pers-nav']"){
-		$(".//ul[@class='nav-primary']"){
-			$("./li"){
-				$("./a"){
-					add_class("_box-shadow")
-					
+	match($path){
+		with(/AutoSuggestView/){}
+		with(/AjaxLogonFormCenterLinksDisplayView/){}
+		with(/AjaxAddressBookForm/){}
+		with(/AjaxRequisitionListDisplayView/){}
+		with(/AjaxRequisitionListCreateView/){}
+		with(/AjaxRequisitionListDetailView/){}
+		with(/AjaxTrackOrderStatus/){}
+		with(/AjaxCouponWallet/){}
+		with(/WillCallModalView/){}
+		else (){
+			inner_wrap("div", id: "body-content"){
+				insert_bottom("div", id: "pers-nav-mask")
+				insert_before("div", id: "pers-nav"){
+					copy_here("//div[@class='nav_wrapper']")
 				}
 			}
-			$("./li[@id='menu1']"){
-				$("./a"){
-					
-					attributes(data-ur-id: "pers-nav-menu")
+			$("./div[@id='pers-nav']"){
+				$(".//ul[@class='nav-primary']"){
+					$("./li"){
+						$("./a"){
+							add_class("_box-shadow")
+							
+						}
+					}
+					$("./li[@id='menu1']"){
+						$("./a"){
+							
+							attributes(data-ur-id: "pers-nav-menu")
+						}
+						$("./ul[@class='subnav']"){
+							attributes(data-ur-id: "pers-nav-menu")
+						}	
+					}
 				}
-				$("./ul[@class='subnav']"){
-					attributes(data-ur-id: "pers-nav-menu")
-				}	
+			}
+
+			$(".//div[@class='header_wrapper']"){
+
 			}
 		}
 	}
-
-	$(".//div[@class='header_wrapper']"){
-
-	}
+	
 }
