@@ -1,8 +1,9 @@
 #will_call_modal_dialog{
 	div{
 		div{
-			bottom: 48px !important;
+			bottom: 26px !important;
 			right: 22px !important;
+			// width: 65px;
 		}
 	}
 }
@@ -15,15 +16,15 @@
 	padding: 5px 10px;
 	form{
 		#cityMarker{
-			width: 74%;
+			width: 70%;
 			margin-left: 18px;
 		}
 		#stateMarker{
-			width: 75%;
+			width: 72%;
 			margin-left: 5px;
 		}
 		#postalcode{
-			width: 73%;
+			width: 70%;
 		}
 	}
 }
