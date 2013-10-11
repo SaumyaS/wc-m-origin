@@ -59,8 +59,7 @@
 	text-decoration: none;
 	text-transform: lowercase;
 	text-transform: capitalize;
-	padding-left: 10px;
-	padding-top: 10px;
+	padding: 10px;
 
 	.subscribe_data_warapper{
 		display: inline-block;   
@@ -70,11 +69,13 @@
 			font-size: 16px;
 			line-height: 1;
 			float: left;
-			padding-bottom: 5px;
 
 			#emailSidebar {
 				padding: 5px;
 				float: left;
+			}
+			.subsc_email{
+				padding-top: 4px;
 			}
 		}
 
