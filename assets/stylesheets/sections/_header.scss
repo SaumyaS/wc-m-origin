@@ -85,6 +85,7 @@
 
 			>a{
 				background: url(../../../images/img/plus.png) no-repeat right center #aaa;
+				
 			}
 			>a.active{
 				background: url(../../../images/img/delete.png) no-repeat right center #aaa;
@@ -98,6 +99,8 @@
 		}
 
 	}
+
+
 	.subnav{
 		margin-bottom: 10px;
 		._sub2 {
@@ -105,6 +108,9 @@
 			padding-left: 15px;
 		}
 	}
+	
+
+	
 
 	
 
@@ -185,11 +191,6 @@
 		}		 
 	}
 
-	
-
-	
-
-	
 
 	#headerAdvancedSearch  {
 		display: block;
@@ -211,11 +212,6 @@
 	#shoppingCartBar{
 			text-align: center;
 	}
-
-
-
-	
-
 }
 
 #Add_To_Cart_modal_dialog{
