@@ -1,0 +1,29 @@
+#will_call_modal_dialog{
+	div{
+		div{
+			bottom: 48px !important;
+			right: 22px !important;
+		}
+	}
+}
+
+
+
+.will_call_form_border{
+	border: 1px solid #ddd;
+	overflow: hidden;
+	padding: 5px 10px;
+	form{
+		#cityMarker{
+			width: 74%;
+			margin-left: 18px;
+		}
+		#stateMarker{
+			width: 75%;
+			margin-left: 5px;
+		}
+		#postalcode{
+			width: 73%;
+		}
+	}
+}
