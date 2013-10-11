@@ -36,6 +36,10 @@ $("/html"){
 			remove()
 		}
 
+		$(".//div[@id='MessageArea']"){
+
+		}
+
 		$(".//div[@class='header_wrapper']"){
 			wrap("div"){
 			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
@@ -81,16 +85,18 @@ $$(".nav_wrapper"){
 	}
 
 	$$(".nav-primary"){
+		attributes(data-ur-toggler-component: "content")
 		$$(">li"){
 			attribute("class", "col")
 
 			$$(">a"){
-				attribute("class", "_category")
-				add_class("_box-shadow")
+				attributes(class: "_category")
+
+				
 			}
 		}
 		$("./li[1]"){
-			attribute("class", "_accordian")
+			attributes(class: "_accordian")
 		}
 	}
 
@@ -184,7 +190,30 @@ $("./body"){
 	inner_wrap("div", id: "body-content"){
 		insert_bottom("div", id: "pers-nav-mask")
 		insert_before("div", id: "pers-nav"){
-			move_here("//div[@class='nav_wrapper']")
+			copy_here("//div[@class='nav_wrapper']")
 		}
+	}
+	$("./div[@id='pers-nav']"){
+		$(".//ul[@class='nav-primary']"){
+			$("./li"){
+				$("./a"){
+					add_class("_box-shadow")
+					
+				}
+			}
+			$("./li[@id='menu1']"){
+				$("./a"){
+					
+					attributes(data-ur-id: "pers-nav-menu")
+				}
+				$("./ul[@class='subnav']"){
+					attributes(data-ur-id: "pers-nav-menu")
+				}	
+			}
+		}
+	}
+
+	$(".//div[@class='header_wrapper']"){
+
 	}
 }

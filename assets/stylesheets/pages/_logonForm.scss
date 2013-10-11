@@ -5,6 +5,11 @@
 	hr{
 		@include horizontal_line;
 	}
+	
+	#AccountDisplayError_1{
+		display: none;
+	}
+
 
 	.login-box{
 		.col-1{
