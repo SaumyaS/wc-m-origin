@@ -206,6 +206,7 @@ $("./body"){
 			}
 			$("./div[@id='pers-nav']"){
 				$(".//ul[@class='nav-primary']"){
+					attributes(data-ur-state: "enabled")
 					$("./li"){
 						$("./a"){
 							add_class("_box-shadow")
