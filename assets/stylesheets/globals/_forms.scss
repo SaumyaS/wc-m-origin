@@ -10,3 +10,11 @@ label.for-checkbox {
 input[type="text"] {
 	padding: .6em !important;
 }
+
+input.input-second-line {
+	margin: 5px 0;
+
+	@media (min-width: 338px) {
+		margin-left: 124px !important;
+	}
+}

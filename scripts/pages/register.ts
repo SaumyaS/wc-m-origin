@@ -116,4 +116,9 @@ $$(".register"){
 	$$(".checkout-container > .sub-col") {
 		attributes(style: "")
 	}
+
+	$$("input[name='address2']") {
+		add_class("input-second-line")
+		attributes(style: "")
+	}
 } // .register

@@ -3,14 +3,5 @@
 }
 
 [data-ur-toggler-component="button"] {
-	@include background-image(url(../../../images/img/plus.png), linear-gradient(black 0, #333 100%));
-	background-position: right center;
-	background-repeat: no-repeat;
-	color: white;
-	border: none;
-	margin: 5px 10px;
-
-	&[data-ur-state="enabled"] {
-		@include background-image(url(../../../images/img/delete.png), linear-gradient(black 0, #333 100%));
-	}
+	@include toggler;
 }
