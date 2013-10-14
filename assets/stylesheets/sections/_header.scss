@@ -115,10 +115,12 @@
 			}
 		}
 		.col{
-			a{
-				background: url(../../../images/menu_go.png) no-repeat right center #aaa;
+			a {
+				@include background-image(url(../../../images/menu_go.png), linear-gradient(black 0, #333 100%));
+				background-position: right center;
+				background-repeat: no-repeat;
 				padding-right: 10px;
-		 }
+			}
 		}
 
 	}

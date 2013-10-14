@@ -3,7 +3,7 @@
 }
 
 [data-ur-toggler-component="button"] {
-	@include background-image(url(../../../images/img/plus.png), linear-gradient(black 0, #333 100%)); !important
+	@include background-image(url(../../../images/img/plus.png), linear-gradient(black 0, #333 100%));
 	background-position: right center;
 	background-repeat: no-repeat;
 	color: white;
