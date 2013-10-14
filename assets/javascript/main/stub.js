@@ -23,9 +23,11 @@ $(".cart_check_btn").DOMNodeAppear(function () {
     str = str.trim();
     
     if (str.localeCompare(empty) === 0) {
-        $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-empty.png");
+        // $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-empty.png");
+        $("#cart-image").attr("class", "_cart-empty");
     }
     if (str.localeCompare(full) === 0) {
-        $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-full.png");
+        // $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-full.png");
+        $("#cart-image").attr("class", "_cart-full");
     }
 });
