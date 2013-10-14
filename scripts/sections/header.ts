@@ -157,7 +157,7 @@ $$("form#CatalogSearchForm"){
 		attributes(id: "search_bar")
 		move_here("../a[@id='headerAdvancedSearch']")
 		$(".//a[@id='WC_CachedHeaderDisplay_button_1']"){
-			add_class("btn-gray")
+			add_class("btn")
 			text(){
 				set("Search")
 			}
