@@ -78,10 +78,11 @@ $base-line-height: 24px;
 
 @mixin bars{
 	font-family: 'FrancoisOne', sans-serif;
-	border-bottom:1px solid #808080;
-	border-top: 1px solid #808080;
-	background: #aaa;
-	background-position-x: right;
+	// border-bottom:1px solid #808080;
+	// border-top: 1px solid #808080;
+	// background: #aaa;
+	// background-position-x: right;
+	@include background-image(linear-gradient(black 0, #333 100%));
 	display: block;
 	font-size: 16px;
 	line-height: 1;
@@ -89,9 +90,9 @@ $base-line-height: 24px;
 	text-transform: capitalize;
 	font-weight: bold;
 	padding: 10px;
-	color: #2C3539;
-	margin-left: 10px;
-	margin-right: 10px;
+	// color: #2C3539;
+	color: white;
+	margin: 5px 10px;
 	border-radius: 4px;
 }
 

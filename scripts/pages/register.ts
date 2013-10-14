@@ -98,4 +98,22 @@ $$(".register"){
 			attributes(data-ur-toggler-component: "content")
 		}
 	}
-}
+
+	$("//*[@for='promos']") {
+		attributes(style: "")
+		attributes(for: "receiveEmailChkBox") # change the for attr so the label click/tap will check/uncheck the promos checkbox
+		add_class("for-checkbox")
+	}
+
+	$("//*[@class='btn']") {
+		add_class("expand")
+	}
+
+	$("//*[@class='btn-gray']") {
+		remove()
+	}
+
+	$$(".checkout-container > .sub-col") {
+		attributes(style: "")
+	}
+} // .register
