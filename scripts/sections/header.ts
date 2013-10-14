@@ -120,15 +120,13 @@ $$(".checkout_wrapper"){
 								$("../img") {
 									remove()
 								}
-						 		# insert("div", class: "_cartEmpty")
-						 		insert("img", src: asset("images/cart-empty.png"), id: "cart-image")
+						 		insert("div", id: "cart-image")
 							}	
 							with(/Checkout/){
 						  		$("../img") {
 									remove()
 						  		}
-						  		# insert("div", class: "_cartFull")
-						  		insert("img", src: asset("images/cart-full.png"), id: "cart-image")
+						  		insert("div", id: "cart-image")
 							}
 						}
 						remove_text_nodes()

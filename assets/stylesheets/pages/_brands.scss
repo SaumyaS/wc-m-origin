@@ -3,7 +3,7 @@
 	padding-top: 5px;
 	background: #FFF;
 	h1{
-		@include title_bar;
+		@include toggler;
 	}
 	h2{
 		letter-spacing: -1px;
