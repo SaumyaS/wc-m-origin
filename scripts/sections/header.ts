@@ -44,10 +44,7 @@ $("/html"){
 			wrap("div"){
 			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
-			}
-			$(".//div[@class='logo']"){
-				add_class("textsssssss")
-			}			
+			}		
 		}
 
 	$(".//li[@class='MyAccountURLSep']"){

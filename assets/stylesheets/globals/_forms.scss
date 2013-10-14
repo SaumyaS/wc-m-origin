@@ -1,3 +1,20 @@
+input {
+	padding: .5em !important;
+}
+
+label.for-checkbox {
+	width: auto !important;
+	display: inline !important;
+}
+
 input[type="text"] {
 	padding: .6em !important;
+}
+
+input.input-second-line {
+	margin: 5px 0;
+
+	@media (min-width: 338px) {
+		margin-left: 124px !important;
+	}
 }
