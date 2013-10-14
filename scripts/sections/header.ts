@@ -36,31 +36,15 @@ $("/html"){
 			remove()
 		}
 
+		$(".//div[@id='MessageArea']"){
+
+		}
+
 		$(".//div[@class='header_wrapper']"){
 			wrap("div"){
 			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
-			}
-
-			$(".//a[@id='shoppingCartBar']"){
-				wrap_text_children("span") {
-					match(text()) {
-						with(/Empty/){
-							$("../img") {
-								remove()
-							}
-					 		insert("img", src: asset("images/cart-empty.png"))
-						}	
-						with(/Checkout/){
-					  		$("../img") {
-								remove()
-					  		}
-					  		insert("img", src: asset("images/cart-full.png"))
-						}
-					}
-					remove_text_nodes()
-				}    
-			}
+			}		
 		}
 
 	$(".//li[@class='MyAccountURLSep']"){
@@ -72,25 +56,25 @@ $("/html"){
   }
 }
 
+# Creates toggler for Navigation 
 $$(".nav_wrapper"){
 	$("./div/ul"){
 		$("li[1]"){
 			attribute("id", "menu1")
-		  
 		}
 	}
 
 	$$(".nav-primary"){
+		attributes(data-ur-toggler-component: "content")
 		$$(">li"){
 			attribute("class", "col")
 
 			$$(">a"){
-				attribute("class", "_category")
-				add_class("_box-shadow")
+				attributes(class: "_category")
 			}
 		}
 		$("./li[1]"){
-			attribute("class", "_accordian")
+			attributes(class: "_accordian")
 		}
 	}
 
@@ -113,10 +97,7 @@ $$("#msgpopup1_x"){
 	remove()
 }
 
-
-  
-
-
+# Creates the menu buttons
 $$(".checkout_wrapper"){
 	insert("div", class: "_accountURL"){
 		move_here("../ul[@class='cart_menu']"){
@@ -129,7 +110,29 @@ $$(".checkout_wrapper"){
 		insert("div", id: "image-user", data-ur-tab-id: "user", data-ur-tabs-component: "button")
 
 		insert("div", id: "image-cart"){
-		  	move_here("//*[@id='shopping-cart']")
+		  	copy_here("//*[@id='shopping-cart']"){
+		  		$(".//a[@id='shoppingCartBar']"){
+					wrap_text_children("span") {
+						match(text()) {
+							with(/Empty/){
+								$("../img") {
+									remove()
+								}
+						 		# insert("div", class: "_cartEmpty")
+						 		insert("img", src: asset("images/cart-empty.png"), id: "cart-image")
+							}	
+							with(/Checkout/){
+						  		$("../img") {
+									remove()
+						  		}
+						  		# insert("div", class: "_cartFull")
+						  		insert("img", src: asset("images/cart-full.png"), id: "cart-image")
+							}
+						}
+						remove_text_nodes()
+					}
+				}
+		  	}
 		  	add_class("_cart") 
 		}
 		insert("div", id: "image-menu")
@@ -181,10 +184,52 @@ $("//*[@class='free_gifts_popup_main_div']"){
 }
 
 $("./body"){
-	inner_wrap("div", id: "body-content"){
-		insert_bottom("div", id: "pers-nav-mask")
-		insert_before("div", id: "pers-nav"){
-			move_here("//div[@class='nav_wrapper']")
+	match($path){
+		with(/AutoSuggestView/){}
+		with(/AjaxLogonFormCenterLinksDisplayView/){}
+		with(/AjaxAddressBookForm/){}
+		with(/AjaxRequisitionListDisplayView/){}
+		with(/AjaxRequisitionListCreateView/){}
+		with(/AjaxRequisitionListDetailView/){}
+		with(/AjaxTrackOrderStatus/){}
+		with(/AjaxCouponWallet/){}
+		with(/WillCallModalView/){}
+		with(/AjaxQuickCartDisplay/){}
+		else (){
+			inner_wrap("div", id: "body-content"){
+				insert_bottom("div", id: "pers-nav-mask")
+				insert_before("div", id: "pers-nav"){
+					copy_here("//div[@class='nav_wrapper']")
+				}
+			}
+			$("./div[@id='pers-nav']"){
+				$(".//ul[@class='nav-primary']"){
+					attributes(data-ur-state: "enabled")
+					$("./li"){
+						$("./a"){
+							add_class("_box-shadow")
+							
+						}
+					}
+					$("./li[@id='menu1']"){
+						$("./a"){
+							
+							attributes(data-ur-id: "pers-nav-menu")
+						}
+						$("./ul[@class='subnav']"){
+							attributes(data-ur-id: "pers-nav-menu")
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+$$(".checkout_wrapper"){
+	$(".//a[@id='shoppingCartBar']"){
+		$("./img"){
+			remove()
 		}
 	}
 }

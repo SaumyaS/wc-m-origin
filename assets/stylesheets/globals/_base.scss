@@ -120,16 +120,18 @@ $slider-width: 255px;
   right: 0;
   position: absolute;
   background: #777;
-
   width: $slider-width;
   min-height: 100%;
   position: absolute;
+  -webkit-transition: all 0.3s ease;
   &.pers-nav-active {
     opacity: 1;
     @include prefixer(transition-delay, 0s);
+    -webkit-transition: opacity 0.5s ease;
   }
   .sprites-dude {
     display: inline-block;
     margin-right: 5px;
   }
 }
+

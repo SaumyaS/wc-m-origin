@@ -168,6 +168,14 @@ match($status) {
       with(/AjaxRequisitionListDetailView/){
         @import pages/AjaxRequisitionListDetailView.ts
       }
+      with(/WillCallModalView/){
+        log("--> Importing WillCallModalView")
+        @import pages/WillCallModalView.ts
+      }
+      with(/AjaxQuickCartDisplay/){
+        log("--> Importing AjaxQuickCartDisplay")
+        @import pages/AjaxQuickCartDisplay.ts
+      }
 
      
    

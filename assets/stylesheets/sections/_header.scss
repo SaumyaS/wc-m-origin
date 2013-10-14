@@ -11,6 +11,22 @@
 	}
 }
 
+#MessageArea1{
+	background-color: #fff;
+	padding: 10px;
+	text-align: center;
+	border: 3px solid #000;
+	border-radius: 10px;
+}
+
+#MessageArea{
+	div{
+		text-align: center;
+	}
+}
+
+
+
 #autoSuggest_Container{
 	text-align: left;
 	.autoSuggestBoxPopup{
@@ -78,9 +94,16 @@
 	._category {
 		@include bars;
 	}
+	._homeNav{
+		margin-bottom: 2px;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
 	
 	.nav-primary{
-		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #777;
 		#menu1{
 
 			>a{
@@ -99,7 +122,6 @@
 		}
 
 	}
-
 	.subnav{
 		margin-bottom: 10px;
 		._sub2 {
@@ -107,9 +129,6 @@
 			padding-left: 15px;
 		}
 	}
-	
-
-	
 
 	/* header bar*/
 	#ad_17601{
@@ -126,6 +145,10 @@
 		position: relative;
 		>div {
 			margin-bottom: -3px;
+		}
+		#shoppingCartBar{
+			position: absolute;
+			left: -999px;
 		}
 	}
 
@@ -169,12 +192,11 @@
 		padding-bottom: 3px;
 		border-bottom: 1px solid #eee;
 		background-color: #000;	
+		text-align: center;
 		#header-search{
 			display: inline-block;
-			padding-left: 10px;
 
 			#SimpleSearchForm_SearchTerm{
-				padding-right: 93px;
 				float: left;
 			}
 			#searchDiv {
@@ -187,12 +209,6 @@
 			}
 		}		 
 	}
-
-	
-
-	
-
-	
 
 	#headerAdvancedSearch  {
 		display: block;
@@ -211,14 +227,7 @@
 		}
 	}
 
-	#shoppingCartBar{
-			text-align: center;
-	}
-
-
-
 	
-
 }
 
 #Add_To_Cart_modal_dialog{

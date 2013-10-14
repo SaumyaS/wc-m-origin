@@ -5,4 +5,7 @@ input {
 label.for-checkbox {
 	width: auto !important;
 	display: inline !important;
+
+input[type="text"] {
+	padding: .6em !important;
 }
