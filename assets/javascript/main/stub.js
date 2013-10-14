@@ -15,4 +15,17 @@ $("#createNewRequisitionList").DOMNodeAppear(function(){
     $("._userInfo").prop('data-ur-state', 'disabled');
 });
 
-
+$(".cart_check_btn").DOMNodeAppear(function () {
+    var str = $(".cart_check_btn").text();
+    var empty = "cart empty";
+    var full = "cart checkout";
+    str = str.toLowerCase();
+    str = str.trim();
+    
+    if (str.localeCompare(empty) === 0) {
+        $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-empty.png");
+    }
+    if (str.localeCompare(full) === 0) {
+        $("#cart-image").attr("src", "/_moovweb_local_assets_/images/cart-full.png");
+    }
+});

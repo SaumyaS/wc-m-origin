@@ -172,6 +172,10 @@ match($status) {
         log("--> Importing WillCallModalView")
         @import pages/WillCallModalView.ts
       }
+      with(/AjaxQuickCartDisplay/){
+        log("--> Importing AjaxQuickCartDisplay")
+        @import pages/AjaxQuickCartDisplay.ts
+      }
 
      
    

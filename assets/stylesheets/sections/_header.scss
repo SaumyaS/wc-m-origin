@@ -146,6 +146,10 @@
 		>div {
 			margin-bottom: -3px;
 		}
+		#shoppingCartBar{
+			position: absolute;
+			left: -999px;
+		}
 	}
 
 	#_icons_bar{ 
@@ -223,9 +227,7 @@
 		}
 	}
 
-	#shoppingCartBar{
-			text-align: center;
-	}
+	
 }
 
 #Add_To_Cart_modal_dialog{
