@@ -62,26 +62,31 @@
 	padding: 10px;
 
 	.subscribe_data_warapper{
-		display: inline-block;   
+		display: inline-block;
+		width: 100%;
 
 		.subs_imput_box {
 			position: relative;
 			font-size: 16px;
 			line-height: 1;
-			float: left;
+			// float: left;
 
 			#emailSidebar {
 				padding: 5px;
-				float: left;
+				display: inline-block;
+				vertical-align: middle;
+				width: 70%;
 			}
 			.subsc_email{
 				padding-top: 4px;
+				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 
 		#emailText {
 			float: left;
-			padding-top: 10px; 
+			// padding-top: 10px; 
 			font-weight: bold;
 		}
 	}
