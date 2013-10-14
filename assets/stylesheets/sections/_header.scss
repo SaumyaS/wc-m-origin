@@ -124,6 +124,20 @@
 		}
 
 	}
+
+	#cart-image{
+		width: 30px;
+		height: 30px;
+		background-size: 30px 30px;
+	}
+	._cart-full{
+		background: url(../../../images/cart-full.png) no-repeat;
+	}
+
+	._cart-empty{
+		background: url(../../../images/cart-empty.png) no-repeat;
+	}
+
 	.subnav{
 		margin-bottom: 10px;
 		._sub2 {
@@ -151,11 +165,11 @@
 		#shoppingCartBar{
 			position: absolute;
 			left: -999px;
+
 		}
 	}
 
 	#_icons_bar{ 
-		//display: none;
 		position: absolute;
 		bottom: 0;
 		right: 5px;
