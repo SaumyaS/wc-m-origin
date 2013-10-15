@@ -196,6 +196,7 @@ $("./body"){
 		with(/AjaxCouponWallet/){}
 		with(/WillCallModalView/){}
 		with(/AjaxQuickCartDisplay/){}
+		with(/AjaxCatalogSearchResultView/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

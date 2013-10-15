@@ -23,6 +23,7 @@ $("/html") {
 
   @import sections/header.ts
   @import sections/footer.ts
+  @import sections/pagination.ts
 
   @import mappings.ts
 
