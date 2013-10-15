@@ -1,4 +1,5 @@
-$("//*[@id='WC_ContentAreaESpot_links_7_1']/img") {
+# Replace the logo with one without a tagline:
+$$(".logo #WC_ContentAreaESpot_links_7_1 img") {
 	attributes(src: asset("images/white-cap-logo-no-tagline.png"))
 }
 
