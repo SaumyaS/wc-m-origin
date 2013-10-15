@@ -1,6 +1,5 @@
 ._specials{
 	div{
-		display: block;
 		h1{
 			background-color: #ffe089;
 			border-top: 1px solid #555;
@@ -11,7 +10,7 @@
 		}
 
 		#ad_62001{
-			a{
+			._onlineSpecials{
 				img{
 					height: 50px;
 				}
@@ -25,17 +24,7 @@
 					text-align: center;
 				}
 				._scpeicalsScroller{
-					._container1{
-						@include specialsScroll;
-
-					}
-					._container2{
-						@include specialsScroll;
-					}
-					._container3{
-						@include specialsScroll;
-					}
-					._container4{
+					._container{
 						@include specialsScroll;
 					}
 				}

@@ -1,4 +1,7 @@
 ._brandsDisplay{
+	._dots{
+		margin-top: 10px;
+	}
 	display: block;
 	.brand-splash{
 		text-align: center;
@@ -12,18 +15,21 @@
 		h1{
 			@include title_bar;
 		}
-		._scrollC{
-			width: 2000px !important;
+		._brandCarouselContainer{
+			._brandViewContainer{
+				width: 2000px !important;
+				.promo-box{
+					float: left;
+					width: 288px;
+					padding: 10px;
+					margin-left: 10px;
+					margin-right: 10px;
+					background-color: #ebebeb;
+					border: 2px solid #555;
+				}
+			}
 		}
-		.promo-box{
-			float: left;
-			width: 288px;
-			padding: 10px;
-			margin-left: 10px;
-			margin-right: 10px;
-			background-color: #ebebeb;
-			border: 2px solid #555;
-		}
+		
 	}
 	.brand-categories{
 		h1{
@@ -34,6 +40,7 @@
 			border-top: 1px solid #555;
 			border-bottom: 1px solid #555;
 			._brandCategories{
+				width: 1500px !important;
 				display: block;
 				.category-item{
 					display: inline-block;
@@ -135,6 +142,9 @@
 					}
 					.lpadd_tocart{
 						@include add_to_cart_HP;
+					}
+					.add_wishlist{
+						display: none;
 					}
 				}
 			}
