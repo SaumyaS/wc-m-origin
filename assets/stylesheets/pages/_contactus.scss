@@ -3,7 +3,6 @@
 	div{
 		display: block;
 		
-		
 		h1{
 			@include title_bar;
 		}
@@ -13,14 +12,10 @@
 
 		.mw_was_td{
 			padding: 10px;
-			background-color: rgb(202, 202, 202);
-			width: 100%;
+			background-color: rgb(202, 202, 202) !important;
+			width: auto !important;
 			margin-bottom: 5px;
 			border-bottom: 2px solid #555;
-
 		}
-		
-		
 	}
-
 }
