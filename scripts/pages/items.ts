@@ -23,6 +23,13 @@ $$(".main-col"){
 				}
 			}
 		}
+		$("./hr[3]"){
+			remove()
+		}
+		$("./div[2]"){
+			remove()
+		}
+
 	}
 	$("./div[@class='gallery']"){
 		insert_before("div", class: "_mainInfo")
