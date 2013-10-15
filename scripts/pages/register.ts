@@ -109,7 +109,7 @@ $$(".register"){
 		add_class("expand")
 	}
 
-	$("//*[@class='btn-gray']") {
+	$("//*[@id='WC_UserRegistrationAddForm_links_2']") {
 		remove()
 	}
 

@@ -150,6 +150,7 @@ $$(".subscribe_wrapper"){
 
 $$("#emailText"){
 	move_to("//div[@class='subs_imput_box']", "before")
+	insert_after("br")
 }
   
 

@@ -1,4 +1,6 @@
-
+$("//*[@id='WC_ContentAreaESpot_links_7_1']/img") {
+	attributes(src: asset("images/white-cap-logo-no-tagline.png"))
+}
 
 $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
@@ -155,7 +157,7 @@ $$("form#CatalogSearchForm"){
 		attributes(id: "search_bar")
 		move_here("../a[@id='headerAdvancedSearch']")
 		$(".//a[@id='WC_CachedHeaderDisplay_button_1']"){
-			add_class("btn-gray")
+			add_class("btn")
 			text(){
 				set("Search")
 			}
