@@ -105,7 +105,7 @@ $$(".register"){
 		add_class("for-checkbox")
 	}
 
-	$("//*[@class='btn']") {
+	$$("#WC_UserRegistrationAddForm_links_1") {
 		add_class("expand")
 	}
 
