@@ -4,16 +4,15 @@
 	background: #FFF;
 	h1{
 		@include toggler;
+		padding: 5px 10px 5px 5px;
 	}
 	h2{
 		letter-spacing: -1px;
 		padding: 5px;
-		display: block;
 		font-size: 1.5em;
 		font-weight: bold;
 	}
 	.brand-gallery{
-		display: block;
 		margin: 0px auto;
 		text-align: center;
 		>div{
@@ -31,7 +30,6 @@
 		}
 	}
 	.all-brands-alpha{
-		display: block;
 		.tabs{
 			
 			padding: 5px;
