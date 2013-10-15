@@ -1,5 +1,0 @@
-$$("#shoppingCartBar"){
-	$("./img"){
-		remove()
-	}
-}

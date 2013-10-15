@@ -4,7 +4,6 @@ $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
 }
 
-
 $$(".account-col-quick-order"){
 	$("./div[@class='Quick-Order-eSpot']"){
 		$("./div[@class='quick-order-po-number']"){
@@ -72,11 +71,13 @@ $$(".account-col-quick-order"){
 			}
 		}
 	}
+
+	$("./div[@class='quick-order-process-order']"){
+		$("./a"){
+			add_class("expand")
+		}
+	}
 }
-
-
-//*[@id="MQuickOrderForm"]
-
 
 $("//*[@id='ad_19601']"){
 	$("./span[2]"){
@@ -89,28 +90,24 @@ $("//*[@id='ad_19601']"){
 	}
 }
 
+$$("#order_details"){
+	$("./div[@class='mw_was_thead']"){
+		remove()
+	} 
 
-
-
-	$$("#order_details"){
-
-		$$(".mw_was_thead"){
-			remove()
+	$$(".order-product-info"){
+		add_class("test")
+		$("./div[1]"){
+			insert_before("h4", "SKU: ", class: "_titleHead")
 		}
-		
-		$$(".order-product-info"){
-			$("./div[1]"){
-				insert_before("h4", "SKU: ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_SKU")
-			}
-			$("./div[2]"){
-				insert_before("h4", "Name: ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_Name")
-			}
-			$("./div[3]"){
-				insert_before("h4", "QTY:  ", style: "float: left; font-weight: bold; margin-right: 10px;", class: "_QTY")
-			}
-			$("./div[4]"){
-				attribute("class", "_remove")
-			}
+		$("./div[2]"){
+			insert_before("h4", "Name: ", class: "_titleHead")
 		}
-
+		$("./div[3]"){
+			insert_before("h4", "QTY:  ", class: "_titleHead")
+		}
+		$("./div[4]"){
+			attribute("class", "_remove")
+		}
 	}
+}

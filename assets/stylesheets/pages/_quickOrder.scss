@@ -42,6 +42,7 @@
 			}
 		}
 		#WC_ContentAreaESpot_div_1_18351{
+			display: none;
 			#ad_18351{
 				width: 300px;
 				div{
@@ -77,19 +78,21 @@
 				input{
 					@include input;
 				}
-				a{
-					margin-left: 10px; 
-					margin-bottom: 5px;
-				}
+			}
+			#WC_ContentAreaESpot_div_1_19601{
+				display: none;
 			}
 			#quickOrderPaste{
+				display: none;
 				width: 96%;
 				margin: 5px 0px;
 				padding: 4px;
 				background: #ccc;
 				border: 1px solid #aaa;
 			}
-
+			#WC_QuickOrderForm_Submit_2{
+				display: none;
+			}
 		}
 		.sub-col-right-Quick-Order{
 			h2{
@@ -101,6 +104,11 @@
 				margin-bottom: 5px;
 				background-color: #ddd;
 				padding: 5px;
+				._titleHead{
+					float: left; 
+					font-weight: bold; 
+					margin-right: 10px;
+				}
 				._remove{
 					text-decoration: underline;
 					a{
@@ -111,6 +119,14 @@
 		}
 		
 	}
+	.quick-order-process-order{
+		.Quick-Order-Btn{
+			margin-bottom: 10px;
+			float: none;
+			margin-left: 10px;
+		}
+	}
+
 			
 }
 

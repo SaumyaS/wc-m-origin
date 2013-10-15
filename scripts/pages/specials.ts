@@ -6,11 +6,16 @@ $$("#ad_17601"){
 
 $("//*[@id='main_content_wrapper']/div/div"){
 	add_class("_specials")
+
+	$(".//div[@class='ad_product']"){
+		$("./a"){
+			attributes(class: "_onlineSpecials")
+		}
+	}
 	
 	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[1]"){
 		attributes(style: "", class: "_specialText")
 	}
-
 
 	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[2]"){
 		add_class("_scpeicalsScroller")
@@ -104,7 +109,7 @@ $("//*[@id='main_content_wrapper']/div/div"){
 				remove()
 			}
 			wrap("div"){
-				attributes(class: "_container1")
+				attributes(class: "_container")
 			}
 		}
 
@@ -132,7 +137,7 @@ $("//*[@id='main_content_wrapper']/div/div"){
 				remove()
 			}
 			wrap("div"){
-				attributes(class: "_container2")
+				attributes(class: "_container")
 			}
 		}
 
@@ -160,7 +165,7 @@ $("//*[@id='main_content_wrapper']/div/div"){
 				remove()
 			}
 			wrap("div"){
-				attributes(class: "_container3")
+				attributes(class: "_container")
 			}
 		}
 
@@ -188,52 +193,22 @@ $("//*[@id='main_content_wrapper']/div/div"){
 				remove()
 			}
 			wrap("div"){
-				attributes(class: "_container4")
+				attributes(class: "_container")
 			}
 		}
 
 		# Creating the Carousel Attributes
-		$("./div[@class='_container1']"){
-      		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "firstCarousel", data-ur-autoscroll: "disabled", data-ur-center: "enabled", data-ur-infinite: "disabled")
+		$("./div[@class='_container']"){
+      		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-autoscroll: "disabled", data-ur-center: "enabled", data-ur-infinite: "disabled")
       		$("./div"){
       			attributes(data-ur-carousel-component: "scroll_container")
       			$("./div"){
       				attributes(data-ur-carousel-component: "item", style: "float: left;")
       			}
       		}
-		}
-
-		$("./div[@class='_container2']"){
-      		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "secondCarousel", data-ur-autoscroll: "disabled", data-ur-center: "enabled", data-ur-infinite: "disabled")
-      		$("./div"){
-      			attributes(data-ur-carousel-component: "scroll_container")
-      			$("./div"){
-      				attributes(data-ur-carousel-component: "item", style: "float: left;")
-      			}
-      		}
-		}
-
-		$("./div[@class='_container3']"){
-      		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "thirdCarousel", data-ur-autoscroll: "disabled", data-ur-center: "enabled", data-ur-infinite: "disabled")
-      		$("./div"){
-      			attributes(data-ur-carousel-component: "scroll_container")
-      			$("./div"){
-      				attributes(data-ur-carousel-component: "item", style: "float: left;")
-      			}
-      		}
-		}
-
-		$("./div[@class='_container4']"){
-      		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "fourthCarousel", data-ur-autoscroll: "disabled", data-ur-center: "enabled", data-ur-infinite: "disabled")
-      		$("./div"){
-      			attributes(data-ur-carousel-component: "scroll_container")
-      			$("./div"){
-      				attributes(data-ur-carousel-component: "item", style: "float: left;")
-      			}
-      		}
+      		insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
 		}
 	}
-
 
 	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[3]"){
 		add_class("_specialsBottom")
@@ -252,8 +227,15 @@ $("//*[@id='main_content_wrapper']/div/div"){
 	}
 }
 
-//*[@id="WC_ContentAreaESpot_div_22_1"]/div[2]
+$$("._scpeicalsScroller"){
+	$("./div[@data-ur-set='carousel']"){
+		$("./div/div/div[2]"){
+			$("./a"){
+				attributes(class: "")
+				remove_text_nodes()
+				move_here("../../div[1]/img")
+			}
 
-# $("//div[@id='WC_ContentAreaESpot_div_22_1']/div[2]/div[1]"){
-# 	remove()
-# }
+		}
+	}
+}
