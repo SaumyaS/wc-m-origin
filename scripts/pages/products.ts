@@ -6,6 +6,33 @@ $$("#ad_17601"){
 
 $$(".main_container"){
 	add_class("_products")
+
+	$(".//div[@class='search-main']"){
+		$(".//div[@class='search_based']/span[@class='fright']"){
+			$("./select[@id='sortBy']/option"){
+				attribute("value"){
+					value(){
+						rewrite_link()
+					}
+				}
+			}
+
+			$("./select[@id='sortBy']/option[1]"){
+				attributes(selected: "selected")
+			}
+			$("./select[@id='sortBy']/option[3]"){
+				attributes(selected: "")
+			}
+
+			$("./select[@id='orderBy']/option"){
+				attribute("value"){
+					value(){
+						rewrite_link()
+					}
+				}
+			}
+		}
+	}
 }
 
 $$(".search-sidebar"){
@@ -56,15 +83,12 @@ $$(".search-sidebar"){
 }
 
 $$(".search-main"){
-	$("./div/div/div/ul"){
-		remove()
-	}
+	# $("./div/div/div/ul"){
+	# 	remove()
+	# }
 	$$(".pricingLoginSearch"){
 		$("./a"){
 			attributes(style: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301", onclick: "")
 		}
 	}
-
-
-
 }

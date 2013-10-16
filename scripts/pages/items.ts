@@ -8,10 +8,6 @@ $$(".product_social_icons"){
 	remove()
 }
 
-$$(".product_spacing"){
-	# $("./div[@")
-}
-
 $$(".main-col"){
 	$("./div[@class='product-info']"){
 		$("./div/h1"){
@@ -29,7 +25,6 @@ $$(".main-col"){
 		$("./div[2]"){
 			remove()
 		}
-
 	}
 	$("./div[@class='gallery']"){
 		insert_before("div", class: "_mainInfo")
@@ -83,8 +78,6 @@ $$(".product-more-info"){
 	$("./ul[2]"){
 		attributes(data-ur-toggler-component: "content", data-ur-id: "3")
 	}
-
-
 }
 
 $$(".product-info"){

@@ -79,6 +79,32 @@ $$(".main_container"){
 			}
 		}
 	}
+	$(".//div[@class='search-main']"){
+		$(".//div[@class='search_based']/span[@class='fright']"){
+			$("./select[@id='sizeBy']/option"){
+				attribute("value"){
+					value(){
+						rewrite_link()
+					}
+				}
+			}
+
+			$("./select[@id='sizeBy']/option[1]"){
+				attributes(selected: "selected")
+			}
+			$("./select[@id='sizeBy']/option[3]"){
+				attributes(selected: "")
+			}
+
+			$("./select[@id='orderBy']/option"){
+				attribute("value"){
+					value(){
+						rewrite_link()
+					}
+				}
+			}
+		}
+	}
 }
 
 $$(".pricingLoginSearch"){

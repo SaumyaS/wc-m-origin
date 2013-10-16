@@ -172,6 +172,10 @@ match($status) {
         log("--> Importing WillCallModalView")
         @import pages/WillCallModalView.ts
       }
+      with(/SearchBasedNavigationCategoryResultDisplayView/){
+        log("--> Importing SearchBasedNavigationCategoryResultDisplayView")
+        @import pages/SearchBasedNavigationCategoryResultDisplayView.ts
+      }
 
      
    
