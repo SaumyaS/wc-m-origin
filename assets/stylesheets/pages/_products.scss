@@ -5,22 +5,22 @@
 			.search-sidebar{
 
 				h2{
-					@include toggler;
+					// @include toggler;
 					-webkit-margin-after: 0;
 				}
 				ul{
 					h4{
-						font-family: 'trebuchet ms', sans-serif;
-						border-bottom: 1px solid #808080;
-		    			border-top: 1px solid #808080;
-						@include background(linear-gradient(#aaa, #555));
-						color: #fff;
-						line-height: 1;
-						text-align: center;
-						margin-top: 0;
-						font-size: 16px;
-						font-weight: bold;
-						padding: 10px;
+						// font-family: 'trebuchet ms', sans-serif;
+						// border-bottom: 1px solid #808080;
+		    // 			border-top: 1px solid #808080;
+						// @include background(linear-gradient(#aaa, #555));
+						// color: #fff;
+						// line-height: 1;
+						// text-align: center;
+						// margin-top: 0;
+						// font-size: 16px;
+						// font-weight: bold;
+						// padding: 10px;
 					}
 					ul{
 						li{

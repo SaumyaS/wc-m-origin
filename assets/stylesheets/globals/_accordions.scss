@@ -5,3 +5,7 @@
 [data-ur-toggler-component="button"] {
 	@include toggler;
 }
+
+[data-ur-tabs-component="button"] {
+	@include toggler-level-2;
+}

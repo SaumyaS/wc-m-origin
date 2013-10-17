@@ -37,11 +37,30 @@ $base-line-height: 24px;
 	color: white;
 	border: 1px solid black;
 	border-radius: 4px;
+	padding: 10px;
 	margin: 5px 10px;
 	font-size: 1.25em;
+	line-height: 1em;
 
 	&[data-ur-state="enabled"] {
 		@include background-image(url(../../../images/img/delete.png), linear-gradient(black 0, #333 100%));
+	}
+}
+
+@mixin toggler-level-2 {
+	@include background-image(linear-gradient(#888 0, #555 100%));
+	background-position: right center;
+	background-repeat: no-repeat;
+	color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 5px 10px;
+	font-size: 1em;
+	line-height: 1em;
+
+	&[data-ur-state="enabled"] {
+		@include background-image(linear-gradient(#555 0, #888 100%));
 	}
 }
 
@@ -85,7 +104,7 @@ $base-line-height: 24px;
 	text-decoration: none;
 	text-transform: capitalize;
 	font-weight: bold;
-	padding: 10px;
+	// padding: 10px;
 	// color: #2C3539;
 	color: white;
 	margin: 5px 10px;
