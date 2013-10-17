@@ -34,7 +34,7 @@ $$(".main_container"){
 	}
 
 	$(".//div[@class='search-sidebar']"){
-
+		attributes(onload: "pageSize()")
 		$("./h2"){
 			insert_after("div", class:"_resultContent"){
 				insert("div", class: "_tabWidget"){
@@ -89,12 +89,12 @@ $$(".main_container"){
 				}
 			}
 
-			$("./select[@id='sizeBy']/option[1]"){
-				attributes(selected: "selected")
-			}
-			$("./select[@id='sizeBy']/option[3]"){
-				attributes(selected: "")
-			}
+			# $("./select[@id='sizeBy']/option[1]"){
+			# 	attributes(selected: "selected")
+			# }
+			# $("./select[@id='sizeBy']/option[3]"){
+			# 	attributes(selected: "")
+			# }
 
 			$("./select[@id='orderBy']/option"){
 				attribute("value"){

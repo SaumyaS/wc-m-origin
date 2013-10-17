@@ -103,16 +103,6 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 		background-color: #ccc;
-		#menu1{
-
-			>a{
-				// background: url(../../../images/img/plus.png) no-repeat right center #aaa;
-				
-			}
-			>a.active{
-				// background: url(../../../images/img/delete.png) no-repeat right center #aaa;
-			}
-		}
 		.col{
 			a {
 				@include background-image(url(../../../images/menu_go.png), linear-gradient(#333 0, black 100%));
