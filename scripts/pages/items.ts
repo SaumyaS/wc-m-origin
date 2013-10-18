@@ -22,8 +22,10 @@ $$(".main-col"){
 		$("./hr[3]"){
 			remove()
 		}
-		$("./div[2]"){
-			remove()
+		$("./div[@class='sub-col']/a"){
+			$(".."){
+				remove()
+			}
 		}
 	}
 	$("./div[@class='gallery']"){

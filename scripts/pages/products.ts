@@ -56,12 +56,12 @@ $$(".main_container"){
 				}
 			}
 
-			$("./select[@id='sortBy']/option[1]"){
-				attributes(selected: "selected")
-			}
-			$("./select[@id='sortBy']/option[3]"){
-				attributes(selected: "")
-			}
+			# $("./select[@id='sortBy']/option[1]"){
+			# 	attributes(selected: "selected")
+			# }
+			# $("./select[@id='sortBy']/option[3]"){
+			# 	attributes(selected: "")
+			# }
 
 			$("./select[@id='orderBy']/option"){
 				attribute("value"){
