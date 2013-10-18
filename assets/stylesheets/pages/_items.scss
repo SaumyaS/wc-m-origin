@@ -122,4 +122,48 @@
 			}
 		}
 	}
+	.sidebar{
+		margin-top: 10px;
+		border-top: 1px solid #555;
+		text-align: center;
+		padding: 10px 20px;
+		background-color: #ffedbd;
+		h2{
+			font-size: 14px;
+			margin-top: 0;
+		}
+		.sidebar-product{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #505050;
+			a{
+				img{
+					border: 1px solid #555;
+				}
+			}
+			h1{
+				font-size: 16px;
+				color: black;
+				background: none;
+				border-top: none;
+				border-bottom: 1px solid #ffc623;
+				padding-bottom: 4px;
+			}
+			p{
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				.price{
+					color: #ff6311;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				.add-to{
+					display: none;
+				}
+			}
+		}
+	}
 }

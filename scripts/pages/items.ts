@@ -67,6 +67,12 @@ $$(".main-col"){
 	}
 }
 
+$$(".sidebar"){
+	$("./div[@class='sidebar-product']/p[2]/span[@class='price']"){
+		insert_after("br")
+	}
+}
+
 $$(".product-more-info"){
 	attribute("data-ur-set", "toggler")
 	$("./h2[1]"){
