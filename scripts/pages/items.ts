@@ -8,10 +8,6 @@ $$(".product_social_icons"){
 	remove()
 }
 
-$$(".product_spacing"){
-	# $("./div[@")
-}
-
 $$(".main-col"){
 	$("./div[@class='product-info']"){
 		$("./div/h1"){
@@ -22,6 +18,12 @@ $$(".main-col"){
 					}
 				}
 			}
+		}
+		$("./hr[3]"){
+			remove()
+		}
+		$("./div[2]"){
+			remove()
 		}
 	}
 	$("./div[@class='gallery']"){
@@ -76,8 +78,6 @@ $$(".product-more-info"){
 	$("./ul[2]"){
 		attributes(data-ur-toggler-component: "content", data-ur-id: "3")
 	}
-
-
 }
 
 $$(".product-info"){

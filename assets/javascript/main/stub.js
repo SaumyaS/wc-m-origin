@@ -5,6 +5,8 @@ $(document).ready(function() {
     $("#image-menu").on('click', function() {
     	$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
   	});
+    
+    $('.search-sidebar:contains("No further refinement")').slideUp("fast");
 });
 
 $("#createdBy").DOMNodeAppear(function() {
@@ -16,6 +18,7 @@ $("#createNewRequisitionList").DOMNodeAppear(function(){
 });
 
 $(".cart_check_btn").DOMNodeAppear(function () {
+
     var str = $(".cart_check_btn").text();
     var empty = "cart empty";
     var full = "cart checkout";

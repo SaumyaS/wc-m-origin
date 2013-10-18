@@ -41,27 +41,44 @@ $base-line-height: 24px;
 	margin: 5px 10px;
 	font-size: 1.25em;
 	line-height: 1em;
+	padding: 5px 10px;
 
 	&[data-ur-state="enabled"] {
 		@include background-image(url(../../../images/img/delete.png), linear-gradient(black 0, #333 100%));
 	}
 }
 
-@mixin toggler-level-2 {
-	@include background-image(linear-gradient(#888 0, #555 100%));
+@mixin subToggler{
+	@include background-image(url(../../../images/img/plus.png), linear-gradient(#777 0, #444 100%));
 	background-position: right center;
 	background-repeat: no-repeat;
 	color: white;
 	border: 1px solid black;
 	border-radius: 4px;
-	padding: 5px;
-	margin: 5px 10px;
-	font-size: 1em;
-	line-height: 1em;
+	margin: 4px 12px;
+	font-size: 1.25em;
+	padding: 4px 10px;
 
 	&[data-ur-state="enabled"] {
-		@include background-image(linear-gradient(#555 0, #888 100%));
+		@include background-image(url(../../../images/img/delete.png), linear-gradient(#444 0, #777 100%));
 	}
+}
+
+@mixin togglerContent{
+	font-family: 'FrancoisOne', sans-serif;
+	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	background-position-x: right;
+	background-color: #eee;
+	display: block;
+	font-size: 13px;
+	line-height: 1;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #726E6D;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 @mixin dots{
