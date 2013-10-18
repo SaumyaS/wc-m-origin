@@ -7,12 +7,6 @@ $(document).ready(function() {
 	});
 	
 	$('.search-sidebar:contains("No further refinement")').slideUp("fast");
-
-   
-		
-	pageSize();
-	
-
 });
 
 $("#createdBy").DOMNodeAppear(function() {
@@ -39,26 +33,3 @@ $(".cart_check_btn").DOMNodeAppear(function () {
 	}
 });
 
-var pageSize = function(){
-	var URL = document.URL;
-	var key = getUrlVars(URL)["pageSize"];
-	console.log(key);
-	if(!window.location.hash){
-		if(key != 12 && URL.indexOf("pageSize") > -1){
-			var newSize = 12;
-			var newURL = URL.replace(/(pageSize=).*?(&)/,'$1' + newSize + '$2');
-			console.log(newURL);
-			this.document.location.href = newURL;
-		}
-	}
-
-	
-}
-
-function getUrlVars(URL) {
-	var vars = {};
-	var parts = URL.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-		vars[key] = value;
-	});
-	return vars;
-}

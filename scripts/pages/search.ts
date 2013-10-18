@@ -34,7 +34,6 @@ $$(".main_container"){
 	}
 
 	$(".//div[@class='search-sidebar']"){
-		attributes(onload: "pageSize()")
 		$("./h2"){
 			insert_after("div", class:"_resultContent"){
 				insert("div", class: "_tabWidget"){
