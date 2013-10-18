@@ -104,6 +104,7 @@ $base-line-height: 24px;
 	margin: 0px auto;
 	border-radius: 5px;
 	padding: 5px 10px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 @mixin bars{
