@@ -9,10 +9,7 @@ $("//*[@id='Register']"){
 	$("../h1"){
 		attributes(class: "_personalInfoTitle")
 	}
-	$("../h2"){
-		attributes(style: "padding: 5px;")
-	}
-
+	
 	$("./div/div[2]/input[@id='WC_UserRegistrationUpdateForm_FormInput_receiveEmail_In_Register_1']"){
 		insert_before("br")
 	}
@@ -36,6 +33,13 @@ $("//*[@id='Register']"){
 
 	$("./div/div[2]/br[6]"){
 		remove()
+	}
+
+	$("./a[@class='btn']"){
+		add_class("expand")
+	}
+	$("./a[@class='btn-gray']"){
+		add_class("expand")
 	}
 }
 

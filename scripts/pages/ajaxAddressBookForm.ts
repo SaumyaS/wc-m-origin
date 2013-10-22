@@ -10,6 +10,10 @@ $("/html/body"){
 			move_here("../a[1]")
 
 			move_here("../a[1]")
+			insert_after("div", class: "test"){
+				move_here("../p[1]")
+				move_here("../div[@class='align']")
+			}
 		}
 	}
 

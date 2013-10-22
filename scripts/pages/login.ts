@@ -52,12 +52,6 @@ $("/html/body"){
 					insert_after("br")
 				}
 			}
-			# $(".//div[@class='body']"){
-			# 	$("./div[1]"){
-			# 		attributes(style: "display: inline-block;float: left;margin-right: 10px;")
-			# 	}
-
-			# }
 		}
 		$(".//div[@id='OrderStatusTableDisplay_div_1']"){
 			$(".//div[@class='mw_was_thead']"){
@@ -116,6 +110,40 @@ $("/html/body"){
 		
 		$("//*[@id='WC_AccountDisplay_links_3']") {
 			add_class("expand")
+		}
+	}
+}
+
+$$(".body"){
+	# add_class("_accountContent")
+	$("./div[@class='checkout-container']"){
+		attributes(data-ur-set: "toggler")
+		$("./div[@class='contentgrad_header']//h3"){
+			attributes(data-ur-toggler-component: "button")
+		}
+		$("./div[@class='content']"){
+			attributes(data-ur-toggler-component: "content")
+		}
+	}
+	$("./div[@class='checkout-container']"){
+		$("./h3"){
+			text(){
+				set("Shipping")
+			}
+			match(text()){
+				with(/Shipping/){
+					log("this is a test")
+					attributes(data-ur-toggler-component: "button")
+					insert_after("div", class: "_shippingContent")
+					$("../div[@class='_shippingContent']"){
+						attributes(data-ur-toggler-component: "content")
+						move_here("../ul[@class='orgs']")
+						move_here("../div[@class='erp-shipping-address']")
+						move_here("../div[@class='erp-shipping-address-detail']")
+					}
+				}
+			}
+
 		}
 	}
 }

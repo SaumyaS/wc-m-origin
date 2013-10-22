@@ -1,7 +1,4 @@
-.register{
-	h1{
-		@include title_bar;
-	}
+#Register{
 	.checkout-container{
 		border: 2px solid #ccc;
 		padding: 10px;
@@ -63,8 +60,7 @@
 		@include toggler;
 	}
 	>a{
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 
 }
