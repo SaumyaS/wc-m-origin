@@ -201,7 +201,7 @@
 		text-align: center;
 
 		#header-search {
-			width: 90%;
+			width: 94%;
 			display: inline-block;
 
 			#SimpleSearchForm_SearchTerm {
@@ -213,7 +213,7 @@
 			#searchDiv {
 				@include box-sizing(border-box);
 				display: inline-block;
-				width: 20%;
+				// width: 20%;
 				margin-top: 5px;
 				a{
 					margin-left: 5px;
