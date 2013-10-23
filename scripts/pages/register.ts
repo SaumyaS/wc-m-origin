@@ -6,9 +6,20 @@ $$("#ad_17601"){
 
 
 $$(".register"){
-	#checkout container 1
+
 	$("./div[1]"){
 		add_class("_loginCredentials")
+	}
+	$("./div[2]"){
+		add_class("_personalInfoForm")
+	}
+	$("./div[3]"){
+		add_class("_companyInfoForm")
+	}
+
+	#checkout container 1
+	$("./div[@class='_loginCredentials']"){
+		
 		$("./label[2]"){
 			insert_before("br")
 		}
@@ -20,8 +31,9 @@ $$(".register"){
 	}
 	# checkout container 2
 
-	$("./div[2]"){
-		add_class("_personalInfoForm")
+	$("./div[@class='_personalInfoForm']"){
+		# move_to("..", "top")
+
 		$("./div[1]"){
 			attribute("style", "min-width: 400px; float: left;")
 			$("./label[2]"){
@@ -45,7 +57,7 @@ $$(".register"){
 				insert_before("br")			
 			}
 		}
-		$("./div[2]"){
+		$("./div[@class='_companyInfoForm']"){
 			attribute("style", "width: 300px; float: left; margin-top: 23px;")
 			$("./label[2]"){
 				insert_before("br")
@@ -64,7 +76,7 @@ $$(".register"){
 
 	#checkout container 3
 	$("./div[3]"){
-		add_class("_companyInfoForm")
+		
 		$("./ol"){
 			$("./li"){
 				insert_before("br")
@@ -77,6 +89,8 @@ $$(".register"){
 			}
 		}
 	}
+
+
 
 	$("./a[1]"){
 		attribute("style", "margin-left: 10px;")
@@ -121,4 +135,6 @@ $$(".register"){
 		add_class("input-second-line")
 		attributes(style: "")
 	}
-} // .register
+} 
+
+

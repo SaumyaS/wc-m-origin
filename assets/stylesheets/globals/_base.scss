@@ -5,136 +5,141 @@
 @import "_vertical_rhythmic";
 
 html {
-  height: 100%;
-  overflow: auto !important;
+	height: 100%;
+	overflow: auto !important;
 }
 
 body {
-  -webkit-text-size-adjust: none;
-  background: #fff;
-  color: #505050;
-  font-family: "Helvetica Neue", Helvetica, Verdana;
-  position: relative;
-  min-height: 100%;
+	-webkit-text-size-adjust: none;
+	background: #fff;
+	color: #505050;
+	font-family: "Helvetica Neue", Helvetica, Verdana;
+	position: relative;
+	min-height: 100%;
 }
 
 a {
-  color: #369;
-  text-decoration: none;
-  word-wrap: break-word;
+	color: #369;
+	text-decoration: none;
+	word-wrap: break-word;
 }
 
 a, a:link {
-  -webkit-tap-highlight-color: rgba(225, 244, 204, 0.5);
+	-webkit-tap-highlight-color: rgba(225, 244, 204, 0.5);
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 input[type="number"]::-webkit-outer-spin-button {
-  display: none;
+	display: none;
 }
 
 .wrapperScale {
-  min-width:1024px;
+	min-width:1024px;
 }
 
 h1{
-  display: block;
-  font-size: 2em;
-  -webkit-margin-before: 0.37em;
-  -webkit-margin-after: 0.37em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0.37em;
+	-webkit-margin-after: 0.37em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
 }
 
 h2{
-  display: block;
-  font-size: 1.5em;
-  -webkit-margin-before: 0.43em;
-  -webkit-margin-after: 0.43em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
+	display: block;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.43em;
+	-webkit-margin-after: 0.43em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
 }
 
 h3{
-  display: block;
-  font-size: 1.17em;
-  -webkit-margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
+	display: block;
+	font-size: 1.17em;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
 }
 
 strong{
-  font-weight: bold;
+	font-weight: bold;
 }
 
 label{
-  min-width: 100px;
-  font-weight: bold;
+	min-width: 100px;
+	font-weight: bold;
 }
 
 form{
-  display: block;
-  margin-top: 0em;
+	display: block;
+	margin-top: 0em;
 }
 
+select{
+	border: 1px solid #aaa;
+	background: #ccc;
+	padding: 3px;
+}
 
 ._box-shadow {
-  @include box-shadow($box-shadow-demo-pers-nav);
+	@include box-shadow($box-shadow-demo-pers-nav);
 }
 $slider-width: 255px;
 #body-content{
-  position: relative;
-  z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-  background: white;
-  @include box-shadow($box-shadow-demo-pers-nav);
-  // Fixes the flashing that occurs when the universal navigation is clicked due to the redraw
-  @include transform(translate(0, 0));
-  @include transition (all 0.3s ease);
-  // Fixes the flashing that occurs when togglers and tabs clicked due to the redraw
-  [data-ur-set = 'tabs'], [data-ur-set = 'toggler'] {
-    @include transform(translate(0, 0));
-  }
-  &.pers-nav-active {
-    @include transform(translate(-$slider-width, 0));
-  }
+	position: relative;
+	z-index: 1;
+	max-width: 100%;
+	overflow: hidden;
+	background: white;
+	@include box-shadow($box-shadow-demo-pers-nav);
+	// Fixes the flashing that occurs when the universal navigation is clicked due to the redraw
+	@include transform(translate(0, 0));
+	@include transition (all 0.3s ease);
+	// Fixes the flashing that occurs when togglers and tabs clicked due to the redraw
+	[data-ur-set = 'tabs'], [data-ur-set = 'toggler'] {
+		@include transform(translate(0, 0));
+	}
+	&.pers-nav-active {
+		@include transform(translate(-$slider-width, 0));
+	}
 }
 
 #pers-nav-mask {
-  display: none;
-  &.pers-nav-active {
-    opacity: 0;
-  }
+	display: none;
+	&.pers-nav-active {
+		opacity: 0;
+	}
 }
 #pers-nav{
-  opacity: 0;
-  top: 0;
-  right: 0;
-  position: absolute;
-  background: #ccc;
-  width: $slider-width;
-  min-height: 100%;
-  position: absolute;
-  -webkit-transition: all 0.3s ease;
-  &.pers-nav-active {
-    opacity: 1;
-    @include prefixer(transition-delay, 0s);
-    -webkit-transition: opacity 0.5s ease;
-  }
-  .sprites-dude {
-    display: inline-block;
-    margin-right: 5px;
-  }
+	opacity: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	background: #ccc;
+	width: $slider-width;
+	min-height: 100%;
+	position: absolute;
+	-webkit-transition: all 0.3s ease;
+	&.pers-nav-active {
+		opacity: 1;
+		@include prefixer(transition-delay, 0s);
+		-webkit-transition: opacity 0.5s ease;
+	}
+	.sprites-dude {
+		display: inline-block;
+		margin-right: 5px;
+	}
 }
 
 ._hide{
-  display: none;
+	display: none;
 }

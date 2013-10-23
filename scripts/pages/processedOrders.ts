@@ -64,6 +64,7 @@ $("//div[@id='OrderStatusTableDisplay_div_4']"){
 				}
 			}
 		}
+		insert_after("hr")
 
 
 	}

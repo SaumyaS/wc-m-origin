@@ -1,20 +1,22 @@
 ._accountSummary{
-
-
 	._togglerWidget{
 		padding-top: 3px;
 		text-align: center;
+		background: #ccc;
+		padding-bottom: 5px;
 		._userInfo{
 			@include bars;
 		}
-		.group{
-			a{
-				@include subbars;
-
-
+		.nav-secondary{
+			margin-top: -5px;
+			.group{
+				a{
+					border: 1px solid #aaa;
+					@include subbars;
+				}
 			}
-
 		}
+		
 		.items{
 			a{
 				@include subbars;
@@ -71,8 +73,6 @@
 			}
 		}
 	}
-
-
 }
 
 .acct-name {

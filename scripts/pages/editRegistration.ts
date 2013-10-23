@@ -6,22 +6,27 @@ $$("#ad_17601"){
 
 
 $$("#Register"){
+
+	$("./div[1]"){
+		
+	}
+	$("./div[2]"){
+		
+	}
+	$("./div[3]"){
+		
+	}
+
+
 	#checkout container 1
 	$("./div[1]"){
 		add_class("_personalInfoForm")
-		$("./label[2]"){
-			insert_before("br")
-		}
-		$("./label[3]"){
-			insert_before("br")
-		}
-
-
 	}
 	# checkout container 2
 
 	$("./div[2]"){
 		add_class("_loginCreds")
+		move_to("../div[1]", position("before"))
 		$("./div[1]"){
 			attribute("style", "min-width: 400px; float: left;")
 			$("./label[2]"){
@@ -78,11 +83,6 @@ $$("#Register"){
 		}
 	}
 
-	$("./a[1]"){
-		attribute("style", "margin-left: 10px;")
-	}
-
-
 	$("./h1[2]"){
 		add_class("_companyInfoTitle")
 		insert_before("div", class: "_companyInfoContainer")
@@ -123,7 +123,9 @@ $$("#Register"){
 	}
 
 	$("./a[@class='btn']"){
-		insert_after("br")
+		add_class("expand")
 	}
-
+	$("./a[@class='btn-gray']"){
+		add_class("expand")
+	}
 }

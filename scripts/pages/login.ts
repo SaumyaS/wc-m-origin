@@ -44,6 +44,9 @@ $("/html/body"){
 			}
 			$("../div[@class='nav-secondary']"){
 				attributes(data-ur-toggler-component: "content")
+				$(".//a[@id='couponWallet']"){
+					remove()
+				}
 			}
 		}
 		$("./div[@class='account-col']"){
