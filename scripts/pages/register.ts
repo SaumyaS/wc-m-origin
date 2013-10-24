@@ -7,35 +7,20 @@ $$("#ad_17601"){
 
 $$(".register"){
 
+		#checkout container 1
 	$("./div[1]"){
-		add_class("_loginCredentials")
-	}
-	$("./div[2]"){
-		add_class("_personalInfoForm")
-	}
-	$("./div[3]"){
-		add_class("_companyInfoForm")
-	}
-
-	#checkout container 1
-	$("./div[@class='_loginCredentials']"){
-		
-		$("./label[2]"){
-			insert_before("br")
+		add_class("_loginCreds")
+		$("./input"){
+			insert_after("br")
 		}
-		$("./label[3]"){
-			insert_before("br")
-		}
-
-
 	}
 	# checkout container 2
 
-	$("./div[@class='_personalInfoForm']"){
-		# move_to("..", "top")
+	$("./div[2]"){
+		
 
+		add_class("_personalInfoForm")
 		$("./div[1]"){
-			attribute("style", "min-width: 400px; float: left;")
 			$("./label[2]"){
 				insert_before("br")
 			}
@@ -52,13 +37,8 @@ $$(".register"){
 			$("./label[6]"){
 				insert_before("br")
 			}
-			$("./input[@id='WC_UserRegistrationAddForm_AddressEntryForm_FormInput_address2_1']"){
-				attribute("style", "margin-left: 124px !important;")
-				insert_before("br")			
-			}
 		}
-		$("./div[@class='_companyInfoForm']"){
-			attribute("style", "width: 300px; float: left; margin-top: 23px;")
+		$("./div[2]"){
 			$("./label[2]"){
 				insert_before("br")
 			}
@@ -68,15 +48,18 @@ $$(".register"){
 			$("./input[@id='receiveEmailChkBox']"){
 				insert_before("br")
 			}
-			$("./label[4]"){
-				attribute("style", "font-weight: bold; margin-left: 5px;")
+			$("./input[@id='WC_UserRegistrationUpdateForm_FormInput_phoneNum_In_Register_1']"){
+				insert_after("br")
+			}
+			$("./input[@name='sendMeEmail']"){
+				insert_before("br")
 			}
 		}
 	}
 
 	#checkout container 3
 	$("./div[3]"){
-		
+		add_class("_companyInfoForm")
 		$("./ol"){
 			$("./li"){
 				insert_before("br")
