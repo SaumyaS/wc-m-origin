@@ -65,13 +65,17 @@ match($status) {
 			}
 			with(/personalInformation/){
 				log("--> Importing UserRegistrationForm")
-				@import pages/personalInfo.ts
-				@import pages/register.ts
+				# @import pages/personalInfo.ts
+				@import pages/editRegistration.ts
+			}
+			with(/editRegistration/){
+				@import pages/editRegistration.ts
 			}
 			with(/UserRegistrationForm/){
 				log("--> Importing Register code")
 				@import pages/register.ts
 			}
+
 			with(/AjaxCatalogSearchView/){
 				log("--> Importing AdvancedSearch")
 				@import pages/advancedSearch.ts

@@ -7,14 +7,33 @@ $(document).ready(function() {
 	});
 	
 	$('.search-sidebar:contains("No further refinement")').slideUp("fast");
+
+	$(".tabStrip-disabled").hide();
+
+	$('#map-header').addClass("test");
+
+	$("#PreviouslyProcessed1").click(function(){
+		console.log("prev");
+		$("._prev").show();
+		$("._waiting").hide();
+	});
+
+	$("#trackOrderStatus").click(function(){
+		console.log("prev");
+		$("._prev").show();
+		$("._waiting").hide();
+	});
+
+	$("#WaitingForApproval1").click(function(){
+		console.log("wait");
+		$("._prev").hide();
+		$("._waiting").show();
+	});
+
 });
 
 $("#createdBy").DOMNodeAppear(function() {
   Ur.setup("._togglerContainer");
-});
-
-$("#createNewRequisitionList").DOMNodeAppear(function(){
-	$("._userInfo").prop('data-ur-state', 'disabled');
 });
 
 $(".cart_check_btn").DOMNodeAppear(function () {
@@ -32,4 +51,22 @@ $(".cart_check_btn").DOMNodeAppear(function () {
 		$("#cart-image").attr("class", "_cart-full");
 	}
 });
+
+$(".closeText").DOMNodeAppear(function(){
+	$('.closeText').hide();
+});
+
+$("._ajaxCalledAccount").DOMNodeAppear(function() {
+	Ur.setup("._togglerInitialize");
+});
+
+$(".highslide-container").DOMNodeAppear(function(){
+	$('.highslide-container').hide();
+});
+
+$("#mainTabContainer_tablist").DOMNodeAppear(function(){
+	$('#mainTabContainer_tablist').hide();
+});
+
+
 

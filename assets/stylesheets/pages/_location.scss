@@ -8,12 +8,23 @@
 			@include horizontal_line;
 		}
 		#ad_18101{
-			display: block;
 			#WC_ContentAreaESpot_div_22_1{
 				height: auto;
+			}
+			a{
+				display: none;
+			}
+			iframe{
+				#map-header{
+					background: none;
+				}
 			}
 		}
 		
 	}
 
+}
+
+#map-header{
+	background: none;
 }

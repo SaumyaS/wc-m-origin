@@ -1,20 +1,22 @@
 ._accountSummary{
-
-
 	._togglerWidget{
 		padding-top: 3px;
 		text-align: center;
+		background: #ccc;
+		padding-bottom: 5px;
 		._userInfo{
 			@include bars;
 		}
-		.group{
-			a{
-				@include subbars;
-
-
+		.nav-secondary{
+			margin-top: -5px;
+			.group{
+				a{
+					border: 1px solid #aaa;
+					@include subbars;
+				}
 			}
-
 		}
+		
 		.items{
 			a{
 				@include subbars;
@@ -25,7 +27,9 @@
 		}
 	}
 	.account-col{
-
+		h2{
+			padding: 5px;
+		}
 		#box{
 			padding-bottom: 0px !important;
 			display: block;
@@ -45,25 +49,21 @@
 				.body{
 					padding: 5px;
 					.checkout-container{
-						border: 2px solid #ccc;
-						padding: 10px;
-						margin: 10px 0;
 						overflow: hidden;
-						#WC_MyAccountCenterLinkDisplay_div_130{
-							h3{
-								margin-top: 0px;
-								border-bottom: 1px solid #aaa;
-								padding-bottom: 5px;
-							}
-						}
 						.content{
-							padding-bottom: 0px !important;
+							border: 2px solid #ccc;
+							padding: 10px;
+							margin: 0 15px;
 							.info{
-								padding-bottom: 0px !important;
 								a{
 									margin-top: 5px;
 								}
 							}
+						}
+						._shippingContent{
+							border: 2px solid #cccccc;
+							padding: 10px;
+							margin: 0 15px;
 						}
 						.erp-shipping-address-detail{
 							width: 200px;
@@ -73,8 +73,6 @@
 			}
 		}
 	}
-
-
 }
 
 .acct-name {

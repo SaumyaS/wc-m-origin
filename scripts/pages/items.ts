@@ -12,10 +12,18 @@ $$(".main-col"){
 	$("./div[@class='product-info']"){
 		$("./div/h1"){
 			match(text()){
+				
 				with(/Your/){
 					$(".."){
 						add_class("_discount-Price")
 					}
+				}
+			}
+		}
+		$("./h1"){
+			match(text()){
+				with(/Call/){
+					add_class("_callForPrice")
 				}
 			}
 		}
@@ -28,6 +36,7 @@ $$(".main-col"){
 			}
 		}
 	}
+
 	$("./div[@class='gallery']"){
 		insert_before("div", class: "_mainInfo")
 	}
@@ -39,6 +48,7 @@ $$(".main-col"){
 	$("./div[@class='_item-info']"){
 		insert_top("div", class: "_info-title", "Product Info")
 		move_here("../div[@class='product-info']/div[@class='_discount-Price']")
+		move_here("../div[@class='product-info']/h1[@class='_callForPrice']")
 		move_here("../div[@class='product-info']/span[1]")
 		move_here("../div[@class='product-info']/h4[1]")
 		move_here("../div[@class='product-info']/h2[1]")
@@ -46,7 +56,6 @@ $$(".main-col"){
 		move_here("../div[@class='product-info']/input[@type='text']")
 		insert("br")
 		move_here("../div[@class='product-info']/a[@id='productPageAdd2Cart']")
-
 	}
 
 	$("./div[@class='_top-info']"){
@@ -55,6 +64,12 @@ $$(".main-col"){
 		insert_after("div", class: "_product-info"){
 			move_here("../div[@class='product-more-info']")
 		}
+	}
+}
+
+$$(".sidebar"){
+	$("./div[@class='sidebar-product']/p[2]/span[@class='price']"){
+		insert_after("br")
 	}
 }
 
@@ -86,7 +101,6 @@ $$(".product-info"){
 	inner(){
 		replace(/Pricing/, "Pricing <br>")
 	}
-
 	$("./a[@id='login_modal_link']"){
 		attributes(href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
 	}

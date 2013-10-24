@@ -11,40 +11,45 @@
 			margin: 5px;
 		}
 	}
-	.checkout-container{
-		border: 2px solid #ccc;
-		padding: 10px;
-		margin: 10px 5px;
+	._addressOptions{
+		padding: 5px;
+	}
+	._ajaxAddressBook{
+		padding: 5px;
 		overflow: hidden;
-		h3{
-			margin-top: 0;
-			border-bottom: 1px solid #aaa;
-			padding-bottom: 5px;
-
+		.align{
+			border: 2px solid #ccc;
+			padding: 5px;
 		}
-		.sub-col{
-			label{
-				display: inline-block;
-				min-width: 110px;
-			}
-			select{
-				width: 150px;
-			}
-			#address2{
-				margin-left: 114px !important;
-			}
-			input[type=text]{
-				margin: 5px 0px;
-				padding: 4px;
-				background: #ccc;
-				border: 1px solid #aaa;
-				box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+		._addressInfo{
+			margin-top: 10px;
+			border: 2px solid #ccc;
+			padding: 5px;
+			.sub-col{
+				label{
+					display: inline-block;
+					min-width: 110px;
+				}
+				select{
+					width: 150px;
+				}
+				#address2{
+					margin-left: 114px !important;
+				}
+				input[type=text]{
+					margin: 5px 0px;
+					padding: 4px;
+					background: #ccc;
+					border: 1px solid #aaa;
+					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+				}
 			}
 		}
 	}
 	.content_footer{
 		margin-bottom: 10px;
 		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 .alert{

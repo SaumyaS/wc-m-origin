@@ -1,3 +1,17 @@
+$("//div[@class='checkout-container']"){
+	add_class("_myOrders")
+	$("./h3"){
+		match(text()){
+			with(/Previously/){
+				attributes(class: "_prev")
+			}
+			with(/Waiting/){
+				attributes(class: "_waiting")
+				attributes(style: "display: none;")
+			}
+		}
+	}
+}
 $("//div[@id='OrderStatusTableDisplay_div_4']"){
 	$(".//div[@class='mw_was_thead']"){
 		remove()
@@ -50,6 +64,7 @@ $("//div[@id='OrderStatusTableDisplay_div_4']"){
 				}
 			}
 		}
+		insert_after("hr")
 
 
 	}

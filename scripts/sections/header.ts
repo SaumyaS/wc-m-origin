@@ -156,8 +156,9 @@ $$("a#headerAdvancedSearch"){
 $$("form#CatalogSearchForm"){
 	wrap("div") {
 		attributes(id: "search_bar")
-		move_here("../a[@id='headerAdvancedSearch']")
+		# move_here("../a[@id='headerAdvancedSearch']")
 		$(".//a[@id='WC_CachedHeaderDisplay_button_1']"){
+			attributes(onmouseover: "", onmouseout: "")
 			add_class("btn")
 			text(){
 				set("Search")
@@ -198,6 +199,11 @@ $("./body"){
 		with(/AjaxQuickCartDisplay/){}
 		with(/AjaxCatalogSearchResultView/){}
 		with(/SearchBasedNavigationCategoryResultDisplayView/){}
+		with(/AddToCartModalView/){}
+		with(/AjaxOrderChangeServiceItemAdd/){}
+		with(/UserRegistrationForm/){}
+		with(/AjaxTrackOrderStatus/){}
+		with(/OrderStatusTableDetailsHelper/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")
