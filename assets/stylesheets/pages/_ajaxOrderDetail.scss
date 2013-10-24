@@ -1,10 +1,52 @@
 ._orderDetails{
+	label{
+		display: inline-block;
+	}
 	#WC_ContentAreaESpot_div_1_63001{
 
 	}
 	#box{
 		._orderInfo{
 			padding: 5px;
+			background-color: #eee;
+			border: 1px solid #aaa;
+			margin: 5px;
+		}
+		._content{
+			padding: 5px;
+			border: 2px solid #ccc;
+			margin: 5px 17px;
+			.sub-col{
+				span{
+					display: inherit;
+				}
+				label{
+					min-width: 120px;
+				}
+			}
+		}
+		.checkout-container{
+			#OrderConfirmPagingDisplay{
+				margin 5px;
+				padding: 5px;
+				background-color: #eee;
+				border: 1px solid #aaa;
+			}
+			#order-total{
+				margin: 10px 5px;
+				padding: 10px;
+				border: 1px solid #aaa;
+				background-color: #ccc;
+				overflow: hidden;
+				label{
+					min-width: 120px;
+				}
+			}
+			a{
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
 		}
 	}
 }

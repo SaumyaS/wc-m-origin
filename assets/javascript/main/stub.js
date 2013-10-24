@@ -10,8 +10,6 @@ $(document).ready(function() {
 
 	$(".tabStrip-disabled").hide();
 
-	$('#map-header').addClass("test");
-
 	$("#PreviouslyProcessed1").click(function(){
 		console.log("prev");
 		$("._prev").show();
@@ -29,7 +27,6 @@ $(document).ready(function() {
 		$("._prev").hide();
 		$("._waiting").show();
 	});
-
 });
 
 $("#createdBy").DOMNodeAppear(function() {
@@ -60,6 +57,12 @@ $("._ajaxCalledAccount").DOMNodeAppear(function() {
 	Ur.setup("._togglerInitialize");
 });
 
+$("._orderDetails").DOMNodeAppear(function() {
+	console.log("test the container");
+	Ur.setup("._togglerBillContainer");
+	Ur.setup("._togglerShipContainer");
+});
+
 $(".highslide-container").DOMNodeAppear(function(){
 	$('.highslide-container').hide();
 });
@@ -67,6 +70,5 @@ $(".highslide-container").DOMNodeAppear(function(){
 $("#mainTabContainer_tablist").DOMNodeAppear(function(){
 	$('#mainTabContainer_tablist').hide();
 });
-
 
 
