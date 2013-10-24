@@ -179,6 +179,10 @@ match($status) {
 				log("--> Importing SearchBasedNavigationCategoryResultDisplayView")
 				@import pages/SearchBasedNavigationCategoryResultDisplayView.ts
 			}
+			with(/AjaxOrderDetail/){
+				log("--> Importing Account OrderDetails transformation")
+				@import pages/AjaxOrderDetail.ts
+			}
 
 		 
 	 

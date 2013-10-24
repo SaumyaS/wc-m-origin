@@ -32,7 +32,7 @@ $("/html"){
 
 		# Removes breadcrumbs
 		$$("#breadcrumb"){
-			remove()
+			attributes(style: "display: none;")
 		}
 
 		$$("#sessionTimeoutModalDiv"){
@@ -204,6 +204,7 @@ $("./body"){
 		with(/UserRegistrationForm/){}
 		with(/AjaxTrackOrderStatus/){}
 		with(/OrderStatusTableDetailsHelper/){}
+		with(/AjaxOrderDetail/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")
