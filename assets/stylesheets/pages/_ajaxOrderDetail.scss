@@ -27,10 +27,17 @@
 		}
 		.checkout-container{
 			#OrderConfirmPagingDisplay{
-				margin: 5px;
-				padding: 5px;
-				background-color: #eee;
-				border: 1px solid #aaa;
+				-webkit-box-shadow: #555555 1px 1px 4px;
+				background: white;
+				border-bottom-left-radius: 3px 3px;
+				border-bottom-right-radius: 3px 3px;
+				border-top-left-radius: 3px 3px;
+				border-top-right-radius: 3px 3px;
+				clear: both;
+				line-height: 140%;
+				margin: 10px 5px;
+				overflow: hidden;
+				padding: 10px;
 			}
 			#order-total{
 				margin: 10px 5px;

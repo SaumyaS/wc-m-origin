@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	$('#menu1 > a').click(function() {
-		$(this).toggleClass('active');
-	});
 	$("#image-menu").on('click', function() {
 		$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
 	});
@@ -58,9 +55,9 @@ $("._ajaxCalledAccount").DOMNodeAppear(function() {
 });
 
 $("._orderDetails").DOMNodeAppear(function() {
-	console.log("test the container");
 	Ur.setup("._togglerBillContainer");
 	Ur.setup("._togglerShipContainer");
+	Ur.setup("._orderSummaryContainer");
 });
 
 $(".highslide-container").DOMNodeAppear(function(){

@@ -29,8 +29,6 @@ $("/html"){
 						attributes(style: "")
 						$(".."){
 							add_class("_paymentInfo")
-							
-
 						}
 					}
 					with(/Shipping/){
@@ -41,7 +39,6 @@ $("/html"){
 			}
 		}
 	}
-
 }
 
 $$("._paymentInfo"){
@@ -102,6 +99,18 @@ $$("._paymentInfo"){
 }
 
 $$(".checkout-container"){
+	add_class("_orderSummaryContainer")
+	attributes(data-ur-set: "toggler")
+	$("./h3"){
+		match(text()){
+			with(/Order/){
+				attributes(class: "_orderSummaryTitle", data-ur-toggler-component: "button", data-ur-id: "order")
+			}
+		}
+	}
+	$("./div[@id='OrderConfirmPagingDisplay']"){
+		attributes(data-ur-toggler-component: "content", data-ur-id: "order")
+	}
 	$(".//div[@id='order-total']"){
 		$("./div[1]"){
 			attributes(style: "")
@@ -125,7 +134,6 @@ $$(".checkout-container"){
 				add_class("expand")
 			}
 		}
-		
 	}
 	$("./a[@id='email_modal_link']"){
 		add_class("expand")
