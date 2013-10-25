@@ -47,7 +47,7 @@ $("/html"){
 			wrap("div"){
 			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
-			}		
+			}
 		}
 
 	$(".//li[@class='MyAccountURLSep']"){
@@ -59,7 +59,7 @@ $("/html"){
   }
 }
 
-# Creates toggler for Navigation 
+# Creates toggler for Navigation
 $$(".nav_wrapper"){
 	$("./div/ul"){
 		$("li[1]"){
@@ -86,7 +86,7 @@ $$(".nav_wrapper"){
 		$$(">a"){
 		  attributes(data-ur-toggler-component: "button", data-ur-id: "submenu")
 		}
-		  
+
 		$$(".subnav"){
 			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
 			$$("a"){
@@ -105,7 +105,7 @@ $$(".checkout_wrapper"){
 	insert("div", class: "_accountURL"){
 		move_here("../ul[@class='cart_menu']"){
 		  	$(".//li[@class='MyAccountURLSep']"){
-				attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user") 
+				attributes(data-ur-tabs-component: "content", data-ur-tab-id:"user")
 		  	}
 		}
 	}
@@ -122,7 +122,7 @@ $$(".checkout_wrapper"){
 									remove()
 								}
 						 		insert("div", id: "cart-image")
-							}	
+							}
 							with(/Checkout/){
 						  		$("../img") {
 									remove()
@@ -134,14 +134,14 @@ $$(".checkout_wrapper"){
 					}
 				}
 		  	}
-		  	add_class("_cart") 
+		  	add_class("_cart")
 		}
 		insert("div", id: "image-menu")
 	}
 
 	$$("#image-menu"){
 		insert("img", src: asset("images/menu.png"))
-	}    
+	}
 
 	$$("#image-user"){
 		insert("img", src: asset("images/user.png"))
@@ -210,6 +210,9 @@ $("./body"){
 				insert_bottom("div", id: "pers-nav-mask")
 				insert_before("div", id: "pers-nav"){
 					copy_here("//div[@class='nav_wrapper']")
+					insert("div", class: "_hdsupplyLogo"){
+						insert("div", class: "_image")
+					}
 				}
 			}
 			$("./div[@id='pers-nav']"){
@@ -218,17 +221,17 @@ $("./body"){
 					$("./li"){
 						$("./a"){
 							add_class("_box-shadow")
-							
+
 						}
 					}
 					$("./li[@id='menu1']"){
 						$("./a"){
-							
+
 							attributes(data-ur-id: "pers-nav-menu")
 						}
 						$("./ul[@class='subnav']"){
 							attributes(data-ur-id: "pers-nav-menu")
-						}	
+						}
 					}
 				}
 			}

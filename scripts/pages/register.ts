@@ -17,7 +17,7 @@ $$(".register"){
 	# checkout container 2
 
 	$("./div[2]"){
-		
+
 
 		add_class("_personalInfoForm")
 		$("./div[1]"){
@@ -31,7 +31,7 @@ $$(".register"){
 				insert_before("br")
 			}
 			$("./label[5]"){
-				
+
 				insert_before("br")
 			}
 			$("./label[6]"){
@@ -118,6 +118,6 @@ $$(".register"){
 		add_class("input-second-line")
 		attributes(style: "")
 	}
-} 
+}
 
 

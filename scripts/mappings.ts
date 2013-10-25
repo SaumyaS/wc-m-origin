@@ -13,12 +13,14 @@ match($status) {
 	with(/302/) {
 		log("--> STATUS: 302") # redirect: just let it go through
 	}
+	with(/301/){
+		log("--> status: 301")
+	}
 
 	with(/200/) {
 		log("--> STATUS: 200")
 
 		match($path) {
-			
 			with(/TopCategoriesDisplay/){
 				log("--> Importing pages/new.ts in mapping.ts")
 				log("--> Importing pages/home.ts in mappring.ts")
@@ -184,8 +186,6 @@ match($status) {
 				@import pages/AjaxOrderDetail.ts
 			}
 
-		 
-	 
 			else() {
 				log("--> No page match in mappings.ts")
 			}
@@ -197,5 +197,4 @@ match($status) {
 		log("--> STATUS: " + $status + " assuming its an error code pages/error.ts")
 		@import pages/error.ts
 	}
-
 }

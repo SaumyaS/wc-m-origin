@@ -45,7 +45,7 @@ $$("._paymentInfo"){
 	$("./hr"){
 		remove()
 	}
-	
+
 	$("./h3[@class='_BillingInfo']"){
 		wrap("div"){
 			attributes(class: "_togglerBillContainer")

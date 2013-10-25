@@ -69,8 +69,8 @@ $$("#page"){
 			  		move_here("../ul")
 				}
 		  	}
-			
-		  
+
+
 		  	$("./div[@class='_traderCarousel']"){
 				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
 				$("./ul[@id='first-carousel']"){
@@ -85,11 +85,11 @@ $$("#page"){
 		  		}
 			}
 		}
-		
+
 		$("./div[4]"){
 			add_class("_feature")
 			$("./div[@class='future_product']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled") 
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled")
 				$("./ul"){
 					attributes(data-ur-carousel-component: "scroll_container")
 					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
@@ -108,20 +108,12 @@ $$("#page"){
 				 			remove()
 						}
 			  		}
-				}	
-		  	}      
+				}
+		  	}
 		}
 	}
 }
-  
-
-
-
-
-
- 
-
-  # Removes Product category section on the page
+# Removes Product category section on the page
 #  $$(".product_cat"){
 #    remove()
 #  }
@@ -152,5 +144,5 @@ $$("#emailText"){
 	move_to("//div[@class='subs_imput_box']", "before")
 	insert_after("br")
 }
-  
+
 
