@@ -201,7 +201,7 @@ $("./body"){
 		with(/SearchBasedNavigationCategoryResultDisplayView/){}
 		with(/AddToCartModalView/){}
 		with(/AjaxOrderChangeServiceItemAdd/){}
-		with(/UserRegistrationForm/){}
+		with(/editRegistration/){}
 		with(/AjaxTrackOrderStatus/){}
 		with(/OrderStatusTableDetailsHelper/){}
 		with(/AjaxOrderDetail/){}
