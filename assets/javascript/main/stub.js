@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$("#image-menu").on('click', function() {
 		$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
 	});
-	
+
 	$('.search-sidebar:contains("No further refinement")').slideUp("fast");
 
 	$(".tabStrip-disabled").hide();
@@ -27,7 +27,7 @@ $(document).ready(function() {
 });
 
 $("#createdBy").DOMNodeAppear(function() {
-  Ur.setup("._togglerContainer");
+	Ur.setup("._togglerContainer");
 });
 
 $(".cart_check_btn").DOMNodeAppear(function () {
@@ -37,7 +37,7 @@ $(".cart_check_btn").DOMNodeAppear(function () {
 	var full = "cart checkout";
 	str = str.toLowerCase();
 	str = str.trim();
-	
+
 	if (str.localeCompare(empty) === 0) {
 		$("#cart-image").attr("class", "_cart-empty");
 	}

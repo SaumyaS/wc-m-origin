@@ -2,6 +2,18 @@
 //   display: none;
 // }
 
+#pers-nav{
+	._hdsupplyLogo{
+		margin-top: -5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		._image{
+			background: url(../../../images/HDSupply-Logo.png) no-repeat;
+			height: 65px;
+			background-size: 235px 65px
+		}
+	}
+}
 
 .header_container {
 	#WC_ContentAreaESpot_links_7_1{
@@ -43,7 +55,7 @@
 			a{
 				color: #3a00f4;
 				text-decoration: underline;
-					
+
 			}
 			.heading{
 				color: #505050;
@@ -98,7 +110,7 @@
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
-	
+
 	.nav-primary{
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -159,20 +171,20 @@
 		}
 	}
 
-	#_icons_bar{ 
+	#_icons_bar{
 		position: absolute;
 		bottom: 0;
 		right: 5px;
 		opacity: .8;
 
-			 
+
 		>div:hover{
-			cursor: pointer;			
+			cursor: pointer;
 		}
 		>div{
 			padding-left: 4px;
 			padding-right: 4px;
-			display: inline-block;    
+			display: inline-block;
 			width: 30px;
 			height: 30px;
 		}
@@ -189,7 +201,7 @@
 		font-size: 16px;
 		line-height: 1;
 		text-decoration: none;
-		text-transform: capitalize; 
+		text-transform: capitalize;
 		padding: 10px;
 	}
 
@@ -197,7 +209,7 @@
 		padding-top: 3px;
 		padding-bottom: 3px;
 		border-bottom: 1px solid #eee;
-		background-color: #000;	
+		background-color: #000;
 		text-align: center;
 
 		#header-search {
@@ -220,7 +232,7 @@
 					padding: 2px 8px;
 				}
 			}
-		}		 
+		}
 	}
 
 	#headerAdvancedSearch  {
@@ -229,9 +241,9 @@
 	}
 
 	._cart {
-		list-style: none;  
+		list-style: none;
 	}
-	
+
 	.MyAccountURLSep {
 		text-align: center;
 		border-bottom: 1px solid #eee;
@@ -240,7 +252,7 @@
 		}
 	}
 
-	
+
 }
 
 #Add_To_Cart_modal_dialog{
