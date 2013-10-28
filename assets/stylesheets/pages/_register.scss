@@ -18,17 +18,17 @@
 			background: #ccc;
 			padding: 0.5em !important;
 		}
+		input[name="address2"]{
+			margin-left: 124px !important;
+		}
 		input[type="password"]{
 			margin: 5px 0;
 			border: 1px solid #aaa;
 			background: #ccc;
-			padding: 3px;
+			padding: 0.5em !important;
 		}
 		select{
 			margin: 5px 0;
-			border: 1px solid #aaa;
-			background: #ccc;
-			padding: 3px;
 			width: 157px;
 		}
 		ol{
@@ -63,9 +63,8 @@
 		@include toggler;
 	}
 	>a{
+		margin-bottom: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
-		margin-bottom: 10px;
 	}
-
 }
