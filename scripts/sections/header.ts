@@ -140,11 +140,11 @@ $$(".checkout_wrapper"){
 	}
 
 	$$("#image-menu"){
-		insert("img", src: asset("images/menu.png"))
+		attributes(class: "Icons-menu")
 	}
 
 	$$("#image-user"){
-		insert("img", src: asset("images/user.png"))
+		attributes(class: "Icons-male_user")
 	}
 }
 
@@ -211,7 +211,7 @@ $("./body"){
 				insert_before("div", id: "pers-nav"){
 					copy_here("//div[@class='nav_wrapper']")
 					insert("div", class: "_hdsupplyLogo"){
-						insert("div", class: "_image")
+						insert("div", class: "Icons-HDSupply-Logo")
 					}
 				}
 			}

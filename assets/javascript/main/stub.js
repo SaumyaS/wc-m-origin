@@ -39,11 +39,15 @@ $(".cart_check_btn").DOMNodeAppear(function () {
 	str = str.trim();
 
 	if (str.localeCompare(empty) === 0) {
-		$("#cart-image").attr("class", "_cart-empty");
+		$("#cart-image").attr("class", "Icons-cart-empty");
 	}
 	if (str.localeCompare(full) === 0) {
-		$("#cart-image").attr("class", "_cart-full");
+		$("#cart-image").attr("class", "Icons-cart-full");
 	}
+});
+
+$(".dijitDialogPaneContent").DOMNodeAppear(function(){
+	$('.dijitDialogPaneContent').hide();
 });
 
 $(".closeText").DOMNodeAppear(function(){
