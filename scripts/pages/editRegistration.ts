@@ -5,6 +5,7 @@ $$("#ad_17601"){
 }
 
 $$("#Register"){
+	add_class("register")
 	#checkout container 1
 	$("./div[1]"){
 		add_class("_personalInfoForm")
@@ -18,8 +19,11 @@ $$("#Register"){
 			$("./label[4]"){
 				insert_before("br")
 			}
+			$("./input[@name='address2']"){
+				insert_before("br")
+				attributes(style: "")
+			}
 			$("./label[5]"){
-				
 				insert_before("br")
 			}
 			$("./label[6]"){

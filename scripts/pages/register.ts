@@ -36,7 +36,7 @@ $$(".register"){
 			}
 			$("./input[@name='address2']"){
 				insert_before("br")
-				attributes(style: "margin-left: 124px;")
+				attributes(style: "")
 			}
 			$("./label[6]"){
 				insert_before("br")
@@ -114,11 +114,6 @@ $$(".register"){
 	$$(".checkout-container > .sub-col") {
 		attributes(style: "")
 	}
-
-	# $$("input[name='address2']") {
-	# 	add_class("input-second-line")
-	# 	attributes(style: "")
-	# }
 }
 
 
