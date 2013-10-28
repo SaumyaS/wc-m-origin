@@ -1,7 +1,12 @@
 # Replace the logo with one without a tagline:
-$$(".logo #WC_ContentAreaESpot_links_7_1 img") {
-	attributes(src: asset("images/white-cap-logo-no-tagline.png"))
+$$(".logo #WC_ContentAreaESpot_links_7_1") {
+	$("./img"){
+		remove()
+	}
+	insert("div", class: "Icons-white-cap-logo-no-tagline")
+
 }
+
 
 $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
