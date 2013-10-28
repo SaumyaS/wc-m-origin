@@ -34,6 +34,10 @@ $$(".register"){
 
 				insert_before("br")
 			}
+			$("./input[@name='address2']"){
+				insert_before("br")
+				attributes(style: "margin-left: 124px;")
+			}
 			$("./label[6]"){
 				insert_before("br")
 			}
@@ -73,12 +77,9 @@ $$(".register"){
 		}
 	}
 
-
-
 	$("./a[1]"){
 		attribute("style", "margin-left: 10px;")
 	}
-
 
 	$("./h1[2]"){
 		add_class("_companyInfoTitle")
@@ -114,10 +115,10 @@ $$(".register"){
 		attributes(style: "")
 	}
 
-	$$("input[name='address2']") {
-		add_class("input-second-line")
-		attributes(style: "")
-	}
+	# $$("input[name='address2']") {
+	# 	add_class("input-second-line")
+	# 	attributes(style: "")
+	# }
 }
 
 
