@@ -8,22 +8,21 @@ $(document).ready(function() {
 	$(".tabStrip-disabled").hide();
 
 	$("#PreviouslyProcessed1").click(function(){
-		console.log("prev");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
 	$("#trackOrderStatus").click(function(){
-		console.log("prev");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
 	$("#WaitingForApproval1").click(function(){
-		console.log("wait");
 		$("._prev").hide();
 		$("._waiting").show();
 	});
+
+
 });
 
 $("#createdBy").DOMNodeAppear(function() {
@@ -56,6 +55,10 @@ $("#free_gifts_popup_div_6").DOMNodeAppear(function(){
 
 $(".closeText").DOMNodeAppear(function(){
 	$('.closeText').hide();
+});
+
+$("#CVVDetailsSection").DOMNodeAppear(function() {
+	Ur.setup("#CVVDetailsSection");
 });
 
 $("._ajaxCalledAccount").DOMNodeAppear(function() {
