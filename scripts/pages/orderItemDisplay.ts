@@ -8,17 +8,13 @@ $("//*[@id='order_details']/div[1]"){
 	remove()
 }
 
-
 $$(".order-confirm"){
 	$(".//div[@id='order-summary']"){
 
-		
 		$("./a"){
-			attribute("style", "text-align: center")
+			add_class("expand")
 		}
-			
-		
-	
+
 		$$(".order-product-info"){
 			$("./div[2]"){
 				add_class("_colTitle")
@@ -28,8 +24,6 @@ $$(".order-confirm"){
 			}
 			$("./div[4]"){
 				add_class("_colInStock")
-				
-
 			}
 			$("./div[5]"){
 				add_class("_colQuantity")
@@ -44,24 +38,20 @@ $$(".order-confirm"){
 				add_class("_colEach")
 				wrap("div"){
 					attribute("class", "_eachDiv")
-					insert_top("div", "Each: ", class: "_each", style: "float:left; padding-left: 100px;")
+					insert_bottom("div", "Each: ", class: "_each")
 				}
 			}
 			$("./div[7]"){
 				add_class("_colTotal")
 				wrap("div"){
 					attribute("class", "_totalDiv")
-					insert_top("div", "Total: ", class: "_total", style: "float:left; padding-left: 100px;")
+					insert_bottom("div", "Total: ", class: "_total")
 				}
 			}
 
 			$$("._colInStock"){
 				insert_after("div", class: "info")
 			}
-
-			
-
-
 		}
 		$$(".order-product-last"){
 			$("./div[1]"){
@@ -99,6 +89,11 @@ $$(".order-confirm"){
 					insert_after("br")
 					insert_before("br")
 				}
+				$("./a[@class='btn']"){
+					text(){
+						set("Calculate")
+					}
+				}
 			}
 			$("./div[3]"){
 				insert("h2", "Estimated Tax")
@@ -121,12 +116,6 @@ $$(".order-confirm"){
 
 				}
 			}
-		}		
-	}
-
-	$$(".body759"){
-		$("./div/p"){
-			insert_after("br")
 		}
 	}
 }

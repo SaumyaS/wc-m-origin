@@ -210,6 +210,8 @@ $("./body"){
 		with(/AjaxTrackOrderStatus/){}
 		with(/OrderStatusTableDetailsHelper/){}
 		with(/AjaxOrderDetail/){}
+		with(/ShopCartDisplayView/){}
+		with(/AjaxOrderChangeServiceItemUpdate/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

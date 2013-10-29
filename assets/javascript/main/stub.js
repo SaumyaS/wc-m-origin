@@ -46,8 +46,12 @@ $(".cart_check_btn").DOMNodeAppear(function () {
 	}
 });
 
-$(".dijitDialogPaneContent").DOMNodeAppear(function(){
-	$('.dijitDialogPaneContent').hide();
+$(".close").DOMNodeAppear(function(){
+	$('.close').hide();
+});
+
+$("#free_gifts_popup_div_6").DOMNodeAppear(function(){
+	$('#free_gifts_popup_div_6').hide();
 });
 
 $(".closeText").DOMNodeAppear(function(){

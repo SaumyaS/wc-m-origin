@@ -14,9 +14,13 @@ $("//div[@class='login-box']"){
 		$("./label[@for='password']"){
 			insert_before("br")
 		}
-		$("./a[@id='WC_AccountDisplay_links_1']"){
-			insert_before("br")
+		$(".//a[@id='WC_AccountDisplay_links_1']"){
 			insert_after("br")
+		}
+		$(".//a[@id='WC_AccountDisplay_links_2']"){
+			$(".."){
+				attributes(style: "")
+			}
 		}
 	}
 }
