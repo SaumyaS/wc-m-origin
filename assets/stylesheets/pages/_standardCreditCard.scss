@@ -1,0 +1,28 @@
+.card_info{
+	#payment-cc{
+		label{
+			min-width: 120px;
+		}
+	}
+	#expire_month_1{
+		margin-left: 0;
+	}
+	.order_link{
+		background-image: none;
+		color: #505050;
+		border: none;
+		padding: 0px;
+		margin: 0;
+		font-size: inherit;
+		text-decoration: underline;
+	}
+	.dijitTooltipData{
+		position: fixed;
+		z-index: 100;
+		background: #ddd;
+		left: 0px;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 10px;
+	}
+}

@@ -212,6 +212,10 @@ $("./body"){
 		with(/AjaxOrderDetail/){}
 		with(/ShopCartDisplayView/){}
 		with(/AjaxOrderChangeServiceItemUpdate/){}
+		with(/Standard/){}
+		with(/BillingAddressDisplayView_1/){}
+		with(/AddressEditView/){}
+		with(/POSnippetDisplay/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")
@@ -228,7 +232,6 @@ $("./body"){
 					$("./li"){
 						$("./a"){
 							add_class("_box-shadow")
-
 						}
 					}
 					$("./li[@id='menu1']"){

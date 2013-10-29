@@ -8,6 +8,9 @@
 		padding: 3px;
 		margin: 5px 0px;
 	}
+	select[name="state"]{
+		width: 165px !important;
+	}
 	textarea{
 		border: 1px solid #aaa;
 		background-color: #ccc;
@@ -15,7 +18,7 @@
 		margin: 5px 0px;
 		vertical-align: top;
 		font-family: Arial, Helvetica, sans-serif;
-		min-width: 151px;
+		min-width: 159px;
 
 	}
 	h3{
@@ -31,7 +34,7 @@
 		padding: 10px;
 		margin: 10px 5px;
 		overflow: hidden;
-		
+
 		#willCallDisplayArea{
 			margin-bottom: 5px;
 			padding: 5px;
@@ -43,26 +46,19 @@
 		}
 
 		#willCallShippingAddressForm{
-			
+
 		}
 		.shipping_method_content{
-		
+
 
 			#willCallShippingMethods{
 				display: block;
-				
+
 				span{
 					input[type="radio"]{
 						margin-left: 100px;
 					}
 				}
-			}
-		}
-
-		.billing_method{
-			input{
-				margin-left: -5px;
-				margin-top: -3px;
 			}
 		}
 
@@ -73,10 +69,10 @@
 	#WC_UnregisteredCheckout_links_4{
 		margin-bottom: 10px;
 		margin-left: 10px;
+		margin-right: 10px;
 	}
 	#shippingBillingPageNext{
-		margin-bottom: 10px;
-		margin-left: 10px;
+		margin: 10px;
 	}
 }
 

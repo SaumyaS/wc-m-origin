@@ -185,6 +185,14 @@ match($status) {
 				log("--> Importing Account OrderDetails transformation")
 				@import pages/AjaxOrderDetail.ts
 			}
+			with(/Standard/){
+				log("--> Importing Standard Creditcard form")
+				@import pages/standardCreditCard.ts
+			}
+			with(/AddressEditView/){
+				log("--> importing AddressEditView")
+				@import pages/AddressEditView.ts
+			}
 
 			else() {
 				log("--> No page match in mappings.ts")
