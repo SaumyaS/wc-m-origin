@@ -43,7 +43,7 @@ $$(".main_container"){
 					attributes(data-ur-tabs-component: "content", data-ur-tab-id: "mfg")
 				}
 			}
-		}	
+		}
 	}
 
 	$(".//div[@class='search-main']"){
@@ -55,18 +55,32 @@ $$(".main_container"){
 					}
 				}
 			}
-
-			# $("./select[@id='sortBy']/option[1]"){
-			# 	attributes(selected: "selected")
-			# }
-			# $("./select[@id='sortBy']/option[3]"){
-			# 	attributes(selected: "")
-			# }
-
 			$("./select[@id='orderBy']/option"){
 				attribute("value"){
 					value(){
 						rewrite_link()
+					}
+				}
+			}
+		}
+		$(".//div[contains(@class, 'result-item')]"){
+			$("./a"){
+				add_class("_productImage")
+			}
+			$("./div[@class='item-description ']"){
+				move_to("../a", position("before"))
+				insert_after("div", class: "_SKUList", "")
+			}
+			$("./div[@class='item-action ']"){
+				$("./span[@class='discount-price']/div[contains(@class, 'offerprice')]"){
+					$("./span[contains(@class, 'price')]"){
+						match(text()){
+							with(/Call/){
+								$(".."){
+									attributes(style: "margin-bottom: 30px;")
+								}
+							}
+						}
 					}
 				}
 			}
