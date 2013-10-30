@@ -193,7 +193,10 @@ match($status) {
 				log("--> importing AddressEditView")
 				@import pages/AddressEditView.ts
 			}
-
+			with(/AjaxCatalogSearchResultView/){
+				log("--> importing the ajax call for search results")
+				@import pages/AjaxCatalogSearchResultView.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}

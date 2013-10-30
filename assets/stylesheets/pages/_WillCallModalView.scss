@@ -1,8 +1,15 @@
 #will_call_modal_dialog{
+	position: absolute;
+	top: 0px !important;
+	left: 0px !important;
+	.dijitDialogPaneContent{
+		overflow: hidden;
+		width: 334px !important;
+		height: auto !important;
+	}
 	div{
 		div{
-			bottom: 26px !important;
-			right: 22px !important;
+			
 			// width: 65px;
 		}
 	}
@@ -27,4 +34,44 @@
 			width: 70%;
 		}
 	}
+}
+
+._cancelContainer{
+	position: absolute;
+	bottom: 16px !important;
+	right: 22px !important;
+}
+
+.will_call_map_wrapper{
+	margin-top: 10px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	ul.will_call_map_data {
+		margin: 0px;
+		padding: 0px;
+		list-style: none outside none;
+		li{
+			border-bottom: 1px solid #EEE;
+			padding: 10px 0;
+			height: 365px;
+			p{
+				float: left;
+				width: 160px;
+				display: block;
+				span{
+					display: block;
+					width: 160px;
+					float: left;
+				}
+
+			}
+			.will_call_map_img{
+				float: left;
+				width: 115px;
+				float: right;
+
+			}
+		}
+	}
+
 }

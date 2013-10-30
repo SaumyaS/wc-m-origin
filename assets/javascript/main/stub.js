@@ -22,7 +22,9 @@ $(document).ready(function() {
 		$("._waiting").show();
 	});
 
-
+	$(".will_call_modal_link").click(function(){
+		console.log("this is clicked");
+	});
 });
 
 $("#createdBy").DOMNodeAppear(function() {
