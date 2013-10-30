@@ -2,7 +2,7 @@
 	text-align: center;
 	border-top: 2px solid #5D5D5D;
 	padding: 5px;
-	background-color: #333; 
+	background-color: #333;
 	img{
 		border-radius: 10px;
 	}
@@ -15,7 +15,7 @@
 ._catView{
 	position: relative;
 	display: block;
-	
+
 	._catType{
 		width: 175px;
 		background-color: #000;
@@ -87,7 +87,6 @@
 		}
 		.topcat_product_name_cntr{
 			span{
-				width: 155;
 				display: block;
 				height: 30px;
 				a{
@@ -101,7 +100,7 @@
 		}
 	}
 }
- 
+
 .topcat_right_content{
 	display: none;
 	.topcat_right_content_top{

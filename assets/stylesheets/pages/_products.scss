@@ -50,11 +50,11 @@
 					padding:5px 10px;
 					display: block;
 					.item-description{
-						float: left;
 						width: 150px;
 						line-height: 1.5;
 						a{
 							h1{
+								text-decoration: underline !important;
 								color: #3a3a39;
 								font-size: 12px;
 							}
@@ -63,10 +63,20 @@
 							display: none;
 						}
 					}
+					._SKUList{
+						overflow: hidden;
+						width: 150px;
+						height: 40px;
+						line-height: 1.5;
+					}
+					._productImage{
+						float: right;
+						margin-top: -77px;
+					}
 					.item-action{
 						display: inline-block;
-						margin-top: -59px;
-						margin-bottom: 8px;
+						margin-top: 12px;
+						margin-bottom: 16px;
 						.orig-price{
 							text-decoration: line-through;
 							color: #777;
@@ -85,7 +95,6 @@
 							display: none;
 						}
 					}
-					
 				}
 			}
 		}
