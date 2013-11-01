@@ -58,8 +58,8 @@ $("/html/body"){
 				insert("br")
 			}
 		}
-		$("./p"){
-			
+		$("./p/a"){
+			add_class("expand")
 		}
 	}
 }
