@@ -61,5 +61,8 @@ $("/html/body"){
 		$("./p/a"){
 			add_class("expand")
 		}
+		$("./p/a[@id='WC_OrderShippingBillingConfirmationPage_Print_Link']"){
+			remove()
+		}
 	}
 }
