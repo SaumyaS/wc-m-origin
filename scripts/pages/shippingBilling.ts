@@ -10,6 +10,18 @@ $("/html/body"){
 		$(".//a[@id='shippingBillingPageNext']"){
 			add_class("expand")
 		}
+
+		$("./div[@class='checkout-container']"){
+			$(".//span[@id='ShiptoBranch']"){
+				attributes(data-ur-set: "toggler")
+				$("./span[@id='ShiptoBranch_1']"){
+					attributes(data-ur-toggler-component: "button")
+				}
+				$("./span[@id='ShiptoBranch_2']"){
+					attributes(style: "", data-ur-toggler-component: "content")
+				}
+			}
+		}
 	}
 
 	$$(".shipping_method_content"){
