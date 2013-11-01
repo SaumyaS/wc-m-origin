@@ -53,5 +53,8 @@ $("/html/body"){
 				add_class("_order_total")
 			}
 		}
+		$("./p/a"){
+			add_class("expand")
+		}
 	}
 }
