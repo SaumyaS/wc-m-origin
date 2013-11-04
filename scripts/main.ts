@@ -8,6 +8,10 @@ match($detected_content_type) {
   with(/html/) {
     replace(/fb:/, "fbn_") # Rewrite the xmlns facebook nodes before the html parser clobbers them
 
+    # fix broken table HTML
+    capture(/<table.+(\/>)/) {
+      replace($1,">")
+    }
     # Force UTF-8 encoding. If you'd like to auto-detect the encoding,
     # simply remove the "UTF-8" argument.  e.g. html(){ ... }
     html("UTF-8") {

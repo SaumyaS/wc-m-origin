@@ -31,8 +31,14 @@ $("/html"){
 
   	$("./body"){
 		# Removes all the breakpoints
-		$$("br"){
-			remove()
+		match($path){
+			with(/Footer_Terms_Conditions/){}
+			else(){
+				log("--> this is not the footer")
+				$$("br"){
+					remove()
+				}
+			}
 		}
 
 		# Removes breadcrumbs

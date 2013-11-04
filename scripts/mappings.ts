@@ -197,6 +197,14 @@ match($status) {
 				log("--> importing the ajax call for search results")
 				@import pages/AjaxCatalogSearchResultView.ts
 			}
+			with(/Footer_Terms_Conditions/){
+				log("--> improrting pages for terms&conditions")
+				@import pages/termsConditions.ts
+			}
+			with(/Footer_Privacy_Policy/){
+				log("--> importing pages for privacy policy")
+				@import pages/privacyPolicy.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
