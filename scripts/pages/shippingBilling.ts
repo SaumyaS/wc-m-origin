@@ -33,6 +33,11 @@ $("/html/body"){
 				replace(/Shipping:Comments/, "Shipping:<br>Comments")
 			}
 		}
+		$("./div[@id='willCallShippingPhoneNumber']"){
+			$("./br"){
+				remove()
+			}
+		}
 	}
 
 	$$("#create-account-container"){
