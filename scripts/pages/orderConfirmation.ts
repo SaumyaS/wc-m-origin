@@ -9,7 +9,7 @@ $("/html/body"){
 		add_class("_reviewPage")
 	}
 
-	$("./div[@id='thankyou']"){
+	$(".//div[@id='thankyou']"){
 		$("./div[@class='order-details']"){
 			$("./label[2]"){
 				insert_before("br")
