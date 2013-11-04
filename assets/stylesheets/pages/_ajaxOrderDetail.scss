@@ -26,18 +26,93 @@
 			}
 		}
 		.checkout-container{
+			
+			.order-product-info{
+				.image{
+					display: block;
+					float: left;
+					width: 30%;
+				}
+				.info{
+					display: block;
+					padding-top: 30px;
+				}
+				._colQuantity{
+					padding-top: 5px;
+					display: block;
+					float: left;
+					label{
+						float: left;
+						padding-right: 5px;
+						padding-top: 3px;
+					}
+					input{
+						background: #ccc;
+						border: 1px solid #aaa;
+					}
+				}
+				._Quantity{
+					float: left;
+					._quantity{
+						float: left;
+						padding-top: 5px;
+						margin-right: 3px;
+					}
+				}
+
+				._eachDiv{
+					display: block;
+					padding-top: 5px;
+					border-top: 1px solid #DDD;
+					text-align: right;
+					._colEach{
+						float: right;
+					}
+					._each{
+						margin-right: 4px;
+						display: inline-block;
+					}
+				}
+				._totalDiv{
+					display: block;
+					padding-bottom: 5px;
+					border-bottom: 1px solid #DDD;
+					text-align: right;
+					font-weight: bold;
+					._colTotal{
+						float: right;
+					}
+					._total{
+						margin-right: 4px;
+						display: inline-block;
+					}
+				}
+
+			}
+			.order-product-last{
+				
+				._remove{
+					padding-top: 20px;
+					a{
+						text-decoration: underline;
+						color: #ff6311;
+					}
+
+				}
+			}
+
+
 			#OrderConfirmPagingDisplay{
-				-webkit-box-shadow: #555555 1px 1px 4px;
+				border: 2px solid #aaa;
 				background: white;
-				border-bottom-left-radius: 3px 3px;
-				border-bottom-right-radius: 3px 3px;
-				border-top-left-radius: 3px 3px;
-				border-top-right-radius: 3px 3px;
 				clear: both;
 				line-height: 140%;
 				margin: 10px 5px;
 				overflow: hidden;
 				padding: 10px;
+				img{
+					max-width:95%;
+				}
 			}
 			#order-total{
 				margin: 10px 5px;

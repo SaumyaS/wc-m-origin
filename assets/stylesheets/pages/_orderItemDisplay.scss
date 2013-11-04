@@ -65,6 +65,15 @@
 					border: 1px solid #aaa;
 				}
 			}
+			._Quantity{
+				float: left;
+				._quantity{
+					float: left;
+					padding-top: 5px;
+					margin-right: 3px;
+				}
+			}
+
 			._eachDiv{
 				display: block;
 				padding-top: 5px;
@@ -95,9 +104,7 @@
 
 		}
 		.order-product-last{
-			._delete{
-				display: none;
-			}
+			
 			._remove{
 				padding-top: 20px;
 				a{
@@ -293,19 +300,6 @@
 		}
 	}
 	#order-summary{
-		.dijitContentPane{
-			-webkit-box-shadow: #555 1px 1px 4px;
-			background: white;
-			border-bottom-left-radius: 3px 3px;
-			border-bottom-right-radius: 3px 3px;
-			border-top-left-radius: 3px 3px;
-			border-top-right-radius: 3px 3px;
-			clear: both;
-			line-height: 140%;
-			margin: 10px 5px;
-			overflow: hidden;
-			padding: 10px;
-		}
 		#order-total{
 			margin-top: 10px;
 			padding: 10px;
@@ -320,7 +314,6 @@
 			}
 		}
 		p{
-			// margin-top: 10px;
 			a{
 				margin: 10px;
 			}
@@ -329,4 +322,7 @@
 
 
 	}
+}
+._delete{
+	display: none;
 }
