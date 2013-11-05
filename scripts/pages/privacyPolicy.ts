@@ -6,12 +6,7 @@ $$("#ad_17601"){
 $(".//div[@class='main_container']"){
 	add_class("_privacyPolicy")
 	$(".//div[@id='WC_ContentAreaESpot_div_22_1']"){
-		$("./br[1]"){
-			remove()
-		}
-		$("./br[1]"){
-			remove()
-		}
+		
 		$("./strong"){
 			insert_after("br")
 			insert_before("br")
@@ -20,6 +15,12 @@ $(".//div[@class='main_container']"){
 		$("./ul"){
 			insert_after("br")
 			insert_before("br")
+		}
+		$("./br[2]"){
+			remove()
+		}
+		$("./br[1]"){
+			remove()
 		}
 	}
 }
