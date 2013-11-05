@@ -11,4 +11,12 @@ $("//*[@id='content_wrapper_border']/div"){
 	$(".//span[@id='WC_AjaxAddressBookForm_div_19']"){
 		insert_before("br")
 	}
+	$(".//b"){
+		name(){
+			set("strong")
+		}
+	}
+	$(".//a[@class='btn']"){
+		add_class("expand")
+	}
 }

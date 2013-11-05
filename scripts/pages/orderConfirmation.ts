@@ -50,6 +50,7 @@ $("/html/body"){
 
 		$(".//div[contains(@class, 'order-summary')]"){
 			$(".//div[contains(@class, 'order-product-info')]"){
+				insert_before("hr")
 				$("./div[2]"){
 					add_class("_colTitle")
 				}
@@ -105,6 +106,9 @@ $("/html/body"){
 				$("./div[6]"){
 					add_class("_delete")
 				}
+			}
+			$(".//hr[1]"){
+				remove()
 			}
 		}
 
