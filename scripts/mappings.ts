@@ -20,6 +20,14 @@ match($status) {
 	with(/200/) {
 		log("--> STATUS: 200")
 
+		$$(".refineTextH2"){
+			match(text()){
+				with(/Refine/){
+					log("this is getting refined")
+				}
+			}
+		}
+
 		match($path) {
 			with(/TopCategoriesDisplay/){
 				log("--> Importing pages/new.ts in mapping.ts")
@@ -204,6 +212,14 @@ match($status) {
 			with(/Footer_Privacy_Policy/){
 				log("--> importing pages for privacy policy")
 				@import pages/privacyPolicy.ts
+			}
+			with(/Trader/){
+				log("--> importing pages for trader")
+				@import pages/trader.ts
+			}
+			with(/Footer_Email_Subscribe/){
+				log("--> importing pages for email subscribe")
+				@import pages/footer-email.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")

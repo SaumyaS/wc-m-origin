@@ -25,6 +25,10 @@ $(document).ready(function() {
 	$(".will_call_modal_link").click(function(){
 		console.log("this is clicked");
 	});
+
+	$(".category-item:empty").remove();
+
+
 });
 
 $("#createdBy").DOMNodeAppear(function() {

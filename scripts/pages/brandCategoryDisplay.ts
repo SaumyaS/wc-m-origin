@@ -5,6 +5,11 @@ $$("#ad_17601"){
 
 $$(".main_container"){
 	add_class("_brandsDisplay")
+	$("./div[@class='brand-splash']"){
+		$(".//img"){
+			attributes(width: "", height: "")
+		}
+	}
 
 	$("./div[@class='brand-promos']"){
 		$("./h1"){

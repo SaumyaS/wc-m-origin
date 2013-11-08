@@ -28,6 +28,9 @@
 					border: 2px solid #555;
 				}
 			}
+			div[data-ur-carousel-component="dot"]{
+				margin-top: 5px;
+			}
 		}
 		
 	}
@@ -115,7 +118,7 @@
 			overflow: hidden;
 			
 			li{
-				margin: 0 10px;
+				margin: 5px 10px;
 				float: left;
 				.futute_proimage_01{
 					background-color: #fff;
