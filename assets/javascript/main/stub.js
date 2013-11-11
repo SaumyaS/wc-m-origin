@@ -27,6 +27,11 @@ $(document).ready(function() {
 	});
 
 	$(".category-item:empty").remove();
+	$("._industries:empty").remove();
+
+	$("div").filter(function(){
+	    return $.trim(this.innerHTML) === "&nbsp;"
+	}).remove();
 
 
 });

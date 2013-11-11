@@ -221,6 +221,10 @@ match($status) {
 				log("--> importing pages for email subscribe")
 				@import pages/footer-email.ts
 			}
+			with(/lp-construction-boot/){
+				log("--> importing pages for lp-construction-boot")
+				@import pages/construction-boot.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
