@@ -20,12 +20,28 @@ match($status) {
 	with(/200/) {
 		log("--> STATUS: 200")
 
-		$$(".refineTextH2"){
-			match(text()){
-				with(/Refine/){
-					log("this is getting refined")
-				}
-			}
+		# Search/PLP
+		$$(".search-container"){
+			log("this is getting refined")
+			@import pages/search.ts
+		}
+		# Product Subcategories
+		$$(".topcat_header"){
+			@import pages/categories.ts
+		}
+		# PDP
+		$$(".product-detail-content"){
+			@import pages/items.ts
+		}
+		# Brands Page
+		$$(".brand-gallery"){
+			log("--> Importing Brands")
+			@import pages/brands.ts
+		}
+		#Brands Category Page
+		$$(".brand-promos"){
+			log("--> Importing Brand Category Page")
+			@import pages/brandCategoryDisplay.ts
 		}
 
 		match($path) {
@@ -35,10 +51,10 @@ match($status) {
 				@import pages/new.ts
 				@import pages/home.ts
 			}
-			with(/BrandsCategoryLandingView/){
-				log("--> Importing Brands")
-				@import pages/brands.ts
-			}
+			# with(/brands/){
+			# 	log("--> Importing Brands")
+			# 	@import pages/brands.ts
+			# }
 			with(/CategoryDisplay/){
 				log("--> Importing Category")
 				@import pages/categories.ts
