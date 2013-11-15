@@ -1,0 +1,8 @@
+._oliverBoots{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+}
