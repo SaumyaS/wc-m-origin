@@ -55,24 +55,24 @@ match($status) {
 			# 	log("--> Importing Brands")
 			# 	@import pages/brands.ts
 			# }
-			with(/CategoryDisplay/){
-				log("--> Importing Category")
-				@import pages/categories.ts
-				@import pages/products.ts
-			}
-			with(/ProductDisplay/){
+			# with(/CategoryDisplay/){
+			# 	log("--> Importing Category")
+			# 	@import pages/categories.ts
+			# 	@import pages/products.ts
+			# }
+			# with(/ProductDisplay/){
 
-				log("--> Importing Product")
-				@import pages/items.ts
-			}
+			# 	log("--> Importing Product")
+			# 	@import pages/items.ts
+			# }
 			with(/AjaxOrderItemDisplayView/){
 				log("--> Importing AjaxOrderItemDisplayView")
 				@import pages/orderItemDisplay.ts
 			}
-			with(/SearchDisplay/){
-				log("--> Importing Search")
-				@import pages/search.ts
-			}
+			# with(/SearchDisplay/){
+			# 	log("--> Importing Search")
+			# 	@import pages/search.ts
+			# }
 			with(/Store_Locations/){
 				log("--> Importing Store_Locations")
 				@import pages/location.ts
@@ -154,10 +154,10 @@ match($status) {
 				log("--> Importing Shipment Order Summary Info")
 				@import pages/shipmentOrderSummary.ts
 			}
-			with(/BrandsCategoryLandingDisplayView/){
-				log("--> Importing Brand Category Page")
-				@import pages/brandCategoryDisplay.ts
-			}
+			# with(/BrandsCategoryLandingDisplayView/){
+			# 	log("--> Importing Brand Category Page")
+			# 	@import pages/brandCategoryDisplay.ts
+			# }
 			with(/OrderShippingBillingConfirmationView/){
 				log("--> Importing Confirmation View Page")
 				@import pages/orderConfirmation.ts
@@ -239,7 +239,31 @@ match($status) {
 			}
 			with(/lp-construction-boot/){
 				log("--> importing pages for lp-construction-boot")
-				@import pages/construction-boot.ts
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-gumboot/){
+				log("--> importing pages for lp-gumboot")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-high-rise/){
+				log("--> importing pages for lp-high-rise")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-low-rise-boot/){
+				log("--> importing pages for lp-low-rise-boot")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-mining/){
+				log("--> importing pages for lp-mining")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/Video/){
+				log("--> Importing Video pages")
+				@import pages/video.ts
+			}
+			with(/lp-oliverboots/){
+				log("--> Importing Oliver Boots")
+				@import pages/oliverBoots.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")
