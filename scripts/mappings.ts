@@ -39,7 +39,7 @@ match($status) {
 			@import pages/brands.ts
 		}
 		#Brands Category Page
-		$$(".brand-promos"){
+		$$(".brand-categories"){
 			log("--> Importing Brand Category Page")
 			@import pages/brandCategoryDisplay.ts
 		}
