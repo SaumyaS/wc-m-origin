@@ -167,12 +167,12 @@ $(".//div[@class='main_container']"){
 												attributes(align: "")
 												move_here("../div[@class='_FootwearContent']")
 												$("./div[@class='_FootwearContent']"){
-													attributes(align: "")
+													attributes(align: "", cellspacing: "", cellpadding: "")
 												}
 											}
 
 											$("./div[@class='_carouselContainer']"){
-												attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-autoscroll: "enabled", data-ur-autoscroll-delay: "3000", data-ur-center: "enabled")
+												attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-autoscroll: "enabled", data-ur-autoscroll-delay: "3000", data-ur-center: "enabled", data-ur-touch: "disabled")
 												$("./div[@class='_FootwearContent']"){
 													attributes(data-ur-carousel-component: "scroll_container")
 													$("./div[@class='mw_was_td']"){
