@@ -69,7 +69,14 @@ match($status) {
 				log("--> Importing Catalog Reuest Form")
 				@import pages/catalogRequestForm.ts
 			}
-			
+			with(/Download_Safety_Catalog/){
+				log("--> Importing Safety Catalog")
+				@import pages/safetyCatalog.ts
+			}
+			with(/lp-woc/){
+				log("--> Importing WOC")
+				@import pages/woc.ts
+			}
 			# with(/SearchDisplay/){
 			# 	log("--> Importing Search")
 			# 	@import pages/search.ts
