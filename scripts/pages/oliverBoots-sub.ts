@@ -162,17 +162,24 @@ $(".//div[@class='main_container']"){
 											}
 										}
 										$("./div[@class='_footwareContainer']"){
-											insert_bottom("div", class: "_scrollContainer"){
-												attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-autoscroll: "enabled", data-ur-infinite: "enabled")
+											attributes(align: "")
+											insert_bottom("div", class: "_carouselContainer"){
+												attributes(align: "")
 												move_here("../div[@class='_FootwearContent']")
 												$("./div[@class='_FootwearContent']"){
+													attributes(align: "")
+												}
+											}
+
+											$("./div[@class='_carouselContainer']"){
+												attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-autoscroll: "enabled", data-ur-autoscroll-delay: "3000", data-ur-center: "enabled")
+												$("./div[@class='_FootwearContent']"){
 													attributes(data-ur-carousel-component: "scroll_container")
-													$("./div"){
+													$("./div[@class='mw_was_td']"){
 														attributes(data-ur-carousel-component: "item")
 													}
 												}
 											}
-											
 										}
 									}
 								}
