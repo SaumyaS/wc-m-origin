@@ -29,5 +29,19 @@ $(".//div[@class='main_container']"){
 			insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
 		}
 	}
+	$(".//div[@class='brand-featured-products']"){
+		insert_top("div", class: "_brand-view"){
+			move_here("../ul[@class='brand_catpro']/li")
+		}
+		move_here("./ul/h1", "top")
+		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-center: "enabled", data-ur-infinite: "disabled")
+		$("./div[@class='_brand-view']"){
+			attributes(data-ur-carousel-component: "scroll_container")
+			$("./li"){
+				attributes(data-ur-carousel-component: "item")
+			}
+		}
+		insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
+	}
 
 }

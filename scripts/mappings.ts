@@ -65,10 +65,11 @@ match($status) {
 			# 	log("--> Importing Product")
 			# 	@import pages/items.ts
 			# }
-			with(/AjaxOrderItemDisplayView/){
-				log("--> Importing AjaxOrderItemDisplayView")
-				@import pages/orderItemDisplay.ts
+			with(/Footer_Catalog_Request/){
+				log("--> Importing Catalog Reuest Form")
+				@import pages/catalogRequestForm.ts
 			}
+			
 			# with(/SearchDisplay/){
 			# 	log("--> Importing Search")
 			# 	@import pages/search.ts
@@ -264,6 +265,10 @@ match($status) {
 			with(/lp-oliverboots/){
 				log("--> Importing Oliver Boots")
 				@import pages/oliverBoots.ts
+			}
+			with(/AjaxOrderItemDisplayView/){
+				log("--> Importing AjaxOrderItemDisplayView")
+				@import pages/orderItemDisplay.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")
