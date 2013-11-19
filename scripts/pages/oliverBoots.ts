@@ -70,7 +70,7 @@ $(".//div[@class='main_container']"){
 					}
 					$("./div[@class='_available']"){
 						$("./div[@class='_availableView']"){
-							attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-center: "enabled", data-ur-infinite: "disabled", data-ur-autoscroll: "enabled")
+							attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-center: "enabled", data-ur-autoscroll: "enabled", data-ur-autoscroll-delay: "3000")
 							$("./div[@class='_availableScroll']"){
 								attributes(data-ur-carousel-component: "scroll_container")
 								$("./div"){

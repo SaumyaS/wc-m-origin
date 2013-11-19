@@ -55,10 +55,12 @@
 		._FootwearContent{
 			width: 4500px !important;
 			img{
+				margin: 0 auto;
 				display: block;
 			}
 			.mw_was_td{
-				margin-right: 40px;
+				margin-right: 10px;
+				margin-left: 10px;
 			}
 		}
 	}
