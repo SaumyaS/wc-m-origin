@@ -69,10 +69,6 @@ match($status) {
 				log("--> Importing Catalog Reuest Form")
 				@import pages/catalogRequestForm.ts
 			}
-			with(/Footer_Rewards_Card/){
-				log("--> Importing Rewards Card")
-				@import pages/footerRewards.ts
-			}
 			with(/Download_Safety_Catalog/){
 				log("--> Importing Safety Catalog")
 				@import pages/safetyCatalog.ts
