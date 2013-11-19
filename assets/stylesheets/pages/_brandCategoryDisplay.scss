@@ -131,9 +131,19 @@
 				.futute_prodata{
 					width: 200px;
 					a{
-						color: #000;
 						text-align: center;
+					}
+					h4{
+						overflow: hidden;
+						text-overflow: ellipsis;
+						color: #292929;
+						display: block;
+						font-size: 12px;
 						font-weight: bold;
+						height: 40px;
+						padding: 5px;
+						margin-top: 5px;
+						border-bottom: 1px solid #cccccc;
 					}
 					.featured_product_price{
 						color: #ff6311;
