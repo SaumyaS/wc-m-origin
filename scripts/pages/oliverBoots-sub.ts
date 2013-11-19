@@ -41,6 +41,7 @@ $(".//div[@class='main_container']"){
 									}
 									$("./div[@class='_listContent']"){
 										attributes(data-ur-set: "toggler")
+										move_here("../h2", "top")
 										$("./h2"){
 											attributes(data-ur-toggler-component: "button")
 										}
@@ -52,6 +53,18 @@ $(".//div[@class='main_container']"){
 							}
 						}
 						with(/Lace/){
+							$(".."){
+								add_class("_laceUpBoot")
+								attributes(style: "", data-ur-set: "toggler")
+							}
+							attributes(data-ur-toggler-component: "button")
+							insert_after("div", class: "_laceUpBootContent"){
+								attributes(data-ur-toggler-component: "content")
+								move_here("../div")
+								move_here("../p")
+							}
+						}
+						with(/LACE/){
 							$(".."){
 								add_class("_laceUpBoot")
 								attributes(style: "", data-ur-set: "toggler")
