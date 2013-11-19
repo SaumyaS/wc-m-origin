@@ -77,6 +77,10 @@ match($status) {
 				log("--> Importing Safety Catalog")
 				@import pages/safetyCatalog.ts
 			}
+			with(/safetydealzone/){
+				log("--> Importing safety deal zone")
+				@import pages/safetydealzone.ts
+			}
 			with(/lp-woc/){
 				log("--> Importing WOC")
 				@import pages/woc.ts

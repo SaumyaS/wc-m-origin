@@ -1,0 +1,23 @@
+._safetydealzone{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+	._brand-view{
+		._brand-scroll{
+			width: 3000px !important;
+			.promo-box{
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		._dots{
+			div{
+				// margin-top: 5px;
+			}
+		}
+	}
+}
