@@ -47,6 +47,13 @@ $(".//div[@class='main_container']"){
 										}
 										$("./div"){
 											attributes(data-ur-toggler-component: "content")
+											$(".//a"){
+												attribute("href"){
+													value(){
+														rewrite_link()
+													}
+												}
+											}
 										}
 									}
 								}
