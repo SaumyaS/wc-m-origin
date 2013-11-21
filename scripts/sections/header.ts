@@ -51,7 +51,7 @@ $("/html"){
 		}
 
 		$(".//div[@id='MessageArea']"){
-
+			
 		}
 
 		$(".//div[@class='header_wrapper']"){
