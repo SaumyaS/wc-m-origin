@@ -1,0 +1,67 @@
+._construction-boot{
+	h1{
+		@include title_bar;
+	}
+	._allTerrian{
+		img{
+			max-width: 60% !important;
+		}
+	}
+	._selectSize{
+		._sizeContent{
+			border: 2px solid #aaa;
+			margin: 10px;
+			padding: 5px;
+			.select-size{
+				margin-top: -5px;
+				.mw_was_td{
+					@include togglerContent;
+					border: 1px solid #aaa;
+				}
+				
+			}
+		}
+	}
+	._laceUpBoot{
+		._laceUpBootContent{
+			margin: 10px;
+			padding: 5px;
+			background-color: #bbb;
+			p{
+
+				img{
+					display: none;
+					width:  90%;
+				}
+			}
+		}
+	}
+	._IandF{
+		._IandFDetail{
+			margin: 10px;
+			._IndustiresContent{
+				margin-top: -5px;
+				._industries{
+					margin: 0 15px;
+					background: #bbb;
+				}
+			}
+		}
+		._footwareContainer{
+			._Footware{
+				padding: 10px;
+			}
+		}
+		._FootwearContent{
+			width: 4500px !important;
+			img{
+				margin: 0 auto;
+				display: block;
+			}
+			.mw_was_td{
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+	}
+}

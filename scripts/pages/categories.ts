@@ -1,9 +1,18 @@
-$$("#ad_17601"){
-	move_here("//div[@id='_icons_bar']")
-}
+
 
 
 $("/html"){
+
+	$$("#ad_17601"){
+		log("is this happening?")
+		move_here("//div[@id='_icons_bar']")
+	}
+	$$(".topcat_narrow_row"){
+		$("./ul/li/div[1]"){
+			add_class("_imageDiv")
+		}
+	}
+	
 	$("./body//div[@class='topcat_left_content']"){
 		# topcat_promo2
 		$("./div[2]"){
@@ -33,11 +42,7 @@ $("/html"){
 	}
 }
 
-$$(".topcat_narrow_row"){
-	$("./ul/li/div[1]"){
-		add_class("_imageDiv")
-	}
-}
+
 
 
 

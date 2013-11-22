@@ -115,5 +115,8 @@ $$(".register"){
 		attributes(style: "")
 	}
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 

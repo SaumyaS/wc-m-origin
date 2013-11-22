@@ -20,6 +20,30 @@ match($status) {
 	with(/200/) {
 		log("--> STATUS: 200")
 
+		# Search/PLP
+		$$(".search-container"){
+			log("this is getting refined")
+			@import pages/search.ts
+		}
+		# Product Subcategories
+		$$(".topcat_header"){
+			@import pages/categories.ts
+		}
+		# PDP
+		$$(".product-detail-content"){
+			@import pages/items.ts
+		}
+		# Brands Page
+		$$(".brand-gallery"){
+			log("--> Importing Brands")
+			@import pages/brands.ts
+		}
+		#Brands Category Page
+		$$(".brand-categories"){
+			log("--> Importing Brand Category Page")
+			@import pages/brandCategoryDisplay.ts
+		}
+
 		match($path) {
 			with(/TopCategoriesDisplay/){
 				log("--> Importing pages/new.ts in mapping.ts")
@@ -27,28 +51,44 @@ match($status) {
 				@import pages/new.ts
 				@import pages/home.ts
 			}
-			with(/BrandsCategoryLandingView/){
-				log("--> Importing Brands")
-				@import pages/brands.ts
-			}
-			with(/CategoryDisplay/){
-				log("--> Importing Category")
-				@import pages/categories.ts
-				@import pages/products.ts
-			}
-			with(/ProductDisplay/){
+			# with(/brands/){
+			# 	log("--> Importing Brands")
+			# 	@import pages/brands.ts
+			# }
+			# with(/CategoryDisplay/){
+			# 	log("--> Importing Category")
+			# 	@import pages/categories.ts
+			# 	@import pages/products.ts
+			# }
+			# with(/ProductDisplay/){
 
-				log("--> Importing Product")
-				@import pages/items.ts
+			# 	log("--> Importing Product")
+			# 	@import pages/items.ts
+			# }
+			with(/Footer_Catalog_Request/){
+				log("--> Importing Catalog Reuest Form")
+				@import pages/catalogRequestForm.ts
 			}
-			with(/AjaxOrderItemDisplayView/){
-				log("--> Importing AjaxOrderItemDisplayView")
-				@import pages/orderItemDisplay.ts
+			with(/Footer_Rewards_Card/){
+				log("--> Importing Rewards Card")
+				@import pages/footerRewards.ts
 			}
-			with(/SearchDisplay/){
-				log("--> Importing Search")
-				@import pages/search.ts
+			with(/Download_Safety_Catalog/){
+				log("--> Importing Safety Catalog")
+				@import pages/safetyCatalog.ts
 			}
+			with(/safetydealzone/){
+				log("--> Importing safety deal zone")
+				@import pages/safetydealzone.ts
+			}
+			with(/lp-woc/){
+				log("--> Importing WOC")
+				@import pages/woc.ts
+			}
+			# with(/SearchDisplay/){
+			# 	log("--> Importing Search")
+			# 	@import pages/search.ts
+			# }
 			with(/Store_Locations/){
 				log("--> Importing Store_Locations")
 				@import pages/location.ts
@@ -130,10 +170,10 @@ match($status) {
 				log("--> Importing Shipment Order Summary Info")
 				@import pages/shipmentOrderSummary.ts
 			}
-			with(/BrandsCategoryLandingDisplayView/){
-				log("--> Importing Brand Category Page")
-				@import pages/brandCategoryDisplay.ts
-			}
+			# with(/BrandsCategoryLandingDisplayView/){
+			# 	log("--> Importing Brand Category Page")
+			# 	@import pages/brandCategoryDisplay.ts
+			# }
 			with(/OrderShippingBillingConfirmationView/){
 				log("--> Importing Confirmation View Page")
 				@import pages/orderConfirmation.ts
@@ -205,6 +245,49 @@ match($status) {
 				log("--> importing pages for privacy policy")
 				@import pages/privacyPolicy.ts
 			}
+<<<<<<< HEAD
+=======
+			with(/Trader/){
+				log("--> importing pages for trader")
+				@import pages/trader.ts
+			}
+			with(/Footer_Email_Subscribe/){
+				log("--> importing pages for email subscribe")
+				@import pages/footer-email.ts
+			}
+			with(/lp-construction-boot/){
+				log("--> importing pages for lp-construction-boot")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-gumboot/){
+				log("--> importing pages for lp-gumboot")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-high-rise/){
+				log("--> importing pages for lp-high-rise")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-low-rise-boot/){
+				log("--> importing pages for lp-low-rise-boot")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/lp-mining/){
+				log("--> importing pages for lp-mining")
+				@import pages/oliverBoots-sub.ts
+			}
+			with(/Video/){
+				log("--> Importing Video pages")
+				@import pages/video.ts
+			}
+			with(/lp-oliverboots/){
+				log("--> Importing Oliver Boots")
+				@import pages/oliverBoots.ts
+			}
+			with(/AjaxOrderItemDisplayView/){
+				log("--> Importing AjaxOrderItemDisplayView")
+				@import pages/orderItemDisplay.ts
+			}
+>>>>>>> origin/master
 			else() {
 				log("--> No page match in mappings.ts")
 			}

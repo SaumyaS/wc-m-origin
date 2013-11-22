@@ -1,0 +1,57 @@
+._traderESpot{
+	.brand-splash{
+		img{
+			height: 40px;
+		}
+	}
+	h1{
+		@include title_bar;
+	}
+	._traderCarousel{
+		._traderView{
+			width: 4000px !important;
+			.promo-box{
+				.ad{
+					padding-left: 20px;
+					padding-right: 20px;
+
+				}
+			}
+		}
+		._dots{
+			div{
+				margin-top: 5px;
+			}
+		}
+	}
+	.brand-featured-products{
+		._brand-view{
+			width: 4000px !important;
+			li{
+				margin: 0 10px;
+				width: 200px;
+				.futute_prodata{
+					text-align: center;
+					h4{
+						color: #292929;
+						display: block;
+						font-size: 12px;
+						font-weight: bold;
+						height: 40px;
+						padding: 5px;
+						line-height: 1.5;
+						margin-top: 5px;
+						border-top: 1px solid #cccccc;
+						border-bottom: 1px solid #cccccc;
+					}
+				}
+				.lpadd_tocart{
+					@include add_to_cart_HP;
+					margin-left: 20px;
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

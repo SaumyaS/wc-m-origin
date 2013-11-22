@@ -1,0 +1,11 @@
+._video{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+	.ad{
+		padding: 0 10px;
+	}
+}

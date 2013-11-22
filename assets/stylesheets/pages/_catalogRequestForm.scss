@@ -1,0 +1,25 @@
+._catalogRequest{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+	form{
+		p{
+			padding: 10px;
+		}
+		input[type='text']{
+			width: 200px !important;
+			border: 1px solid #aaaaaa;
+			background: #cccccc;
+		}
+		select{
+			height: 26px !important;
+			width: 218px !important;
+		}
+		input[type='submit']{
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -22,9 +22,31 @@ $(document).ready(function() {
 		$("._waiting").show();
 	});
 
+<<<<<<< HEAD
 	$(".will_call_modal_link").click(function(){
 		console.log("this is clicked");
 	});
+=======
+	$(".category-item:empty").remove();
+	$("._industries:empty").remove();
+
+	$("div").filter(function(){
+	    return $.trim(this.innerHTML) === "&nbsp;";
+	}).remove();
+
+	$("#WC_UserRegistrationAddForm_links_1").click(function(){
+		// console.log("i was clicked");
+		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
+		// $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	});
+	$(".dijitTooltipLeft").click(function(){
+		console.log("i was clicked");
+		$(this).attr("class", "dijitTooltipRight");
+	});
+	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+
+
+>>>>>>> origin/master
 });
 
 $("#createdBy").DOMNodeAppear(function() {

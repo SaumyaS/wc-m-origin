@@ -1,0 +1,11 @@
+._woc{
+	h1{
+		@include title_bar;
+	}
+	hr{
+		@include horizontal_line;
+	}
+	.ad_product{
+		text-align: center;
+	}
+}
