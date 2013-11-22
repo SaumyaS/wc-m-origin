@@ -1,106 +1,98 @@
 $(document).ready(function() {
-	$("#image-menu").on('click', function() {
-		$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
-	});
+        $("#image-menu").on('click', function() {
+                $("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
+        });
 
-	$('.search-sidebar:contains("No further refinement")').slideUp("fast");
+        $('.search-sidebar:contains("No further refinement")').slideUp("fast");
 
-	$(".tabStrip-disabled").hide();
+        $(".tabStrip-disabled").hide();
 
-	$("#PreviouslyProcessed1").click(function(){
-		$("._prev").show();
-		$("._waiting").hide();
-	});
+        $("#PreviouslyProcessed1").click(function(){
+                $("._prev").show();
+                $("._waiting").hide();
+        });
 
-	$("#trackOrderStatus").click(function(){
-		$("._prev").show();
-		$("._waiting").hide();
-	});
+        $("#trackOrderStatus").click(function(){
+                $("._prev").show();
+                $("._waiting").hide();
+        });
 
-	$("#WaitingForApproval1").click(function(){
-		$("._prev").hide();
-		$("._waiting").show();
-	});
+        $("#WaitingForApproval1").click(function(){
+                $("._prev").hide();
+                $("._waiting").show();
+        });
 
-<<<<<<< HEAD
-	$(".will_call_modal_link").click(function(){
-		console.log("this is clicked");
-	});
-=======
-	$(".category-item:empty").remove();
-	$("._industries:empty").remove();
+        $(".category-item:empty").remove();
+        $("._industries:empty").remove();
 
-	$("div").filter(function(){
-	    return $.trim(this.innerHTML) === "&nbsp;";
-	}).remove();
+        $("div").filter(function(){
+            return $.trim(this.innerHTML) === "&nbsp;";
+        }).remove();
 
-	$("#WC_UserRegistrationAddForm_links_1").click(function(){
-		// console.log("i was clicked");
-		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
-		// $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
-	});
-	$(".dijitTooltipLeft").click(function(){
-		console.log("i was clicked");
-		$(this).attr("class", "dijitTooltipRight");
-	});
-	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+        $("#WC_UserRegistrationAddForm_links_1").click(function(){
+                // console.log("i was clicked");
+                $(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
+                // $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+        });
+        $(".dijitTooltipLeft").click(function(){
+                console.log("i was clicked");
+                $(this).attr("class", "dijitTooltipRight");
+        });
+        $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
 
 
->>>>>>> origin/master
 });
 
 $("#createdBy").DOMNodeAppear(function() {
-	Ur.setup("._togglerContainer");
+        Ur.setup("._togglerContainer");
 });
 
 $(".cart_check_btn").DOMNodeAppear(function () {
 
-	var str = $(".cart_check_btn").text();
-	var empty = "cart empty";
-	var full = "cart checkout";
-	str = str.toLowerCase();
-	str = str.trim();
+        var str = $(".cart_check_btn").text();
+        var empty = "cart empty";
+        var full = "cart checkout";
+        str = str.toLowerCase();
+        str = str.trim();
 
-	if (str.localeCompare(empty) === 0) {
-		$("#cart-image").attr("class", "Icons-cart-empty");
-	}
-	if (str.localeCompare(full) === 0) {
-		$("#cart-image").attr("class", "Icons-cart-full");
-	}
+        if (str.localeCompare(empty) === 0) {
+                $("#cart-image").attr("class", "Icons-cart-empty");
+        }
+        if (str.localeCompare(full) === 0) {
+                $("#cart-image").attr("class", "Icons-cart-full");
+        }
 });
 
 $(".close").DOMNodeAppear(function(){
-	$('.close').hide();
+        $('.close').hide();
 });
 
 $("#free_gifts_popup_div_6").DOMNodeAppear(function(){
-	$('#free_gifts_popup_div_6').hide();
+        $('#free_gifts_popup_div_6').hide();
 });
 
 $(".closeText").DOMNodeAppear(function(){
-	$('.closeText').hide();
+        $('.closeText').hide();
 });
 
 $("#CVVDetailsSection").DOMNodeAppear(function() {
-	Ur.setup("#CVVDetailsSection");
+        Ur.setup("#CVVDetailsSection");
 });
 
 $("._ajaxCalledAccount").DOMNodeAppear(function() {
-	Ur.setup("._togglerInitialize");
+        Ur.setup("._togglerInitialize");
 });
 
 $("._orderDetails").DOMNodeAppear(function() {
-	Ur.setup("._togglerBillContainer");
-	Ur.setup("._togglerShipContainer");
-	Ur.setup("._orderSummaryContainer");
+        Ur.setup("._togglerBillContainer");
+        Ur.setup("._togglerShipContainer");
+        Ur.setup("._orderSummaryContainer");
 });
 
 $(".highslide-container").DOMNodeAppear(function(){
-	$('.highslide-container').hide();
+        $('.highslide-container').hide();
 });
 
 $("#mainTabContainer_tablist").DOMNodeAppear(function(){
-	$('#mainTabContainer_tablist').hide();
+        $('#mainTabContainer_tablist').hide();
 });
-
-
