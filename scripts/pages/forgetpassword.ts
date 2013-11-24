@@ -5,8 +5,11 @@ $$("#ad_17601") {
 
 $("/html/body") {
 	$("//div[@class='main_container']") {
-		add_class("_forgetPassword")	
-	}	
+		add_class("_forgetPassword")
+	}
+	$(".//div[@class='error_msg']"){
+		remove()
+	}
 }
 
 $$(".btn") {

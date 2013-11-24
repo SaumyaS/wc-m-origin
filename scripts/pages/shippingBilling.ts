@@ -10,8 +10,35 @@ $("/html/body"){
 		$(".//a[@id='shippingBillingPageNext']"){
 			add_class("expand")
 		}
+		$(".//form[@id='shippingAddressCreateEditFormDiv_1']"){
+			$(".//label"){
+				insert_before("br")
+			}
+			$("./br[1]"){
+				remove()
+			}
+			$("./br[4]"){
+				remove()
+			}
+		}
+		$(".//form[@id='billingAddressCreateEditFormDiv_1']"){
+			$("./label"){
+				insert_before("br")
+			}
+			$("./br[1]"){
+				remove()
+			}
+			$("./br[4]"){
+				remove()
+			}
+		}
 
 		$("./div[@class='checkout-container']"){
+			$(".//form[@id='PromotionCodeForm']"){
+				$("./a"){
+					insert_before("br")
+				}
+			}
 			$(".//span[@id='ShiptoBranch']"){
 				attributes(data-ur-set: "toggler")
 				$("./span[@id='ShiptoBranch_1']"){
@@ -25,8 +52,14 @@ $("/html/body"){
 	}
 
 	$$(".shipping_method_content"){
-		$("./div/label"){
-			insert_after("br")
+		$("./div/span"){
+			insert_before("br")
+		}
+		$("./label"){
+			insert_before("br")
+		}
+		$("./br[1]"){
+			remove()
 		}
 		$("./label[2]"){
 			inner(){
@@ -42,6 +75,7 @@ $("/html/body"){
 
 	$$("#create-account-container"){
 		$("./label[2]"){
+			insert_before("br")
 			inner(){
 				replace(/ConfirmPassword:/, "Confirm<br>Password:")
 			}

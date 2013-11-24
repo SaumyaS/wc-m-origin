@@ -85,10 +85,10 @@ match($status) {
 				log("--> Importing WOC")
 				@import pages/woc.ts
 			}
-			# with(/SearchDisplay/){
-			# 	log("--> Importing Search")
-			# 	@import pages/search.ts
-			# }
+			with(/searchTerm/){
+				log("--> Importing Search")
+				@import pages/search.ts
+			}
 			with(/Store_Locations/){
 				log("--> Importing Store_Locations")
 				@import pages/location.ts
@@ -136,6 +136,10 @@ match($status) {
 			}
 			with(/forgetpassword/){
 				log("--> Importing forgetpassword")
+				@import pages/forgetpassword.ts
+			}
+			with(/PersonChangeServicePasswordReset/){
+				log("--> Importing Wrong email address")
 				@import pages/forgetpassword.ts
 			}
 			with(/ResetPasswordForm/){

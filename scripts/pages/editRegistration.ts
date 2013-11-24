@@ -53,6 +53,9 @@ $$("#Register"){
 	$("./div[2]"){
 		add_class("_loginCreds")
 		move_to("../div[1]", position("before"))
+		$("./label[2]"){
+			insert_before("br")
+		}
 	}
 
 	#checkout container 3
