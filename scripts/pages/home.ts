@@ -72,7 +72,7 @@ $$("#page"){
 
 
 		  	$("./div[@class='_traderCarousel']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "enabled", data-ur-center: "enabled")
 				$("./ul[@id='first-carousel']"){
 			  		attributes(data-ur-carousel-component: "scroll_container", style: "width: 1900px;")
 			  		$("./script"){
@@ -89,7 +89,7 @@ $$("#page"){
 		$("./div[4]"){
 			add_class("_feature")
 			$("./div[@class='future_product']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled")
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled", data-ur-center: "enabled")
 				$("./ul"){
 					attributes(data-ur-carousel-component: "scroll_container")
 					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
