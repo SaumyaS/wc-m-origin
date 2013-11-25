@@ -17,6 +17,11 @@
 	width: 50%;
 }
 
+h1{
+	@include title_bar;
+}
+
+
 .error_msg{
 	color: red;
 	font-weight: bold;

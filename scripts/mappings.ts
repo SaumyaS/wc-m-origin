@@ -43,6 +43,14 @@ match($status) {
 			log("--> Importing Brand Category Page")
 			@import pages/brandCategoryDisplay.ts
 		}
+		$(".//div[@class='main_container']/h1/strong"){
+			match(text()){
+				with(/Sorry/){
+					log("--> Importing generic Error")
+					@import pages/genericError.ts
+				}
+			}
+		}
 
 		match($path) {
 			with(/TopCategoriesDisplay/){

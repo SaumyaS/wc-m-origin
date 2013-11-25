@@ -40,6 +40,7 @@ $("/html/body"){
 				}
 			}
 			$(".//span[@id='ShiptoBranch']"){
+				insert_before("br")
 				attributes(data-ur-set: "toggler")
 				$("./span[@id='ShiptoBranch_1']"){
 					attributes(data-ur-toggler-component: "button")
@@ -47,6 +48,16 @@ $("/html/body"){
 				$("./span[@id='ShiptoBranch_2']"){
 					attributes(style: "", data-ur-toggler-component: "content")
 				}
+			}
+		}
+		$(".//span[@id='ShiptoBranch']"){
+			insert_before("br")
+			attributes(data-ur-set: "toggler")
+			$("./span[@id='ShiptoBranch_1']"){
+				attributes(data-ur-toggler-component: "button")
+			}
+			$("./span[@id='ShiptoBranch_2']"){
+				attributes(style: "", data-ur-toggler-component: "content")
 			}
 		}
 	}
