@@ -222,6 +222,8 @@ $("./body"){
 		with(/BillingAddressDisplayView_1/){}
 		with(/AddressEditView/){}
 		with(/POSnippetDisplay/){}
+		with(/ShopCartPageView/){}
+		with(/OrderProcessServiceOrderPrepare/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

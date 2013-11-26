@@ -33,6 +33,23 @@ $("/html/body"){
 			}
 		}
 
+		$(".//div[@id='billingAddressDisplayArea_1']"){
+			$("./span"){
+				insert_before("br")
+			}
+			$("./br[1]"){
+				remove()
+			}
+		}
+		$(".//div[@id='billingAddressDisplayArea_2']"){
+			$("./span"){
+				insert_before("br")
+			}
+			$("./br[1]"){
+				remove()
+			}
+		}
+
 		$("./div[@class='checkout-container']"){
 			$(".//form[@id='PromotionCodeForm']"){
 				$("./a"){
@@ -103,7 +120,7 @@ $("//*[@id='shippingAddressDisplayArea']/span"){
 	insert_after("br")
 }
 
-$("//*[@id='WC_CheckoutPaymentsAndBillingAddressf_div_2_1']/label"){
+$("//div[@class='billing_method']/label"){
 	insert_after("br")
 	$("../input[4]"){
 		attributes(style: "margin-bottom: 10px;")

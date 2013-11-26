@@ -15,7 +15,7 @@ $$(".order-confirm"){
 			add_class("expand")
 		}
 
-		$$(".order-product-info"){
+		$(".//div[contains(@class, 'order-product-info')]"){
 			$("./div[2]"){
 				add_class("_colTitle")
 			}

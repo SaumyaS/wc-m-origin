@@ -150,6 +150,10 @@ match($status) {
 				log("--> Importing Wrong email address")
 				@import pages/forgetpassword.ts
 			}
+			with(/ShopCartPageView/){
+				log("--> Importing shop cart pagination")
+				@import pages/shopCartPage.ts
+			}
 			with(/ResetPasswordForm/){
 				log("--> Importing ResetPasswordForm")
 				@import pages/forgetpassword.ts
@@ -211,7 +215,7 @@ match($status) {
 				log("--> Importing EmailModalView")
 				@import pages/emailModalView.ts
 			}
-			with(/ProcessedOrders/){
+			with(/AjaxTrackOrderStatus/){
 				log("--> Importing processed Orders")
 				@import pages/processedOrders.ts
 			}
@@ -295,6 +299,10 @@ match($status) {
 			}
 			with(/AjaxOrderItemDisplayView/){
 				log("--> Importing AjaxOrderItemDisplayView")
+				@import pages/orderItemDisplay.ts
+			}
+			with(/OrderProcessServiceOrderPrepare/){
+				log("--> Importing process order")
 				@import pages/orderItemDisplay.ts
 			}
 			else() {

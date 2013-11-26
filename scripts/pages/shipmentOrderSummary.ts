@@ -20,6 +20,10 @@ $("/html/body"){
 			insert_before("br")
 			insert("br")
 		}
+		$("./div[@class='col-1']/div[3]/span"){
+			insert_before("br")
+		}
+
 		$("./div[@class='col-1']/div[2]/br[1]"){
 			remove()
 		}

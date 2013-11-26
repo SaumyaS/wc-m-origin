@@ -13,6 +13,14 @@
 		padding: 5px;
 		font-size: 16px;
 	}
+	#ShopcartPaginationText1{
+		text-align: right;
+		margin-right: 10px;
+	}
+	#ShopcartPaginationText2{
+		text-align: right;
+		margin-right: 10px;
+	}
 	#order-summary{
 		display: block;
 		padding-bottom: 1px;
@@ -200,7 +208,6 @@
 			border: 2px solid #555;
 			padding: 10px 10px 10px 130px;
 			background-color: #ededed;
-			height: 114px;
 			margin: 10px 5px;
 			font-weight: bold;
 			font-size: 16px;
