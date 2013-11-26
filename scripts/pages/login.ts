@@ -117,7 +117,7 @@ $("/html/body"){
 	}
 }
 
-$$(".body"){
+$("//div[@class='body']"){
 	# add_class("_accountContent")
 	$("./div[@class='checkout-container']"){
 		attributes(data-ur-set: "toggler")

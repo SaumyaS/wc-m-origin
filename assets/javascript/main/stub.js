@@ -83,6 +83,10 @@ $("._ajaxCalledAccount").DOMNodeAppear(function() {
 	Ur.setup("._togglerInitialize");
 });
 
+$("._companyInfoContainer").DOMNodeAppear(function() {
+	Ur.setup("._companyInfoContainer");
+});
+
 $("._orderDetails").DOMNodeAppear(function() {
 	Ur.setup("._togglerBillContainer");
 	Ur.setup("._togglerShipContainer");

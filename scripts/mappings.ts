@@ -20,11 +20,11 @@ match($status) {
 	with(/200/) {
 		log("--> STATUS: 200")
 
-		# Search/PLP
-		$$(".search-container"){
-			log("this is getting refined")
-			@import pages/search.ts
-		}
+		# # Search/PLP
+		# $$(".search-container"){
+		# 	log("this is getting refined")
+		# 	@import pages/search.ts
+		# }
 		# Product Subcategories
 		$$(".topcat_header"){
 			@import pages/categories.ts
@@ -159,7 +159,18 @@ match($status) {
 				@import pages/forgetpassword.ts
 			}
 			with(/LogonForm/){
-				log("--> Importing LogonForm")
+				
+				$$(".main_header_text"){
+					match(text()){
+						with(/Account/){
+							log("--> Importing Login")
+							@import pages/login.ts
+						}
+						else(){
+							log("--> Importing LogonForm")
+						}
+					}
+				}
 				@import pages/logonForm.ts
 			}
 			with(/Logon/){
@@ -304,6 +315,10 @@ match($status) {
 			with(/OrderProcessServiceOrderPrepare/){
 				log("--> Importing process order")
 				@import pages/orderItemDisplay.ts
+			}
+			with(/ShippingAddressDisplayView/){
+				log("--> Importing Ajax shipping")
+				@import pages/shippingAddressDisplayView.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")

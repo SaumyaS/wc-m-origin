@@ -67,10 +67,12 @@
 					float: left;
 					padding-right: 5px;
 					padding-top: 3px;
+					margin-top: 6px;
 				}
 				input{
 					background: #ccc;
 					border: 1px solid #aaa;
+					width:40px !important;
 				}
 			}
 			._Quantity{
@@ -142,28 +144,32 @@
 					margin-left: -128px;
 					margin-top: -8px;
 					position: absolute;
-					width: 110px;
+					width: 100px;
 					height: 120px;
 					color: white;
 					background-color: #555555;
 					padding: 5px;
 					line-height: 1em;
 					font-weight: bold;
-					font-size: 16px;
+					font-size: 14px;
 
 				}
 				label{
 					display: inline-block;
 					min-width: 100px;
 					font-weight: bold;
+					margin-left: -10px;
 				}
 				input{
 					margin: 5px 0px;
-					padding: 4px;
 					background: #ccc;
 					border: 1px solid #aaa;
 					width: 130px;
+					margin-left: -10px;
 
+				}
+				a{
+					margin-left: -10px;
 				}
 			}
 		}
@@ -179,13 +185,13 @@
 				margin-left: -128px;
 				margin-top: -8px;
 				position: absolute;
-				width: 110px;
+				width: 100px;
 				height: 120px;
 				color: white;
 				background-color: #555555;
 				padding: 5px;
 				line-height: 1em;
-				font-size: 16px;
+				font-size: 14px;
 			}
 			input{
 				margin: 5px 0px;
@@ -193,15 +199,18 @@
 				background: #ccc;
 				border: 1px solid #aaa;
 				width: 130px;
+				margin-left: -10px;
 			}
 			label{
 				display: inline-block;
 				min-width: 100px;
 				font-weight: bold;
 				font-size: 13px;
+				margin-left: -10px;
 			}
 			a{
 				font-size: 13px;
+				margin-left: -10px;
 			}
 		}
 		._tax{
@@ -215,17 +224,18 @@
 				margin-left: -128px;
 				margin-top: -8px;
 				position: absolute;
-				width: 110px;
+				width: 100px;
 				height: 120px;
 				color: white;
 				background-color: #555555;
 				padding: 5px;
 				line-height: 1em;
-				font-size: 16px;
+				font-size: 14px;
 			}
 			>div{
 				font-size: 12px;
 				font-weight: normal;
+				margin-left: -10px;
 				label{
 					display: inline-block;
 					min-width: 90px;

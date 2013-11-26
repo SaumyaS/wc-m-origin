@@ -60,6 +60,7 @@ $$("#Register"){
 
 	#checkout container 3
 	$("./div[3]"){
+		insert_before("div", class: "_companyInfoContainer")
 		add_class("_companyInfoForm")
 		$("./ol"){
 			$("./li"){
@@ -71,6 +72,18 @@ $$("#Register"){
 			$("./br[1]"){
 				remove()
 			}
+		}
+	}
+	$("./div[@class='_companyInfoContainer']"){
+		attributes(data-ur-set: "toggler")
+		insert("div", "Comapany Info", class: "_companyInfoButton")
+		move_here("../div[contains(@class,'_companyInfoForm')]")
+		
+		$("./div[@class='_companyInfoButton']"){
+			attributes(data-ur-toggler-component: "button")
+		}
+		$("./div[contains(@class,'_companyInfoForm')]"){
+			attributes(data-ur-toggler-component: "content")
 		}
 	}
 

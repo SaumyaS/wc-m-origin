@@ -10,6 +10,9 @@ $("/html"){
 
 	$$(".main-col"){
 		$("./div[@class='product-info']"){
+			$("./p/select[@id='shipAddressDropDown']"){
+				
+			}
 			$("./div/h1"){
 				match(text()){
 					
