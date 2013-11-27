@@ -17,6 +17,7 @@ $("//*[@id='content_wrapper_border']/div"){
 		}
 	}
 	$(".//a[@class='btn']"){
+		attributes(style: "", href: "/webapp/wcs/stores/servlet/AjaxLogonForm?catalogId=11101&myAcctMain=1&langId=-1&storeId=11301")
 		add_class("expand")
 	}
 }
