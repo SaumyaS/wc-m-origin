@@ -228,6 +228,8 @@ $("./body"){
 		with(/AjaxAddressDisplayView/){}
 		with(/AjaxOrderChangeServiceShipInfoUpdate/){}
 		with(/AjaxUpdateUserAddress/){}
+		with(/AjaxOrderChangeServiceItemAdd/){}
+		with(/QuickOrderCartDisplayView/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

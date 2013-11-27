@@ -324,6 +324,10 @@ match($status) {
 				log("--> Importing Address Display View")
 				@import pages/ajaxAddressDisplayView.ts
 			}
+			with(/QuickOrderCartDisplayView/){
+				log("--> Import Quick Order display")
+				@import pages/quickOrderCartDisplay.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
