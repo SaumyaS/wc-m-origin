@@ -20,11 +20,16 @@ match($status) {
 	with(/200/) {
 		log("--> STATUS: 200")
 
-		# # Search/PLP
-		# $$(".search-container"){
-		# 	log("this is getting refined")
-		# 	@import pages/search.ts
-		# }
+		# Search/PLP
+		$$(".search-container"){
+			log("--> Importing search/PLP")
+			@import pages/search.ts
+		}
+		$$("#search-content"){
+			log("--> Importing Invalid search")
+			@import pages/search.ts
+		}
+
 		# Product Subcategories
 		$$(".topcat_header"){
 			@import pages/categories.ts
@@ -93,10 +98,10 @@ match($status) {
 				log("--> Importing WOC")
 				@import pages/woc.ts
 			}
-			with(/searchTerm/){
-				log("--> Importing Search")
-				@import pages/search.ts
-			}
+			# with(/searchTerm/){
+			# 	log("--> Importing Search")
+			# 	@import pages/search.ts
+			# }
 			with(/Store_Locations/){
 				log("--> Importing Store_Locations")
 				@import pages/location.ts
