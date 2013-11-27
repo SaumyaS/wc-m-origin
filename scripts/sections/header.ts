@@ -225,6 +225,9 @@ $("./body"){
 		with(/ShopCartPageView/){}
 		with(/OrderProcessServiceOrderPrepare/){}
 		with(/ShippingAddressDisplayView/){}
+		with(/AjaxAddressDisplayView/){}
+		with(/AjaxOrderChangeServiceShipInfoUpdate/){}
+		with(/AjaxUpdateUserAddress/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

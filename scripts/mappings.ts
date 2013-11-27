@@ -320,6 +320,10 @@ match($status) {
 				log("--> Importing Ajax shipping")
 				@import pages/shippingAddressDisplayView.ts
 			}
+			with(/AjaxAddressDisplayView/){
+				log("--> Importing Address Display View")
+				@import pages/ajaxAddressDisplayView.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
