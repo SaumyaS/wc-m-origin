@@ -12,185 +12,72 @@ $("//*[@id='main_content_wrapper']/div/div"){
 			attributes(class: "_onlineSpecials")
 		}
 	}
-	
-	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[1]"){
-		attributes(style: "", class: "_specialText")
-	}
 
-	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[2]"){
-		add_class("_scpeicalsScroller")
-		# Removeing blank rows
-		$("./div[1]"){
+
+	$(".//div[@id='WC_ContentAreaESpot_div_22_1']/div[1]"){
+		attributes(class: "_specialText", style: "")
+	# Removeing blank rows
+		$("./div[@data-mw-id='mw_dump_tr1']"){
 			remove()
 		}
-		$("./div[1]"){
+		$("./div[@data-mw-id='mw_dump_tr5']"){
 			remove()
 		}
-		$("./div[3]"){
+		$("./div[@data-mw-id='mw_dump_tr24']"){
 			remove()
 		}
-		$("./div[4]"){
-			remove()
-		}
-		$("./div[6]"){
-			remove()
-		}
-		$("./div[7]"){
-			remove()
-		}
-		$("./div[9]"){
-			remove()
-		}
-		$("./div[10]"){
-			remove()
-		}
-		$("./div[12]"){
+		$("./div[@data-mw-id='mw_dump_tr43']"){
 			remove()
 		}
 
 		# Restructuring each of the rows
-		insert_top("div", class: "_carousel4")
-		insert_top("div", class: "_carousel3")
-		insert_top("div", class: "_carousel2")
-		insert_top("div", class: "_carousel1")
+		# insert_top("div", class: "_carousel4")
+		# insert_top("div", class: "_carousel3")
+		insert_top("div", class: "_carousel", id: "_carousel1")
+		insert_top("div", class: "_carousel", id: "_carousel2")
 
-		$("./div[@class='_carousel1']"){
-			move_here("../div[5]")
-			move_here("../div[5]")
+		$("./div[@id='_carousel1']"){
+			move_here("../div[3]")
+			move_here("../div[3]")
+			move_here("../div[3]")
 		}
-		$("./div[5]"){
-			move_to("../div[1]", position("after"))
-		}
-
-		$("./div[@class='_carousel2']"){
-			move_here("../div[6]")
-			move_here("../div[6]")
-		}
-		$("./div[6]"){
-			move_to("../div[3]", position("after"))
+		$("./div[3]"){
+			move_to("../div[@id='_carousel1']", position("after"))
 		}
 
-		$("./div[@class='_carousel3']"){
-			move_here("../div[7]")
-			move_here("../div[7]")
+		$("./div[@id='_carousel2']"){
+			move_here("../div[4]")
+			move_here("../div[4]")
+			move_here("../div[4]")
 		}
-		$("./div[7]"){
-			move_to("../div[5]", position("after"))
+		$("./div[4]"){
+			move_to("../div[@id='_carousel2']", position("after"))
 		}
-
-		$("./div[@class='_carousel4']"){
-			move_here("../div[8]")
-			move_here("../div[8]")
-		}
-
 
 		# Making rows suitable for carousel
-		$("./div[@class='_carousel1']"){
-			insert("div", class: "_firstCarousel"){
+		$("./div[@class='_carousel']"){
+			insert("div", class: "_carouselItem"){
 				move_here("../div[1]/div[1]")
 				move_here("../div[2]/div[1]")
+				move_here("../div[3]/div[1]")
 			}
-			insert("div", class: "_firstCarousel"){
+			insert("div", class: "_carouselItem"){
 				move_here("../div[1]/div[1]")
 				move_here("../div[2]/div[1]")
+				move_here("../div[3]/div[1]")
 			}
-			insert("div", class: "_firstCarousel"){
+			insert("div", class: "_carouselItem"){
 				move_here("../div[1]/div[1]")
 				move_here("../div[2]/div[1]")
+				move_here("../div[3]/div[1]")
 			}
-			insert("div", class: "_firstCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			$("./div[1]"){
+			$("./div[@class='mw_was_tr']"){
 				remove()
 			}
-			$("./div[1]"){
-				remove()
-			}
-			wrap("div"){
-				attributes(class: "_container")
-			}
-		}
-
-		$("./div[@class='_carousel2']"){
-			insert("div", class: "_secondCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_secondCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_secondCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_secondCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			$("./div[1]"){
-				remove()
-			}
-			$("./div[1]"){
-				remove()
-			}
-			wrap("div"){
-				attributes(class: "_container")
-			}
-		}
-
-		$("./div[@class='_carousel3']"){
-			insert("div", class: "_thirdCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_thirdCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_thirdCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_thirdCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			$("./div[1]"){
-				remove()
-			}
-			$("./div[1]"){
-				remove()
-			}
-			wrap("div"){
-				attributes(class: "_container")
-			}
-		}
-
-		$("./div[@class='_carousel4']"){
-			insert("div", class: "_fourthCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_fourthCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_fourthCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			insert("div", class: "_fourthCarousel"){
-				move_here("../div[1]/div[1]")
-				move_here("../div[2]/div[1]")
-			}
-			$("./div[1]"){
-				remove()
-			}
-			$("./div[1]"){
-				remove()
+			$("./div[@class='_carouselItem']"){
+				$("./div[2]"){
+					attributes(class: "_text")
+				}
 			}
 			wrap("div"){
 				attributes(class: "_container")
@@ -227,15 +114,19 @@ $("//*[@id='main_content_wrapper']/div/div"){
 	}
 }
 
-$$("._scpeicalsScroller"){
+$$("._specialText"){
 	$("./div[@data-ur-set='carousel']"){
-		$("./div/div/div[2]"){
+		$("./div/div/div[3]"){
 			$("./a"){
 				attributes(class: "")
 				remove_text_nodes()
 				move_here("../../div[1]/img")
 			}
-
+		}
+		$(".//div[@class='_carouselItem']"){
+			$("./div[@class='_text']"){
+				move_to("..", position("bottom"))
+			}
 		}
 	}
 }
