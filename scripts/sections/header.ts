@@ -26,7 +26,7 @@ $("./head"){
 }
 
 $("/html"){
-  #remove(".//script[contains(@src,'jcarousel.min.js')]")
+  # remove(".//script[contains(@src,'jcarousel.min.js')]")
   remove(".//script[contains(@src,'navigation.js')]")
 
   	$("./body"){
@@ -87,7 +87,10 @@ $$(".nav_wrapper"){
 				attributes(class: "_category")
 			}
 		}
-		$("./li[1]"){
+		$("./li[@id='menu1']"){
+			attributes(class: "_accordian")
+		}
+		$("./li[@id='menu6']"){
 			attributes(class: "_accordian")
 		}
 	}
@@ -100,6 +103,19 @@ $$(".nav_wrapper"){
 
 		$$(".subnav"){
 			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
+			$$("a"){
+				attribute("class", "_sub2")
+			}
+		}
+	}
+	$(".//li[@id='menu6']"){
+		attribute("data-ur-set", "toggler")
+		$$(">a"){
+		  attributes(data-ur-toggler-component: "button", data-ur-id: "submenu2")
+		}
+
+		$$(".subnav"){
+			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu2")
 			$$("a"){
 				attribute("class", "_sub2")
 			}
