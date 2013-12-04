@@ -9,7 +9,7 @@ $("//*[@id='account-col']"){
 
 $$(".body"){
 	add_class("_ajaxCalledAccount")
-	
+
 	$("./div[@class='checkout-container']"){
 		add_class("_togglerInitialize")
 		attributes(data-ur-set: "toggler")
