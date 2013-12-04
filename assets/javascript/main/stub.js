@@ -30,9 +30,7 @@ $(document).ready(function() {
 	}).remove();
 
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
-		// console.log("i was clicked");
 		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
-		// $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
 	});
 	$(".dijitTooltipLeft").click(function(){
 		console.log("i was clicked");
@@ -92,13 +90,6 @@ $("._orderDetails").DOMNodeAppear(function() {
 	Ur.setup("._togglerShipContainer");
 	Ur.setup("._orderSummaryContainer");
 });
-
-// $("#email_modal_dialog").DOMNodeAppear(function() {
-// 	Ur.setup("._togglerBillContainer");
-// 	Ur.setup("._togglerShipContainer");
-// 	Ur.setup("._orderSummaryContainer");
-// });
-
 
 $(".highslide-container").DOMNodeAppear(function(){
 	$('.highslide-container').hide();

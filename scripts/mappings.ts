@@ -325,10 +325,10 @@ match($status) {
 				log("--> Importing Ajax shipping")
 				@import pages/shippingAddressDisplayView.ts
 			}
-			with(/AjaxAddressDisplayView/){
-				log("--> Importing Address Display View")
-				@import pages/ajaxAddressDisplayView.ts
-			}
+			# with(/AjaxAddressDisplayView/){
+			# 	log("--> Importing Address Display View")
+			# 	@import pages/ajaxAddressDisplayView.ts
+			# }
 			with(/QuickOrderCartDisplayView/){
 				log("--> Import Quick Order display")
 				@import pages/quickOrderCartDisplay.ts

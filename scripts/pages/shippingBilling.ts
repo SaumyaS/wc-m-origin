@@ -21,36 +21,11 @@ $("/html/body"){
 				remove()
 			}
 		}
-		$(".//form[@id='billingAddressCreateEditFormDiv_1']"){
-			$("./label"){
-				insert_before("br")
-			}
-			$("./br[1]"){
-				remove()
-			}
-			$("./br[4]"){
-				remove()
-			}
-		}
-
-		$(".//div[@id='billingAddressDisplayArea_1']"){
-			$("./span"){
-				insert_before("br")
-			}
-			$("./br[1]"){
-				remove()
-			}
-		}
-		$(".//div[@id='billingAddressDisplayArea_2']"){
-			$("./span"){
-				insert_before("br")
-			}
-			$("./br[1]"){
-				remove()
-			}
-		}
 
 		$("./div[@class='checkout-container']"){
+			$("./br"){
+				remove()
+			}
 			$(".//form[@id='PromotionCodeForm']"){
 				$("./a"){
 					insert_before("br")
@@ -80,15 +55,7 @@ $("/html/body"){
 	}
 
 	$$(".shipping_method_content"){
-		$("./div/span"){
-			insert_before("br")
-		}
-		$("./label"){
-			insert_before("br")
-		}
-		$("./br[1]"){
-			remove()
-		}
+		
 		$("./label[2]"){
 			inner(){
 				replace(/Shipping:Comments/, "Shipping:<br>Comments")
@@ -116,19 +83,23 @@ $$("#ad_17601"){
 	move_here("//div[@id='_icons_bar']")
 }
 
-$("//*[@id='shippingAddressDisplayArea']/span"){
-	insert_after("br")
-}
-
 $("//div[@class='billing_method']/label"){
-	insert_after("br")
 	$("../input[4]"){
 		attributes(style: "margin-bottom: 10px;")
 	}
 }
 
+$$("#PaymentForm1"){
+	$("./br"){
+		remove()
+	}
+}
+
 $$(".card_info"){
 	$("./div[@id='payment-cc']"){
+		$("./br"){
+			remove()
+		}
 		remove_text_nodes()
 		$("./label[@for='expire_month_1']"){
 			remove_text_nodes()

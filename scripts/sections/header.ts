@@ -33,6 +33,9 @@ $("/html"){
 		# Removes all the breakpoints
 		match($path){
 			with(/Footer_Terms_Conditions/){}
+			with(/OrderShippingBillingView/){}
+			with(/SingleShipmentOrderSummaryView/){}
+			with(/OrderShippingBillingConfirmationView/){}
 			else(){
 				log("--> this is not the footer")
 				$$("br"){
