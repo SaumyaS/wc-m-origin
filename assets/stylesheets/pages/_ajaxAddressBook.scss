@@ -28,13 +28,13 @@
 			.sub-col{
 				label{
 					display: inline-block;
-					min-width: 110px;
+					min-width: 130px;
 				}
 				select{
 					width: 150px;
 				}
 				#address2{
-					margin-left: 114px !important;
+					margin-left: 134px !important;
 				}
 				input[type=text]{
 					margin: 5px 0px;
@@ -50,8 +50,31 @@
 		margin-bottom: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
+		a{
+			margin: 5px;
+		}
 	}
 }
 .alert{
 	color: #C00;
+}
+
+._ajaxAddress{
+	label{
+		display: inline-block;
+		min-width: 130px;
+	}
+	select{
+		width: 150px;
+	}
+	#address2{
+		margin-left: 134px !important;
+	}
+	input[type=text]{
+		margin: 5px 0px;
+		padding: 4px;
+		background: #ccc;
+		border: 1px solid #aaa;
+		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4) inset;
+	}
 }

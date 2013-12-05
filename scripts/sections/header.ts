@@ -250,6 +250,7 @@ $("./body"){
 		with(/AjaxOrderChangeServiceItemAdd/){}
 		with(/QuickOrderCartDisplayView/){}
 		with(/OrderItemPageView/){}
+		with(/AjaxAccountAddressForm/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

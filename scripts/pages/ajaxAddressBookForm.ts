@@ -17,6 +17,9 @@ $("/html/body"){
 		$("./div/a[@class='btn']"){
 			add_class("expand")
 		}
+		$("./div/a[@class='btn-gray']"){
+			add_class("expand")
+		}
 	}
 }
 $("//div[@class='checkout-container']"){

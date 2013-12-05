@@ -337,6 +337,11 @@ match($status) {
 				log("--> Import Quick Order display")
 				@import pages/quickOrderCartDisplay.ts
 			}
+			with(/AjaxAccountAddressForm/){
+				log("--> importing ajax address book")
+				@import pages/ajaxAddressBookForm.ts
+				@import pages/AjaxAccountAddressForm.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
