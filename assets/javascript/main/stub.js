@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$("#email_modal_link").click(function(){
+	$("#email_modal_link").on('click',function(){
 		console.log("email was clicked");
 		Ur.setup("._togglerBillContainer");
 		Ur.setup("._togglerShipContainer");
@@ -15,17 +15,20 @@ $(document).ready(function() {
 
 	$(".tabStrip-disabled").hide();
 
-	$("#PreviouslyProcessed1").click(function(){
+	$("#PreviouslyProcessed1").on('click',function(){
+		console.log("prev");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
-	$("#trackOrderStatus").click(function(){
+	$("#trackOrderStatus").on('click',function(){
+		console.log("next");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
-	$("#WaitingForApproval1").click(function(){
+	$("#WaitingForApproval1").on('click',function(){
+		console.log("next after");
 		$("._prev").hide();
 		$("._waiting").show();
 	});

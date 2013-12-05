@@ -206,6 +206,9 @@ $$(".checkout-container"){
 		}
 	}
 	$("./a[@id='email_modal_link']"){
+		# attribute("onclick"){
+		# 	# append("Ur.setup(\"._togglerBillContainer\");Ur.setup(\"._togglerShipContainer\");Ur.setup(\"._orderSummaryContainer\");")
+		# }
 		add_class("expand")
 	}
 }

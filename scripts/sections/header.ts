@@ -59,7 +59,7 @@ $("/html"){
 
 		$(".//div[@class='header_wrapper']"){
 			wrap("div"){
-			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
+			  	attributes(id: "moovweb-header", class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
 			}
 		}

@@ -1,3 +1,17 @@
+$(".//div[@class='checkout-container']"){
+	add_class("_myOrders")
+	$("./h3"){
+		match(text()){
+			with(/Previously/){
+				add_class("_prev")
+			}
+			with(/Waiting/){
+				add_class("_waiting")
+			}
+		}
+	}
+}
+
 $(".//div[@class='mw_was_thead']"){
 	remove()
 }
