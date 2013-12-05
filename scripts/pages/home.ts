@@ -28,27 +28,27 @@ $$("#page"){
 
 	#$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
 	# Carousel Widget
-  	$(".//div[@class='main_wrapper']"){
-		$("./div/ul"){
-		  	attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
-		  	insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
-				move_here("../li")
-		  	}
-		  	insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
-		  	$("./div/li[3]"){
-				attribute("class", "type1")
-		  	}
-		  	$("./div/li[1]"){
-				attributes(data-ur-carousel-component: "item", alt: "1")
-		  	}
-		  	$("./div/li[2]"){
-				attributes(data-ur-carousel-component: "item", alt: "2")
-		  	}
-		  	$("./div/li[3]"){
-				attributes(data-ur-carousel-component: "item", alt: "3")
-		  	}
-		}
-	}
+ #  	$(".//div[@class='main_wrapper']"){
+	# 	$("./div/ul"){
+	# 	  	attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
+	# 	  	insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
+	# 			move_here("../li")
+	# 	  	}
+	# 	  	insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
+	# 	  	$("./div/li[3]"){
+	# 			attribute("class", "type1")
+	# 	  	}
+	# 	  	$("./div/li[1]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "1")
+	# 	  	}
+	# 	  	$("./div/li[2]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "2")
+	# 	  	}
+	# 	  	$("./div/li[3]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "3")
+	# 	  	}
+	# 	}
+	# }
 
   	$("./div/div/div/div[@class='main_container']"){
 		$("./div[2]"){
@@ -89,12 +89,20 @@ $$("#page"){
 		$("./div[4]"){
 			add_class("_feature")
 			$("./div[@class='future_product']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
+				# attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
 				$("./ul"){
-					attributes(data-ur-carousel-component: "scroll_container")
-					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+					insert_after("div", class:"_random"){
+						move_here("../ul[@id='first-carousel']/div")
+						move_here("../ul[@id='first-carousel']/input")
+					}
+					$("./script"){
+						remove()
+					}
+					# attributes(data-ur-carousel-component: "scroll_container")
+					# insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
 					$("./li"){
-						attributes(data-ur-carousel-component: "item", class: "_item")
+						# attributes(data-ur-carousel-component: "item", class: "_item")
+
 						$("./div[2]/a[1]"){
 							add_class("_featurePrice")
 						}
@@ -109,6 +117,16 @@ $$("#page"){
 						}
 			  		}
 				}
+		  	}
+		  	$("./div[@class='future_product']"){
+		  		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
+		  		$(".//ul[@id='first-carousel']"){
+		  			attributes(data-ur-carousel-component: "scroll_container")
+		  			insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+		  			$("./li"){
+		  				attributes(data-ur-carousel-component: "item", class: "_item")
+		  			}
+		  		}
 		  	}
 		}
 	}
