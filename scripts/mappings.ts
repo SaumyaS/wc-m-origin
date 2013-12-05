@@ -340,7 +340,7 @@ match($status) {
 			with(/AjaxAccountAddressForm/){
 				log("--> importing ajax address book")
 				@import pages/ajaxAddressBookForm.ts
-				@import pages/AjaxAccountAddressForm.ts
+				@import pages/ajaxAccountAddressForm.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")
