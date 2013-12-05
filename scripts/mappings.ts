@@ -329,6 +329,10 @@ match($status) {
 			# 	log("--> Importing Address Display View")
 			# 	@import pages/ajaxAddressDisplayView.ts
 			# }
+			with(/OrderItemPageView/){
+				log("--> importing paginated summary page")
+				@import pages/orderItemPageView.ts
+			}
 			with(/QuickOrderCartDisplayView/){
 				log("--> Import Quick Order display")
 				@import pages/quickOrderCartDisplay.ts

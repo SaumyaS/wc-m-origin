@@ -249,6 +249,7 @@ $("./body"){
 		with(/AjaxUpdateUserAddress/){}
 		with(/AjaxOrderChangeServiceItemAdd/){}
 		with(/QuickOrderCartDisplayView/){}
+		with(/OrderItemPageView/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")
