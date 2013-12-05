@@ -9,19 +9,16 @@ $(document).ready(function() {
 	$(".tabStrip-disabled").hide();
 
 	$("#PreviouslyProcessed1").on('click',function(){
-		console.log("prev");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
 	$("#trackOrderStatus").on('click',function(){
-		console.log("next");
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
 	$("#WaitingForApproval1").on('click',function(){
-		console.log("next after");
 		$("._prev").hide();
 		$("._waiting").show();
 	});
@@ -32,6 +29,8 @@ $(document).ready(function() {
 	$("div").filter(function(){
 	    return $.trim(this.innerHTML) === "&nbsp;";
 	}).remove();
+
+		// $(".dijitTooltipLeft").attr("class", "dijitTooltipBottom");
 
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
 		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");

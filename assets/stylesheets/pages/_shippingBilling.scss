@@ -1,5 +1,6 @@
 ._shippingBilling{
 	label{
+		min-width: 120px;
 		display: inline-block;
 	}
 	input[type="text"], input[type="password"]{
@@ -87,6 +88,15 @@
 	}
 	#shippingBillingPageNext{
 		margin: 10px;
+	}
+	.billing_method{
+		label{
+			min-width: 100px;
+		}
+		
+	}
+	#WC_EmptyShopCartDisplayf_div_1{
+		padding: 10px;
 	}
 }
 
