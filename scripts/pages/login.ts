@@ -178,6 +178,9 @@ $("//div[@class='body']"){
 					attributes(width: "", height: "")
 				}
 			}
+			$("./div[2]"){
+				attributes(style: "float:left;", class: "_youtube")
+			}
 		}
 		$(".//a"){
 			add_class("expand")
