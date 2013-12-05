@@ -10,17 +10,7 @@ $("/html/body"){
 		$(".//a[@id='shippingBillingPageNext']"){
 			add_class("expand")
 		}
-		$(".//form[@id='shippingAddressCreateEditFormDiv_1']"){
-			$(".//label"){
-				insert_before("br")
-			}
-			$("./br[1]"){
-				remove()
-			}
-			$("./br[4]"){
-				remove()
-			}
-		}
+	
 
 		$("./div[@class='checkout-container']"){
 			$("./br"){
@@ -70,7 +60,6 @@ $("/html/body"){
 
 	$$("#create-account-container"){
 		$("./label[2]"){
-			insert_before("br")
 			inner(){
 				replace(/ConfirmPassword:/, "Confirm<br>Password:")
 			}
@@ -92,6 +81,12 @@ $("//div[@class='billing_method']/label"){
 $$("#PaymentForm1"){
 	$("./br"){
 		remove()
+	}
+	$(".//label/img"){
+		$(".."){
+			
+			attributes(style:"text-align: center;")
+		}
 	}
 }
 

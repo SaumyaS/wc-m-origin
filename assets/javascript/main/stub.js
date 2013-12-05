@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-	$("#email_modal_link").on('click',function(){
-		console.log("email was clicked");
-		Ur.setup("._togglerBillContainer");
-		Ur.setup("._togglerShipContainer");
-		Ur.setup("._orderSummaryContainer");
-	});
-
 	$("#image-menu").on('click', function() {
 		$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
 	});
