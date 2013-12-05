@@ -58,8 +58,9 @@ $("/html"){
 		}
 
 		$(".//div[@class='header_wrapper']"){
+			attributes(id: "moovweb-header")
 			wrap("div"){
-			  	attributes(id: "moovweb-header", class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
+			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
 			}
 		}
