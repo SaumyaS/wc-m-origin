@@ -64,6 +64,21 @@
 			}
 		}
 	}
+
+}
+#LinkAccount{
+	padding: 5px;
+	label{
+		display: inline-block;
+		min-width: 110px;
+	}
+	._youtube{
+		float: left;
+		width: 100%;
+	}
+	a{
+		margin-left: 1px;
+	}
 }
 
 

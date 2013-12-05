@@ -163,4 +163,24 @@ $("//div[@class='body']"){
 
 		}
 	}
+
+	$(".//form[@id='LinkAccount']"){
+		$(".//label"){
+			insert_before("br")
+		}
+		$("./div/br[1]"){
+			remove()
+		}
+		$("./div[@class='checkout-container']"){
+			$("./div[3]"){
+				attributes(style: "", class: "_youtube")
+				$(".//iframe"){
+					attributes(width: "", height: "")
+				}
+			}
+		}
+		$(".//a"){
+			add_class("expand")
+		}
+	}
 }

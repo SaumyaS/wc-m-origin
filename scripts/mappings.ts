@@ -342,6 +342,9 @@ match($status) {
 				@import pages/ajaxAddressBookForm.ts
 				@import pages/ajaxAccountAddressForm.ts
 			}
+			with(/OrderStatusTableDetailsDisplay/){
+				@import pages/processedOrders.ts
+			}
 			else() {
 				log("--> No page match in mappings.ts")
 			}
