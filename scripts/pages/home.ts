@@ -89,20 +89,12 @@ $$("#page"){
 		$("./div[4]"){
 			add_class("_feature")
 			$("./div[@class='future_product']"){
-				# attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
 				$("./ul"){
-					# insert_after("div", class:"_random"){
-					# 	move_here("../ul[@id='first-carousel']/div")
-					# 	move_here("../ul[@id='first-carousel']/input")
-					# }
-					$("./script"){
-						remove()
-					}
-					# attributes(data-ur-carousel-component: "scroll_container")
-					# insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
+					attributes(data-ur-carousel-component: "scroll_container")
+					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
 					$("./li"){
-						# attributes(data-ur-carousel-component: "item", class: "_item")
-
+						attributes(data-ur-carousel-component: "item", class: "_item")
 						$("./div[2]/a[1]"){
 							add_class("_featurePrice")
 						}
@@ -117,16 +109,6 @@ $$("#page"){
 						}
 			  		}
 				}
-		  	}
-		  	$("./div[@class='future_product']"){
-		  		attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
-		  		$(".//ul[@id='first-carousel']"){
-		  			attributes(data-ur-carousel-component: "scroll_container")
-		  			insert_after("div", class: "_dots", data-ur-carousel-component: "dots")
-		  			$("./li"){
-		  				attributes(data-ur-carousel-component: "item", class: "_item")
-		  			}
-		  		}
 		  	}
 		}
 	}
