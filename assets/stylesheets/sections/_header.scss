@@ -3,24 +3,10 @@
 // }
 // 
 
-.dijitTooltipLeft{
-	display: block;
-	position:absolute;
-	left: 139px !important;
-	background-color: white;
-	z-index: 2000;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	color: red;
-	font-size: 14px;
-	font-weight: bold;
-	width: 50%;
-}
-
 // .dijitTooltipLeft{
 // 	display: block;
-// 	position:fixed;
-// 	left: 25% !important;
+// 	position:absolute;
+// 	left: 139px !important;
 // 	background-color: white;
 // 	z-index: 2000;
 // 	border-radius: 5px;
@@ -29,9 +15,22 @@
 // 	font-size: 14px;
 // 	font-weight: bold;
 // 	width: 50%;
-// 	top: 50% !important;
-
 // }
+
+.dijitTooltipLeft{
+	display: block;
+	position:fixed;
+	left: 25% !important;
+	background-color: white;
+	z-index: 2000;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	width: 50%;
+	top: 50% !important;
+}
 
 // h1{
 // 	@include title_bar;

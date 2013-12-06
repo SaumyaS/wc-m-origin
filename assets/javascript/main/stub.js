@@ -39,8 +39,15 @@ $(document).ready(function() {
 		console.log("i was clicked");
 		$(this).attr("class", "dijitTooltipRight");
 	});
-	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	
 
+	// $("input").on('click', function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
+
+	$("input").keydown(function(){
+		$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	});
 
 
 
