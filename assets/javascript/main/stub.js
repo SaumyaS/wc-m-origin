@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
 		$("input").blur();
-	})
+	});
 	
 
 	// $("input").on('click', function(){
