@@ -42,9 +42,9 @@ $(document).ready(function() {
 
 		// $(".dijitTooltipLeft").attr("class", "dijitTooltipBottom");
 
-	// $("#WC_UserRegistrationAddForm_links_1").click(function(){
-	// 	$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
-	// });
+	$("#WC_UserRegistrationAddForm_links_1").click(function(){
+		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
+	});
 	
 
 	// $(".dijitTooltipLeft").click(function(){
