@@ -1,13 +1,3 @@
-// $(document).on("mobileinit", function() {
-
-//         $.mobile.fixedtoolbar.prototype.options.tapToggle = false;
-//         $.mobile.fixedtoolbar.prototype.options.hideDuringFocus = "";
-
-//     });
-
-
-
-
 $(document).ready(function() {
 
 	$("#image-menu").on('click', function() {
