@@ -179,7 +179,9 @@ $("//div[@class='body']"){
 				}
 			}
 			$("./div[2]"){
-				attributes(style: "float:left;", class: "_youtube")
+				attributes(style: "")
+				insert_before("hr")
+				insert_after("hr")
 			}
 		}
 		$(".//a"){
