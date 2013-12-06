@@ -45,9 +45,9 @@ $(document).ready(function() {
 	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
 	// });
 
-	$("input").keydown(function(){
-		$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
-	});
+	// $("input").keydown(function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
 
 
 
