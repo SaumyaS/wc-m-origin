@@ -91,10 +91,10 @@ $$("#page"){
 			$("./div[@class='future_product']"){
 				# attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
 				$("./ul"){
-					insert_after("div", class:"_random"){
-						move_here("../ul[@id='first-carousel']/div")
-						move_here("../ul[@id='first-carousel']/input")
-					}
+					# insert_after("div", class:"_random"){
+					# 	move_here("../ul[@id='first-carousel']/div")
+					# 	move_here("../ul[@id='first-carousel']/input")
+					# }
 					$("./script"){
 						remove()
 					}
