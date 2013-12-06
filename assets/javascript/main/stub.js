@@ -1,3 +1,13 @@
+// $(document).on("mobileinit", function() {
+
+//         $.mobile.fixedtoolbar.prototype.options.tapToggle = false;
+//         $.mobile.fixedtoolbar.prototype.options.hideDuringFocus = "";
+
+//     });
+
+
+
+
 $(document).ready(function() {
 
 	$("#image-menu").on('click', function() {
@@ -35,12 +45,25 @@ $(document).ready(function() {
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
 		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
 	});
-	$(".dijitTooltipLeft").click(function(){
-		console.log("i was clicked");
-		$(this).attr("class", "dijitTooltipRight");
-	});
-	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	
 
+	// $(".dijitTooltipLeft").click(function(){
+	// 	console.log("i was clicked");
+	// 	$(this).attr("class", "dijitTooltipRight");
+	// });
+
+	$("#WC_UserRegistrationAddForm_links_1").click(function(){
+		$("input").blur();
+	})
+	
+
+	// $("input").on('click', function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
+
+	// $("input").keydown(function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
 
 
 
