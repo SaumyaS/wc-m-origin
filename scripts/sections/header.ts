@@ -23,6 +23,8 @@ $$("body"){
 
 $("./head"){
 	insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
+	insert("link", rel: "apple-touch-icon", sizes: "72x72", href: "image-url(images/WhiteCap.png)")
+	insert("link", rel: "apple-touch-icon", sizes: "114x114", href: "image-url(images/WhiteCap.png)")
 }
 
 $("/html"){
