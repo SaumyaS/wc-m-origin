@@ -1,3 +1,13 @@
+// $(document).on("mobileinit", function() {
+
+//         $.mobile.fixedtoolbar.prototype.options.tapToggle = false;
+//         $.mobile.fixedtoolbar.prototype.options.hideDuringFocus = "";
+
+//     });
+
+
+
+
 $(document).ready(function() {
 
 	$("#image-menu").on('click', function() {
@@ -32,13 +42,19 @@ $(document).ready(function() {
 
 		// $(".dijitTooltipLeft").attr("class", "dijitTooltipBottom");
 
+	// $("#WC_UserRegistrationAddForm_links_1").click(function(){
+	// 	$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
+	// });
+	
+
+	// $(".dijitTooltipLeft").click(function(){
+	// 	console.log("i was clicked");
+	// 	$(this).attr("class", "dijitTooltipRight");
+	// });
+
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
-		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
-	});
-	$(".dijitTooltipLeft").click(function(){
-		console.log("i was clicked");
-		$(this).attr("class", "dijitTooltipRight");
-	});
+		$("input").blur();
+	})
 	
 
 	// $("input").on('click', function(){
