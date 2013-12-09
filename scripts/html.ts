@@ -1,11 +1,8 @@
 # HTML Transformations go here
 
-
-
 $("/html") {
   rewrite_links()
   absolutize_srcs()
-
     
   # Add the mobile meta tags 
   clean_mobile_meta_tags()
@@ -19,12 +16,11 @@ $("/html") {
   # lateload()
   
 
-
-
   add_assets()
 
   @import sections/header.ts
   @import sections/footer.ts
+
   @import sections/pagination.ts
 
   @import mappings.ts

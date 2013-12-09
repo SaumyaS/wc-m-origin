@@ -1,3 +1,4 @@
+
 # Place holder/example file
 
 # Place holder/example file
@@ -144,5 +145,3 @@ $$("#emailText"){
 	move_to("//div[@class='subs_imput_box']", "before")
 	insert_after("br")
 }
-
-

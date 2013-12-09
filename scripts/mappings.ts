@@ -1,4 +1,5 @@
 /*
+<<<<<<< HEAD
 	Mappings
 
 	Mappings are matchers that we use to determine if we should execute a
@@ -6,6 +7,7 @@
 	are on a certain page.
 
 	Example starting code:
+
 */
 
 match($status) {

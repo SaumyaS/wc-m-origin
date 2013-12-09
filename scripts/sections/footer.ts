@@ -1,5 +1,3 @@
-
-
 	# Removes unneeded footer items
 	$$(".footer_nav_wrapper"){
 		remove()
