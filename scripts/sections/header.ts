@@ -39,7 +39,6 @@ $("/html"){
 			with(/SingleShipmentOrderSummaryView/){}
 			with(/OrderShippingBillingConfirmationView/){}
 			else(){
-				log("--> this is not the footer")
 				$$("br"){
 					remove()
 				}
