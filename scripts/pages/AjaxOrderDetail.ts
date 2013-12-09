@@ -79,7 +79,7 @@ $$("._paymentInfo"){
 		}
 	}
 	$("./div[@class='_togglerBillContainer']"){
-		attributes(data-ur-set: "toggler")
+		attributes(data-ur-set: "toggler", data-ur-id: "bill")
 		$("./h3[@class='_BillingInfo']"){
 			attributes(data-ur-toggler-component: "button", data-ur-id: "bill")
 		}
@@ -88,7 +88,7 @@ $$("._paymentInfo"){
 		}
 	}
 	$("./div[@class='_togglerShipContainer']"){
-		attributes(data-ur-set: "toggler")
+		attributes(data-ur-set: "toggler", data-ur-id: "ship")
 		$("./h3[@class='_ShippingInfo']"){
 			attributes(data-ur-toggler-component: "button", data-ur-id: "ship")
 		}
@@ -100,7 +100,7 @@ $$("._paymentInfo"){
 
 $$(".checkout-container"){
 	add_class("_orderSummaryContainer")
-	attributes(data-ur-set: "toggler")
+	attributes(data-ur-set: "toggler", data-ur-id: "order")
 	$("./h3"){
 		match(text()){
 			with(/Order/){
@@ -206,6 +206,9 @@ $$(".checkout-container"){
 		}
 	}
 	$("./a[@id='email_modal_link']"){
+		$onclick = fetch("./@onclick")
+		log("dsfgsdfgdf" + $onclick)
+		attributes(onclick: concat($onclick, "Ur.setup(\"._togglerBillContainer\");Ur.setup(\"._togglerShipContainer\");Ur.setup(\"._orderSummaryContainer\");"))
 		add_class("expand")
 	}
 }

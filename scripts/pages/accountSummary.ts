@@ -9,7 +9,7 @@ $("//*[@id='account-col']"){
 
 $$(".body"){
 	add_class("_ajaxCalledAccount")
-	
+
 	$("./div[@class='checkout-container']"){
 		add_class("_togglerInitialize")
 		attributes(data-ur-set: "toggler")
@@ -26,7 +26,6 @@ $$(".body"){
 			}
 			match(text()){
 				with(/Shipping/){
-					log("this is a test")
 					attributes(data-ur-toggler-component: "button")
 					insert_after("div", class: "_shippingContent")
 					$("../div[@class='_shippingContent']"){
@@ -34,6 +33,21 @@ $$(".body"){
 						move_here("../ul[@class='orgs']")
 						move_here("../div[@class='erp-shipping-address']")
 						move_here("../div[@class='erp-shipping-address-detail']")
+
+						$("./div[@class='erp-shipping-address-detail']"){
+							$("./span[@class='organizationName']"){
+								insert_after("br")
+							}
+							$("./span[@class='address2']"){
+								insert_after("br")
+							}
+							$("./span[@class='zipCode']"){
+								insert_after("br")
+							}
+							$("./span[@class='phone1']"){
+								insert_after("br")
+							}
+						}
 					}
 				}
 			}

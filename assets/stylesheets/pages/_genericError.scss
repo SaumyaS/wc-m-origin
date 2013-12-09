@@ -1,11 +1,12 @@
-#WC_ContentAreaESpot_div_1_20101{
+._genericError{
 	h1{
 		@include title_bar;
 	}
+
 	hr{
 		@include horizontal_line;
 	}
 	.ad{
-		padding: 10px;
+		padding: 5px;
 	}
 }

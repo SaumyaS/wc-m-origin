@@ -23,18 +23,22 @@ $$("body"){
 
 $("./head"){
 	insert("meta", name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=no")
+	insert("link", rel: "apple-touch-icon", sizes: "72x72", href: asset("images/WhiteCap.png"))
+	insert("link", rel: "apple-touch-icon", sizes: "114x114", href: asset("images/WhiteCap.png"))
 }
 
 $("/html"){
-  #remove(".//script[contains(@src,'jcarousel.min.js')]")
+  # remove(".//script[contains(@src,'jcarousel.min.js')]")
   remove(".//script[contains(@src,'navigation.js')]")
 
   	$("./body"){
 		# Removes all the breakpoints
 		match($path){
 			with(/Footer_Terms_Conditions/){}
+			with(/OrderShippingBillingView/){}
+			with(/SingleShipmentOrderSummaryView/){}
+			with(/OrderShippingBillingConfirmationView/){}
 			else(){
-				log("--> this is not the footer")
 				$$("br"){
 					remove()
 				}
@@ -55,6 +59,7 @@ $("/html"){
 		}
 
 		$(".//div[@class='header_wrapper']"){
+			attributes(id: "moovweb-header")
 			wrap("div"){
 			  	attributes(class: "header_widget", data-ur-set: "tabs", data-ur-closeable: "true")
 			  	move_here("../div[@class='nav_wrapper']")
@@ -87,7 +92,10 @@ $$(".nav_wrapper"){
 				attributes(class: "_category")
 			}
 		}
-		$("./li[1]"){
+		$("./li[@id='menu1']"){
+			attributes(class: "_accordian")
+		}
+		$("./li[@id='menu6']"){
 			attributes(class: "_accordian")
 		}
 	}
@@ -100,6 +108,19 @@ $$(".nav_wrapper"){
 
 		$$(".subnav"){
 			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu")
+			$$("a"){
+				attribute("class", "_sub2")
+			}
+		}
+	}
+	$(".//li[@id='menu6']"){
+		attribute("data-ur-set", "toggler")
+		$$(">a"){
+		  attributes(data-ur-toggler-component: "button", data-ur-id: "submenu2")
+		}
+
+		$$(".subnav"){
+			attributes(data-ur-toggler-component: "content", data-ur-id: "submenu2")
 			$$("a"){
 				attribute("class", "_sub2")
 			}
@@ -222,6 +243,17 @@ $("./body"){
 		with(/BillingAddressDisplayView_1/){}
 		with(/AddressEditView/){}
 		with(/POSnippetDisplay/){}
+		with(/ShopCartPageView/){}
+		with(/OrderProcessServiceOrderPrepare/){}
+		with(/ShippingAddressDisplayView/){}
+		with(/AjaxAddressDisplayView/){}
+		with(/AjaxOrderChangeServiceShipInfoUpdate/){}
+		with(/AjaxUpdateUserAddress/){}
+		with(/AjaxOrderChangeServiceItemAdd/){}
+		with(/QuickOrderCartDisplayView/){}
+		with(/OrderItemPageView/){}
+		with(/AjaxAccountAddressForm/){}
+		with(/OrderStatusTableDetailsDisplay/){}
 		else (){
 			inner_wrap("div", id: "body-content"){
 				insert_bottom("div", id: "pers-nav-mask")

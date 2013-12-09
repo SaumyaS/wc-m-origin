@@ -28,27 +28,27 @@ $$("#page"){
 
 	#$("/html/body/div[@id='page']/div[@id='main_content_wrapper']/div[@id='content_wrapper_box']/div[@class='main_wrapper']"){
 	# Carousel Widget
-  	$(".//div[@class='main_wrapper']"){
-		$("./div/ul"){
-		  	attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled", data-ur-center: "enabled")
-		  	insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
-				move_here("../li")
-		  	}
-		  	insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
-		  	$("./div/li[3]"){
-				attribute("class", "type1")
-		  	}
-		  	$("./div/li[1]"){
-				attributes(data-ur-carousel-component: "item", alt: "1")
-		  	}
-		  	$("./div/li[2]"){
-				attributes(data-ur-carousel-component: "item", alt: "2")
-		  	}
-		  	$("./div/li[3]"){
-				attributes(data-ur-carousel-component: "item", alt: "3")
-		  	}
-		}
-	}
+ #  	$(".//div[@class='main_wrapper']"){
+	# 	$("./div/ul"){
+	# 	  	attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader_icons", data-ur-autoscroll: "enabled")
+	# 	  	insert_top("div", class: "_container", data-ur-carousel-component: "scroll_container"){
+	# 			move_here("../li")
+	# 	  	}
+	# 	  	insert_bottom("div", class: "_dots", data-ur-carousel-component: "dots")
+	# 	  	$("./div/li[3]"){
+	# 			attribute("class", "type1")
+	# 	  	}
+	# 	  	$("./div/li[1]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "1")
+	# 	  	}
+	# 	  	$("./div/li[2]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "2")
+	# 	  	}
+	# 	  	$("./div/li[3]"){
+	# 			attributes(data-ur-carousel-component: "item", alt: "3")
+	# 	  	}
+	# 	}
+	# }
 
   	$("./div/div/div/div[@class='main_container']"){
 		$("./div[2]"){
@@ -72,7 +72,7 @@ $$("#page"){
 
 
 		  	$("./div[@class='_traderCarousel']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "disabled")
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "trader", data-ur-infinite: "enabled")
 				$("./ul[@id='first-carousel']"){
 			  		attributes(data-ur-carousel-component: "scroll_container", style: "width: 1900px;")
 			  		$("./script"){
@@ -89,7 +89,7 @@ $$("#page"){
 		$("./div[4]"){
 			add_class("_feature")
 			$("./div[@class='future_product']"){
-				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "disabled")
+				attributes(data-ur-set: "carousel", data-ur-carousel-component: "view_container", data-ur-id: "feature",  data-ur-infinite: "enabled")
 				$("./ul"){
 					attributes(data-ur-carousel-component: "scroll_container")
 					insert_after("div", class: "_dots", data-ur-carousel-component: "dots")

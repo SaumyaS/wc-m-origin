@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$("#image-menu").on('click', function() {
 		$("#pers-nav, #pers-nav-mask, #body-content").toggleClass("pers-nav-active");
 	});
@@ -7,17 +8,17 @@ $(document).ready(function() {
 
 	$(".tabStrip-disabled").hide();
 
-	$("#PreviouslyProcessed1").click(function(){
+	$("#PreviouslyProcessed1").on('click',function(){
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
-	$("#trackOrderStatus").click(function(){
+	$("#trackOrderStatus").on('click',function(){
 		$("._prev").show();
 		$("._waiting").hide();
 	});
 
-	$("#WaitingForApproval1").click(function(){
+	$("#WaitingForApproval1").on('click',function(){
 		$("._prev").hide();
 		$("._waiting").show();
 	});
@@ -29,16 +30,31 @@ $(document).ready(function() {
 	    return $.trim(this.innerHTML) === "&nbsp;";
 	}).remove();
 
+		// $(".dijitTooltipLeft").attr("class", "dijitTooltipBottom");
+
 	$("#WC_UserRegistrationAddForm_links_1").click(function(){
-		// console.log("i was clicked");
 		$(".dijitTooltipRight").attr("class", "dijitTooltipLeft");
-		// $(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
 	});
-	$(".dijitTooltipLeft").click(function(){
-		console.log("i was clicked");
-		$(this).attr("class", "dijitTooltipRight");
+	
+
+	// $(".dijitTooltipLeft").click(function(){
+	// 	console.log("i was clicked");
+	// 	$(this).attr("class", "dijitTooltipRight");
+	// });
+
+	$("#WC_UserRegistrationAddForm_links_1").click(function(){
+		$("input").blur();
 	});
-	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	
+
+	// $("input").on('click', function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
+
+	// $("input").keydown(function(){
+	// 	$(".dijitTooltipLeft").attr("class", "dijitTooltipRight");
+	// });
+
 
 
 });
@@ -81,6 +97,10 @@ $("#CVVDetailsSection").DOMNodeAppear(function() {
 
 $("._ajaxCalledAccount").DOMNodeAppear(function() {
 	Ur.setup("._togglerInitialize");
+});
+
+$("._companyInfoContainer").DOMNodeAppear(function() {
+	Ur.setup("._companyInfoContainer");
 });
 
 $("._orderDetails").DOMNodeAppear(function() {

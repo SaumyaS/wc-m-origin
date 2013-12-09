@@ -22,9 +22,14 @@ match($status) {
 
 		# Search/PLP
 		$$(".search-container"){
-			log("this is getting refined")
+			log("--> Importing search/PLP")
 			@import pages/search.ts
 		}
+		$$("#search-content"){
+			log("--> Importing Invalid search")
+			@import pages/search.ts
+		}
+
 		# Product Subcategories
 		$$(".topcat_header"){
 			@import pages/categories.ts
@@ -42,6 +47,14 @@ match($status) {
 		$$(".brand-categories"){
 			log("--> Importing Brand Category Page")
 			@import pages/brandCategoryDisplay.ts
+		}
+		$(".//div[@class='main_container']/h1/strong"){
+			match(text()){
+				with(/Sorry/){
+					log("--> Importing generic Error")
+					@import pages/genericError.ts
+				}
+			}
 		}
 
 		match($path) {
@@ -85,7 +98,7 @@ match($status) {
 				log("--> Importing WOC")
 				@import pages/woc.ts
 			}
-			# with(/SearchDisplay/){
+			# with(/searchTerm/){
 			# 	log("--> Importing Search")
 			# 	@import pages/search.ts
 			# }
@@ -138,12 +151,31 @@ match($status) {
 				log("--> Importing forgetpassword")
 				@import pages/forgetpassword.ts
 			}
+			with(/PersonChangeServicePasswordReset/){
+				log("--> Importing Wrong email address")
+				@import pages/forgetpassword.ts
+			}
+			with(/ShopCartPageView/){
+				log("--> Importing shop cart pagination")
+				@import pages/shopCartPage.ts
+			}
 			with(/ResetPasswordForm/){
 				log("--> Importing ResetPasswordForm")
 				@import pages/forgetpassword.ts
 			}
 			with(/LogonForm/){
-				log("--> Importing LogonForm")
+				
+				$$(".main_header_text"){
+					match(text()){
+						with(/Account/){
+							log("--> Importing Login")
+							@import pages/login.ts
+						}
+						else(){
+							log("--> Importing LogonForm")
+						}
+					}
+				}
 				@import pages/logonForm.ts
 			}
 			with(/Logon/){
@@ -199,7 +231,7 @@ match($status) {
 				log("--> Importing EmailModalView")
 				@import pages/emailModalView.ts
 			}
-			with(/ProcessedOrders/){
+			with(/AjaxTrackOrderStatus/){
 				log("--> Importing processed Orders")
 				@import pages/processedOrders.ts
 			}
@@ -284,6 +316,34 @@ match($status) {
 			with(/AjaxOrderItemDisplayView/){
 				log("--> Importing AjaxOrderItemDisplayView")
 				@import pages/orderItemDisplay.ts
+			}
+			with(/OrderProcessServiceOrderPrepare/){
+				log("--> Importing process order")
+				@import pages/orderItemDisplay.ts
+			}
+			with(/ShippingAddressDisplayView/){
+				log("--> Importing Ajax shipping")
+				@import pages/shippingAddressDisplayView.ts
+			}
+			# with(/AjaxAddressDisplayView/){
+			# 	log("--> Importing Address Display View")
+			# 	@import pages/ajaxAddressDisplayView.ts
+			# }
+			with(/OrderItemPageView/){
+				log("--> importing paginated summary page")
+				@import pages/orderItemPageView.ts
+			}
+			with(/QuickOrderCartDisplayView/){
+				log("--> Import Quick Order display")
+				@import pages/quickOrderCartDisplay.ts
+			}
+			with(/AjaxAccountAddressForm/){
+				log("--> importing ajax address book")
+				@import pages/ajaxAddressBookForm.ts
+				@import pages/ajaxAccountAddressForm.ts
+			}
+			with(/OrderStatusTableDetailsDisplay/){
+				@import pages/processedOrders.ts
 			}
 			else() {
 				log("--> No page match in mappings.ts")

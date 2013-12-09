@@ -1,17 +1,26 @@
 .order-confirm{
+	.shopcart_pagination{
+		text-align: right;
+		
+	}
 	label{
 		min-width: 0px;
 	}
 	display: block;
 	padding-top: 5px;
-	background-color: #ccc;
 	h1{
-		background-color: #ffe089;
-		border-top: 1px solid #555;
-		border-bottom: 1px solid #555;
+		border-bottom: 2px solid #ffe089;
 		font-weight: bold;
 		padding: 5px;
 		font-size: 16px;
+	}
+	#ShopcartPaginationText1{
+		text-align: right;
+		margin-right: 10px;
+	}
+	#ShopcartPaginationText2{
+		text-align: right;
+		margin-right: 10px;
 	}
 	#order-summary{
 		display: block;
@@ -59,10 +68,12 @@
 					float: left;
 					padding-right: 5px;
 					padding-top: 3px;
+					margin-top: 6px;
 				}
 				input{
 					background: #ccc;
 					border: 1px solid #aaa;
+					width:40px !important;
 				}
 			}
 			._Quantity{
@@ -113,6 +124,12 @@
 				}
 
 			}
+			.showHazardous{
+				color: red;
+			}
+			.showBulky {
+				color: red;
+			}
 		}
 
 
@@ -134,28 +151,32 @@
 					margin-left: -128px;
 					margin-top: -8px;
 					position: absolute;
-					width: 110px;
+					width: 95px;
 					height: 120px;
 					color: white;
 					background-color: #555555;
 					padding: 5px;
 					line-height: 1em;
 					font-weight: bold;
-					font-size: 16px;
+					font-size: 13px;
 
 				}
 				label{
 					display: inline-block;
 					min-width: 100px;
 					font-weight: bold;
+					margin-left: -17px;
 				}
 				input{
 					margin: 5px 0px;
-					padding: 4px;
 					background: #ccc;
 					border: 1px solid #aaa;
 					width: 130px;
+					margin-left: -17px;
 
+				}
+				a{
+					margin-left: -17px;
 				}
 			}
 		}
@@ -171,13 +192,13 @@
 				margin-left: -128px;
 				margin-top: -8px;
 				position: absolute;
-				width: 110px;
+				width: 95px;
 				height: 120px;
 				color: white;
 				background-color: #555555;
 				padding: 5px;
 				line-height: 1em;
-				font-size: 16px;
+				font-size: 13px;
 			}
 			input{
 				margin: 5px 0px;
@@ -185,22 +206,24 @@
 				background: #ccc;
 				border: 1px solid #aaa;
 				width: 130px;
+				margin-left: -17px;
 			}
 			label{
 				display: inline-block;
 				min-width: 100px;
 				font-weight: bold;
 				font-size: 13px;
+				margin-left: -17px;
 			}
 			a{
 				font-size: 13px;
+				margin-left: -17px;
 			}
 		}
 		._tax{
 			border: 2px solid #555;
 			padding: 10px 10px 10px 130px;
 			background-color: #ededed;
-			height: 114px;
 			margin: 10px 5px;
 			font-weight: bold;
 			font-size: 16px;
@@ -208,17 +231,18 @@
 				margin-left: -128px;
 				margin-top: -8px;
 				position: absolute;
-				width: 110px;
+				width: 95px;
 				height: 120px;
 				color: white;
 				background-color: #555555;
 				padding: 5px;
 				line-height: 1em;
-				font-size: 16px;
+				font-size: 13px;
 			}
 			>div{
 				font-size: 12px;
 				font-weight: normal;
+				margin-left: -17px;
 				label{
 					display: inline-block;
 					min-width: 90px;

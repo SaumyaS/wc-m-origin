@@ -33,7 +33,7 @@ $("/html/body"){
 
 		$("./div[@class='nav-secondary']"){
 			insert_before("div", class: "_userInfo", "My Info"){
-				
+
 			}
 		}
 		$("./div[@class='_userInfo']"){
@@ -110,14 +110,14 @@ $("/html/body"){
 				}
 			}
 		}
-		
+
 		$("//*[@id='WC_AccountDisplay_links_3']") {
 			add_class("expand")
 		}
 	}
 }
 
-$$(".body"){
+$("//div[@class='body']"){
 	# add_class("_accountContent")
 	$("./div[@class='checkout-container']"){
 		attributes(data-ur-set: "toggler")
@@ -143,10 +143,49 @@ $$(".body"){
 						move_here("../ul[@class='orgs']")
 						move_here("../div[@class='erp-shipping-address']")
 						move_here("../div[@class='erp-shipping-address-detail']")
+						$("./div[@class='erp-shipping-address-detail']"){
+							$("./span[@class='organizationName']"){
+								insert_after("br")
+							}
+							$("./span[@class='address2']"){
+								insert_after("br")
+							}
+							$("./span[@class='zipCode']"){
+								insert_after("br")
+							}
+							$("./span[@class='phone1']"){
+								insert_after("br")
+							}
+						}
 					}
 				}
 			}
 
+		}
+	}
+
+	$(".//form[@id='LinkAccount']"){
+		$(".//label"){
+			insert_before("br")
+		}
+		$("./div/br[1]"){
+			remove()
+		}
+		$("./div[@class='checkout-container']"){
+			$("./div[3]"){
+				attributes(style: "", class: "_youtube")
+				$(".//iframe"){
+					attributes(width: "", height: "")
+				}
+			}
+			$("./div[2]"){
+				attributes(style: "")
+				insert_before("hr")
+				insert_after("hr")
+			}
+		}
+		$(".//a"){
+			add_class("expand")
 		}
 	}
 }

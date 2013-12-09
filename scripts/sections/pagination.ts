@@ -3,35 +3,6 @@ $$(".bt_pagination"){
 		attributes(style: "")
 	}
 	$("./div[@class='bt_pagination_1']"){
-		$("./a[16]"){
-			remove()
-		}
-		$("./a[15]"){
-			remove()
-		}
-		$("./a[14]"){
-			remove()
-		}
-		$("./a[13]"){
-			remove()
-		}
-		$("./a[12]"){
-			remove()
-		}
-		$("./a[11]"){
-			remove()
-		}
-		$("./a[10]"){
-			remove()
-		}
-		$("./a[9]"){
-			remove()
-		}
-		$("./a[8]"){
-			remove()
-		}
-		$("./a[7]"){
-			remove()
-		}
+
 	}
 }
