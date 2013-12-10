@@ -1,10 +1,15 @@
 ._specials{
 	div{
 		h1{
-			@include title_bar
+			@include title_bar;
+			border-bottom: none;
+			margin-bottom: -5px;
 		}
 		hr{
-			@include horizontal_line;
+			background-color: #fc0;
+			height: 2px;
+			border: none;
+			margin: 10px 0px;
 		}
 
 		#ad_62001{
