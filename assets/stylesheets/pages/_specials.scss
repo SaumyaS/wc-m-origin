@@ -1,9 +1,7 @@
 ._specials{
 	div{
 		h1{
-			background-color: #ffe089;
-			border-top: 1px solid #555;
-			border-bottom: 1px solid #555;
+			@include title_bar
 		}
 		hr{
 			@include horizontal_line;

@@ -33,8 +33,8 @@ $("//*[@id='main_content_wrapper']/div/div"){
 		# Restructuring each of the rows
 		# insert_top("div", class: "_carousel4")
 		# insert_top("div", class: "_carousel3")
-		insert_top("div", class: "_carousel", id: "_carousel1")
 		insert_top("div", class: "_carousel", id: "_carousel2")
+		insert_top("div", class: "_carousel", id: "_carousel1")
 
 		$("./div[@id='_carousel1']"){
 			move_here("../div[3]")
@@ -56,6 +56,7 @@ $("//*[@id='main_content_wrapper']/div/div"){
 
 		# Making rows suitable for carousel
 		$("./div[@class='_carousel']"){
+			insert_after("hr")
 			insert("div", class: "_carouselItem"){
 				move_here("../div[1]/div[1]")
 				move_here("../div[2]/div[1]")
